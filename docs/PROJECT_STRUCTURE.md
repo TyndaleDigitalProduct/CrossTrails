@@ -53,7 +53,7 @@ Examples:
 - Navigation and layout components
 
 ### `/data` - Public Data
-**PUBLIC ONLY** - Cross-reference data that's safe to include in the repository.
+**PUBLIC ONLY** - Open-source data that's safe to include in the repository.
 
 ⚠️ **Important**: Proprietary biblical scholarship data goes on Vercel separately, NOT in this folder.
 
@@ -89,13 +89,12 @@ Static files served directly by Next.js:
 ## Data Architecture
 
 **Public Data (in repo):**
-- Basic cross-reference mappings
-- Public domain biblical data
+- Tyndale Open Study Notes
+- Tyndale Open Bible Dictionary
 
 **Private Data (Vercel only):**
-- Proprietary biblical scholarship
-- Enhanced commentary data
-- Advanced cross-reference insights
+- Cross Reference system including new metadata
+- NLT files (if NLT.to is not viable for our use)
 
 ## Team Workflow
 
