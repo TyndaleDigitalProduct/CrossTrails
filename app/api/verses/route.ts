@@ -170,7 +170,7 @@ function getMatthew2Verses(): BibleVerse[] {
     {
       verse_number: 6,
       verse_id: 'Matthew.2.6',
-      text: '"And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah, for a ruler will come from you who will be the shepherd for my people Israel.'"'
+      text: '"And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah, for a ruler will come from you who will be the shepherd for my people Israel."'
     },
     {
       verse_number: 7,
