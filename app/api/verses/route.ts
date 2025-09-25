@@ -117,7 +117,7 @@ async function fetchVersesByReference(reference: string) {
     endChapter = parseInt(end);
     // "1" in "35.30-36.1" is a verse number
     endVerse = parseInt(parts[3]);
-    } elseif (parts.length > 2) {
+    } else if (parts.length > 2) {
       // Single chapter, single verse or range within chapter (e.g., "35", "35.30" or "35.30-32")
       startChapter = endChapter = parseInt(parts[1]);
       if (parts.length === 2) {
@@ -139,7 +139,7 @@ async function fetchVersesByReference(reference: string) {
   }
 
   // For demo, handle Matthew 2
-  if (book === 'Matthew' && chapter === 2) {
+  if (book === 'Matthew' && startChapter === 2) {
     const allVerses = getMatthew2Verses()
     const filteredVerses = allVerses.filter(
       verse => verse.verse_number >= startVerse && verse.verse_number <= endVerse
