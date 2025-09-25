@@ -1,0 +1,18 @@
+# Example environment variables for CrossTrails
+# Copy this file to .env and fill in the values as needed
+
+# Public version identifier
+NEXT_PUBLIC_VERSION=0.1.0
+
+# App public URL
+NEXT_PUBLIC_APP_URL=http://localhost:3000
+
+# Gloo AI API Key (required for AI features)
+GLOO_AI_API_KEY=6t78057g4kqf6ng1mvrknt79mebamfbcj4tsi157hih3uqno142
+
+# NLT API base URL
+NLT_API_BASE_URL=https://api.nlt.to
+
+# Vercel deployment info (used in health checks)
+VERCEL_REGION=your-vercel-region
+VERCEL_URL=your-vercel-url
