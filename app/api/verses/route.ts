@@ -117,7 +117,7 @@ async function fetchVersesByReference(reference: string) {
     endChapter = parseInt(end);
     // "1" in "35.30-36.1" is a verse number
     endVerse = parseInt(parts[3]);
-    } else {
+    } elseif (parts.length > 2) {
       // Single chapter, single verse or range within chapter (e.g., "35", "35.30" or "35.30-32")
       startChapter = endChapter = parseInt(parts[1]);
       if (parts.length === 2) {
