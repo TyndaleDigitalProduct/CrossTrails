@@ -101,29 +101,45 @@ async function fetchVersesByChapter(book: string, chapter: number) {
 }
 
 async function fetchVersesByReference(reference: string) {
-  // Parse reference like "John.3.16" or "John.3.16-18"
-  const parts = reference.split('.')
-  if (parts.length < 3) {
-    throw new Error('Invalid reference format')
-  }
+  // Parse reference like "John.3.16" or "John.3.16-18" or "Exod.35.30-36.1" or "Exod.35"
+  const parts = reference.split('.');
+  let book: string, startChapter: number, startVerse: number, endChapter: number, endVerse: number;
 
-  const book = parts[0]
-  const chapter = parseInt(parts[1])
-  const versePart = parts[2]
-
-  let startVerse: number
-  let endVerse: number
-
-  if (versePart.includes('-')) {
-    const [start, end] = versePart.split('-')
-    startVerse = parseInt(start)
-    endVerse = parseInt(end)
+  book = parts[0];
+  if (parts.length === 4) {
+    // Check for cross-chapter range (e.g., "35.30-36.1")
+    // e.g., "30-36" in "Exod.35.30-36.1"
+    const [start, end] = parts[2].split('-');
+    startChapter = parseInt(parts[1]);
+    // start is always a verse number (e.g., "30" in "35.30-36.1")
+    startVerse = parseInt(start);
+    // "36" in "35.30-36.1" is a chapter number
+    endChapter = parseInt(end);
+    // "1" in "35.30-36.1" is a verse number
+    endVerse = parseInt(parts[3]);
+    } else if (parts.length > 2) {
+      // Single chapter, single verse or range within chapter (e.g., "35", "35.30" or "35.30-32")
+      startChapter = endChapter = parseInt(parts[1]);
+      if (parts.length === 2) {
+        // Handle references like "Exod.35"
+        startVerse = 1;
+        endVerse = 0; // Dummy value, since no end verse specified
+      } else {
+        if (parts[2].includes('-')) {
+          const [start, end] = parts[2].split('-');
+          startVerse = parseInt(start);
+          endVerse = parseInt(end);
+        } else {
+          // Single verse like "John.3.16"
+          startVerse = endVerse = parseInt(parts[2]);
+        }
+    }
   } else {
-    startVerse = endVerse = parseInt(versePart)
+    throw new Error('Invalid reference format');
   }
 
   // For demo, handle Matthew 2
-  if (book === 'Matthew' && chapter === 2) {
+  if (book === 'Matthew' && startChapter === 2) {
     const allVerses = getMatthew2Verses()
     const filteredVerses = allVerses.filter(
       verse => verse.verse_number >= startVerse && verse.verse_number <= endVerse
@@ -170,7 +186,7 @@ function getMatthew2Verses(): BibleVerse[] {
     {
       verse_number: 6,
       verse_id: 'Matthew.2.6',
-      text: '"And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah, for a ruler will come from you who will be the shepherd for my people Israel.'"'
+      text: '"And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah, for a ruler will come from you who will be the shepherd for my people Israel."'
     },
     {
       verse_number: 7,
