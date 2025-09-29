@@ -8,7 +8,6 @@ const nextConfig = {
 
   // Compression and optimization
   compress: true,
-  swcMinify: true,
 
   // Image optimization (for future use)
   images: {

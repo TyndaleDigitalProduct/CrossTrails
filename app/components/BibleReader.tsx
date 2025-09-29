@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from 'react'
+import { useState, useCallback, type ReactElement } from 'react'
 import { BibleReaderProps } from '@/lib/types'
 
 export default function BibleReader({
@@ -34,7 +34,7 @@ export default function BibleReader({
     const hasDemo = verse.verse_number <= 6; // First 6 verses have demo cross-refs
 
     let verseText = verse.text;
-    let spanElements: JSX.Element[] = [];
+    let spanElements: ReactElement[] = [];
 
     if (hasDemo) {
       // Demo: Add underlines to specific phrases (in production, this comes from data)
@@ -118,7 +118,7 @@ export default function BibleReader({
       return [<span key="text">{text}</span>];
     }
 
-    const elements: JSX.Element[] = [];
+    const elements: ReactElement[] = [];
     let currentIndex = 0;
 
     spans.forEach((span, spanIndex) => {
