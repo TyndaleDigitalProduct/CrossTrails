@@ -46,7 +46,7 @@ function capitalize(word: string) {
   return word[0].toUpperCase() + word.slice(1)
 }
 
-function parsePassageHtml(html: string, referenceHint?: string) {
+function parseHTMLtoJSON(html: string, referenceHint?: string) {
   const verses: BibleVerse[] = []
 
   // Find all <verse_export ...>...</verse_export>
@@ -64,17 +64,59 @@ function parsePassageHtml(html: string, referenceHint?: string) {
     const ch = chMatch ? parseInt(chMatch[1], 10) : undefined
     const vn = vnMatch ? parseInt(vnMatch[1], 10) : undefined
 
-    // Extract <p class="body"> ... </p>
-    const pMatch = /<p[^>]*class="body"[^>]*>([\s\S]*?)<\/p>/i.exec(body)
-    const pHtml = pMatch ? pMatch[1] : body
+    // Remove structural headings (h2/h3) and known noise. We iteratively remove
+    // elements by their class token (vn, tn-ref, tn) using a helper so nested
+    // structures are removed reliably.
+    let working = body
+      // remove h2 and h3 blocks entirely
+      .replace(/<h[23]\b[^>]*>[\s\S]*?<\/h[23]>/gi, '')
+      // remove anchor footnote markers like <a class="a-tn">*</a>
+      .replace(/<a[^>]*class="[^\"]*\ba-tn\b[^\"]*"[^>]*>[\s\S]*?<\/a>/gi, '')
 
-    // Remove verse number span and footnote anchors/notes
-    let cleaned = pHtml
-      .replace(/<span[^>]*class="vn"[^>]*>[\s\S]*?<\/span>/i, '')
-      .replace(/<a[^>]*class="a-tn"[^>]*>[\s\S]*?<\/a>/gi, '')
-      .replace(/<span[^>]*class="tn"[^>]*>[\s\S]*?<\/span>/gi, '')
+    // helper: remove elements whose class attribute contains the given token
+    const removeByClass = (input: string, token: string) => {
+      const rx = new RegExp(`<([a-z][^>]*?)[^>]*class="[^\"]*\\b${token}\\b[^\"]*"[^>]*>[\\s\\S]*?<\\/\\1>`, 'gi')
+      let prev: string
+      do {
+        prev = input
+        input = input.replace(rx, '')
+      } while (input !== prev)
+      return input
+    }
 
-    cleaned = htmlToText(cleaned)
+    working = removeByClass(working, 'vn')
+    working = removeByClass(working, 'tn-ref')
+    working = removeByClass(working, 'tn')
+    // remove empty tags produced by the removals
+    working = working.replace(/<([a-z][^>]*)>\s*<\/\1>/gi, '')
+
+  // Collect text parts in order: any text outside <p> plus all <p> blocks
+  // Do NOT assume a particular class on the <p> elements; accept any <p>.
+  const parts: string[] = []
+  let remaining = working
+  const pRegex = /<p\b[^>]*>([\s\S]*?)<\/p>/i
+    while (true) {
+      const pMatch = pRegex.exec(remaining)
+      if (!pMatch) {
+        if (remaining && remaining.trim()) parts.push(remaining)
+        break
+      }
+      const idx = pMatch.index
+      const pre = remaining.slice(0, idx)
+      if (pre && pre.trim()) parts.push(pre)
+      parts.push(pMatch[1])
+      remaining = remaining.slice(idx + pMatch[0].length)
+    }
+
+    // Fallback: if no <p class="body"> and parts is empty, use the whole body
+    if (parts.length === 0 && working && working.trim()) parts.push(working)
+
+    // Clean each part and join with a single space. Also remove leftover footnote markers like '*'
+    const cleaned = parts
+      .map((part) => htmlToText(part))
+      .map((t) => t.replace(/\*+/g, ' '))
+      .filter(Boolean)
+      .join(' ')
 
     if (vn !== undefined && ch !== undefined && bk) {
       verses.push({
@@ -84,11 +126,11 @@ function parsePassageHtml(html: string, referenceHint?: string) {
       })
     } else if (referenceHint) {
       // Try to infer from reference hint like John.3.3
-      const parts = (referenceHint || '').split('.')
-      if (parts.length >= 3) {
-        const inferredBk = capitalize(parts[0])
-        const inferredCh = parseInt(parts[1], 10)
-        const inferredVn = parseInt(parts[2], 10)
+      const partsRef = (referenceHint || '').split('.')
+      if (partsRef.length >= 3) {
+        const inferredBk = capitalize(partsRef[0])
+        const inferredCh = parseInt(partsRef[1], 10)
+        const inferredVn = parseInt(partsRef[2], 10)
         verses.push({
           verse_number: inferredVn || 0,
           verse_id: `${inferredBk}.${inferredCh}.${inferredVn}`,
@@ -105,14 +147,14 @@ export async function getVersesByChapter(book: string, chapter: number) {
   const ref = `${book}.${chapter}`
   const url = makeUrl('api/passages', { ref, version: 'NLT' })
   const text = await fetchText(url)
-  const verses = parsePassageHtml(text, ref)
+  const verses = parseHTMLtoJSON(text, ref)
   return { book: capitalize(book), chapter, verses }
 }
 
 export async function getVersesByReference(reference: string) {
   const url = makeUrl('api/passages', { ref: reference, version: 'NLT' })
   const text = await fetchText(url)
-  const verses = parsePassageHtml(text, reference)
+  const verses = parseHTMLtoJSON(text, reference)
   // Attempt to infer book/chapter
   const parts = reference.split('.')
   const book = capitalize(parts[0] || 'Unknown')
