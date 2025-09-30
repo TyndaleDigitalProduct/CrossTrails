@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { ensureValidToken, tokenInfo } from '../../../lib/utils/auth'
+import { checkNLTHealth } from '../../../lib/bible-api/nltHealth'
 
 // --- Service checks ---
 
@@ -16,9 +17,9 @@ async function checkGlooAI() {
 
 async function checkNLTAPI() {
   try {
-    // Placeholder health check for NLT API
-    return 'healthy'
-  } catch {
+    return await checkNLTHealth()
+  } catch (err) {
+    console.error('checkNLTAPI error:', err)
     return 'unhealthy'
   }
 }
