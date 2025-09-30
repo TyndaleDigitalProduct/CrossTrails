@@ -75,7 +75,7 @@ function parseHTMLtoJSON(html: string, referenceHint?: string) {
 
     // helper: remove elements whose class attribute contains the given token
     const removeByClass = (input: string, token: string) => {
-      const rx = new RegExp(`<([a-z][^>]*?)[^>]*class="[^\"]*\\b${token}\\b[^\"]*"[^>]*>[\\s\\S]*?<\\/\\1>`, 'gi')
+      const rx = new RegExp(`<([a-z][^>]*?)[^>]*class="[^\\"]*\\b${token}\\b[^\\"]*"[^>]*>[\\s\\S]*?<\\/\\1>`, 'gi')
       let prev: string
       do {
         prev = input
@@ -84,10 +84,12 @@ function parseHTMLtoJSON(html: string, referenceHint?: string) {
       return input
     }
 
+    // Remove numeric verse markers and tn-ref markers (they are identifiers we don't want)
     working = removeByClass(working, 'vn')
     working = removeByClass(working, 'tn-ref')
+    // For tn (text-notes) we want to remove the entire explanatory note
     working = removeByClass(working, 'tn')
-    // remove empty tags produced by the removals
+    // After removals, clean up any empty tags left behind
     working = working.replace(/<([a-z][^>]*)>\s*<\/\1>/gi, '')
 
   // Collect text parts in order: any text outside <p> plus all <p> blocks
@@ -143,18 +145,119 @@ function parseHTMLtoJSON(html: string, referenceHint?: string) {
   return verses
 }
 
+/**
+ * DOM-based parser: more robust than regex. Attempts to use global DOMParser,
+ * otherwise falls back to `linkedom` if available. Removes <h2>/<h3>, vn markers,
+ * footnote anchors, and text-notes (tn / tn-ref). Returns the same shape as
+ * parseHTMLtoJSON: BibleVerse[]
+ */
+function parseHTMLwithDOM(html: string, referenceHint?: string) {
+  // Acquire a document parser
+  let doc: any = null
+  if (typeof (globalThis as any).DOMParser === 'function') {
+    const DP = (globalThis as any).DOMParser
+    doc = new DP().parseFromString(html, 'text/html')
+  } else {
+    try {
+      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      const { parseHTML } = require('linkedom')
+      doc = parseHTML(html).window.document
+    } catch (e) {
+      throw new Error('No DOM parser available. Install `linkedom` or run in environment with DOMParser.')
+    }
+  }
+
+  const verses: BibleVerse[] = []
+  const nodes = Array.from(doc.querySelectorAll('verse_export'))
+
+  for (const veNode of nodes) {
+    const ve = veNode as Element
+    const bkAttr = ve.getAttribute('bk')
+    const chAttr = ve.getAttribute('ch')
+    const vnAttr = ve.getAttribute('vn')
+
+    const bk = bkAttr ? capitalize(bkAttr) : undefined
+    const ch = chAttr ? parseInt(chAttr, 10) : undefined
+    const vn = vnAttr ? parseInt(vnAttr, 10) : undefined
+
+    // Remove headings
+  Array.from(ve.querySelectorAll('h2,h3')).forEach((n: any) => n.remove())
+
+    // Remove verse-number spans and anchor footnote markers
+  Array.from(ve.querySelectorAll('span.vn, a.a-tn')).forEach((n: any) => n.remove())
+
+    // Remove any tn or tn-ref elements (text-notes) completely
+  Array.from(ve.querySelectorAll('[class*="tn"]')).forEach((n: any) => n.remove())
+
+    // Collect text parts in document order: text nodes and <p> blocks
+    const parts: string[] = []
+    for (const child of Array.from(ve.childNodes)) {
+      // nodeType 3 = text node, 1 = element
+      if ((child as any).nodeType === 3) {
+        const txt = (child as Node).textContent || ''
+        if (txt.trim()) parts.push(txt)
+      } else if ((child as any).nodeType === 1) {
+        const el = child as Element
+        if (el.tagName && el.tagName.toLowerCase() === 'p') {
+          const txt = el.textContent || ''
+          if (txt.trim()) parts.push(txt)
+        } else {
+          // Other elements: if they contain <p>, those will be handled when iterating; otherwise include their text
+          if (!el.querySelector || !el.querySelector('p')) {
+            const txt = el.textContent || ''
+            if (txt.trim()) parts.push(txt)
+          }
+        }
+      }
+    }
+
+    // Fallback
+    if (parts.length === 0) {
+      const whole = ve.textContent || ''
+      if (whole.trim()) parts.push(whole)
+    }
+
+    const cleaned = parts.map((p) => htmlToText(p)).map((t) => t.replace(/\*+/g, ' ')).filter(Boolean).join(' ')
+
+    if (vn !== undefined && ch !== undefined && bk) {
+      verses.push({ verse_number: vn, verse_id: `${bk}.${ch}.${vn}`, text: cleaned })
+    } else if (referenceHint) {
+      const partsRef = (referenceHint || '').split('.')
+      if (partsRef.length >= 3) {
+        const inferredBk = capitalize(partsRef[0])
+        const inferredCh = parseInt(partsRef[1], 10)
+        const inferredVn = parseInt(partsRef[2], 10)
+        verses.push({ verse_number: inferredVn || 0, verse_id: `${inferredBk}.${inferredCh}.${inferredVn}`, text: cleaned })
+      }
+    }
+  }
+
+  return verses
+}
+
 export async function getVersesByChapter(book: string, chapter: number) {
   const ref = `${book}.${chapter}`
   const url = makeUrl('api/passages', { ref, version: 'NLT' })
   const text = await fetchText(url)
-  const verses = parseHTMLtoJSON(text, ref)
+  let verses
+  try {
+    verses = parseHTMLwithDOM(text, ref)
+  } catch (e) {
+    // fallback to regex-based parser
+    verses = parseHTMLtoJSON(text, ref)
+  }
   return { book: capitalize(book), chapter, verses }
 }
 
 export async function getVersesByReference(reference: string) {
   const url = makeUrl('api/passages', { ref: reference, version: 'NLT' })
   const text = await fetchText(url)
-  const verses = parseHTMLtoJSON(text, reference)
+  let verses
+  try {
+    verses = parseHTMLwithDOM(text, reference)
+  } catch (e) {
+    verses = parseHTMLtoJSON(text, reference)
+  }
   // Attempt to infer book/chapter
   const parts = reference.split('.')
   const book = capitalize(parts[0] || 'Unknown')

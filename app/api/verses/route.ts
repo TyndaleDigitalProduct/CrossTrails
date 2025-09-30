@@ -106,41 +106,51 @@ async function fetchVersesByChapter(book: string, chapter: number) {
 }
 
 async function fetchVersesByReference(reference: string) {
-  // Parse reference like "John.3.16" or "John.3.16-18" or "Exod.35.30-36.1" or "Exod.35"
-  const parts = reference.split('.');
-  let book: string, startChapter: number, startVerse: number, endChapter: number, endVerse: number;
+  // Parse reference like "John.3.16" or "John.3.16-18" or "Exod.35.30-36.1" or "Exod.35" or "Matt.3"
+  const parts = reference.split('.')
+    let book: string
+    let startChapter = 0, startVerse = 0, endChapter = 0, endVerse = 0
 
-  book = parts[0];
+  book = parts[0]
+
+  // Support shorthand 'Book' (defaults to chapter 1) and 'Book.Chapter' (pass through as chapter request)
+  if (parts.length === 1) {
+    // e.g., 'John' -> chapter 1
+    return await fetchVersesByChapter(book, 1)
+  }
+
+  if (parts.length === 2) {
+    // e.g., 'Matt.3' -> request full chapter from NLT
+    const chap = parseInt(parts[1], 10)
+    if (isNaN(chap)) throw new Error('Invalid chapter number in reference')
+    return await fetchVersesByChapter(book, chap)
+  }
+
+  // From here, parts.length >= 3: detailed verse references or ranges
   if (parts.length === 4) {
     // Check for cross-chapter range (e.g., "35.30-36.1")
-    // e.g., "30-36" in "Exod.35.30-36.1"
-    const [start, end] = parts[2].split('-');
-    startChapter = parseInt(parts[1]);
-    // start is always a verse number (e.g., "30" in "35.30-36.1")
-    startVerse = parseInt(start);
-    // "36" in "35.30-36.1" is a chapter number
-    endChapter = parseInt(end);
-    // "1" in "35.30-36.1" is a verse number
-    endVerse = parseInt(parts[3]);
-    } else if (parts.length > 2) {
-      // Single chapter, single verse or range within chapter (e.g., "35", "35.30" or "35.30-32")
-      startChapter = endChapter = parseInt(parts[1]);
-      if (parts.length === 2) {
-        // Handle references like "Exod.35"
-        startVerse = 1;
-        endVerse = 0; // Dummy value, since no end verse specified
+    const [start, end] = parts[2].split('-')
+    startChapter = parseInt(parts[1], 10)
+    startVerse = parseInt(start, 10)
+    endChapter = parseInt(end, 10)
+    endVerse = parseInt(parts[3], 10)
+  } else if (parts.length > 2) {
+    // Single chapter, single verse or range within chapter (e.g., "35", "35.30" or "35.30-32")
+    startChapter = endChapter = parseInt(parts[1], 10)
+    if (parts.length === 2) {
+      // Handle references like "Exod.35"
+      startVerse = 1
+      endVerse = 0 // Dummy value, since no end verse specified
+    } else {
+      if (parts[2].includes('-')) {
+        const [start, end] = parts[2].split('-')
+        startVerse = parseInt(start, 10)
+        endVerse = parseInt(end, 10)
       } else {
-        if (parts[2].includes('-')) {
-          const [start, end] = parts[2].split('-');
-          startVerse = parseInt(start);
-          endVerse = parseInt(end);
-        } else {
-          // Single verse like "John.3.16"
-          startVerse = endVerse = parseInt(parts[2]);
-        }
+        // Single verse like "John.3.16"
+        startVerse = endVerse = parseInt(parts[2], 10)
+      }
     }
-  } else {
-    throw new Error('Invalid reference format');
   }
 
   try {
