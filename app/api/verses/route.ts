@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { BibleVerse, VersesAPIResponse, APIError } from '@/lib/types'
+import nltClient from '@/lib/bible-api/nltClient'
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -75,85 +76,59 @@ export async function GET(request: NextRequest) {
 }
 
 async function fetchVersesByChapter(book: string, chapter: number) {
-  // For demo purposes, return mock data for Matthew 2
-  // In production, this would call the NLT.to API
-  if (book === 'Matthew' && chapter === 2) {
-    return {
-      book: 'Matthew',
-      chapter: 2,
-      verses: getMatthew2Verses()
-    }
-  }
+  try {
+    return await nltClient.getVersesByChapter(book, chapter)
+  } catch (err) {
+    console.error('NLT API error (chapter):', err)
 
-  // For other passages, return a placeholder
-  // TODO: Implement actual NLT.to API integration
-  return {
-    book: book,
-    chapter: chapter,
-    verses: [
-      {
-        verse_number: 1,
-        verse_id: `${book}.${chapter}.1`,
-        text: `This is ${book} chapter ${chapter}, verse 1. (Demo text - implement NLT.to API integration)`
+    // Preserve demo behavior for Matthew 2
+    if (book === 'Matthew' && chapter === 2) {
+      return {
+        book: 'Matthew',
+        chapter: 2,
+        verses: getMatthew2Verses()
       }
-    ]
+    }
+
+    // Fallback: return a placeholder so UI still works
+    return {
+      book: book,
+      chapter: chapter,
+      verses: [
+        {
+          verse_number: 1,
+          verse_id: `${book}.${chapter}.1`,
+          text: `This is ${book} chapter ${chapter}, verse 1. (Demo text - NLT API unavailable)`
+        }
+      ]
+    }
   }
 }
 
 async function fetchVersesByReference(reference: string) {
-  // Parse reference like "John.3.16" or "John.3.16-18" or "Exod.35.30-36.1" or "Exod.35"
-  const parts = reference.split('.');
-  let book: string, startChapter: number, startVerse: number, endChapter: number, endVerse: number;
+  // Delegate to NLT client directly; NLT accepts references like
+  // "John.3.16", "Matt.3", "Exod.35.30-36.1", etc.
+  const parts = reference.split('.')
+  const book = parts[0]
 
-  book = parts[0];
-  if (parts.length === 4) {
-    // Check for cross-chapter range (e.g., "35.30-36.1")
-    // e.g., "30-36" in "Exod.35.30-36.1"
-    const [start, end] = parts[2].split('-');
-    startChapter = parseInt(parts[1]);
-    // start is always a verse number (e.g., "30" in "35.30-36.1")
-    startVerse = parseInt(start);
-    // "36" in "35.30-36.1" is a chapter number
-    endChapter = parseInt(end);
-    // "1" in "35.30-36.1" is a verse number
-    endVerse = parseInt(parts[3]);
-    } else if (parts.length > 2) {
-      // Single chapter, single verse or range within chapter (e.g., "35", "35.30" or "35.30-32")
-      startChapter = endChapter = parseInt(parts[1]);
-      if (parts.length === 2) {
-        // Handle references like "Exod.35"
-        startVerse = 1;
-        endVerse = 0; // Dummy value, since no end verse specified
-      } else {
-        if (parts[2].includes('-')) {
-          const [start, end] = parts[2].split('-');
-          startVerse = parseInt(start);
-          endVerse = parseInt(end);
-        } else {
-          // Single verse like "John.3.16"
-          startVerse = endVerse = parseInt(parts[2]);
-        }
+  try {
+    return await nltClient.getVersesByReference(reference)
+  } catch (err) {
+    console.error('NLT API error (reference):', err)
+
+    // Preserve demo fallback for obvious Matthew 2 requests (e.g., "Matthew.2.1-4")
+    if (book === 'Matthew' && reference.startsWith('Matthew.2')) {
+      // Try to extract start/end verse if present
+      const match = reference.match(/^Matthew\.2(?:\.(\d+)(?:-(\d+))?)?/) // start/end optional
+      const startVerse = match && match[1] ? parseInt(match[1], 10) : 1
+      const endVerse = match && match[2] ? parseInt(match[2], 10) : Number.MAX_SAFE_INTEGER
+      const allVerses = getMatthew2Verses()
+      const filteredVerses = allVerses.filter(v => v.verse_number >= startVerse && v.verse_number <= endVerse)
+      return { book: 'Matthew', chapter: 2, verses: filteredVerses }
     }
-  } else {
-    throw new Error('Invalid reference format');
+
+    throw new Error(`Reference ${reference} not available and NLT API failed`)
   }
-
-  // For demo, handle Matthew 2
-  if (book === 'Matthew' && startChapter === 2) {
-    const allVerses = getMatthew2Verses()
-    const filteredVerses = allVerses.filter(
-      verse => verse.verse_number >= startVerse && verse.verse_number <= endVerse
-    )
-
-    return {
-      book: 'Matthew',
-      chapter: 2,
-      verses: filteredVerses
-    }
-  }
-
-  // TODO: Implement actual NLT.to API integration
-  throw new Error(`Reference ${reference} not available in demo`)
 }
 
 function getMatthew2Verses(): BibleVerse[] {
