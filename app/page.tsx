@@ -140,7 +140,7 @@ export default function HomePage() {
   }
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex flex-col bg-[#f5f5f5]">
       {/* Header */}
       <Header
         currentBook={currentBook}
@@ -149,32 +149,49 @@ export default function HomePage() {
         onSearch={handleSearch}
       />
 
-      {/* Main content area */}
-      <main id="main-content" className="flex-1 flex">
-        {/* Bible reading area */}
-        <div className="flex-1 min-w-0">
-          {error ? (
-            <div className="container-responsive py-8">
-              <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                <p className="text-red-800">
-                  Error loading content: {error}
-                </p>
-                <button
-                  onClick={() => loadVerses(currentBook, currentChapter)}
-                  className="mt-2 btn-primary"
-                >
-                  Try Again
-                </button>
+      {/* Main content area - matching Figma layout */}
+      <main id="main-content" style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '55px' }}>
+        {/* Frame 8 - Container for BibleReader and CrossReferences */}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          padding: '0px',
+          gap: '70px',
+          isolation: 'isolate',
+          width: '1076px',
+          maxWidth: '1076px'
+        }}>
+          {/* Frame 10 - Bible reading area */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            padding: '0px',
+            gap: '8px',
+            width: '742px',
+            flex: 'none',
+            order: 0,
+            flexGrow: 0,
+            zIndex: 0
+          }}>
+            {error ? (
+              <div className="py-8">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                  <p className="text-red-800">
+                    Error loading content: {error}
+                  </p>
+                  <button
+                    onClick={() => loadVerses(currentBook, currentChapter)}
+                    className="mt-2 btn-primary"
+                  >
+                    Try Again
+                  </button>
+                </div>
               </div>
-            </div>
-          ) : (
-            <div className="container-responsive py-8">
-              {/* Instruction text */}
-              <p className="text-text-muted text-sm mb-6">
-                Select an underlined passage to view a cross reference
-              </p>
-
-              {/* Bible reader component */}
+            ) : (
               <BibleReader
                 book={currentBook}
                 chapter={currentChapter}
@@ -183,30 +200,46 @@ export default function HomePage() {
                 onVerseSelect={handleVerseSelection}
                 loading={loading.verses}
               />
+            )}
+          </div>
 
-              {/* AI Companion - show when we have selections */}
-              {selectedVerses.length > 0 && selectedCrossRefs.length > 0 && (
-                <AICompanion
-                  selectedVerses={selectedVerses}
-                  selectedCrossRefs={selectedCrossRefs}
-                  onSubmitObservation={handleAIExploration}
-                  conversation_history={[]} // TODO: Implement conversation history
-                />
-              )}
-            </div>
-          )}
+          {/* Frame 8 - Cross-references sidebar */}
+          <aside style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '0px',
+            gap: '8px',
+            width: '220.33px',
+            flex: 'none',
+            order: 1,
+            flexGrow: 0,
+            zIndex: 1
+          }}>
+            <CrossReferencesSidebar
+              crossReferences={crossReferences}
+              selectedRefs={selectedCrossRefs}
+              onRefSelect={handleCrossRefSelection}
+              loading={loading.crossRefs}
+            />
+          </aside>
         </div>
-
-        {/* Cross-references sidebar */}
-        <aside className="cross-refs-sidebar w-80 overflow-y-auto scrollbar-thin">
-          <CrossReferencesSidebar
-            crossReferences={crossReferences}
-            selectedRefs={selectedCrossRefs}
-            onRefSelect={handleCrossRefSelection}
-            loading={loading.crossRefs}
-          />
-        </aside>
       </main>
+
+      {/* AI Companion Modal - show when we have selections */}
+      {selectedVerses.length > 0 && selectedCrossRefs.length > 0 && (
+        <AICompanion
+          selectedVerses={selectedVerses}
+          selectedCrossRefs={selectedCrossRefs}
+          onSubmitObservation={handleAIExploration}
+          conversation_history={[]} // TODO: Implement conversation history
+          isOpen={selectedCrossRefs.length > 0}
+          onClose={() => setSelectedCrossRefs([])}
+          crossRefReference={selectedCrossRefs[0]}
+          crossRefText="Sample cross-reference text will be fetched from API"
+        />
+      )}
     </div>
   )
 }

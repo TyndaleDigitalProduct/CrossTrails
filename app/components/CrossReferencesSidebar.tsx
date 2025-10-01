@@ -108,98 +108,47 @@ export default function CrossReferencesSidebar({
   }
 
   return (
-    <div className="space-y-6">
+    <div className="space-y-6 w-full">
       {displayReferences.map((group, groupIndex) => {
         const verseDisplay = group.anchor_verse.split('.').slice(-2).join(':'); // e.g., "2:1"
 
         return (
-          <div key={group.anchor_verse} className="cross-ref-group">
-            {/* Verse number header */}
-            <div className="cross-ref-group-verse">
+          <div key={group.anchor_verse} className="mb-6">
+            {/* Verse number header - matching Figma */}
+            <div className="text-[20px] text-[#403e3e] mb-2" style={{ fontFamily: 'Calibri, sans-serif', lineHeight: '1.5' }}>
               {verseDisplay}
             </div>
 
             {/* Cross-reference list */}
-            <div className="cross-ref-list">
+            <div className="space-y-1">
               {group.cross_references.map((ref, refIndex) => {
                 const isSelected = selectedRefs.includes(ref.reference)
 
                 return (
-                  <div key={ref.reference} className="cross-ref-item">
+                  <div key={ref.reference}>
                     <button
                       onClick={() => handleRefClick(ref.reference)}
-                      className={`cross-ref-link block w-full text-left ${
+                      className={`block w-full text-left text-[16px] underline decoration-[#ff6a32] decoration-solid hover:decoration-2 ${
                         isSelected ? 'font-semibold' : ''
                       }`}
+                      style={{
+                        fontFamily: 'Calibri, sans-serif',
+                        lineHeight: '1.5',
+                        color: '#ff6a32',
+                        textDecorationSkipInk: 'none',
+                        textUnderlinePosition: 'from-font'
+                      }}
                       title={`Click to select ${ref.display_ref}`}
                     >
                       {ref.display_ref}
                     </button>
-
-                    {/* Show reference text if available and selected */}
-                    {isSelected && ref.text && (
-                      <div className="mt-1 text-xs text-text-secondary pl-2 border-l-2 border-primary-200">
-                        {ref.text}
-                      </div>
-                    )}
                   </div>
                 )
               })}
             </div>
-
-            {/* Show total count if there are more references */}
-            {group.total_found > group.returned && (
-              <div className="mt-2 text-xs text-text-muted">
-                Showing {group.returned} of {group.total_found} references
-              </div>
-            )}
           </div>
         )
       })}
-
-      {/* Selection summary */}
-      {selectedRefs.length > 0 && (
-        <div className="mt-8 p-4 bg-primary-50 border border-primary-200 rounded-lg">
-          <div className="text-sm font-medium text-primary-700 mb-2">
-            Selected References ({selectedRefs.length})
-          </div>
-          <div className="text-xs text-primary-600 space-y-1">
-            {selectedRefs.map(ref => {
-              // Find the display name for this reference
-              const displayRef = displayReferences
-                .flatMap(group => group.cross_references)
-                .find(cr => cr.reference === ref)?.display_ref || ref
-
-              return (
-                <div key={ref} className="flex justify-between items-center">
-                  <span>{displayRef}</span>
-                  <button
-                    onClick={() => handleRefClick(ref)}
-                    className="text-primary-500 hover:text-primary-700"
-                    title="Remove from selection"
-                  >
-                    ×
-                  </button>
-                </div>
-              )
-            })}
-          </div>
-
-          <div className="mt-3 pt-2 border-t border-primary-200">
-            <button
-              onClick={() => onRefSelect([])}
-              className="text-xs text-primary-600 hover:text-primary-800"
-            >
-              Clear all selections
-            </button>
-          </div>
-        </div>
-      )}
-
-      {/* Instructions */}
-      <div className="text-xs text-text-muted">
-        Click references to select them for AI exploration. Multiple references can be selected.
-      </div>
     </div>
   )
 }
