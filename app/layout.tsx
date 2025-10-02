@@ -61,6 +61,19 @@ export default function RootLayout({
 
         {/* Prevent zoom on mobile inputs */}
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+
+        {/* jQuery - required for Gloo widget */}
+        <script 
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossOrigin="anonymous"
+        ></script>
+
+        {/* AI Discovery Widget */}
+        <script 
+          src="https://studio.ai.gloo.com/api/discovery/widget?cid=2ksiovolp6mjdh5e9l6mlpnev4&config=z4ye9s7a&secure=true" 
+          crossOrigin="anonymous"
+        ></script>
       </head>
       <body
         className={`${inter.className} selection-primary antialiased`}
