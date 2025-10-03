@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { useState } from 'react'
 import { Search, ChevronDown } from 'lucide-react'
 import { HeaderProps } from '@/lib/types'

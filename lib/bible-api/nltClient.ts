@@ -159,7 +159,7 @@ function parseHTMLwithDOM(html: string, referenceHint?: string) {
     doc = new DP().parseFromString(html, 'text/html')
   } else {
     try {
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
+       
       const { parseHTML } = require('linkedom')
       doc = parseHTML(html).window.document
     } catch (e) {

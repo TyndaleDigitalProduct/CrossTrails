@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { useState, useEffect } from 'react'
 import { BibleVerse, CrossReferenceGroup } from '@/lib/types'
 import Header from './components/Header'

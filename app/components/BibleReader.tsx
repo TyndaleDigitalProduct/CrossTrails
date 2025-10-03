@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { useState, useCallback, type ReactElement } from 'react'
 import { BibleReaderProps } from '@/lib/types'
 
@@ -33,7 +34,7 @@ export default function BibleReader({
     // In production, this would come from the cross-reference data
     const hasDemo = verse.verse_number <= 6; // First 6 verses have demo cross-refs
 
-    let verseText = verse.text;
+    const verseText = verse.text;
     let spanElements: ReactElement[] = [];
 
     if (hasDemo) {
