@@ -1,5 +1,6 @@
 'use client'
 
+import React from 'react'
 import { useState, useRef, useEffect } from 'react'
 import { Send, X } from 'lucide-react'
 import { AICompanionProps } from '@/lib/types'
