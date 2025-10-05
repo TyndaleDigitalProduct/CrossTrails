@@ -1,4 +1,5 @@
 import { BibleVerse } from '@/lib/types'
+import { parseNltSearchHtml } from '../parsers/search'
 
 const BASE_URL = (process.env.NLT_API_BASE_URL || 'https://api.nlt.to').replace(/\/$/, '')
 const API_KEY = process.env.NLT_API_KEY || process.env.NLT_API_TOKEN || ''
@@ -265,7 +266,26 @@ export async function getVersesByReference(reference: string) {
   return { book, chapter, verses }
 }
 
+export async function getPassagesBySearch(terms: string) {
+  const termsValue = terms.replace(" ", "+");
+  const url = makeUrl('api/search', { text: termsValue, version: 'NLT' })
+  const result = await fetchText(url);
+
+  const parsedResult = parseNltSearchHtml(result);
+
+  return {
+    content: [
+      { 
+        type: "text",
+        text: JSON.stringify(parsedResult, null, 2)
+      }
+    ],
+    structuredOutput: parsedResult,
+  }
+}
+
 export default {
   getVersesByChapter,
-  getVersesByReference
+  getVersesByReference,
+  getPassagesBySearch
 }
