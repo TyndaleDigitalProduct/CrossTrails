@@ -22,26 +22,45 @@ export async function getCrossReferenceConnection(
   const { anchor_verse, candidate_refs, min_strength = 0.5 } = request
 
   try {
+    // console.log('MCP Tool: getCrossReferenceConnection called with:', { anchor_verse, candidate_refs, min_strength })
+    
     // Load cross-reference data using the data access layer
     const dataAccess = await createDataAccess()
     
     // Get data for the anchor verse
     const anchorData = await dataAccess.getVerseData(anchor_verse)
+    // console.log('MCP Tool: anchorData result:', anchorData)
+    
     if (!anchorData) {
+      // console.log('MCP Tool: No anchor data found, returning empty connections')
       return { connections: [] }
     }
 
     const connections = []
 
-    for (const candidateRef of candidate_refs) {
-      // Find if there's a connection between anchor and candidate
-      const connection = anchorData.cross_references.find(
+    // If no candidate_refs provided, use all cross-references from the anchor data
+    const refsToProcess = candidate_refs.length > 0 
+      ? candidate_refs 
+      : anchorData.cross_references.map((ref: any) => ref.bref)
+
+    // console.log('MCP Tool: Processing refs:', refsToProcess)
+
+    for (const candidateRef of refsToProcess) {
+      // Find the connection data for this reference
+      let connection = anchorData.cross_references.find(
         (ref: any) => normalizeReference(ref.bref) === normalizeReference(candidateRef)
       )
 
+      // If we're using all refs from anchor data, the connection IS the ref itself
+      if (!connection && candidate_refs.length === 0) {
+        connection = anchorData.cross_references.find(
+          (ref: any) => ref.bref === candidateRef
+        )
+      }
+
       if (connection && connection.strength >= min_strength) {
         connections.push({
-          reference: candidateRef,
+          reference: connection.bref || candidateRef,
           strength: connection.strength,
           categories: connection.categories || [],
           type: connection.connection_type as ConnectionType,

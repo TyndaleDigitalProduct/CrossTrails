@@ -77,6 +77,10 @@ export default function CrossReferencesSidebar({
     )
   }
 
+  // Debug logging
+  // console.log('CrossReferencesSidebar received crossReferences:', crossReferences)
+  // console.log('crossReferences.length:', crossReferences.length)
+
   // Use demo data if no real cross-references are provided
   const displayReferences = crossReferences.length > 0
     ? crossReferences

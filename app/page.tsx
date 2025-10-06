@@ -72,12 +72,21 @@ export default function HomePage() {
       }
 
       const data = await response.json()
+      // console.log('Cross-references API response:', data)
+      
       setCrossReferences([{
         anchor_verse: verseIds[0],
         cross_references: data.cross_references,
         total_found: data.total_found,
         returned: data.returned
       }])
+      
+      // console.log('Set crossReferences state to:', [{
+      //   anchor_verse: verseIds[0],
+      //   cross_references: data.cross_references,
+      //   total_found: data.total_found,
+      //   returned: data.returned
+      // }])
 
     } catch (err) {
       console.error('Error loading cross-references:', err)
