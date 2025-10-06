@@ -1,4 +1,4 @@
-import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, ConnectionType } from '@/lib/types'
+import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, CrossReferenceCategory } from '@/lib/types'
 
 /**
  * MCP Tool: Get Cross-Reference Connection
@@ -32,7 +32,7 @@ export async function getCrossReferenceConnection(
           reference: candidateRef,
           strength: connection.strength,
           categories: connection.categories || [],
-          type: connection.connection_type as ConnectionType,
+          type: connection.connection_type as CrossReferenceCategory,
           explanation: connection.explanation_seed || '',
           metadata: {
             thematic_overlap: calculateThematicOverlap(anchor_verse, candidateRef),

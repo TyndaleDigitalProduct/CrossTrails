@@ -41,24 +41,69 @@ export interface CrossReference {
     chapter: number;
     verse: number;
   };
+  anchor_ref?: string; // e.g., "Phlm.1" (optional, for data linkage)
+  category?: CrossReferenceCategory; // optional, for granular category
+  reasoning?: string; // optional, explanation of the connection
 }
 
 export interface ConnectionData {
   categories: string[]; // e.g., ["salvation", "love", "sacrifice"]
   strength: number; // 0.0 to 1.0
-  type: ConnectionType;
+  type: CrossReferenceCategory;
   explanation?: string; // Brief explanation of connection
+  reasoning?: string; // optional, detailed reasoning from data
 }
 
-export type ConnectionType =
-  | "parallel"
-  | "contrast"
-  | "fulfillment"
-  | "prophecy"
-  | "quotation"
+// Expanded category system based on category_cheat_sheet.json
+export type CrossReferenceCategory =
   | "allusion"
-  | "thematic"
-  | "historical";
+  | "christological_parallel"
+  | "contrast"
+  | "covenant_connection"
+  | "elaboration"
+  | "exemplification"
+  | "greek_word"
+  | "hebrew_word"
+  | "historical_pattern"
+  | "historical_reference"
+  | "legal_parallel"
+  | "literary_parallel"
+  | "narrative_continuation"
+  | "numerology"
+  | "parallel_account"
+  | "parallel_instruction"
+  | "prophecy_fulfillment"
+  | "prophetic_parallel"
+  | "quotation"
+  | "ritual_practice"
+  | "septuagint_difference"
+  | "shared_metaphor"
+  | "thematic_echo"
+  | "theological_principle"
+  | "typology"
+  | "wisdom_parallel"
+  | "wisdom_principle";
+
+// Types for cross-reference data files (e.g., Phlm.json)
+export interface CrossReferenceDataFile {
+  book: string;
+  book_number: number;
+  verified: boolean;
+  total_items: number;
+  improved_count: number;
+  category_distribution: Record<string, number>;
+  items: CrossReferenceDataItem[];
+}
+
+export interface CrossReferenceDataItem {
+  anchor_ref: string; // e.g., "Phlm.1"
+  cross_ref: string; // e.g., "Eph.3.1"
+  primary_category: CrossReferenceCategory;
+  secondary_category: CrossReferenceCategory | null;
+  confidence: number; // 0 to 100
+  reasoning: string;
+  // Optionally add more fields if present in data
+}
 
 export interface CrossReferenceGroup {
   anchor_verse: string; // e.g., "John.3.16"
@@ -97,7 +142,7 @@ export interface CrossReferenceConnectionResponse {
     reference: string;
     strength: number;
     categories: string[];
-    type: ConnectionType;
+    type: CrossReferenceCategory;
     explanation: string;
     metadata: {
       thematic_overlap: number;
