@@ -43,6 +43,9 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <head>
+        {/* Adobe Typekit fonts for Figma design */}
+        <link rel="stylesheet" href="https://use.typekit.net/vzb2itz.css" />
+
         {/* Preload critical fonts */}
         <link
           rel="preload"

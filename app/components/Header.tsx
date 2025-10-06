@@ -4,6 +4,7 @@ import React from 'react'
 import { useState } from 'react'
 import { Search, ChevronDown } from 'lucide-react'
 import { HeaderProps } from '@/lib/types'
+import Image from 'next/image'
 
 // Bible books for the dropdown (in order)
 const BIBLE_BOOKS = [
@@ -24,7 +25,7 @@ const BIBLE_BOOKS = [
   'Jude', 'Revelation'
 ]
 
-// Maximum chapters per book (simplified - would be more accurate in production)
+// Maximum chapters per book
 const MAX_CHAPTERS: Record<string, number> = {
   'Genesis': 50, 'Exodus': 40, 'Leviticus': 27, 'Numbers': 36, 'Deuteronomy': 34,
   'Joshua': 24, 'Judges': 21, 'Ruth': 4, '1 Samuel': 31, '2 Samuel': 24,
@@ -60,7 +61,7 @@ export default function Header({
   }
 
   const handleBookSelect = (book: string) => {
-    onNavigate(book, 1) // Start with chapter 1 when changing books
+    onNavigate(book, 1)
     setShowBookDropdown(false)
   }
 
@@ -72,126 +73,141 @@ export default function Header({
   const maxChapters = MAX_CHAPTERS[currentBook] || 1
 
   return (
-    <header className="header sticky top-0 z-40">
-      <div className="container-responsive">
-        <div className="flex items-center justify-between">
-          {/* Logo */}
-          <div className="flex items-center">
-            <h1 className="logo">
-              CROSS/TRAILS
-            </h1>
+    <header className="bg-white w-full">
+      <div style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '24px', paddingBottom: '24px' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '1076px', maxWidth: '1076px' }}>
+          {/* Logo - aligned to left */}
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <Image
+              src="/images/logo.svg"
+              alt="CrossTrails"
+              width={332}
+              height={58}
+              priority
+            />
           </div>
 
-          {/* Search bar and navigation */}
-          <div className="flex items-center space-x-4">
-            {/* Search bar */}
-            <form onSubmit={handleSearchSubmit} className="search-bar w-64">
-              <Search className="w-4 h-4 text-gray-400 flex-shrink-0" />
-              <input
-                type="text"
-                placeholder="Search by Verse or Passage"
-                value={searchQuery}
-                onChange={(e) => setSearchQuery(e.target.value)}
-                className="search-input"
-              />
-            </form>
-
-            {/* Book and Chapter Navigation */}
-            <div className="flex items-center space-x-2">
-              {/* Book dropdown */}
-              <div className="relative">
-                <button
-                  onClick={() => setShowBookDropdown(!showBookDropdown)}
-                  className="chapter-dropdown flex items-center space-x-2"
-                >
-                  <span>{currentBook}</span>
-                  <ChevronDown className="w-4 h-4 text-gray-400" />
-                </button>
-
-                {showBookDropdown && (
-                  <>
-                    {/* Backdrop */}
-                    <div
-                      className="fixed inset-0 z-10"
-                      onClick={() => setShowBookDropdown(false)}
-                    />
-
-                    {/* Dropdown menu */}
-                    <div className="absolute top-full right-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-20 max-h-96 overflow-y-auto scrollbar-thin">
-                      <div className="py-1">
-                        <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-gray-100">
-                          Old Testament
-                        </div>
-                        {BIBLE_BOOKS.slice(0, 39).map((book) => (
-                          <button
-                            key={book}
-                            onClick={() => handleBookSelect(book)}
-                            className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
-                              book === currentBook ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
-                            }`}
-                          >
-                            {book}
-                          </button>
-                        ))}
-                        <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-t border-gray-100">
-                          New Testament
-                        </div>
-                        {BIBLE_BOOKS.slice(39).map((book) => (
-                          <button
-                            key={book}
-                            onClick={() => handleBookSelect(book)}
-                            className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
-                              book === currentBook ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
-                            }`}
-                          >
-                            {book}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
-
-              {/* Chapter dropdown */}
-              <div className="relative">
-                <button
-                  onClick={() => setShowChapterDropdown(!showChapterDropdown)}
-                  className="chapter-dropdown flex items-center space-x-2"
-                >
-                  <span>Chapter {currentChapter}</span>
-                  <ChevronDown className="w-4 h-4 text-gray-400" />
-                </button>
-
-                {showChapterDropdown && (
-                  <>
-                    {/* Backdrop */}
-                    <div
-                      className="fixed inset-0 z-10"
-                      onClick={() => setShowChapterDropdown(false)}
-                    />
-
-                    {/* Dropdown menu */}
-                    <div className="absolute top-full right-0 mt-1 w-32 bg-white border border-gray-200 rounded-lg shadow-lg z-20 max-h-64 overflow-y-auto scrollbar-thin">
-                      <div className="py-1">
-                        {Array.from({ length: maxChapters }, (_, i) => i + 1).map((chapter) => (
-                          <button
-                            key={chapter}
-                            onClick={() => handleChapterSelect(chapter)}
-                            className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
-                              chapter === currentChapter ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
-                            }`}
-                          >
-                            Chapter {chapter}
-                          </button>
-                        ))}
-                      </div>
-                    </div>
-                  </>
-                )}
-              </div>
+          {/* Search and Navigation - aligned to right */}
+          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px' }}>
+            {/* Search bar with label on top */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative' }}>
+              <label htmlFor="search" style={{ fontFamily: 'Inter, sans-serif', fontStyle: 'normal', fontWeight: 600, fontSize: '14px', lineHeight: '17px', color: '#403E3E', marginBottom: '4px' }}>
+                Search
+              </label>
+              <form onSubmit={handleSearchSubmit} style={{ position: 'relative', width: '294px' }}>
+                <input
+                  id="search"
+                  type="text"
+                  placeholder="Search by Verse or Passage"
+                  value={searchQuery}
+                  onChange={(e) => setSearchQuery(e.target.value)}
+                  style={{
+                    width: '294px',
+                    height: '48px',
+                    border: '2px solid #403E3E',
+                    borderRadius: '16px',
+                    fontFamily: 'Inter, sans-serif',
+                    fontStyle: 'normal',
+                    fontWeight: 400,
+                    fontSize: '16px',
+                    lineHeight: '130%',
+                    color: '#403E3E',
+                    paddingLeft: '12px',
+                    paddingRight: '40px'
+                  }}
+                />
+                <Search style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', width: '17.49px', height: '17.49px', color: '#403E3E' }} />
+              </form>
             </div>
+
+            {/* Chapter/Book dropdown - same size as search */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative', marginTop: '21px' }}>
+              <button
+                onClick={() => setShowChapterDropdown(!showChapterDropdown)}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  justifyContent: 'space-between',
+                  alignItems: 'center',
+                  padding: '8px 12px',
+                  gap: '12px',
+                  width: '294px',
+                  height: '48px',
+                  border: '2px solid #403E3E',
+                  borderRadius: '16px',
+                  fontFamily: 'Inter, sans-serif',
+                  fontStyle: 'normal',
+                  fontWeight: 400,
+                  fontSize: '16px',
+                  lineHeight: '130%',
+                  color: '#403E3E',
+                  background: 'white',
+                  cursor: 'pointer'
+                }}
+              >
+                <span>{currentBook} {currentChapter}</span>
+                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', width: '28px', height: '31.08px' }}>
+                  <div style={{ width: '2px', height: '31.08px', background: '#403E3E' }} />
+                  <ChevronDown style={{ width: '14px', height: '9px', color: '#403E3E' }} />
+                </div>
+              </button>
+
+            {showChapterDropdown && (
+              <>
+                <div
+                  className="fixed inset-0 z-10"
+                  onClick={() => setShowChapterDropdown(false)}
+                />
+                <div className="absolute top-full right-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-20 max-h-96 overflow-y-auto scrollbar-thin">
+                  <div className="py-1">
+                    <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-gray-100">
+                      Old Testament
+                    </div>
+                    {BIBLE_BOOKS.slice(0, 39).map((book) => (
+                      <button
+                        key={book}
+                        onClick={() => handleBookSelect(book)}
+                        className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                          book === currentBook ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
+                        }`}
+                      >
+                        {book}
+                      </button>
+                    ))}
+                    <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-t border-gray-100">
+                      New Testament
+                    </div>
+                    {BIBLE_BOOKS.slice(39).map((book) => (
+                      <button
+                        key={book}
+                        onClick={() => handleBookSelect(book)}
+                        className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                          book === currentBook ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
+                        }`}
+                      >
+                        {book}
+                      </button>
+                    ))}
+                    <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-t border-gray-100">
+                      Chapters
+                    </div>
+                    {Array.from({ length: maxChapters }, (_, i) => i + 1).map((chapter) => (
+                      <button
+                        key={chapter}
+                        onClick={() => handleChapterSelect(chapter)}
+                        className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
+                          chapter === currentChapter ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
+                        }`}
+                      >
+                        Chapter {chapter}
+                      </button>
+                    ))}
+                  </div>
+                </div>
+              </>
+            )}
           </div>
+        </div>
         </div>
       </div>
     </header>

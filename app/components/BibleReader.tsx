@@ -41,32 +41,21 @@ export default function BibleReader({
       // Demo: Add underlines to specific phrases (in production, this comes from data)
       const demoSpans = getDemoCrossReferenceSpans(verse.verse_number, verse.text);
 
-      spanElements = renderTextWithSpans(verse.text, demoSpans, verse.verse_id);
+      spanElements = renderTextWithSpans(verse.text, demoSpans, verse.verse_id, verse.verse_number);
     } else {
-      // No cross-references, render plain text
-      spanElements = [<span key="text">{verseText}</span>];
+      // No cross-references, render plain text with verse number
+      spanElements = [
+        <span key="verse-num" className="text-[16.77px] align-super mr-1" style={{ fontFamily: 'Calibri, sans-serif' }}>
+          {verse.verse_number}
+        </span>,
+        <span key="text">{verseText}</span>
+      ];
     }
 
     return (
-      <div
-        key={verse.verse_id}
-        className={`verse-container mb-4 ${isSelected ? 'selected' : ''}`}
-      >
-        <div className="flex">
-          {/* Main verse text */}
-          <div className="flex-1 bible-text">
-            <p className="leading-relaxed">
-              {/* Verse content with cross-reference spans */}
-              {spanElements}
-            </p>
-          </div>
-
-          {/* Verse number on the right */}
-          <div className="verse-number ml-4 flex-shrink-0 w-12 text-right">
-            {verse.verse_number}
-          </div>
-        </div>
-      </div>
+      <p key={verse.verse_id} className="text-[26px] mb-4" style={{ fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E' }}>
+        {spanElements}
+      </p>
     )
   }
 
@@ -114,13 +103,21 @@ export default function BibleReader({
   }
 
   // Render text with cross-reference spans
-  const renderTextWithSpans = (text: string, spans: Array<{start: number, end: number, refs: string[]}>, verseId: string) => {
-    if (spans.length === 0) {
-      return [<span key="text">{text}</span>];
-    }
-
+  const renderTextWithSpans = (text: string, spans: Array<{start: number, end: number, refs: string[]}>, verseId: string, verseNumber: number) => {
     const elements: ReactElement[] = [];
     let currentIndex = 0;
+
+    // Add verse number at the beginning
+    elements.push(
+      <span key="verse-num" className="text-[16.77px] align-super mr-1" style={{ fontFamily: 'Calibri, sans-serif' }}>
+        {verseNumber}
+      </span>
+    );
+
+    if (spans.length === 0) {
+      elements.push(<span key="text">{text}</span>);
+      return elements;
+    }
 
     spans.forEach((span, spanIndex) => {
       // Add text before the span
@@ -132,7 +129,7 @@ export default function BibleReader({
         );
       }
 
-      // Add the cross-reference span
+      // Add the cross-reference span with orange underline matching Figma
       const spanText = text.slice(span.start, span.end);
       const isHovered = hoveredSpan === `${verseId}-${spanIndex}`;
       const isSelected = selectedVerses.includes(verseId);
@@ -140,9 +137,14 @@ export default function BibleReader({
       elements.push(
         <span
           key={`span-${spanIndex}`}
-          className={`cross-ref-indicator cursor-pointer ${isSelected ? 'selected' : ''} ${
-            isHovered ? 'border-primary-500' : ''
-          }`}
+          className="cursor-pointer"
+          style={{
+            textDecoration: 'underline',
+            textDecorationColor: '#ff6a32',
+            textDecorationThickness: '1px',
+            textUnderlineOffset: '0.2em',
+            textDecorationSkipInk: 'none'
+          }}
           onClick={() => handleSpanClick(verseId, spanText)}
           onMouseEnter={() => setHoveredSpan(`${verseId}-${spanIndex}`)}
           onMouseLeave={() => setHoveredSpan(null)}
@@ -199,34 +201,28 @@ export default function BibleReader({
   }
 
   return (
-    <div className="bible-reader-container">
-      {/* Chapter title */}
-      <div className="mb-8">
-        <h2 className="text-3xl font-bold text-text-primary mb-2">
-          {book} {chapter}
-        </h2>
+    <div className="w-full">
+      {/* Instruction text */}
+      <p className="text-[20px] mb-[35px]" style={{ fontFamily: 'Calibri, sans-serif', fontWeight: 300, color: '#403E3E' }}>
+        Select an underlined passage to view a cross reference
+      </p>
 
-        {/* Chapter subtitle if we have it (for demo, using Matthew 2) */}
-        {book === 'Matthew' && chapter === 2 && (
-          <h3 className="text-xl font-semibold text-text-secondary mb-6">
-            Visitors from the East
-          </h3>
-        )}
-      </div>
+      {/* Chapter title */}
+      <h2 className="text-[32px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
+        {book} {chapter}
+      </h2>
+
+      {/* Chapter subtitle if we have it (for demo, using Matthew 2) */}
+      {book === 'Matthew' && chapter === 2 && (
+        <h3 className="text-[24px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
+          Visitors from the East
+        </h3>
+      )}
 
       {/* Verses */}
-      <div className="space-y-1">
+      <div className="space-y-0">
         {verses.map((verse, index) => renderVerse(verse, index))}
       </div>
-
-      {/* Selection indicator */}
-      {selectedVerses.length > 0 && (
-        <div className="mt-8 p-4 bg-primary-50 border border-primary-200 rounded-lg">
-          <p className="text-sm text-primary-700">
-            Selected: {selectedVerses.join(', ')}
-          </p>
-        </div>
-      )}
     </div>
   )
 }
