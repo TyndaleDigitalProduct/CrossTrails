@@ -1,30 +1,20 @@
 import { NextResponse } from 'next/server'
 import { ensureValidToken, tokenInfo } from '../../../lib/utils/auth'
+import { checkNLTHealth } from '../../../lib/bible-api/nltHealth'
 
 // --- Service checks ---
 
-async function checkGlooAI() {
-  if (!process.env.GLOO_AI_API_KEY) return 'not_configured'
-  try {
-    const apiKey = process.env.GLOO_AI_API_KEY
-    if (apiKey.length > 10) return 'healthy'
-    return 'invalid_key'
-  } catch {
-    return 'unhealthy'
-  }
-}
-
 async function checkNLTAPI() {
   try {
-    // Placeholder health check for NLT API
-    return 'healthy'
-  } catch {
+    return await checkNLTHealth()
+  } catch (err) {
+    console.error('checkNLTAPI error:', err)
     return 'unhealthy'
   }
 }
 
 function checkEnvironmentVars() {
-  const required = ['GLOO_AI_API_KEY', 'NEXT_PUBLIC_APP_URL']
+  const required = ['NEXT_PUBLIC_APP_URL']
   const missing = required.filter(key => !process.env[key])
   return missing.length > 0 ? `missing_vars: ${missing.join(', ')}` : 'healthy'
 }
@@ -55,7 +45,6 @@ async function checkAuth() {
 export async function GET() {
   const services = {
     database: 'not_applicable',
-    gloo_ai: await checkGlooAI(),
     nlt_api: await checkNLTAPI(),
     environment_vars: checkEnvironmentVars(),
     authentication: await checkAuth()
