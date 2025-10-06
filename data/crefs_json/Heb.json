@@ -1,0 +1,3774 @@
+{
+  "book": "Hebrews",
+  "book_number": 58,
+  "verified": true,
+  "total_items": 469,
+  "improved_count": 226,
+  "category_distribution": {
+    "allusion": 72,
+    "christological_parallel": 5,
+    "theological_principle": 92,
+    "quotation": 45,
+    "elaboration": 105,
+    "historical_reference": 6,
+    "typology": 89,
+    "contrast": 8,
+    "ritual_practice": 4,
+    "prophecy_fulfillment": 4,
+    "exemplification": 39
+  },
+  "items": [
+    {
+      "anchor_ref": "Heb.1.1",
+      "cross_ref": "Num.12.6-8",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.1.2",
+      "cross_ref": "Matt.21.38",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.1.2",
+      "cross_ref": "John.1.3",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both passages affirm Christ's deity, creative agency, and divine glory - core high Christology themes."
+    },
+    {
+      "anchor_ref": "Heb.1.2",
+      "cross_ref": "1Pet.1.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.1.3",
+      "cross_ref": "Ps.110.1",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1:3 quotes Ps 110:1 about Christ sitting at God's right hand - classic messianic enthronement text."
+    },
+    {
+      "anchor_ref": "Heb.1.3",
+      "cross_ref": "John.14.9",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both passages affirm Christ's deity, creative agency, and divine glory - core high Christology themes."
+    },
+    {
+      "anchor_ref": "Heb.1.3",
+      "cross_ref": "2Cor.4.4",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both passages affirm Christ's deity, creative agency, and divine glory - core high Christology themes."
+    },
+    {
+      "anchor_ref": "Heb.1.3",
+      "cross_ref": "Col.1.15",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both passages affirm Christ's deity, creative agency, and divine glory - core high Christology themes."
+    },
+    {
+      "anchor_ref": "Heb.1.5",
+      "cross_ref": "Ps.2.7",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.5",
+      "cross_ref": "2Sam.7.14",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.6",
+      "cross_ref": "Deut.32.43",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.6",
+      "cross_ref": "Ps.8.4",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.1.7",
+      "cross_ref": "Ps.8.5",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.1.7",
+      "cross_ref": "Ps.104.4",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.8-9",
+      "cross_ref": "Ps.45.6-7",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.10-12",
+      "cross_ref": "Ps.102.25-27",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.13",
+      "cross_ref": "Ps.110.1",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 1 contains explicit OT quotations with citation formulas (\"God says,\" \"to the Son he says\"), all demonstrating Christ's superiority and deity."
+    },
+    {
+      "anchor_ref": "Heb.1.13",
+      "cross_ref": "Matt.22.44",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.1.14",
+      "cross_ref": "Ps.91.11",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.2.2",
+      "cross_ref": "Deut.33.2",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.2.2",
+      "cross_ref": "Gal.3.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.3",
+      "cross_ref": "Heb.1.2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.2.3",
+      "cross_ref": "Heb.10.29",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.2.4",
+      "cross_ref": "Mark.16.20",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.6-8",
+      "cross_ref": "Ps.8.4-6",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 2:6-8 quotes Ps 8:4-6 with citation formula, applying humanity psalm to Christ typologically."
+    },
+    {
+      "anchor_ref": "Heb.2.8",
+      "cross_ref": "1Cor.15.27",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.9",
+      "cross_ref": "Phil.2.6-9",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.10",
+      "cross_ref": "Luke.13.32",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.10",
+      "cross_ref": "Luke.24.46",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.10",
+      "cross_ref": "Rom.11.36",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.10",
+      "cross_ref": "Heb.5.9",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.2.11",
+      "cross_ref": "Matt.28.10",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.11",
+      "cross_ref": "John.20.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.11",
+      "cross_ref": "Rom.8.29",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.11",
+      "cross_ref": "Heb.10.10",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.2.11",
+      "cross_ref": "Heb.13.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.2.12",
+      "cross_ref": "Ps.22.22",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Heb 2:12-13 quotes OT passages with \"he says\" formula, applying them to Christ's incarnation."
+    },
+    {
+      "anchor_ref": "Heb.2.13",
+      "cross_ref": "John.17.11-12",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.14",
+      "cross_ref": "John.1.14",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.2.14",
+      "cross_ref": "Rom.8.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.14",
+      "cross_ref": "1Cor.15.54-57",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.14",
+      "cross_ref": "2Tim.1.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.14",
+      "cross_ref": "1Jn.3.8",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.17",
+      "cross_ref": "Phil.2.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.17",
+      "cross_ref": "Heb.3.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.2.17",
+      "cross_ref": "Heb.4.15",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.2.17",
+      "cross_ref": "Heb.5.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.2.17",
+      "cross_ref": "1Jn.2.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.17",
+      "cross_ref": "1Jn.4.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.2.18",
+      "cross_ref": "Heb.4.15",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.2.18",
+      "cross_ref": "Heb.5.2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.3.1",
+      "cross_ref": "Heb.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.3.1",
+      "cross_ref": "Heb.4.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.3.2",
+      "cross_ref": "Num.12.7-8",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "References to wilderness generation serve as historical example and typological warning about unbelief."
+    },
+    {
+      "anchor_ref": "Heb.3.3",
+      "cross_ref": "2Cor.3.7-11",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.3.5",
+      "cross_ref": "Exod.14.31",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.3.5",
+      "cross_ref": "Num.12.7",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "References to wilderness generation serve as historical example and typological warning about unbelief."
+    },
+    {
+      "anchor_ref": "Heb.3.6",
+      "cross_ref": "Eph.2.19-22",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.3.6",
+      "cross_ref": "1Tim.3.15",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.3.6",
+      "cross_ref": "1Pet.2.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.3.7-11",
+      "cross_ref": "Ps.95.7-11",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 3:7-11 and 4:3-7 extensively quote Ps 95 with \"Holy Spirit says\" formula, using wilderness generation as type/warning."
+    },
+    {
+      "anchor_ref": "Heb.3.8",
+      "cross_ref": "Exod.17.7",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.3.11",
+      "cross_ref": "Num.14.21-23",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "References to wilderness generation serve as historical example and typological warning about unbelief."
+    },
+    {
+      "anchor_ref": "Heb.3.13",
+      "cross_ref": "Eph.4.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.3.14",
+      "cross_ref": "Heb.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.3.15",
+      "cross_ref": "Ps.95.7-8",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 3:7-11 and 4:3-7 extensively quote Ps 95 with \"Holy Spirit says\" formula, using wilderness generation as type/warning."
+    },
+    {
+      "anchor_ref": "Heb.3.16-18",
+      "cross_ref": "Num.14.1-35",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "References to wilderness generation serve as historical example and typological warning about unbelief."
+    },
+    {
+      "anchor_ref": "Heb.3.17",
+      "cross_ref": "Num.14.29",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "References to wilderness generation serve as historical example and typological warning about unbelief."
+    },
+    {
+      "anchor_ref": "Heb.3.17",
+      "cross_ref": "1Cor.10.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.3.18",
+      "cross_ref": "Num.14.22-23",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "References to wilderness generation serve as historical example and typological warning about unbelief."
+    },
+    {
+      "anchor_ref": "Heb.4.2",
+      "cross_ref": "1Thes.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.4.3",
+      "cross_ref": "Ps.95.11",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 3:7-11 and 4:3-7 extensively quote Ps 95 with \"Holy Spirit says\" formula, using wilderness generation as type/warning."
+    },
+    {
+      "anchor_ref": "Heb.4.4",
+      "cross_ref": "Gen.2.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.4.5",
+      "cross_ref": "Ps.95.11",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 3:7-11 and 4:3-7 extensively quote Ps 95 with \"Holy Spirit says\" formula, using wilderness generation as type/warning."
+    },
+    {
+      "anchor_ref": "Heb.4.6",
+      "cross_ref": "Heb.3.18",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.4.7",
+      "cross_ref": "Ps.95.7-8",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 3:7-11 and 4:3-7 extensively quote Ps 95 with \"Holy Spirit says\" formula, using wilderness generation as type/warning."
+    },
+    {
+      "anchor_ref": "Heb.4.8",
+      "cross_ref": "Josh.22.4",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.4.10",
+      "cross_ref": "Gen.2.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.4.10",
+      "cross_ref": "Rev.14.13",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.4.12",
+      "cross_ref": "Jer.23.29",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.4.12",
+      "cross_ref": "1Cor.14.24-25",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.4.12",
+      "cross_ref": "Eph.6.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.4.12",
+      "cross_ref": "1Pet.1.23",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.4.13",
+      "cross_ref": "2Chr.16.9",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.4.13",
+      "cross_ref": "Ps.33.13-15",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.4.14",
+      "cross_ref": "Heb.2.17",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Introduces Christ as high priest - foundational typology connecting Levitical priesthood to Christ."
+    },
+    {
+      "anchor_ref": "Heb.4.14",
+      "cross_ref": "Heb.3.1",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Introduces Christ as high priest - foundational typology connecting Levitical priesthood to Christ."
+    },
+    {
+      "anchor_ref": "Heb.4.15",
+      "cross_ref": "2Cor.5.21",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Introduces Christ as high priest - foundational typology connecting Levitical priesthood to Christ."
+    },
+    {
+      "anchor_ref": "Heb.4.15",
+      "cross_ref": "Heb.2.17-18",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Introduces Christ as high priest - foundational typology connecting Levitical priesthood to Christ."
+    },
+    {
+      "anchor_ref": "Heb.4.16",
+      "cross_ref": "Heb.7.19",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Introduces Christ as high priest - foundational typology connecting Levitical priesthood to Christ."
+    },
+    {
+      "anchor_ref": "Heb.5.1",
+      "cross_ref": "Heb.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.5.1",
+      "cross_ref": "Heb.7.27",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.5.1",
+      "cross_ref": "Heb.8.3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.5.2",
+      "cross_ref": "Heb.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.5.2",
+      "cross_ref": "Heb.4.15",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.5.3",
+      "cross_ref": "Lev.9.7",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.5.3",
+      "cross_ref": "Lev.16.6",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.5.3",
+      "cross_ref": "Heb.7.27",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.5.3",
+      "cross_ref": "Heb.9.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.5.4",
+      "cross_ref": "Exod.28.1",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.5.6",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 5:6, 7:17, 7:21 quote Ps 110:4 about Melchizedekian priesthood - explicit quotation establishing typology."
+    },
+    {
+      "anchor_ref": "Heb.5.7",
+      "cross_ref": "Matt.26.38-46",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.5.7",
+      "cross_ref": "Mark.14.32-42",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.5.7",
+      "cross_ref": "Luke.22.39-46",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.5.8",
+      "cross_ref": "Phil.2.8",
+      "primary_category": "theological_principle",
+      "secondary_category": "christological_parallel",
+      "confidence": 85,
+      "reasoning": "Shared doctrine of Christ learning obedience through suffering - theological principle of incarnation."
+    },
+    {
+      "anchor_ref": "Heb.5.8",
+      "cross_ref": "Heb.1.2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.5.10",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 5:6, 7:17, 7:21 quote Ps 110:4 about Melchizedekian priesthood - explicit quotation establishing typology."
+    },
+    {
+      "anchor_ref": "Heb.5.10",
+      "cross_ref": "Heb.5.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.5.12",
+      "cross_ref": "1Cor.3.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.5.12",
+      "cross_ref": "1Pet.2.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.5.13",
+      "cross_ref": "1Cor.14.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.5.13",
+      "cross_ref": "Eph.4.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.5.14",
+      "cross_ref": "Rom.16.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.5.14",
+      "cross_ref": "1Cor.2.6",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.1",
+      "cross_ref": "Phil.3.12-14",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.1",
+      "cross_ref": "Heb.5.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.6.1",
+      "cross_ref": "Heb.9.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.4",
+      "cross_ref": "John.4.10",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.6.4",
+      "cross_ref": "Eph.2.8",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.5",
+      "cross_ref": "1Pet.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.6",
+      "cross_ref": "2Pet.2.21",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.6",
+      "cross_ref": "1Jn.5.16",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.8",
+      "cross_ref": "Gen.3.17-18",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.6.10",
+      "cross_ref": "Matt.10.40",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.6.10",
+      "cross_ref": "Matt.10.42",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.6.10",
+      "cross_ref": "1Thes.1.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.11",
+      "cross_ref": "Heb.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.11",
+      "cross_ref": "Heb.10.22",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.12",
+      "cross_ref": "Heb.10.36",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.12",
+      "cross_ref": "Heb.13.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.13",
+      "cross_ref": "Gen.22.16",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.6.14",
+      "cross_ref": "Gen.22.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.6.15",
+      "cross_ref": "Gen.21.15",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.6.17",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 5:6, 7:17, 7:21 quote Ps 110:4 about Melchizedekian priesthood - explicit quotation establishing typology."
+    },
+    {
+      "anchor_ref": "Heb.6.17",
+      "cross_ref": "Heb.11.9",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.18",
+      "cross_ref": "Num.23.19",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.6.18",
+      "cross_ref": "1Sam.15.29",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.6.18",
+      "cross_ref": "Titus.1.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.6.18",
+      "cross_ref": "Heb.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.19",
+      "cross_ref": "Lev.16.2-3",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.6.19",
+      "cross_ref": "Lev.16.12",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.6.19",
+      "cross_ref": "Lev.16.15",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.6.19",
+      "cross_ref": "Heb.9.2-3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.19",
+      "cross_ref": "Heb.9.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.6.20",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Heb 5:6, 7:17, 7:21 quote Ps 110:4 about Melchizedekian priesthood - explicit quotation establishing typology."
+    },
+    {
+      "anchor_ref": "Heb.6.20",
+      "cross_ref": "Heb.4.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.6.20",
+      "cross_ref": "Heb.5.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.7.1-2",
+      "cross_ref": "Gen.14.17-20",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.3",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.4",
+      "cross_ref": "Gen.14.20",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.5",
+      "cross_ref": "Num.18.21",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.5",
+      "cross_ref": "Num.18.26",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.6",
+      "cross_ref": "Rom.4.13",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.7",
+      "cross_ref": "Gen.14.19",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.8",
+      "cross_ref": "Heb.5.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.8",
+      "cross_ref": "Heb.6.20",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.11",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.11",
+      "cross_ref": "Heb.5.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.11",
+      "cross_ref": "Heb.7.17",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.14",
+      "cross_ref": "Gen.49.10",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.14",
+      "cross_ref": "Matt.1.3",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.14",
+      "cross_ref": "Matt.2.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.14",
+      "cross_ref": "Luke.3.33",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.14",
+      "cross_ref": "Rom.1.3",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.14",
+      "cross_ref": "Rev.5.5",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.17",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.17",
+      "cross_ref": "Heb.5.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.17",
+      "cross_ref": "Heb.6.20",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.18",
+      "cross_ref": "Rom.8.3",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.19",
+      "cross_ref": "Rom.3.20",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.19",
+      "cross_ref": "Heb.9.9",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.19",
+      "cross_ref": "Heb.10.19-22",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.21",
+      "cross_ref": "Ps.110.4",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.21",
+      "cross_ref": "Heb.5.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.21",
+      "cross_ref": "Heb.6.20",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.21",
+      "cross_ref": "Heb.7.17",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.22",
+      "cross_ref": "Heb.8.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.22",
+      "cross_ref": "Heb.12.24",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.24",
+      "cross_ref": "Rev.1.18",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.25",
+      "cross_ref": "Rom.8.34",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.25",
+      "cross_ref": "1Jn.2.1",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.26",
+      "cross_ref": "2Cor.5.21",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.26",
+      "cross_ref": "Heb.4.14",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.27",
+      "cross_ref": "Lev.9.7",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.27",
+      "cross_ref": "Lev.16.6",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.27",
+      "cross_ref": "Lev.16.11",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.27",
+      "cross_ref": "Lev.16.15",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.27",
+      "cross_ref": "Eph.5.2",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.27",
+      "cross_ref": "Heb.9.12",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.28",
+      "cross_ref": "Heb.2.10",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.7.28",
+      "cross_ref": "Heb.5.1-2",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Melchizedek explicitly interpreted as type of Christ's eternal priesthood - technical typology category."
+    },
+    {
+      "anchor_ref": "Heb.8.1",
+      "cross_ref": "Heb.1.3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.8.1",
+      "cross_ref": "Heb.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.8.1",
+      "cross_ref": "Heb.4.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.8.1",
+      "cross_ref": "Heb.6.20",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.1",
+      "cross_ref": "Heb.7.26",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.1",
+      "cross_ref": "Heb.9.11",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.2",
+      "cross_ref": "Heb.9.11",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.3",
+      "cross_ref": "Heb.5.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.8.5",
+      "cross_ref": "Exod.25.40",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.8.5",
+      "cross_ref": "Exod.26.30",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.8.5",
+      "cross_ref": "Col.2.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.8.5",
+      "cross_ref": "Heb.9.23",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.6",
+      "cross_ref": "Heb.7.22",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.6",
+      "cross_ref": "Heb.9.15",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.6",
+      "cross_ref": "Heb.12.24",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.8.7",
+      "cross_ref": "Heb.7.11",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.8-12",
+      "cross_ref": "Jer.31.31-34",
+      "primary_category": "quotation",
+      "secondary_category": "covenant_connection",
+      "confidence": 98,
+      "reasoning": "Extensive quotation of Jer 31:31-34 new covenant prophecy - explicit citation + covenant theme."
+    },
+    {
+      "anchor_ref": "Heb.8.10",
+      "cross_ref": "Heb.10.16",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.11",
+      "cross_ref": "John.6.45",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.8.12",
+      "cross_ref": "Heb.10.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.8.13",
+      "cross_ref": "Heb.12.24",
+      "primary_category": "contrast",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Explicit contrast: \"By calling this covenant new, he has made the first one obsolete.\""
+    },
+    {
+      "anchor_ref": "Heb.9.2",
+      "cross_ref": "Exod.25.23-40",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.2",
+      "cross_ref": "Exod.26.1-30",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.2",
+      "cross_ref": "Lev.24.5",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.3",
+      "cross_ref": "Exod.26.31-33",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.4",
+      "cross_ref": "Exod.16.33",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.4",
+      "cross_ref": "Exod.25.10-16",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.4",
+      "cross_ref": "Exod.30.1-6",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.4",
+      "cross_ref": "Num.17.8-10",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.4",
+      "cross_ref": "Deut.10.3-5",
+      "primary_category": "ritual_practice",
+      "secondary_category": "typology",
+      "confidence": 88,
+      "reasoning": "OT ritual practice described, with typological implications for Christ's work."
+    },
+    {
+      "anchor_ref": "Heb.9.5",
+      "cross_ref": "Exod.25.17-22",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.6",
+      "cross_ref": "Num.18.2-6",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.7",
+      "cross_ref": "Exod.30.10",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.7",
+      "cross_ref": "Lev.16.2",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.7",
+      "cross_ref": "Lev.16.14-15",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.7",
+      "cross_ref": "Heb.5.2-3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.9.8",
+      "cross_ref": "John.14.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.9.8",
+      "cross_ref": "Heb.10.19-20",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.9",
+      "cross_ref": "Heb.5.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.9.9",
+      "cross_ref": "Heb.10.1-2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.10",
+      "cross_ref": "Lev.11.2",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.10",
+      "cross_ref": "Lev.11.25",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.10",
+      "cross_ref": "Lev.15.8",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.10",
+      "cross_ref": "Num.6.3",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.10",
+      "cross_ref": "Num.19.13",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.11",
+      "cross_ref": "Heb.8.2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.11",
+      "cross_ref": "Heb.10.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.12",
+      "cross_ref": "Heb.7.27",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.13",
+      "cross_ref": "Lev.16.3",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.13",
+      "cross_ref": "Lev.16.14-15",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.13",
+      "cross_ref": "Num.19.9",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.13",
+      "cross_ref": "Num.19.17",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.14",
+      "cross_ref": "Heb.6.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.9.14",
+      "cross_ref": "1Pet.3.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.14",
+      "cross_ref": "1Jn.1.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.15",
+      "cross_ref": "1Tim.2.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.15",
+      "cross_ref": "Heb.7.22",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.18-19",
+      "cross_ref": "Exod.24.6-8",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.18-19",
+      "cross_ref": "Lev.14.4",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.18-19",
+      "cross_ref": "Num.19.6",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "OT institution/person prefigures Christ in Hebrews typological framework."
+    },
+    {
+      "anchor_ref": "Heb.9.20",
+      "cross_ref": "Exod.24.8",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Earthly tabernacle prefigures heavenly reality - technical typology + ritual practice description."
+    },
+    {
+      "anchor_ref": "Heb.9.20",
+      "cross_ref": "Matt.26.28",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.9.21",
+      "cross_ref": "Lev.8.15",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.21",
+      "cross_ref": "Lev.8.19",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.22",
+      "cross_ref": "Lev.17.11",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.9.23",
+      "cross_ref": "Heb.8.5",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.24",
+      "cross_ref": "Rom.8.34",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.24",
+      "cross_ref": "Heb.8.2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.24",
+      "cross_ref": "Heb.9.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.24",
+      "cross_ref": "1Jn.2.1",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.25",
+      "cross_ref": "Heb.9.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.25",
+      "cross_ref": "Heb.10.19",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.26",
+      "cross_ref": "1Cor.10.11",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.26",
+      "cross_ref": "Heb.7.27",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.26",
+      "cross_ref": "1Pet.3.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.27",
+      "cross_ref": "Gen.3.19",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.9.28",
+      "cross_ref": "Phil.3.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.9.28",
+      "cross_ref": "Heb.7.27",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.9.28",
+      "cross_ref": "1Pet.2.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.1",
+      "cross_ref": "Col.2.17",
+      "primary_category": "contrast",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Explicit contrast between law (shadow) and Christ (reality)."
+    },
+    {
+      "anchor_ref": "Heb.10.1",
+      "cross_ref": "Heb.7.19",
+      "primary_category": "contrast",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Explicit contrast between law (shadow) and Christ (reality)."
+    },
+    {
+      "anchor_ref": "Heb.10.1",
+      "cross_ref": "Heb.8.5",
+      "primary_category": "contrast",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Explicit contrast between law (shadow) and Christ (reality)."
+    },
+    {
+      "anchor_ref": "Heb.10.1",
+      "cross_ref": "Heb.9.11",
+      "primary_category": "contrast",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Explicit contrast between law (shadow) and Christ (reality)."
+    },
+    {
+      "anchor_ref": "Heb.10.3",
+      "cross_ref": "Lev.16.34",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.10.3",
+      "cross_ref": "Heb.9.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.10.4",
+      "cross_ref": "Lev.16.15",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.10.4",
+      "cross_ref": "Lev.16.21",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 92,
+      "reasoning": "Levitical sacrifices prefigure Christ's once-for-all sacrifice - typology + ritual practice."
+    },
+    {
+      "anchor_ref": "Heb.10.4",
+      "cross_ref": "Heb.9.13",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.10.5-7",
+      "cross_ref": "Ps.40.6-8",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.10.8",
+      "cross_ref": "Ps.40.6",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.10.10",
+      "cross_ref": "Eph.5.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.10",
+      "cross_ref": "Heb.7.27",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.10",
+      "cross_ref": "Heb.9.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.10.10",
+      "cross_ref": "Heb.9.28",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.10.10",
+      "cross_ref": "1Pet.2.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.11",
+      "cross_ref": "Heb.5.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.12",
+      "cross_ref": "Ps.110.1",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Ps 110 is heavily quoted in Hebrews (1:3, 13; 5:6; 7:17, 21; 8:1; 10:12-13; 12:2) as messianic text."
+    },
+    {
+      "anchor_ref": "Heb.10.12",
+      "cross_ref": "Matt.22.44",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.10.12",
+      "cross_ref": "Col.3.1",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.12",
+      "cross_ref": "Heb.1.3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.13",
+      "cross_ref": "Ps.110.1",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Ps 110 is heavily quoted in Hebrews (1:3, 13; 5:6; 7:17, 21; 8:1; 10:12-13; 12:2) as messianic text."
+    },
+    {
+      "anchor_ref": "Heb.10.15",
+      "cross_ref": "Heb.3.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.16-17",
+      "cross_ref": "Jer.31.33-34",
+      "primary_category": "quotation",
+      "secondary_category": "covenant_connection",
+      "confidence": 98,
+      "reasoning": "Quotes Jer 31:33-34 new covenant promise - explicit citation."
+    },
+    {
+      "anchor_ref": "Heb.10.19",
+      "cross_ref": "Eph.3.12",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.20",
+      "cross_ref": "John.4.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.10.20",
+      "cross_ref": "Heb.6.19",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.20",
+      "cross_ref": "Heb.9.8",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.10.21",
+      "cross_ref": "Heb.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.21",
+      "cross_ref": "Heb.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.22",
+      "cross_ref": "Ezek.36.25",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "covenant_connection",
+      "confidence": 92,
+      "reasoning": "OT prophecy fulfilled in Christ - prophecy fulfillment maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.22",
+      "cross_ref": "Eph.5.26",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.23",
+      "cross_ref": "1Cor.1.9",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.23",
+      "cross_ref": "1Cor.10.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.23",
+      "cross_ref": "Heb.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.25",
+      "cross_ref": "Heb.3.13",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.26",
+      "cross_ref": "Heb.6.4-8",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.26",
+      "cross_ref": "2Pet.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.28",
+      "cross_ref": "Deut.17.6",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.10.30",
+      "cross_ref": "Deut.32.35-36",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.10.30",
+      "cross_ref": "Ps.135.14",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.10.31",
+      "cross_ref": "2Cor.5.11",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.33",
+      "cross_ref": "1Cor.4.9",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.33",
+      "cross_ref": "1Thes.2.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.34",
+      "cross_ref": "Heb.13.3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.10.36",
+      "cross_ref": "Heb.9.15",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.10.37-38",
+      "cross_ref": "Hab.2.3-4",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "covenant_connection",
+      "confidence": 92,
+      "reasoning": "OT prophecy fulfilled in Christ - prophecy fulfillment maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.37-38",
+      "cross_ref": "Rom.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.10.37-38",
+      "cross_ref": "Gal.3.11",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.1",
+      "cross_ref": "Rom.8.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.1",
+      "cross_ref": "Heb.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.11.1",
+      "cross_ref": "Heb.3.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.11.3",
+      "cross_ref": "Gen.1.1-31",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.3",
+      "cross_ref": "Ps.33.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.3",
+      "cross_ref": "Ps.33.9",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.3",
+      "cross_ref": "John.1.3",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Upgraded from thematic_echo to christological_parallel - shared high Christology."
+    },
+    {
+      "anchor_ref": "Heb.11.3",
+      "cross_ref": "Rom.1.19-20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.3",
+      "cross_ref": "Heb.1.2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.11.4",
+      "cross_ref": "Gen.4.3-10",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.5",
+      "cross_ref": "Gen.5.22-24",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.6",
+      "cross_ref": "Heb.7.19",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.11.7",
+      "cross_ref": "Gen.6.13-22",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.7",
+      "cross_ref": "Rom.3.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.7",
+      "cross_ref": "1Pet.3.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.8",
+      "cross_ref": "Gen.12.1-5",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.9",
+      "cross_ref": "Gen.12.8",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.10",
+      "cross_ref": "Heb.12.22",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.11.10",
+      "cross_ref": "Rev.21.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.11.11",
+      "cross_ref": "Gen.17.19",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.11",
+      "cross_ref": "Gen.21.1-3",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.12",
+      "cross_ref": "Gen.15.5-6",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.12",
+      "cross_ref": "Gen.22.17",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.12",
+      "cross_ref": "Rom.4.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.13",
+      "cross_ref": "Gen.23.4",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.13",
+      "cross_ref": "Matt.13.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.11.13",
+      "cross_ref": "Heb.11.39",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.11.14",
+      "cross_ref": "Heb.13.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.11.15",
+      "cross_ref": "Gen.24.6-8",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.16",
+      "cross_ref": "Gen.26.24",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.16",
+      "cross_ref": "Exod.3.6",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.16",
+      "cross_ref": "Exod.3.15",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.17",
+      "cross_ref": "Gen.22.1-10",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.17",
+      "cross_ref": "Jas.2.21",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.18",
+      "cross_ref": "Gen.21.12",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.19",
+      "cross_ref": "Rom.4.21",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.20",
+      "cross_ref": "Gen.27.27-29",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.21",
+      "cross_ref": "Gen.47.31",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.21",
+      "cross_ref": "Gen.48.15-16",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.22",
+      "cross_ref": "Gen.50.24-25",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.22",
+      "cross_ref": "Exod.13.19",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.23",
+      "cross_ref": "Exod.1.16",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.23",
+      "cross_ref": "Exod.1.22",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.23",
+      "cross_ref": "Exod.2.2",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.24",
+      "cross_ref": "Exod.2.10-12",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.26",
+      "cross_ref": "Heb.13.13",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.11.27",
+      "cross_ref": "Exod.12.50-51",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.28",
+      "cross_ref": "Exod.12.21-30",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.29",
+      "cross_ref": "Exod.14.21-31",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.30",
+      "cross_ref": "Josh.6.12-21",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.31",
+      "cross_ref": "Josh.2.11-12",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.31",
+      "cross_ref": "Josh.6.20-25",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.31",
+      "cross_ref": "Jas.2.25",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.32",
+      "cross_ref": "Judg.4.1-13.25",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.32",
+      "cross_ref": "1Sam.1.20",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.32",
+      "cross_ref": "1Sam.16.1",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.32",
+      "cross_ref": "1Sam.16.13",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.33",
+      "cross_ref": "1Sam.17.34-36",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.33",
+      "cross_ref": "Dan.6.1-27",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "covenant_connection",
+      "confidence": 92,
+      "reasoning": "OT prophecy fulfilled in Christ - prophecy fulfillment maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.34",
+      "cross_ref": "2Kgs.20.7",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.34",
+      "cross_ref": "Dan.3.19-27",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.35",
+      "cross_ref": "1Kgs.17.17-24",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.35",
+      "cross_ref": "2Kgs.4.25-37",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.36",
+      "cross_ref": "Gen.39.20",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 92,
+      "reasoning": "OT heroes cited as examples illustrating faith principle - exemplification + historical reference."
+    },
+    {
+      "anchor_ref": "Heb.11.36",
+      "cross_ref": "Jer.20.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.36",
+      "cross_ref": "Jer.37.15",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.37",
+      "cross_ref": "1Kgs.19.10",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.37",
+      "cross_ref": "2Chr.24.20-22",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.38",
+      "cross_ref": "1Kgs.18.4",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.38",
+      "cross_ref": "1Kgs.19.9",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.11.40",
+      "cross_ref": "Rom.11.26",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.11.40",
+      "cross_ref": "Rev.6.11",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.12.1",
+      "cross_ref": "1Cor.9.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.1",
+      "cross_ref": "Phil.3.12-14",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.2",
+      "cross_ref": "Ps.110.1",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Ps 110 is heavily quoted in Hebrews (1:3, 13; 5:6; 7:17, 21; 8:1; 10:12-13; 12:2) as messianic text."
+    },
+    {
+      "anchor_ref": "Heb.12.2",
+      "cross_ref": "Phil.2.8-9",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.2",
+      "cross_ref": "Heb.2.9-10",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.12.2",
+      "cross_ref": "1Pet.1.11",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.4",
+      "cross_ref": "Heb.10.32-34",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.12.5-6",
+      "cross_ref": "Pr.3.11-12",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.6",
+      "cross_ref": "Rev.3.19",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.12.7",
+      "cross_ref": "Deut.8.5",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.12.7",
+      "cross_ref": "2Sam.7.14",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.8",
+      "cross_ref": "1Pet.5.9",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.10",
+      "cross_ref": "2Pet.1.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.11",
+      "cross_ref": "Jas.3.17-18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.13",
+      "cross_ref": "Pr.4.26",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.14",
+      "cross_ref": "Rom.14.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.15",
+      "cross_ref": "Deut.29.17-18",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.12.15",
+      "cross_ref": "Heb.4.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.12.16",
+      "cross_ref": "Gen.25.29-34",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 88,
+      "reasoning": "Esau as negative example/warning - exemplification of rejecting blessing."
+    },
+    {
+      "anchor_ref": "Heb.12.17",
+      "cross_ref": "Gen.27.30-40",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.18-19",
+      "cross_ref": "Exod.19.16-22",
+      "primary_category": "contrast",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Sinai (old covenant) contrasted with Zion (new covenant) - contrast with typological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.18-19",
+      "cross_ref": "Exod.20.18-21",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.12.18-19",
+      "cross_ref": "Deut.4.11-12",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.12.18-19",
+      "cross_ref": "Deut.5.22-27",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.12.20",
+      "cross_ref": "Exod.19.12-13",
+      "primary_category": "contrast",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Sinai (old covenant) contrasted with Zion (new covenant) - contrast with typological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.21",
+      "cross_ref": "Deut.9.19",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Likely quotation with citation formula in Hebrews context (dense OT quotation book)."
+    },
+    {
+      "anchor_ref": "Heb.12.22",
+      "cross_ref": "Gal.4.26",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.22",
+      "cross_ref": "Rev.5.11",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.12.22",
+      "cross_ref": "Rev.21.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.12.23",
+      "cross_ref": "Gen.18.25",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.23",
+      "cross_ref": "Phil.3.12",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.24",
+      "cross_ref": "Gen.4.10",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.24",
+      "cross_ref": "Heb.9.19",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.12.24",
+      "cross_ref": "Heb.10.22",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.12.25",
+      "cross_ref": "Heb.2.1-3",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.12.25",
+      "cross_ref": "Heb.10.28-29",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.12.26",
+      "cross_ref": "Exod.19.18",
+      "primary_category": "contrast",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Sinai (old covenant) contrasted with Zion (new covenant) - contrast with typological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.26",
+      "cross_ref": "Hagg.2.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.12.27",
+      "cross_ref": "2Pet.3.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.12.28",
+      "cross_ref": "Dan.2.44",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "covenant_connection",
+      "confidence": 92,
+      "reasoning": "OT prophecy fulfilled in Christ - prophecy fulfillment maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.1",
+      "cross_ref": "Rom.12.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.2",
+      "cross_ref": "Gen.18.1-8",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.2",
+      "cross_ref": "Gen.19.1-3",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.3",
+      "cross_ref": "Matt.25.36",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.13.3",
+      "cross_ref": "Col.4.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.3",
+      "cross_ref": "Heb.10.34",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.13.4",
+      "cross_ref": "1Cor.7.38",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.5",
+      "cross_ref": "Gen.28.15",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.5",
+      "cross_ref": "Deut.31.6",
+      "primary_category": "ritual_practice",
+      "secondary_category": "typology",
+      "confidence": 88,
+      "reasoning": "OT ritual practice described, with typological implications for Christ's work."
+    },
+    {
+      "anchor_ref": "Heb.13.5",
+      "cross_ref": "Josh.1.5",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.6",
+      "cross_ref": "Ps.118.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.7",
+      "cross_ref": "Heb.6.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.13.8",
+      "cross_ref": "Heb.1.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.13.9",
+      "cross_ref": "Eph.4.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.9",
+      "cross_ref": "Col.2.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.9",
+      "cross_ref": "Col.2.16",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.11",
+      "cross_ref": "Lev.4.12",
+      "primary_category": "ritual_practice",
+      "secondary_category": "typology",
+      "confidence": 88,
+      "reasoning": "OT ritual practice described, with typological implications for Christ's work."
+    },
+    {
+      "anchor_ref": "Heb.13.11",
+      "cross_ref": "Lev.4.21",
+      "primary_category": "ritual_practice",
+      "secondary_category": "typology",
+      "confidence": 88,
+      "reasoning": "OT ritual practice described, with typological implications for Christ's work."
+    },
+    {
+      "anchor_ref": "Heb.13.11",
+      "cross_ref": "Lev.16.27",
+      "primary_category": "typology",
+      "secondary_category": "ritual_practice",
+      "confidence": 90,
+      "reasoning": "Sin offering ritual prefigures Christ's sacrifice outside the camp - typology."
+    },
+    {
+      "anchor_ref": "Heb.13.12",
+      "cross_ref": "John.19.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.13.12",
+      "cross_ref": "Heb.9.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration maintained - progressive argument development."
+    },
+    {
+      "anchor_ref": "Heb.13.13",
+      "cross_ref": "Heb.11.26",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.13.14",
+      "cross_ref": "Heb.11.10",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.13.14",
+      "cross_ref": "Heb.12.22",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Internal elaboration within Hebrews - progressive development of argument."
+    },
+    {
+      "anchor_ref": "Heb.13.15",
+      "cross_ref": "Ps.50.14",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.15",
+      "cross_ref": "Hos.14.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.15",
+      "cross_ref": "1Pet.2.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.16",
+      "cross_ref": "Phil.4.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.17",
+      "cross_ref": "Ezek.3.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.19",
+      "cross_ref": "Phlm.1.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.20",
+      "cross_ref": "Jer.32.40",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.20",
+      "cross_ref": "Jer.50.5",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.20",
+      "cross_ref": "Ezek.37.26",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.20",
+      "cross_ref": "Zech.9.11",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Indirect OT reference maintained with theological dimension."
+    },
+    {
+      "anchor_ref": "Heb.13.20",
+      "cross_ref": "John.10.11",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Upgraded from thematic_echo to allusion for greater specificity."
+    },
+    {
+      "anchor_ref": "Heb.13.21",
+      "cross_ref": "Rom.11.36",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.21",
+      "cross_ref": "Phil.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    },
+    {
+      "anchor_ref": "Heb.13.22",
+      "cross_ref": "1Pet.5.12",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Shared theological doctrine maintained."
+    }
+  ]
+}

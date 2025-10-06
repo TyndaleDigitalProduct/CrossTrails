@@ -1,0 +1,2973 @@
+{
+  "book": "2 Corinthians",
+  "book_number": 47,
+  "verified": true,
+  "total_items": 369,
+  "improved_count": 206,
+  "category_distribution": {
+    "literary_parallel": 7,
+    "theological_principle": 325,
+    "narrative_continuation": 2,
+    "parallel_instruction": 10,
+    "covenant_connection": 5,
+    "typology": 2,
+    "christological_parallel": 6,
+    "quotation": 7,
+    "exemplification": 3,
+    "historical_reference": 2
+  },
+  "items": [
+    {
+      "anchor_ref": "2Cor.1.1",
+      "cross_ref": "1Cor.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 89,
+      "reasoning": "Epistolary formula: \"This letter is from Paul, chosen by the will of God to be an apostle o...\" and \"This letter is from Paul, chosen by the will of God to be an apostle o...\" use identical greeting structure - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.1.1",
+      "cross_ref": "2Cor.1.19",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 89,
+      "reasoning": "Epistolary formula: \"This letter is from Paul, chosen by the will of God to be an apostle o...\" and \"For Jesus Christ, the Son of God, does not waver between \u201cYes\u201d and \u201cNo...\" use identical greeting structure - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.1.1",
+      "cross_ref": "Eph.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 89,
+      "reasoning": "Epistolary formula: \"This letter is from Paul, chosen by the will of God to be an apostle o...\" and \"This letter is from Paul, chosen by the will of God to be an apostle o...\" use identical greeting structure - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.1.2",
+      "cross_ref": "Rom.1.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 89,
+      "reasoning": "Epistolary formula: \"May God our Father and the Lord Jesus Christ give you grace and peace....\" and \"I am writing to all of you in Rome who are loved by God and are called...\" use identical greeting structure - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.1.3",
+      "cross_ref": "Eph.1.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"All praise to God, the Father of our Lord Jesus Christ....\" and \"All praise to God, the Father of our Lord Jesus Christ,...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.3",
+      "cross_ref": "1Pet.1.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"All praise to God, the Father of our Lord Jesus Christ....\" and \"All praise to God, the Father of our Lord Jesus Christ....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.4",
+      "cross_ref": "2Cor.7.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"He comforts us in all our troubles so that we can comfo...\" and \"But God, who encourages those who are discouraged, enco...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.5",
+      "cross_ref": "2Cor.4.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For the more we suffer for Christ, the more God will sh...\" and \"Through suffering, our bodies continue to share in the ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.5",
+      "cross_ref": "Phil.3.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For the more we suffer for Christ, the more God will sh...\" and \"I want to know Christ and experience the mighty power t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.5",
+      "cross_ref": "Col.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For the more we suffer for Christ, the more God will sh...\" and \"I am glad when I suffer for you in my body, for I am pa...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.6",
+      "cross_ref": "2Cor.4.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Even when we are weighed down with troubles, it is for ...\" and \"All of this is for your benefit. And as God\u2019s grace rea...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.9",
+      "cross_ref": "Jer.17.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"In fact, we expected to die. But as a result, we stoppe...\" and \"This is what the LORD says: \u201cCursed are those who put t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.9",
+      "cross_ref": "Jer.17.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"In fact, we expected to die. But as a result, we stoppe...\" and \"\u201cBut blessed are those who trust in the LORD and have m...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.10",
+      "cross_ref": "2Tim.4.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And he did rescue us from mortal danger, and he will re...\" and \"Yes, and the Lord will deliver me from every evil attac...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.10",
+      "cross_ref": "2Pet.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And he did rescue us from mortal danger, and he will re...\" and \"So you see, the Lord knows how to rescue godly people f...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.11",
+      "cross_ref": "Rom.15.30",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And you are helping us by praying for us. Then many peo...\" and \"Dear brothers and sisters, I urge you in the name of ou...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.11",
+      "cross_ref": "2Cor.4.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And you are helping us by praying for us. Then many peo...\" and \"All of this is for your benefit. And as God\u2019s grace rea...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.11",
+      "cross_ref": "Phil.1.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And you are helping us by praying for us. Then many peo...\" and \"For I know that as you pray for me and the Spirit of Je...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.12",
+      "cross_ref": "1Cor.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We can say with confidence and a clear conscience that ...\" and \"For Christ didn\u2019t send me to baptize, but to preach the...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.12",
+      "cross_ref": "2Cor.2.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We can say with confidence and a clear conscience that ...\" and \"You see, we are not like the many hucksters* who preach...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.12",
+      "cross_ref": "2Cor.4.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We can say with confidence and a clear conscience that ...\" and \"All of this is for your benefit. And as God\u2019s grace rea...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.14",
+      "cross_ref": "2Cor.5.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"even if you don\u2019t understand us now. Then on the day wh...\" and \"Are we commending ourselves to you again? No, we are gi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.14",
+      "cross_ref": "Phil.2.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"even if you don\u2019t understand us now. Then on the day wh...\" and \"Hold firmly to the word of life; then, on the day of Ch...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.15",
+      "cross_ref": "Rom.1.11-13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Since I was so sure of your understanding and trust, I ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.16",
+      "cross_ref": "1Cor.16.5-6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"first on my way to Macedonia and again when I returned ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.17",
+      "cross_ref": "2Cor.5.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You may be asking why I changed my plan. Do you think I...\" and \"So we have stopped evaluating others from a human point...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.19",
+      "cross_ref": "Heb.13.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For Jesus Christ, the Son of God, does not waver betwee...\" and \"Jesus Christ is the same yesterday, today, and forever....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.20",
+      "cross_ref": "Rom.15.8-9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For all of God\u2019s promises have been fulfilled in Christ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.20",
+      "cross_ref": "Rev.3.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For all of God\u2019s promises have been fulfilled in Christ...\" and \"\u201cWrite this letter to the angel of the church in Laodic...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.21",
+      "cross_ref": "1Jn.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"It is God who enables us, along with you, to stand firm...\" and \"But you are not like that, for the Holy One has given y...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.21",
+      "cross_ref": "1Jn.2.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"It is God who enables us, along with you, to stand firm...\" and \"But you have received the Holy Spirit,* and he lives wi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.22",
+      "cross_ref": "2Cor.5.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"and he has identified us as his own by placing the Holy Spir...\" and \"God himself has prepared us for this, and as a guarantee he ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.22",
+      "cross_ref": "Eph.1.13-14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"and he has identified us as his own by placing the Holy...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.22",
+      "cross_ref": "Eph.4.30",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"and he has identified us as his own by placing the Holy Spir...\" and \"And do not bring sorrow to God\u2019s Holy Spirit by the way you ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.23",
+      "cross_ref": "1Cor.4.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Now I call upon God as my witness that I am telling the...\" and \"Which do you choose? Should I come with a rod to punish...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.1.24",
+      "cross_ref": "1Cor.15.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But that does not mean we want to dominate you by telli...\" and \"Let me now remind you, dear brothers and sisters,* of t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.1",
+      "cross_ref": "1Cor.4.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So I decided that I would not bring you grief with anot...\" and \"Which do you choose? Should I come with a rod to punish...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.1",
+      "cross_ref": "2Cor.12.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So I decided that I would not bring you grief with anot...\" and \"Yes, I am afraid that when I come again, God will humbl...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.2",
+      "cross_ref": "2Cor.7.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For if I cause you grief, who will make me glad? Certai...\" and \"I am not sorry that I sent that severe letter to you, t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.4",
+      "cross_ref": "2Cor.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I wrote that letter in great anguish, with a troubled h...\" and \"I wrote to you as I did to test you and see if you woul...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.4",
+      "cross_ref": "2Cor.7.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I wrote that letter in great anguish, with a troubled h...\" and \"I am not sorry that I sent that severe letter to you, t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.4",
+      "cross_ref": "2Cor.7.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I wrote that letter in great anguish, with a troubled h...\" and \"My purpose, then, was not to write about who did the wr...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.5",
+      "cross_ref": "1Cor.5.1-2",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Same situation: \"I am not overstating it when I say that the man who caused a...\" continues 1 Cor 5 \"[err]...\" discipline case - narrative_continuation (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.2.5",
+      "cross_ref": "2Cor.7.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am not overstating it when I say that the man who cau...\" and \"Just see what this godly sorrow produced in you! Such e...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.7",
+      "cross_ref": "Gal.6.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 86,
+      "reasoning": "Forgiveness commands: \"Now, however, it is time to forgive and comfort him. Otherwise he...\" and \"Dear brothers and sisters, if another believer* is overcome by so...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.2.7",
+      "cross_ref": "Eph.4.32",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 86,
+      "reasoning": "Forgiveness commands: \"Now, however, it is time to forgive and comfort him. Otherwise he...\" and \"Instead, be kind to each other, tenderhearted, forgiving one anot...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.2.11",
+      "cross_ref": "2Cor.4.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"so that Satan will not outsmart us. For we are familiar...\" and \"Satan, who is the god of this world, has blinded the mi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.11",
+      "cross_ref": "1Pet.5.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"so that Satan will not outsmart us. For we are familiar...\" and \"Stay alert! Watch out for your great enemy, the devil. ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.12",
+      "cross_ref": "2Cor.4.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When I came to the city of Troas to preach the Good New...\" and \"If the Good News we preach is hidden behind a veil, it ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.13",
+      "cross_ref": "2Cor.7.5-6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I had no peace of mind because my dear brother Titu...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.15",
+      "cross_ref": "1Cor.1.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Our lives are a Christ-like fragrance rising up to God....\" and \"The message of the cross is foolish to those who are he...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.16",
+      "cross_ref": "Luke.2.34",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"To those who are perishing, we are a dreadful smell of ...\" and \"Then Simeon blessed them, and he said to Mary, the baby...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.16",
+      "cross_ref": "2Cor.3.5-6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"To those who are perishing, we are a dreadful smell of ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.17",
+      "cross_ref": "2Cor.1.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You see, we are not like the many hucksters* who preach...\" and \"We can say with confidence and a clear conscience that ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.2.17",
+      "cross_ref": "2Cor.12.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You see, we are not like the many hucksters* who preach...\" and \"Perhaps you think we\u2019re saying these things just to def...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.1",
+      "cross_ref": "2Cor.5.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are we beginning to praise ourselves again? Are we like...\" and \"Are we commending ourselves to you again? No, we are gi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.1",
+      "cross_ref": "2Cor.10.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are we beginning to praise ourselves again? Are we like...\" and \"Oh, don\u2019t worry; we wouldn\u2019t dare say that we are as wo...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.2",
+      "cross_ref": "1Cor.9.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"The only letter of recommendation we need is you yourse...\" and \"Even if others think I am not an apostle, I certainly a...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.3",
+      "cross_ref": "Exod.24.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Clearly, you are a letter from Christ showing the resul...\" and \"Then the LORD said to Moses, \u201cCome up to me on the moun...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.3",
+      "cross_ref": "Exod.31.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Clearly, you are a letter from Christ showing the resul...\" and \"When the LORD finished speaking with Moses on Mount Sin...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.3",
+      "cross_ref": "Exod.32.15-16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Clearly, you are a letter from Christ showing the resul...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.3",
+      "cross_ref": "Pr.3.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Clearly, you are a letter from Christ showing the resul...\" and \"Never let loyalty and kindness leave you! Tie them arou...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.3",
+      "cross_ref": "Jer.31.33",
+      "primary_category": "covenant_connection",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Cor 3:3 \"Clearly, you are a letter from Christ showing the result of our minist...\" (hearts not stone) fulfills Jer 31:33 \"\u201cBut this is the new covenant I will make with the people of Isra...\" new covenant promise - covenant_connection (tier 2 >> theological_principle)."
+    },
+    {
+      "anchor_ref": "2Cor.3.3",
+      "cross_ref": "Ezek.36.26",
+      "primary_category": "covenant_connection",
+      "secondary_category": null,
+      "confidence": 94,
+      "reasoning": "2 Cor 3:3 \"Clearly, you are a letter from Christ showing the result of our minist...\" and Ezek 36:26 \"And I will give you a new heart, and I will put a new spirit in y...\" both describe new covenant heart transformation - covenant_connection (tier 2)."
+    },
+    {
+      "anchor_ref": "2Cor.3.5",
+      "cross_ref": "1Cor.15.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"It is not that we think we are qualified to do anything...\" and \"But whatever I am now, it is all because God poured out...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.5",
+      "cross_ref": "2Cor.2.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"It is not that we think we are qualified to do anything...\" and \"To those who are perishing, we are a dreadful smell of ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.6",
+      "cross_ref": "Jer.31.31",
+      "primary_category": "covenant_connection",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Cor 3:6 \"He has enabled us to be ministers of his new covenant. This is a coven...\" ministers of new covenant fulfills Jer 31:31 \"\u201cThe day is coming,\u201d says the LORD, \u201cwhen I will make a new ...\" prophecy - covenant_connection (tier 2)."
+    },
+    {
+      "anchor_ref": "2Cor.3.6",
+      "cross_ref": "Luke.22.20",
+      "primary_category": "covenant_connection",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "2 Cor 3:6 \"He has enabled us to be ministers of his new covenant. This is a ...\" new covenant connects to \"After supper he took another cup of wine and said, \u201cThis cup...\" - covenant_connection (tier 2)."
+    },
+    {
+      "anchor_ref": "2Cor.3.6",
+      "cross_ref": "Rom.2.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"He has enabled us to be ministers of his new covenant. ...\" and \"In fact, uncircumcised Gentiles who keep God\u2019s law will...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.6",
+      "cross_ref": "Rom.7.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"He has enabled us to be ministers of his new covenant. This ...\" and \"But now we have been released from the law, for we died to i...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.6",
+      "cross_ref": "Rom.8.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"He has enabled us to be ministers of his new covenant. This ...\" and \"And because you belong to him, the power* of the life-giving...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.6",
+      "cross_ref": "Heb.8.8-13",
+      "primary_category": "covenant_connection",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "2 Cor 3:6 \"He has enabled us to be ministers of his new covenant. This is a ...\" new covenant connects to \"[err]...\" - covenant_connection (tier 2)."
+    },
+    {
+      "anchor_ref": "2Cor.3.7",
+      "cross_ref": "Exod.34.29-35",
+      "primary_category": "typology",
+      "secondary_category": null,
+      "confidence": 91,
+      "reasoning": "2 Cor 3 \"The old way,* with laws etched in stone, led to death, though it ...\" Moses glory vs Exod 34 \"[err]...\" - Moses glory prefigures Christ, typology (tier 2)."
+    },
+    {
+      "anchor_ref": "2Cor.3.9",
+      "cross_ref": "Deut.27.26",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If the old way, which brings condemnation, was glorious...\" and \"\u2018Cursed is anyone who does not affirm and obey the term...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.9",
+      "cross_ref": "Rom.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If the old way, which brings condemnation, was glorious...\" and \"This Good News tells us how God makes us right in his s...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.9",
+      "cross_ref": "Rom.3.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If the old way, which brings condemnation, was glorious...\" and \"But now God has shown us a way to be made right with hi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.10-11",
+      "cross_ref": "Exod.34.29-30",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"[err]...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.10-11",
+      "cross_ref": "John.17.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"[err]...\" and \"All who are mine belong to you, and you have given them...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.10-11",
+      "cross_ref": "John.17.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"[err]...\" and \"\u201cI have given them the glory you gave me, so they may b...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.13",
+      "cross_ref": "Exod.34.33-35",
+      "primary_category": "typology",
+      "secondary_category": null,
+      "confidence": 91,
+      "reasoning": "2 Cor 3 \"We are not like Moses, who put a veil over his face so the people...\" Moses glory vs Exod 34 \"[err]...\" - Moses glory prefigures Christ, typology (tier 2)."
+    },
+    {
+      "anchor_ref": "2Cor.3.14",
+      "cross_ref": "Rom.11.7-8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But the people\u2019s minds were hardened, and to this day w...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.14",
+      "cross_ref": "2Cor.4.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But the people\u2019s minds were hardened, and to this day w...\" and \"Satan, who is the god of this world, has blinded the mi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.16",
+      "cross_ref": "Rom.11.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But whenever someone turns to the Lord, the veil is tak...\" and \"And if the people of Israel turn from their unbelief, t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.17",
+      "cross_ref": "Gal.4.6-7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For the Lord is the Spirit, and wherever the Spirit of ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.18",
+      "cross_ref": "Rom.8.29",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So all of us who have had that veil removed can see and...\" and \"For God knew his people in advance, and he chose them t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.18",
+      "cross_ref": "2Cor.4.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared glory theme: \"So all of us who have had that veil removed can see and refl...\" and \"Satan, who is the god of this world, has blinded the minds o...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.3.18",
+      "cross_ref": "2Cor.4.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared glory theme: \"So all of us who have had that veil removed can see and refl...\" and \"For God, who said, \u201cLet there be light in the darkness,\u201d has...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.2",
+      "cross_ref": "2Cor.2.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We reject all shameful deeds and underhanded methods. W...\" and \"You see, we are not like the many hucksters* who preach...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.2",
+      "cross_ref": "1Thes.2.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We reject all shameful deeds and underhanded methods. W...\" and \"Never once did we try to win you with flattery, as you ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.3",
+      "cross_ref": "1Cor.1.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If the Good News we preach is hidden behind a veil, it ...\" and \"The message of the cross is foolish to those who are he...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.3",
+      "cross_ref": "2Cor.3.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If the Good News we preach is hidden behind a veil, it ...\" and \"But the people\u2019s minds were hardened, and to this day w...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.4",
+      "cross_ref": "John.12.39-41",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Satan, who is the god of this world, has blinded the mi...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.4",
+      "cross_ref": "2Cor.3.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Satan, who is the god of this world, has blinded the mi...\" and \"But the people\u2019s minds were hardened, and to this day w...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.4",
+      "cross_ref": "Col.1.15",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Christ as image of God: \"Satan, who is the god of this world, has blinded the minds of tho...\" and \"Christ is the visible image of the invisible God. He existed...\" both affirm deity - christological_parallel (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.4.4",
+      "cross_ref": "Heb.1.3",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Christ as image of God: \"Satan, who is the god of this world, has blinded the minds of tho...\" and \"The Son radiates God\u2019s own glory and expresses the very char...\" both affirm deity - christological_parallel (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.4.5",
+      "cross_ref": "1Cor.9.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You see, we don\u2019t go around preaching about ourselves. ...\" and \"Even though I am a free man with no master, I have beco...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.5",
+      "cross_ref": "2Cor.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You see, we don\u2019t go around preaching about ourselves. ...\" and \"But that does not mean we want to dominate you by telli...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "Gen.1.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"Then God said, \u201cLet there be light,\u201d and there was ligh...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "Ps.36.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"For you are the fountain of life, the light by which we...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "John.8.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"Jesus spoke to the people once more and said, \u201cI am the...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "John.12.46",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"I have come as a light to shine in this dark world, so ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "Eph.5.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"For once you were full of darkness, but now you have li...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "Eph.5.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"for the light makes everything visible. This is why it ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "1Pet.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"But you are not like that, for you are a chosen people....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.6",
+      "cross_ref": "2Pet.1.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God, who said, \u201cLet there be light in the darkness,...\" and \"Because of that experience, we have even greater confid...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.7",
+      "cross_ref": "2Cor.5.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We now have this light shining in our hearts, but we ou...\" and \"For we know that when this earthly tent we live in is t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.7",
+      "cross_ref": "2Tim.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We now have this light shining in our hearts, but we ou...\" and \"In a wealthy home some utensils are made of gold and si...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.8",
+      "cross_ref": "2Cor.7.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are pressed on every side by troubles, but we are no...\" and \"When we arrived in Macedonia, there was no rest for us....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.9",
+      "cross_ref": "Rom.8.35",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are hunted down, but never abandoned by God. We get ...\" and \"Can anything ever separate us from Christ\u2019s love? Does ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "Rom.8.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared suffering theme: \"Through suffering, our bodies continue to share in the death...\" and \"And since we are his children, we are his heirs. In fact, to...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "1Cor.15.31",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Through suffering, our bodies continue to share in the ...\" and \"For I swear, dear brothers and sisters, that I face dea...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "Gal.6.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Through suffering, our bodies continue to share in the ...\" and \"From now on, don\u2019t let anyone trouble me with these thi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "Phil.3.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Through suffering, our bodies continue to share in the ...\" and \"I want to know Christ and experience the mighty power t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "Col.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared suffering theme: \"Through suffering, our bodies continue to share in the death...\" and \"I am glad when I suffer for you in my body, for I am partici...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "2Tim.2.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Through suffering, our bodies continue to share in the ...\" and \"This is a trustworthy saying: If we die with him, we wi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.10",
+      "cross_ref": "1Pet.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared suffering theme: \"Through suffering, our bodies continue to share in the death...\" and \"Instead, be very glad\u2014for these trials make you partners wit...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.14",
+      "cross_ref": "1Thes.2.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We know that God, who raised the Lord Jesus,* will also...\" and \"After all, what gives us hope and joy, and what will be...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.15",
+      "cross_ref": "2Cor.1.3-6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"All of this is for your benefit. And as God\u2019s grace rea...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.16",
+      "cross_ref": "Eph.3.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"That is why we never give up. Though our bodies are dying, o...\" and \"I pray that from his glorious, unlimited resources he will e...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.16",
+      "cross_ref": "Col.3.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"That is why we never give up. Though our bodies are dyi...\" and \"Put on your new nature, and be renewed as you learn to ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.17",
+      "cross_ref": "Rom.8.17-18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For our present troubles are small and won\u2019t last very ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.17",
+      "cross_ref": "1Pet.1.6-7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For our present troubles are small and won\u2019t last very ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.18",
+      "cross_ref": "Rom.8.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So we don\u2019t look at the troubles we can see now; rather...\" and \"We were given this hope when we were saved. (If we alre...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.4.18",
+      "cross_ref": "2Cor.5.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So we don\u2019t look at the troubles we can see now; rather...\" and \"For we live by believing and not by seeing....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.1",
+      "cross_ref": "1Cor.15.47",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For we know that when this earthly tent we live in is t...\" and \"Adam, the first man, was made from the dust of the eart...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.1",
+      "cross_ref": "2Cor.4.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For we know that when this earthly tent we live in is t...\" and \"We now have this light shining in our hearts, but we ou...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.1",
+      "cross_ref": "2Pet.1.13-14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For we know that when this earthly tent we live in is t...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.2",
+      "cross_ref": "Rom.8.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We grow weary in our present bodies, and we long to put...\" and \"And we believers also groan, even though we have the Ho...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.2",
+      "cross_ref": "1Cor.15.53-54",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We grow weary in our present bodies, and we long to put...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.4",
+      "cross_ref": "1Cor.15.53-54",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"While we live in these earthly bodies, we groan and sig...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.5",
+      "cross_ref": "Rom.8.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"God himself has prepared us for this, and as a guarantee he ...\" and \"And we believers also groan, even though we have the Holy Sp...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.5",
+      "cross_ref": "2Cor.1.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"God himself has prepared us for this, and as a guarantee he ...\" and \"and he has identified us as his own by placing the Holy Spir...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.5",
+      "cross_ref": "Eph.1.13-14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"God himself has prepared us for this, and as a guarante...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.7",
+      "cross_ref": "1Cor.13.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For we live by believing and not by seeing....\" and \"Now we see things imperfectly, like puzzling reflection...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.8",
+      "cross_ref": "Phil.1.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Yes, we are fully confident, and we would rather be awa...\" and \"I\u2019m torn between two desires: I long to go and be with ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.10",
+      "cross_ref": "Matt.16.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For we must all stand before Christ to be judged. We wi...\" and \"For the Son of Man will come with his angels in the glo...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.12",
+      "cross_ref": "2Cor.1.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are we commending ourselves to you again? No, we are gi...\" and \"even if you don\u2019t understand us now. Then on the day wh...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.12",
+      "cross_ref": "2Cor.3.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are we commending ourselves to you again? No, we are gi...\" and \"Are we beginning to praise ourselves again? Are we like...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.14",
+      "cross_ref": "Rom.6.6-7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Either way, Christ\u2019s love controls us.* Since we believ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.14",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Either way, Christ\u2019s love controls us.* Since we believ...\" and \"My old self has been crucified with Christ.* It is no l...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.14",
+      "cross_ref": "Col.3.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Either way, Christ\u2019s love controls us.* Since we believ...\" and \"For you died to this life, and your real life is hidden...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.15",
+      "cross_ref": "Rom.14.7-9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"He died for everyone so that those who receive his new ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.16",
+      "cross_ref": "2Cor.10.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So we have stopped evaluating others from a human point...\" and \"*We use God\u2019s mighty weapons, not worldly weapons, to k...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.17",
+      "cross_ref": "Gal.6.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"This means that anyone who belongs to Christ has become...\" and \"It doesn\u2019t matter whether we have been circumcised or n...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.17",
+      "cross_ref": "Rev.21.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"This means that anyone who belongs to Christ has become...\" and \"And the one sitting on the throne said, \u201cLook, I am mak...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.18",
+      "cross_ref": "Rom.5.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And all of this is a gift from God, who brought us back...\" and \"For since our friendship with God was restored by the d...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.19",
+      "cross_ref": "Rom.3.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God was in Christ, reconciling the world to himself...\" and \"Yet God, in his grace, freely makes us right in his sig...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.19",
+      "cross_ref": "Rom.4.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God was in Christ, reconciling the world to himself...\" and \"Yes, what joy for those whose record the LORD has clear...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.20",
+      "cross_ref": "Eph.6.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So we are Christ\u2019s ambassadors; God is making his appea...\" and \"I am in chains now, still preaching this message as God...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.21",
+      "cross_ref": "Jer.23.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God made Christ, who never sinned, to be the offeri...\" and \"And this will be his name: \u2018The LORD Is Our Righteousne...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.21",
+      "cross_ref": "Gal.3.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God made Christ, who never sinned, to be the offeri...\" and \"But Christ has rescued us from the curse pronounced by ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.21",
+      "cross_ref": "Heb.4.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God made Christ, who never sinned, to be the offeri...\" and \"This High Priest of ours understands our weaknesses, fo...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.21",
+      "cross_ref": "Heb.7.26",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God made Christ, who never sinned, to be the offeri...\" and \"He is the kind of high priest we need because he is hol...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.5.21",
+      "cross_ref": "1Pet.2.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God made Christ, who never sinned, to be the offeri...\" and \"He never sinned, nor ever deceived anyone.*...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.1",
+      "cross_ref": "1Cor.3.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"As God\u2019s partners,* we beg you not to accept this marve...\" and \"For we are both God\u2019s workers. And you are God\u2019s field....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.1",
+      "cross_ref": "2Cor.5.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"As God\u2019s partners,* we beg you not to accept this marve...\" and \"So we are Christ\u2019s ambassadors; God is making his appea...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.3",
+      "cross_ref": "1Cor.8.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We live in such a way that no one will stumble because ...\" and \"But you must be careful so that your freedom does not c...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.3",
+      "cross_ref": "1Cor.9.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We live in such a way that no one will stumble because ...\" and \"If you support others who preach to you, shouldn\u2019t we h...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.4",
+      "cross_ref": "2Cor.4.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"In everything we do, we show that we are true ministers...\" and \"We reject all shameful deeds and underhanded methods. W...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.5",
+      "cross_ref": "2Cor.11.23-27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We have been beaten, been put in prison, faced angry mo...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.6",
+      "cross_ref": "1Tim.4.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We prove ourselves by our purity, our understanding, ou...\" and \"Don\u2019t let anyone think less of you because you are youn...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.7",
+      "cross_ref": "1Cor.2.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We faithfully preach the truth. God\u2019s power is working ...\" and \"And my message and my preaching were very plain. Rather...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.7",
+      "cross_ref": "2Cor.10.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We faithfully preach the truth. God\u2019s power is working ...\" and \"*We use God\u2019s mighty weapons, not worldly weapons, to k...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.8",
+      "cross_ref": "Matt.27.63",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We serve God whether people honor us or despise us, whe...\" and \"They told him, \u201cSir, we remember what that deceiver onc...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.8",
+      "cross_ref": "1Cor.4.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We serve God whether people honor us or despise us, whe...\" and \"Our dedication to Christ makes us look like fools, but ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.8",
+      "cross_ref": "1Cor.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We serve God whether people honor us or despise us, whe...\" and \"We appeal gently when evil things are said about us. Ye...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.9",
+      "cross_ref": "Ps.118.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are ignored, even though we are well known. We live ...\" and \"The LORD has punished me severely, but he did not let m...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.9",
+      "cross_ref": "2Cor.1.8-10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are ignored, even though we are well known. We live ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.9",
+      "cross_ref": "2Cor.4.10-11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are ignored, even though we are well known. We live ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.10",
+      "cross_ref": "Rom.8.32",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Our hearts ache, but we always have joy. We are poor, b...\" and \"Since he did not spare even his own Son but gave him up...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.10",
+      "cross_ref": "1Cor.3.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Our hearts ache, but we always have joy. We are poor, b...\" and \"So don\u2019t boast about following a particular human leade...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.10",
+      "cross_ref": "2Cor.8.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Our hearts ache, but we always have joy. We are poor, b...\" and \"You know the generous grace of our Lord Jesus Christ. T...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.11",
+      "cross_ref": "2Cor.7.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Oh, dear Corinthian friends! We have spoken honestly wi...\" and \"I\u2019m not saying this to condemn you. I said before that ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.14",
+      "cross_ref": "Eph.5.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Don\u2019t team up with those who are unbelievers. How can r...\" and \"Don\u2019t participate in the things these people do....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.14",
+      "cross_ref": "Eph.5.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Don\u2019t team up with those who are unbelievers. How can r...\" and \"Take no part in the worthless deeds of evil and darknes...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.14",
+      "cross_ref": "1Jn.1.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Don\u2019t team up with those who are unbelievers. How can r...\" and \"So we are lying if we say we have fellowship with God b...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.16",
+      "cross_ref": "Lev.26.12",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "2 Cor 6:16 \"And what union can there be between God\u2019s temple and idols? For w...\" quotes \"I will walk among you; I will be your God, and you will...\" on God dwelling - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.6.16",
+      "cross_ref": "Jer.32.38",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And what union can there be between God\u2019s temple and id...\" and \"They will be my people, and I will be their God....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.6.16",
+      "cross_ref": "Ezek.37.27",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "2 Cor 6:16 \"And what union can there be between God\u2019s temple and idols? For w...\" quotes \"I will make my home among them. I will be their God, an...\" on God dwelling - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.6.17",
+      "cross_ref": "Ezek.20.34",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "2 Cor 6:17 \"Therefore, come out from among unbelievers, and separate yourselv...\" quotes Ezek 20:34 \"And in anger I will reach out with my strong hand and p...\" - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.6.18",
+      "cross_ref": "2Sam.7.8",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "2 Cor 6:18 \"And I will be your Father, and you will be my sons and daughters,...\" quotes 2 Sam 7:14 \"\u201cNow go and say to my servant David, \u2018This is what the ...\" covenant - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.6.18",
+      "cross_ref": "2Sam.7.14",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "2 Cor 6:18 \"And I will be your Father, and you will be my sons and daughters,...\" quotes 2 Sam 7:14 \"I will be his father, and he will be my son. If he sins...\" covenant - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.6.18",
+      "cross_ref": "Jer.31.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And I will be your Father, and you will be my sons and ...\" and \"Tears of joy will stream down their faces, and I will l...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.1",
+      "cross_ref": "1Pet.1.15-16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Because we have these promises, dear friends, let us cl...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.2",
+      "cross_ref": "2Cor.6.12-13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Please open your hearts to us. We have not done wrong t...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.3",
+      "cross_ref": "2Cor.6.11-12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I\u2019m not saying this to condemn you. I said before that ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.3",
+      "cross_ref": "Phil.1.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I\u2019m not saying this to condemn you. I said before that ...\" and \"So it is right that I should feel as I do about all of ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.4",
+      "cross_ref": "2Cor.8.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I have the highest confidence in you, and I take great ...\" and \"So show them your love, and prove to all the churches t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.5",
+      "cross_ref": "2Cor.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When we arrived in Macedonia, there was no rest for us....\" and \"But I had no peace of mind because my dear brother Titu...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.5",
+      "cross_ref": "2Cor.4.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When we arrived in Macedonia, there was no rest for us....\" and \"We are pressed on every side by troubles, but we are no...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.6",
+      "cross_ref": "2Cor.1.3-4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But God, who encourages those who are discouraged, enco...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.6",
+      "cross_ref": "2Cor.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But God, who encourages those who are discouraged, enco...\" and \"But I had no peace of mind because my dear brother Titu...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.8",
+      "cross_ref": "2Cor.2.2-4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am not sorry that I sent that severe letter to you, t...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.10",
+      "cross_ref": "Matt.27.3-5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For the kind of sorrow God wants us to experience leads...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.12",
+      "cross_ref": "1Cor.5.1-2",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Same situation: \"My purpose, then, was not to write about who did the wrong o...\" continues 1 Cor 5 \"[err]...\" discipline case - narrative_continuation (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.7.12",
+      "cross_ref": "2Cor.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"My purpose, then, was not to write about who did the wr...\" and \"That is why I wrote to you as I did, so that when I do ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.12",
+      "cross_ref": "2Cor.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"My purpose, then, was not to write about who did the wr...\" and \"I wrote to you as I did to test you and see if you woul...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.13",
+      "cross_ref": "2Cor.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We have been greatly encouraged by this. In addition to...\" and \"But I had no peace of mind because my dear brother Titu...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.15",
+      "cross_ref": "Phil.2.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Now he cares for you more than ever when he remembers t...\" and \"Dear friends, you always followed my instructions when ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.16",
+      "cross_ref": "2Cor.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am very happy now because I have complete confidence ...\" and \"That is why I wrote to you as I did, so that when I do ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.16",
+      "cross_ref": "2Thes.3.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am very happy now because I have complete confidence ...\" and \"And we are confident in the Lord that you are doing and...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.7.16",
+      "cross_ref": "Phlm.1.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am very happy now because I have complete confidence ...\" and \"I am confident as I write this letter that you will do ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.2",
+      "cross_ref": "2Cor.9.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"They are being tested by many troubles, and they are ve...\" and \"Yes, you will be enriched in every way so that you can ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.4",
+      "cross_ref": "Rom.15.26",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"They begged us again and again for the privilege of sha...\" and \"For you see, the believers in Macedonia and Achaia* hav...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.4",
+      "cross_ref": "1Cor.16.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"They begged us again and again for the privilege of sha...\" and \"Now regarding your question about the money being colle...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.4",
+      "cross_ref": "1Cor.16.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"They begged us again and again for the privilege of sha...\" and \"When I come, I will write letters of recommendation for...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.6",
+      "cross_ref": "2Cor.12.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So we have urged Titus, who encouraged your giving in t...\" and \"The only thing I failed to do, which I do in the other ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.6",
+      "cross_ref": "2Cor.12.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So we have urged Titus, who encouraged your giving in t...\" and \"When I urged Titus to visit you and sent our other brot...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.7",
+      "cross_ref": "1Cor.1.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Since you excel in so many ways\u2014in your faith, your gif...\" and \"Through him, God has enriched your church in every way\u2014...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.7",
+      "cross_ref": "1Cor.16.1-2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Since you excel in so many ways\u2014in your faith, your gif...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.7",
+      "cross_ref": "2Cor.9.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Since you excel in so many ways\u2014in your faith, your gif...\" and \"And God will generously provide all you need. Then you ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.9",
+      "cross_ref": "Matt.8.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You know the generous grace of our Lord Jesus Christ. T...\" and \"But Jesus replied, \u201cFoxes have dens to live in, and bir...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.9",
+      "cross_ref": "Phil.2.6-7",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 91,
+      "reasoning": "Incarnation/humility: \"You know the generous grace of our Lord Jesus Christ. Though he w...\" and \"[err]...\" both describe Christ's self-emptying - christological_parallel (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.8.10",
+      "cross_ref": "2Cor.9.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Here is my advice: It would be good for you to finish w...\" and \"For I know how eager you are to help, and I have been b...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.12",
+      "cross_ref": "Pr.3.27-28",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Whatever you give is acceptable if you give it eagerly....\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.12",
+      "cross_ref": "Mark.12.43-44",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Whatever you give is acceptable if you give it eagerly....\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.12",
+      "cross_ref": "2Cor.9.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"Whatever you give is acceptable if you give it eagerly. And give ...\" and \"You must each decide in your heart how much to give. And don\u2019t gi...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.8.14",
+      "cross_ref": "2Cor.9.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Right now you have plenty and can help those who are in...\" and \"So two good things will result from this ministry of gi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.15",
+      "cross_ref": "Exod.16.18",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "2 Cor 8:15 \"As the Scriptures say, \u201cThose who gathered a lot had nothing left...\" quotes Exod 16:18 \"But when they measured it out,* everyone had just enoug...\" on manna - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.8.16",
+      "cross_ref": "2Cor.2.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But thank God! He has given Titus the same enthusiasm f...\" and \"But thank God! He has made us his captives and continue...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.18",
+      "cross_ref": "2Cor.12.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are also sending another brother with Titus. All the...\" and \"When I urged Titus to visit you and sent our other brot...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.19",
+      "cross_ref": "1Cor.16.3-4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"He was appointed by the churches to accompany us as we ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.21",
+      "cross_ref": "Pr.3.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are careful to be honorable before the Lord, but we ...\" and \"Then you will find favor with both God and people, and ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.21",
+      "cross_ref": "Rom.12.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are careful to be honorable before the Lord, but we ...\" and \"Never pay back evil with more evil. Do things in such a...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.23",
+      "cross_ref": "Phil.2.25",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If anyone asks about Titus, say that he is my partner w...\" and \"Meanwhile, I thought I should send Epaphroditus back to...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.8.24",
+      "cross_ref": "2Cor.7.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So show them your love, and prove to all the churches t...\" and \"I have the highest confidence in you, and I take great ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.1",
+      "cross_ref": "2Cor.8.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I really don\u2019t need to write to you about this ministry...\" and \"They begged us again and again for the privilege of sha...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.1",
+      "cross_ref": "2Cor.8.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I really don\u2019t need to write to you about this ministry...\" and \"We are traveling together to guard against any criticis...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.2",
+      "cross_ref": "2Cor.8.11-12",
+      "primary_category": "exemplification",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "Example: \"For I know how eager you are to help, and I have been boasting to...\" illustrates generosity principle - exemplification (tier 5)."
+    },
+    {
+      "anchor_ref": "2Cor.9.2",
+      "cross_ref": "2Cor.8.19",
+      "primary_category": "exemplification",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "Example: \"For I know how eager you are to help, and I have been boasting to...\" illustrates generosity principle - exemplification (tier 5)."
+    },
+    {
+      "anchor_ref": "2Cor.9.3",
+      "cross_ref": "1Cor.16.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I am sending these brothers to be sure you really a...\" and \"On the first day of each week, you should each put asid...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.3",
+      "cross_ref": "2Cor.8.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I am sending these brothers to be sure you really a...\" and \"If anyone asks about Titus, say that he is my partner w...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.5",
+      "cross_ref": "Phil.4.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So I thought I should send these brothers ahead of me t...\" and \"I don\u2019t say this because I want a gift from you. Rather...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.6",
+      "cross_ref": "Pr.11.24-25",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Remember this\u2014a farmer who plants only a few seeds will...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.6",
+      "cross_ref": "Pr.22.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"Remember this\u2014a farmer who plants only a few seeds will get a sma...\" and \"Blessed are those who are generous, because they feed the poor....\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.9.6",
+      "cross_ref": "Gal.6.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Remember this\u2014a farmer who plants only a few seeds will...\" and \"Don\u2019t be misled\u2014you cannot mock the justice of God. You...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.6",
+      "cross_ref": "Gal.6.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"Remember this\u2014a farmer who plants only a few seeds will get a sma...\" and \"So let\u2019s not get tired of doing what is good. At just the right t...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.9.7",
+      "cross_ref": "Exod.25.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You must each decide in your heart how much to give. An...\" and \"\u201cTell the people of Israel to bring me their sacred off...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.7",
+      "cross_ref": "Deut.15.7-10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You must each decide in your heart how much to give. An...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.7",
+      "cross_ref": "2Cor.8.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"You must each decide in your heart how much to give. And don\u2019t gi...\" and \"Whatever you give is acceptable if you give it eagerly. And give ...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.9.8",
+      "cross_ref": "Phil.4.19",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"And God will generously provide all you need. Then you will alway...\" and \"And this same God who takes care of me will supply all your needs...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.9.10",
+      "cross_ref": "Hos.10.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For God is the one who provides seed for the farmer and...\" and \"I said, \u2018Plant the good seeds of righteousness, and you...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.11",
+      "cross_ref": "2Cor.1.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"Yes, you will be enriched in every way so that you can always be ...\" and \"And you are helping us by praying for us. Then many people will g...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.9.11",
+      "cross_ref": "2Cor.4.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Yes, you will be enriched in every way so that you can ...\" and \"All of this is for your benefit. And as God\u2019s grace rea...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.9.12",
+      "cross_ref": "2Cor.8.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So two good things will result from this ministry of gi...\" and \"Right now you have plenty and can help those who are in...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.1",
+      "cross_ref": "1Cor.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Now I, Paul, appeal to you with the gentleness and kind...\" and \"I came to you in weakness\u2014timid and trembling....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.1",
+      "cross_ref": "2Cor.10.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Now I, Paul, appeal to you with the gentleness and kind...\" and \"For some say, \u201cPaul\u2019s letters are demanding and forcefu...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.2",
+      "cross_ref": "1Cor.4.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Well, I am begging you now so that when I come I won\u2019t ...\" and \"Which do you choose? Should I come with a rod to punish...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.4",
+      "cross_ref": "Jer.1.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"*We use God\u2019s mighty weapons, not worldly weapons, to k...\" and \"Today I appoint you to stand up against nations and kin...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.4",
+      "cross_ref": "Eph.6.13-17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"*We use God\u2019s mighty weapons, not worldly weapons, to k...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.5",
+      "cross_ref": "1Cor.1.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We destroy every proud obstacle that keeps people from ...\" and \"As the Scriptures say, \u201cI will destroy the wisdom of th...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.6",
+      "cross_ref": "2Cor.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And after you have become fully obedient, we will punis...\" and \"I wrote to you as I did to test you and see if you woul...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.6",
+      "cross_ref": "2Cor.7.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And after you have become fully obedient, we will punis...\" and \"Now he cares for you more than ever when he remembers t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.7",
+      "cross_ref": "John.7.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Look at the obvious facts.* Those who say they belong t...\" and \"Look beneath the surface so you can judge correctly.\u201d...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.7",
+      "cross_ref": "2Cor.11.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Look at the obvious facts.* Those who say they belong t...\" and \"Are they servants of Christ? I know I sound like a madm...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.8",
+      "cross_ref": "2Cor.12.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"I may seem to be boasting too much about the authority given to u...\" and \"If I wanted to boast, I would be no fool in doing so, because I w...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.10.8",
+      "cross_ref": "2Cor.13.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 84,
+      "reasoning": "Giving instructions: \"I may seem to be boasting too much about the authority given to u...\" and \"I am writing this to you before I come, hoping that I won\u2019t need ...\" - parallel_instruction (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.10.10",
+      "cross_ref": "1Cor.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For some say, \u201cPaul\u2019s letters are demanding and forcefu...\" and \"For Christ didn\u2019t send me to baptize, but to preach the...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.10",
+      "cross_ref": "1Cor.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For some say, \u201cPaul\u2019s letters are demanding and forcefu...\" and \"I came to you in weakness\u2014timid and trembling....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.10",
+      "cross_ref": "2Cor.11.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For some say, \u201cPaul\u2019s letters are demanding and forcefu...\" and \"I may be unskilled as a speaker, but I\u2019m not lacking in...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.10",
+      "cross_ref": "Gal.4.13-14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For some say, \u201cPaul\u2019s letters are demanding and forcefu...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.11",
+      "cross_ref": "2Cor.13.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Those people should realize that our actions when we ar...\" and \"I have already warned those who had been sinning when I...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.11",
+      "cross_ref": "2Cor.13.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Those people should realize that our actions when we ar...\" and \"I am writing this to you before I come, hoping that I w...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.12",
+      "cross_ref": "2Cor.3.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Oh, don\u2019t worry; we wouldn\u2019t dare say that we are as wo...\" and \"Are we beginning to praise ourselves again? Are we like...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.12",
+      "cross_ref": "2Cor.5.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Oh, don\u2019t worry; we wouldn\u2019t dare say that we are as wo...\" and \"Are we commending ourselves to you again? No, we are gi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.13",
+      "cross_ref": "Rom.12.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We will not boast about things done outside our area of...\" and \"Because of the privilege and authority* God has given m...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.14",
+      "cross_ref": "1Cor.9.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are not reaching beyond these boundaries when we cla...\" and \"Am I not as free as anyone else? Am I not an apostle? H...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.15",
+      "cross_ref": "Rom.15.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Nor do we boast and claim credit for the work someone e...\" and \"My ambition has always been to preach the Good News whe...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.15",
+      "cross_ref": "2Thes.1.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared faith theme: \"Nor do we boast and claim credit for the work someone else h...\" and \"Dear brothers and sisters,* we can\u2019t help but thank God for ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.17",
+      "cross_ref": "Jer.9.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"As the Scriptures say, \u201cIf you want to boast, boast onl...\" and \"But those who wish to boast should boast in this alone:...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.17",
+      "cross_ref": "1Cor.1.31",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"As the Scriptures say, \u201cIf you want to boast, boast onl...\" and \"Therefore, as the Scriptures say, \u201cIf you want to boast...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.10.18",
+      "cross_ref": "Pr.27.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When people commend themselves, it doesn\u2019t count for mu...\" and \"Let someone else praise you, not your own mouth\u2014 a stra...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.2",
+      "cross_ref": "Hos.2.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For I am jealous for you with the jealousy of God himse...\" and \"I will make you my wife forever, showing you righteousn...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.2",
+      "cross_ref": "Eph.5.26-27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For I am jealous for you with the jealousy of God himse...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.3",
+      "cross_ref": "Gen.3.1-6",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eve's deception: \"But I fear that somehow your pure and undivided devotion to ...\" references Gen 3 \"[err]...\" - historical_reference (tier 5)."
+    },
+    {
+      "anchor_ref": "2Cor.11.3",
+      "cross_ref": "Gen.3.13",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eve's deception: \"But I fear that somehow your pure and undivided devotion to ...\" references Gen 3 \"Then the LORD God asked the woman, \u201cWhat have you ...\" - historical_reference (tier 5)."
+    },
+    {
+      "anchor_ref": "2Cor.11.3",
+      "cross_ref": "John.8.44",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I fear that somehow your pure and undivided devotio...\" and \"For you are the children of your father the devil, and ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.3",
+      "cross_ref": "1Tim.2.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I fear that somehow your pure and undivided devotio...\" and \"And it was not Adam who was deceived by Satan. The woma...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.4",
+      "cross_ref": "Rom.8.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 76,
+      "reasoning": "Shared Spirit theme: \"You happily put up with whatever anyone tells you, even if t...\" and \"So you have not received a spirit that makes you fearful sla...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.4",
+      "cross_ref": "Gal.1.6-8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You happily put up with whatever anyone tells you, even...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.5",
+      "cross_ref": "Gal.2.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I don\u2019t consider myself inferior in any way to thes...\" and \"And the leaders of the church had nothing to add to wha...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.6",
+      "cross_ref": "1Cor.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I may be unskilled as a speaker, but I\u2019m not lacking in...\" and \"For Christ didn\u2019t send me to baptize, but to preach the...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.6",
+      "cross_ref": "Eph.3.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I may be unskilled as a speaker, but I\u2019m not lacking in...\" and \"As you read what I have written, you will understand my...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.7",
+      "cross_ref": "1Cor.9.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Was I wrong when I humbled myself and honored you by pr...\" and \"If you support others who preach to you, shouldn\u2019t we h...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.7",
+      "cross_ref": "1Cor.9.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Was I wrong when I humbled myself and honored you by pr...\" and \"What then is my pay? It is the opportunity to preach th...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.7",
+      "cross_ref": "2Cor.12.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Was I wrong when I humbled myself and honored you by pr...\" and \"The only thing I failed to do, which I do in the other ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.9",
+      "cross_ref": "2Cor.12.13",
+      "primary_category": "exemplification",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "Example: \"And when I was with you and didn\u2019t have enough to live on, I did ...\" illustrates generosity principle - exemplification (tier 5)."
+    },
+    {
+      "anchor_ref": "2Cor.11.11",
+      "cross_ref": "2Cor.7.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Why? Because I don\u2019t love you? God knows that I do....\" and \"I\u2019m not saying this to condemn you. I said before that ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.11",
+      "cross_ref": "2Cor.12.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Why? Because I don\u2019t love you? God knows that I do....\" and \"I will gladly spend myself and all I have for you, even...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.12",
+      "cross_ref": "1Cor.9.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"But I will continue doing what I have always done. This...\" and \"If you support others who preach to you, shouldn\u2019t we h...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.13",
+      "cross_ref": "Rev.2.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"These people are false apostles. They are deceitful wor...\" and \"\u201cI know all the things you do. I have seen your hard wo...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.15",
+      "cross_ref": "Phil.3.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"So it is no wonder that his servants also disguise them...\" and \"They are headed for destruction. Their god is their app...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.16",
+      "cross_ref": "2Cor.12.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Again I say, don\u2019t think that I am a fool to talk like ...\" and \"If I wanted to boast, I would be no fool in doing so, b...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.18",
+      "cross_ref": "Phil.3.3-4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"And since others boast about their human achievements, ...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.20",
+      "cross_ref": "Gal.2.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You put up with it when someone enslaves you, takes eve...\" and \"Even that question came up only because of some so-call...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.20",
+      "cross_ref": "Gal.4.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You put up with it when someone enslaves you, takes eve...\" and \"So now that you know God (or should I say, now that God...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.21",
+      "cross_ref": "2Cor.10.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I\u2019m ashamed to say that we\u2019ve been too \u201cweak\u201d to do tha...\" and \"For some say, \u201cPaul\u2019s letters are demanding and forcefu...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.22",
+      "cross_ref": "Rom.11.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are they Hebrews? So am I. Are they Israelites? So am I...\" and \"I ask, then, has God rejected his own people, the natio...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.22",
+      "cross_ref": "Phil.3.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are they Hebrews? So am I. Are they Israelites? So am I...\" and \"I was circumcised when I was eight days old. I am a pur...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.23",
+      "cross_ref": "Rom.8.36",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are they servants of Christ? I know I sound like a madm...\" and \"(As the Scriptures say, \u201cFor your sake we are killed ev...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.23",
+      "cross_ref": "1Cor.15.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are they servants of Christ? I know I sound like a madm...\" and \"But whatever I am now, it is all because God poured out...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.23",
+      "cross_ref": "2Cor.6.4-5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Are they servants of Christ? I know I sound like a madm...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.24",
+      "cross_ref": "Deut.25.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Five different times the Jewish leaders gave me thirty-...\" and \"But never give more than forty lashes; more than forty ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.26",
+      "cross_ref": "Gal.2.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I have traveled on many long journeys. I have faced dan...\" and \"Even that question came up only because of some so-call...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.27",
+      "cross_ref": "1Cor.4.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I have worked hard and long, enduring many sleepless ni...\" and \"Even now we go hungry and thirsty, and we don\u2019t have en...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.27",
+      "cross_ref": "2Cor.6.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I have worked hard and long, enduring many sleepless ni...\" and \"We have been beaten, been put in prison, faced angry mo...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.29",
+      "cross_ref": "1Cor.9.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Who is weak without my feeling that weakness? Who is le...\" and \"When I am with those who are weak, I share their weakne...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.30",
+      "cross_ref": "2Cor.12.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If I must boast, I would rather boast about the things ...\" and \"That experience is worth boasting about, but I\u2019m not go...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.11.31",
+      "cross_ref": "2Cor.1.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"God, the Father of our Lord Jesus, who is worthy of ete...\" and \"Now I call upon God as my witness that I am telling the...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.1",
+      "cross_ref": "Gal.1.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"This boasting will do no good, but I must go on. I will...\" and \"I received my message from no human source, and no one ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.4",
+      "cross_ref": "Luke.23.43",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"that I was caught up* to paradise and heard things so a...\" and \"And Jesus replied, \u201cI assure you, today you will be wit...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.4",
+      "cross_ref": "Rev.2.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"that I was caught up* to paradise and heard things so a...\" and \"\u201cAnyone with ears to hear must listen to the Spirit and...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.5",
+      "cross_ref": "2Cor.11.30",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"That experience is worth boasting about, but I\u2019m not go...\" and \"If I must boast, I would rather boast about the things ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.6",
+      "cross_ref": "2Cor.10.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"If I wanted to boast, I would be no fool in doing so, b...\" and \"I may seem to be boasting too much about the authority ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.7",
+      "cross_ref": "Job.2.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"even though I have received such wonderful revelations ...\" and \"\u201cAll right, do with him as you please,\u201d the LORD said t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.8",
+      "cross_ref": "Matt.26.39",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Three different times I begged the Lord to take it away...\" and \"He went on a little farther and bowed with his face to ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.8",
+      "cross_ref": "Matt.26.44",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Three different times I begged the Lord to take it away...\" and \"So he went to pray a third time, saying the same things...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.9",
+      "cross_ref": "Phil.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Each time he said, \u201cMy grace is all you need. My power ...\" and \"For I can do everything through Christ,* who gives me s...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.10",
+      "cross_ref": "2Cor.6.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"That\u2019s why I take pleasure in my weaknesses, and in the...\" and \"In everything we do, we show that we are true ministers...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.10",
+      "cross_ref": "2Cor.13.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"That\u2019s why I take pleasure in my weaknesses, and in the...\" and \"Although he was crucified in weakness, he now lives by ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.11",
+      "cross_ref": "2Cor.11.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You have made me act like a fool. You ought to be writi...\" and \"I hope you will put up with a little more of my foolish...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.11",
+      "cross_ref": "2Cor.11.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"You have made me act like a fool. You ought to be writi...\" and \"But I don\u2019t consider myself inferior in any way to thes...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.12",
+      "cross_ref": "Rom.15.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When I was with you, I certainly gave you proof that I ...\" and \"They were convinced by the power of miraculous signs an...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.13",
+      "cross_ref": "1Cor.9.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"The only thing I failed to do, which I do in the other ...\" and \"If you support others who preach to you, shouldn\u2019t we h...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.13",
+      "cross_ref": "1Cor.9.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"The only thing I failed to do, which I do in the other ...\" and \"What then is my pay? It is the opportunity to preach th...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.13",
+      "cross_ref": "2Cor.11.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"The only thing I failed to do, which I do in the other ...\" and \"Was I wrong when I humbled myself and honored you by pr...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.14",
+      "cross_ref": "1Cor.4.14-15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Now I am coming to you for the third time, and I will n...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.14",
+      "cross_ref": "2Cor.13.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Now I am coming to you for the third time, and I will n...\" and \"This is the third time I am coming to visit you (and as...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.15",
+      "cross_ref": "2Cor.11.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I will gladly spend myself and all I have for you, even...\" and \"Why? Because I don\u2019t love you? God knows that I do....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.15",
+      "cross_ref": "Phil.2.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I will gladly spend myself and all I have for you, even...\" and \"But I will rejoice even if I lose my life, pouring it o...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.15",
+      "cross_ref": "1Thes.2.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I will gladly spend myself and all I have for you, even...\" and \"We loved you so much that we shared with you not only G...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.16",
+      "cross_ref": "2Cor.11.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Some of you admit I was not a burden to you. But others...\" and \"And when I was with you and didn\u2019t have enough to live ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.18",
+      "cross_ref": "2Cor.8.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When I urged Titus to visit you and sent our other brot...\" and \"So we have urged Titus, who encouraged your giving in t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.18",
+      "cross_ref": "2Cor.8.16-18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"When I urged Titus to visit you and sent our other brot...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.19",
+      "cross_ref": "Rom.9.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Perhaps you think we\u2019re saying these things just to def...\" and \"With Christ as my witness, I speak with utter truthfuln...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.20",
+      "cross_ref": "1Cor.4.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For I am afraid that when I come I won\u2019t like what I fi...\" and \"Which do you choose? Should I come with a rod to punish...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.20",
+      "cross_ref": "2Cor.2.1-4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For I am afraid that when I come I won\u2019t like what I fi...\" and \"[err]...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.12.21",
+      "cross_ref": "2Cor.13.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Yes, I am afraid that when I come again, God will humbl...\" and \"I have already warned those who had been sinning when I...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.1",
+      "cross_ref": "Deut.19.15",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "2 Cor 13:1 \"This is the third time I am coming to visit you (and as the Scrip...\" quotes Deut 19:15 \"\u201cYou must not convict anyone of a crime on the testimon...\" witness law - quotation (tier 1)."
+    },
+    {
+      "anchor_ref": "2Cor.13.1",
+      "cross_ref": "Matt.18.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"This is the third time I am coming to visit you (and as...\" and \"But if you are unsuccessful, take one or two others wit...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.1",
+      "cross_ref": "2Cor.12.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"This is the third time I am coming to visit you (and as...\" and \"Now I am coming to you for the third time, and I will n...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.1",
+      "cross_ref": "1Tim.5.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"This is the third time I am coming to visit you (and as...\" and \"Do not listen to an accusation against an elder unless ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.2",
+      "cross_ref": "2Cor.1.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I have already warned those who had been sinning when I...\" and \"Now I call upon God as my witness that I am telling the...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.2",
+      "cross_ref": "2Cor.12.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I have already warned those who had been sinning when I...\" and \"Yes, I am afraid that when I come again, God will humbl...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.3",
+      "cross_ref": "Matt.10.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I will give you all the proof you want that Christ spea...\" and \"For it is not you who will be speaking\u2014it will be the S...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.3",
+      "cross_ref": "1Cor.5.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I will give you all the proof you want that Christ spea...\" and \"in the name of the Lord Jesus. You must call a meeting ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.4",
+      "cross_ref": "Rom.1.4",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Weakness/power: \"Although he was crucified in weakness, he now lives by the power ...\" and \"and he was shown to be* the Son of God when he was raised fr...\" - christological_parallel (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.13.4",
+      "cross_ref": "Rom.6.4",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Weakness/power: \"Although he was crucified in weakness, he now lives by the power ...\" and \"For we died and were buried with Christ by baptism. And just...\" - christological_parallel (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.13.4",
+      "cross_ref": "Phil.2.7-8",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Weakness/power: \"Although he was crucified in weakness, he now lives by the power ...\" and \"[err]...\" - christological_parallel (tier 4)."
+    },
+    {
+      "anchor_ref": "2Cor.13.4",
+      "cross_ref": "1Pet.3.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Although he was crucified in weakness, he now lives by ...\" and \"Christ suffered* for our sins once for all time. He nev...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "John.14.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"When I am raised to life again, you will know that I am...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "John.17.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"I am in them and you are in me. May they experience suc...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "John.17.26",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"I have revealed you to them, and I will continue to do ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "Rom.8.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"And Christ lives within you, so even though your body w...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "1Cor.11.28",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"That is why you should examine yourself before eating t...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "Gal.4.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"Oh, my dear children! I feel as if I\u2019m going through la...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.5",
+      "cross_ref": "Col.1.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Examine yourselves to see if your faith is genuine. Tes...\" and \"For God wanted them to know that the riches and glory o...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.8",
+      "cross_ref": "1Cor.13.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"For we cannot oppose the truth, but must always stand f...\" and \"It does not rejoice about injustice but rejoices whenev...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.9",
+      "cross_ref": "1Cor.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are glad to seem weak if it helps show that you are ...\" and \"I came to you in weakness\u2014timid and trembling....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.9",
+      "cross_ref": "1Cor.4.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"We are glad to seem weak if it helps show that you are ...\" and \"Our dedication to Christ makes us look like fools, but ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.10",
+      "cross_ref": "2Cor.10.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am writing this to you before I come, hoping that I w...\" and \"I may seem to be boasting too much about the authority ...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.10",
+      "cross_ref": "2Cor.10.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"I am writing this to you before I come, hoping that I w...\" and \"Those people should realize that our actions when we ar...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.11",
+      "cross_ref": "Rom.15.33",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Dear brothers and sisters,* I close my letter with thes...\" and \"And now may God, who gives us his peace, be with you al...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.11",
+      "cross_ref": "Phil.4.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"Dear brothers and sisters,* I close my letter with thes...\" and \"Always be full of joy in the Lord. I say it again\u2014rejoi...\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.12",
+      "cross_ref": "Rom.16.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 87,
+      "reasoning": "Greeting formula: \"Greet each other with a sacred kiss....\" and \"Greet each other with a sacred kiss. All the churches of Christ s...\" - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.13.12",
+      "cross_ref": "1Cor.16.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 87,
+      "reasoning": "Greeting formula: \"Greet each other with a sacred kiss....\" and \"All the brothers and sisters here send greetings to you. Greet ea...\" - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.13.12",
+      "cross_ref": "1Pet.5.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 87,
+      "reasoning": "Greeting formula: \"Greet each other with a sacred kiss....\" and \"Greet each other with a kiss of love. Peace be with all of you wh...\" - literary_parallel (tier 3)."
+    },
+    {
+      "anchor_ref": "2Cor.13.13",
+      "cross_ref": "Rom.16.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"All of God\u2019s people here send you their greetings....\" and \"The God of peace will soon crush Satan under your feet....\" - theological_principle (tier 6)."
+    },
+    {
+      "anchor_ref": "2Cor.13.13",
+      "cross_ref": "Phil.2.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Doctrinal connection: \"All of God\u2019s people here send you their greetings....\" and \"Is there any encouragement from belonging to Christ? An...\" - theological_principle (tier 6)."
+    }
+  ]
+}

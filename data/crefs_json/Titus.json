@@ -1,0 +1,618 @@
+{
+  "book": "Titus",
+  "book_number": 56,
+  "verified": true,
+  "total_items": 75,
+  "improved_count": 75,
+  "category_distribution": {
+    "literary_parallel": 34,
+    "elaboration": 8,
+    "historical_reference": 2,
+    "thematic_echo": 24,
+    "allusion": 4,
+    "parallel_instruction": 2,
+    "prophecy_fulfillment": 1
+  },
+  "items": [
+    {
+      "anchor_ref": "Titus.1.1",
+      "cross_ref": "1Tim.2.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "1 Timothy states God 'wants all people to be saved and to come to a knowledge of the truth,' paralleling Titus' opening: 'for the faith of God's elect and their knowledge of the truth.' Literary parallel showing Pastoral Epistles' consistent universal soteriology\u2014God's salvific will extends to all, though actualized in the elect who believe."
+    },
+    {
+      "anchor_ref": "Titus.1.2",
+      "cross_ref": "2Tim.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2 Timothy grounds Paul's apostleship in 'the promise of life that is in Christ Jesus,' paralleling Titus' 'resting on the hope of eternal life.' Literary parallel\u2014both Pastoral Epistles root apostolic authority in God's life-giving promise. The parallel shows consistent apostolic self-understanding as herald of divine promise."
+    },
+    {
+      "anchor_ref": "Titus.1.2",
+      "cross_ref": "2Tim.1.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "2 Timothy affirms grace 'given us in Christ Jesus before the beginning of time,' paralleling Titus' 'eternal life...promised before the beginning of time.' Literary parallel showing Pastoral Epistles' emphasis on pretemporal divine planning. God's salvific purpose predates creation, guaranteeing its fulfillment."
+    },
+    {
+      "anchor_ref": "Titus.1.2",
+      "cross_ref": "Titus.3.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Titus 1:2 introduces 'hope of eternal life' as opening theme, which 3:7 elaborates: 'having been justified by his grace, we might become heirs having the hope of eternal life.' Elaboration within epistle\u2014later verse unpacks how hope connects to justification and inheritance. The hope framing the letter's opening finds theological grounding in the closing."
+    },
+    {
+      "anchor_ref": "Titus.1.3",
+      "cross_ref": "1Tim.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both 1 Timothy and Titus identify 'God our Savior' as commissioning authority. Literary parallel showing Pastoral Epistles' distinctive use of 'Savior' (s\u014dt\u0113r) for God the Father\u2014relatively rare in Paul's earlier letters. The parallel demonstrates consistent theological vocabulary within Pastoral corpus."
+    },
+    {
+      "anchor_ref": "Titus.1.3",
+      "cross_ref": "1Tim.1.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Timothy references 'the gospel...that he entrusted to me,' paralleling Titus' 'preaching entrusted to me by the command of God.' Literary parallel showing Paul's consistent understanding of gospel ministry as divine stewardship. Apostolic preaching isn't personal message but entrusted deposit requiring faithful transmission."
+    },
+    {
+      "anchor_ref": "Titus.1.3",
+      "cross_ref": "Titus.2.10",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Titus 1:3 refers to 'God our Savior,' which 2:10 elaborates by describing how believers 'make the teaching about God our Savior attractive.' Elaboration showing how divine salvation becomes visible through transformed conduct. God's saving character is manifested in community ethics."
+    },
+    {
+      "anchor_ref": "Titus.1.4",
+      "cross_ref": "2Cor.2.13",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Paul mentions Titus as co-worker in 2 Corinthians: 'I still had no peace of mind, because I did not find my brother Titus there.' Titus epistle addresses same person\u2014historical reference confirming biographical details. The cross-reference establishes Titus' long ministry partnership with Paul."
+    },
+    {
+      "anchor_ref": "Titus.1.4",
+      "cross_ref": "2Tim.4.10",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2 Timothy references 'Titus has gone to Dalmatia,' confirming same historical figure. Historical reference showing Titus' missionary itinerancy. The reference places this epistle before Titus' Dalmatian mission, providing chronological framework for Titus' Cretan ministry."
+    },
+    {
+      "anchor_ref": "Titus.1.6-9",
+      "cross_ref": "1Tim.3.2-7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "Nearly identical elder/overseer qualification lists appear in both Pastoral Epistles: blameless, one wife, manages household well, not violent/quarrelsome, hospitable, able to teach, etc. Direct literary parallel showing consistent church order standards. Both texts establish same leadership requirements, confirming unified Pastoral ecclesiology."
+    },
+    {
+      "anchor_ref": "Titus.1.6-9",
+      "cross_ref": "2Tim.2.24-26",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "2 Timothy describes Lord's servant as 'not quarrelsome but kind to everyone, able to teach, not resentful,' paralleling Titus' elder qualifications: 'not quick-tempered...holding firmly to the trustworthy message as it has been taught.' Literary parallel showing consistent Pastoral emphasis on teaching ability and gentle temperament for leaders."
+    },
+    {
+      "anchor_ref": "Titus.1.7",
+      "cross_ref": "1Cor.4.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Paul calls apostles 'those entrusted with the mysteries God has revealed' (stewards), which Titus echoes by calling overseer 'God's steward' (oikonomos). Both use stewardship metaphor for ministerial responsibility. Thematic echo showing church leadership as divine entrustment requiring faithful management."
+    },
+    {
+      "anchor_ref": "Titus.1.9",
+      "cross_ref": "1Tim.1.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both Pastoral Epistles reference 'sound doctrine' (hygiainous\u0113 didaskalia): 1 Timothy lists vices contrary to it; Titus requires elders to hold firmly to it. Literary parallel showing distinctive Pastoral vocabulary\u2014'sound doctrine' appears almost exclusively in these letters. The health metaphor portrays orthodox teaching as spiritual wellness."
+    },
+    {
+      "anchor_ref": "Titus.1.9",
+      "cross_ref": "2Tim.4.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "2 Timothy warns of time when people 'will not endure sound teaching,' paralleling Titus' requirement that elders 'hold firmly to the trustworthy message' to refute those opposing it. Literary parallel showing Pastoral concern with doctrinal drift. Sound teaching requires active defense against false alternatives."
+    },
+    {
+      "anchor_ref": "Titus.1.9",
+      "cross_ref": "Titus.2.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Titus 1:9 requires elders to hold to sound doctrine and refute opponents, which 2:1 applies to Titus: 'You, however, must teach what is appropriate to sound doctrine.' Elaboration\u2014elder qualification becomes ministerial mandate. The requirement for elders becomes Titus' own teaching responsibility."
+    },
+    {
+      "anchor_ref": "Titus.1.10",
+      "cross_ref": "1Tim.1.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "1 Timothy describes those who 'have turned to meaningless talk,' paralleling Titus' description of 'many rebellious people, full of meaningless talk.' Literary parallel showing Pastoral concern with empty theological speculation. Both texts critique verbosity divorced from truth and godliness."
+    },
+    {
+      "anchor_ref": "Titus.1.11",
+      "cross_ref": "1Tim.5.13",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "1 Timothy warns about idle people going 'about from house to house...saying things they ought not to,' echoing Titus' concern with false teachers who 'are disrupting whole households.' Both texts address domestic infiltration by troublemakers. Thematic echo of concern for protecting household integrity from false teaching."
+    },
+    {
+      "anchor_ref": "Titus.1.13",
+      "cross_ref": "1Tim.5.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "1 Timothy instructs 'rebuke publicly' those who persist in sin; Titus commands 'rebuke them sharply' (the false teachers). Literary parallel showing Pastoral emphasis on public correction. Both texts balance gentleness with firm rebuke when necessary for community health."
+    },
+    {
+      "anchor_ref": "Titus.1.14",
+      "cross_ref": "Col.2.22",
+      "primary_category": "thematic_echo",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Colossians critiques 'human commands and teachings' regarding ceremonial rules, echoing Titus' warning against 'commands of those who reject the truth.' Both texts oppose legalistic systems imposing extra-biblical requirements. Thematic echo showing consistent Pauline concern with protecting gospel freedom from human traditions."
+    },
+    {
+      "anchor_ref": "Titus.1.14",
+      "cross_ref": "1Tim.1.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "1 Timothy warns against 'myths and endless genealogies' that promote speculation, paralleling Titus' rejection of 'Jewish myths.' Literary parallel showing Pastoral concern with speculative theology. Both texts prioritize practical godliness over elaborate mythological systems."
+    },
+    {
+      "anchor_ref": "Titus.1.14",
+      "cross_ref": "1Tim.4.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "1 Timothy commands 'have nothing to do with godless myths,' nearly identical to Titus' 'not paying attention to Jewish myths.' Direct literary parallel with nearly identical vocabulary (mythoi). Both texts use same dismissive formula for rejecting false teaching."
+    },
+    {
+      "anchor_ref": "Titus.1.14",
+      "cross_ref": "2Tim.4.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "2 Timothy warns people 'will turn their ears away from the truth and turn aside to myths,' paralleling Titus' concern with 'Jewish myths' distracting from truth. Literary parallel showing consistent Pastoral contrast between truth and myth. False teaching presents attractive alternatives to orthodox doctrine."
+    },
+    {
+      "anchor_ref": "Titus.1.15",
+      "cross_ref": "Matt.15.10-11",
+      "primary_category": "allusion",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "Jesus teaches 'what goes into someone's mouth does not defile them,' which Titus echoes: 'To the pure, all things are pure.' Allusion to Jesus' teaching on ritual purity. Both texts reject external defilement categories, locating corruption in heart rather than contact with material objects."
+    },
+    {
+      "anchor_ref": "Titus.1.15",
+      "cross_ref": "Rom.14.14-20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "Romans affirms 'no food is unclean in itself' and 'everything is indeed clean,' paralleling Titus' 'to the pure, all things are pure.' Literary parallel showing consistent Pauline theology of ritual purity. Both texts ground cleanness in person's status rather than object's nature."
+    },
+    {
+      "anchor_ref": "Titus.1.16",
+      "cross_ref": "1Jn.1.6",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 John condemns those who 'claim to have fellowship with him and yet walk in the darkness,' echoing Titus' critique: 'They claim to know God, but by their actions they deny him.' Both texts expose gap between profession and practice. Thematic echo showing consistent early Christian test of authenticity through conduct."
+    },
+    {
+      "anchor_ref": "Titus.1.16",
+      "cross_ref": "1Jn.2.4",
+      "primary_category": "thematic_echo",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 John states 'whoever says, 'I know him,' but does not do what he commands is a liar,' nearly identical to Titus' 'They claim to know God, but by their actions they deny him.' Thematic echo approaching literary parallel. Both use identical logic: profession without obedience equals falsehood."
+    },
+    {
+      "anchor_ref": "Titus.2.1",
+      "cross_ref": "1Tim.1.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Same as Titus 1:9\u2014both Pastoral Epistles emphasize 'sound doctrine' (hygiainous\u0113 didaskalia) as ministerial standard. Literary parallel showing distinctive Pastoral vocabulary. The health metaphor portrays false teaching as spiritual disease requiring doctrinal cure."
+    },
+    {
+      "anchor_ref": "Titus.2.1",
+      "cross_ref": "Titus.1.9",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Titus 1:9 requires elders to hold sound doctrine; 2:1 applies this to Titus' teaching ministry. Elaboration showing how elder qualification becomes pastoral responsibility. The standard for leaders becomes mandate for minister."
+    },
+    {
+      "anchor_ref": "Titus.2.3",
+      "cross_ref": "1Tim.3.8",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "1 Timothy lists deacon qualifications including 'not indulging in much wine,' paralleling Titus' instruction for older women to 'not be addicted to much wine.' Literary parallel showing consistent Pastoral standards across leadership roles and demographics. Sobriety is universal Christian virtue."
+    },
+    {
+      "anchor_ref": "Titus.2.3",
+      "cross_ref": "1Tim.3.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Timothy requires women in ministry to 'not be malicious talkers,' paralleling Titus' instruction for older women to 'not be slanderers.' Literary parallel showing consistent behavioral standards for women in church leadership. Both texts emphasize speech integrity."
+    },
+    {
+      "anchor_ref": "Titus.2.5",
+      "cross_ref": "Eph.5.22",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "Ephesians instructs 'Wives, submit yourselves to your own husbands,' paralleling Titus' instruction for younger women to 'be subject to their husbands.' Parallel instruction showing widespread early Christian domestic teaching tradition. Both texts give similar commands addressing wives' conduct in household order."
+    },
+    {
+      "anchor_ref": "Titus.2.5",
+      "cross_ref": "1Tim.5.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "1 Timothy instructs younger widows to 'marry, have children, manage their homes,' paralleling Titus' instruction for younger women to 'be busy at home.' Literary parallel showing Pastoral emphasis on domestic responsibility for younger women. Both texts prioritize household management as primary feminine vocation."
+    },
+    {
+      "anchor_ref": "Titus.2.7",
+      "cross_ref": "1Tim.4.12",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "1 Timothy instructs Timothy to 'set an example for the believers in speech, in conduct,' paralleling Titus' instruction to be 'an example by doing what is good.' Literary parallel showing Pastoral emphasis on ministerial modeling. Young leaders establish authority through exemplary conduct."
+    },
+    {
+      "anchor_ref": "Titus.2.7",
+      "cross_ref": "1Pet.5.3",
+      "primary_category": "thematic_echo",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Peter instructs elders to be 'examples to the flock,' echoing Titus' call to be 'an example by doing what is good.' Both texts emphasize leadership through modeling rather than domination. Thematic echo showing shared early Christian understanding of leadership as exemplary service."
+    },
+    {
+      "anchor_ref": "Titus.2.8",
+      "cross_ref": "1Pet.2.12",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Peter instructs believers to 'live such good lives among the pagans that...they may see your good deeds,' echoing Titus' concern that sound speech silences critics. Both texts emphasize apologetic function of conduct\u2014exemplary living disarms opposition. Thematic echo of witness through ethical integrity."
+    },
+    {
+      "anchor_ref": "Titus.2.9",
+      "cross_ref": "Eph.6.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "Ephesians instructs 'Slaves, obey your earthly masters,' paralleling Titus' 'Teach slaves to be subject to their masters.' Parallel instruction showing NT domestic teaching tradition addressing slave conduct. Both texts give similar commands instructing Christian slaves to faithful service as witness."
+    },
+    {
+      "anchor_ref": "Titus.2.11",
+      "cross_ref": "1Tim.2.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "1 Timothy affirms God 'wants all people to be saved,' paralleling Titus' 'the grace of God has appeared that offers salvation to all people.' Literary parallel showing Pastoral emphasis on universal gospel scope. Both texts stress salvation's availability to all humanity."
+    },
+    {
+      "anchor_ref": "Titus.2.11",
+      "cross_ref": "2Tim.1.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Timothy describes Christ who 'brought life and immortality to light through the gospel,' paralleling Titus' grace that 'has appeared' bringing salvation. Literary parallel showing Pastoral emphasis on gospel as revelation event. Christ's coming manifests previously hidden divine purpose."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "John.1.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "John's prologue affirms 'the Word was God,' which Titus parallels by calling Jesus 'our great God and Savior, Jesus Christ.' Both texts explicitly identify Jesus with divine nature. Thematic echo of highest NT Christology\u2014Jesus receives divine title theos reserved for Yahweh."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "John.20.28",
+      "primary_category": "thematic_echo",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "Thomas confesses 'My Lord and my God' to Jesus, paralleling Titus calling Jesus 'our great God and Savior.' Both texts explicitly call Jesus 'God' (theos). Thematic echo of climactic divine confession\u2014Jesus is identified with God himself. Titus provides one of NT's clearest deity affirmations."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "Rom.9.5",
+      "primary_category": "thematic_echo",
+      "secondary_category": "christological_parallel",
+      "confidence": 85,
+      "reasoning": "Romans' doxology (contested reading) may call Christ 'God over all, forever praised,' paralleling Titus' 'our great God and Savior, Jesus Christ.' Both texts (if Romans is so read) explicitly identify Christ as God. Thematic echo showing Paul's high Christology across his corpus."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "1Cor.1.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "1 Corinthians speaks of 'eagerly waiting for our Lord Jesus Christ to be revealed,' echoing Titus' 'waiting for...the appearing of...Jesus Christ.' Both texts express eschatological expectation of Christ's return. Thematic echo showing consistent Pauline parousia hope."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "Phil.3.20",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Philippians states 'we eagerly await a Savior from there, the Lord Jesus Christ,' paralleling Titus' waiting for 'our great God and Savior, Jesus Christ' to appear. Both texts combine eschatological expectation with Savior Christology. Thematic echo of parousia hope grounded in Christ's saving identity."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "2Pet.1.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "2 Peter refers to 'our God and Savior Jesus Christ,' nearly identical to Titus' 'our great God and Savior, Jesus Christ.' Both use Granville Sharp construction grammatically identifying Jesus as God. Thematic echo showing consistent early Christian high Christology affirming Christ's deity."
+    },
+    {
+      "anchor_ref": "Titus.2.13",
+      "cross_ref": "1Jn.5.20",
+      "primary_category": "thematic_echo",
+      "secondary_category": "christological_parallel",
+      "confidence": 85,
+      "reasoning": "1 John concludes 'He [likely Jesus] is the true God and eternal life,' paralleling Titus calling Jesus 'our great God and Savior.' Both texts (if 1 John refers to Jesus) explicitly identify Jesus as God. Thematic echo of Johannine and Pastoral high Christology converging in divine attribution."
+    },
+    {
+      "anchor_ref": "Titus.2.14",
+      "cross_ref": "Eph.2.10",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Ephesians describes believers 'created in Christ Jesus to do good works,' echoing Titus' description of Christ creating 'a people...eager to do what is good.' Both texts link redemption to good works as purpose. Thematic echo showing salvation produces ethical transformation\u2014grace generates godliness."
+    },
+    {
+      "anchor_ref": "Titus.2.14",
+      "cross_ref": "1Pet.2.9",
+      "primary_category": "allusion",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Peter applies Exodus language to church: 'a people belonging to God,' which Titus echoes: 'purify for himself a people that are his very own.' Both allude to Exodus 19:5 where Israel is God's 'treasured possession.' Allusion showing church as new covenant people inheriting Israel's status."
+    },
+    {
+      "anchor_ref": "Titus.2.14",
+      "cross_ref": "1Jn.1.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 John affirms 'the blood of Jesus...purifies us from all sin,' echoing Titus' description of Christ who 'gave himself for us to redeem us...and to purify.' Both texts link Christ's death to purification. Thematic echo showing consistent early Christian understanding of atonement as cleansing."
+    },
+    {
+      "anchor_ref": "Titus.2.15",
+      "cross_ref": "1Tim.4.12",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "1 Timothy instructs 'Don't let anyone look down on you,' paralleling Titus' 'Do not let anyone despise you.' Literary parallel showing Pastoral concern for young ministers' authority. Both texts encourage assertive leadership despite youth."
+    },
+    {
+      "anchor_ref": "Titus.3.1",
+      "cross_ref": "Rom.13.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "Romans commands 'be subject to the governing authorities,' paralleling Titus' 'Remind the people to be subject to rulers and authorities.' Thematic echo showing consistent Pauline political ethic. Christians submit to civil government as general principle."
+    },
+    {
+      "anchor_ref": "Titus.3.1",
+      "cross_ref": "1Pet.2.13",
+      "primary_category": "thematic_echo",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "Peter instructs 'Submit yourselves...to every human authority,' paralleling Titus' instruction to 'be subject to rulers and authorities.' Thematic echo showing widespread early Christian teaching on civic submission. Both apostles establish similar political theology."
+    },
+    {
+      "anchor_ref": "Titus.3.2",
+      "cross_ref": "Eph.4.31",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Ephesians commands 'Get rid of...slander,' echoing Titus' instruction to 'slander no one.' Both texts prohibit slanderous speech. Thematic echo showing consistent early Christian speech ethics\u2014believers must control tongues and avoid malicious talk."
+    },
+    {
+      "anchor_ref": "Titus.3.3",
+      "cross_ref": "1Cor.6.11",
+      "primary_category": "thematic_echo",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Corinthians lists vices then declares 'that is what some of you were. But you were washed,' paralleling Titus' pre-conversion vice list followed by 'But when the...mercy of God our Savior appeared, he saved us.' Thematic echo showing standard conversion narrative pattern: vice catalog \u2192 transformation declaration."
+    },
+    {
+      "anchor_ref": "Titus.3.3",
+      "cross_ref": "Eph.5.8",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Ephesians contrasts 'you were once darkness, but now you are light,' paralleling Titus' contrast between pre-conversion enslavement to sin and post-conversion salvation. Both use before/after pattern. Thematic echo showing conversion as radical status transformation."
+    },
+    {
+      "anchor_ref": "Titus.3.5",
+      "cross_ref": "John.3.5",
+      "primary_category": "allusion",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "Jesus teaches 'no one can enter the kingdom of God unless they are born of water and the Spirit,' which Titus echoes: 'he saved us through the washing of rebirth and renewal by the Holy Spirit.' Allusion to Jesus' regeneration teaching. Both link water imagery, birth metaphor, and Spirit's work in conversion."
+    },
+    {
+      "anchor_ref": "Titus.3.5",
+      "cross_ref": "Eph.2.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "Ephesians grounds salvation in 'God, who is rich in mercy,' paralleling Titus' 'because of his mercy.' Literary parallel showing consistent Pauline soteriology. Divine mercy, not human merit, motivates salvation."
+    },
+    {
+      "anchor_ref": "Titus.3.5",
+      "cross_ref": "Eph.2.8",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 95,
+      "reasoning": "Ephesians declares 'by grace you have been saved...not by works,' nearly identical to Titus' 'not because of righteous things we had done, but because of his mercy.' Direct literary parallel emphatically excluding works-righteousness. Both texts ground salvation entirely in divine initiative."
+    },
+    {
+      "anchor_ref": "Titus.3.5",
+      "cross_ref": "1Pet.1.3",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Peter praises God who 'has given us new birth,' echoing Titus' 'washing of rebirth.' Both use birth metaphor for conversion. Thematic echo showing widespread early Christian understanding of salvation as regeneration\u2014believers are born again by divine action."
+    },
+    {
+      "anchor_ref": "Titus.3.6",
+      "cross_ref": "Joel.2.28",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "Joel prophesies 'I will pour out my Spirit on all people,' which Titus applies: God 'poured out his Spirit on us generously through Jesus Christ.' Prophecy fulfillment\u2014Joel's eschatological promise finds ongoing fulfillment in Christian conversion. Each believer receives the prophesied Spirit outpouring."
+    },
+    {
+      "anchor_ref": "Titus.3.6",
+      "cross_ref": "Rom.5.5",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Romans describes love 'poured out' (ekkechutai) into hearts by the Spirit, paralleling Titus' God 'poured out' (execheen) the Spirit generously. Literary parallel using identical verb for Spirit's abundant giving. Both texts emphasize Spirit's lavish bestowal."
+    },
+    {
+      "anchor_ref": "Titus.3.7",
+      "cross_ref": "Rom.3.24",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "Romans affirms believers are 'justified freely by his grace,' paralleling Titus' 'having been justified by his grace.' Literary parallel showing consistent Pauline justification theology. Grace is both means and ground of justification\u2014God's unmerited favor declares believers righteous."
+    },
+    {
+      "anchor_ref": "Titus.3.8",
+      "cross_ref": "Titus.2.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Titus 2:14 describes Christ purifying 'a people...eager to do what is good,' which 3:8 elaborates: 'those who have trusted in God may be careful to devote themselves to doing what is good.' Elaboration showing how good works theme culminates in practical exhortation. Earlier theology becomes concrete application."
+    },
+    {
+      "anchor_ref": "Titus.3.8",
+      "cross_ref": "Titus.3.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Titus 3:8 introduces good works theme: believers should 'devote themselves to doing what is good,' which 3:14 elaborates with concrete application: 'Our people must learn to devote themselves to doing what is good.' Elaboration showing principle's immediate application. General exhortation becomes specific community responsibility."
+    },
+    {
+      "anchor_ref": "Titus.3.9",
+      "cross_ref": "2Tim.2.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Timothy warns against 'quarreling about words' as 'of no value,' paralleling Titus' instruction to 'avoid...controversies' as 'unprofitable and useless.' Literary parallel showing Pastoral concern with theological speculation. Both texts prioritize practical godliness over abstract debate."
+    },
+    {
+      "anchor_ref": "Titus.3.9",
+      "cross_ref": "2Tim.2.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Timothy commands 'avoid godless chatter,' paralleling Titus' 'avoid foolish controversies.' Literary parallel showing Pastoral dismissal of empty speculation. Both texts reject theological discussions lacking practical benefit."
+    },
+    {
+      "anchor_ref": "Titus.3.9",
+      "cross_ref": "2Tim.2.23",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2 Timothy instructs 'Don't have anything to do with foolish...arguments,' nearly identical to Titus' 'avoid foolish controversies...because these are unprofitable and useless.' Direct literary parallel with nearly identical vocabulary. Both texts use same formula for rejecting speculative theology."
+    },
+    {
+      "anchor_ref": "Titus.3.10",
+      "cross_ref": "Matt.18.15-17",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Jesus prescribes progressive church discipline: private confrontation \u2192 witnesses \u2192 church \u2192 treat as outsider. Titus simplifies but follows pattern: 'Warn a divisive person once, and then warn them a second time. After that, have nothing to do with them.' Allusion showing Titus applying Jesus' discipline process with abbreviated steps."
+    },
+    {
+      "anchor_ref": "Titus.3.10",
+      "cross_ref": "Rom.16.17",
+      "primary_category": "thematic_echo",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Romans instructs 'watch out for those who cause divisions...keep away from them,' paralleling Titus' instruction regarding divisive person: 'have nothing to do with them.' Thematic echo showing consistent Pauline boundary maintenance. Both texts require separation from persistent troublemakers."
+    },
+    {
+      "anchor_ref": "Titus.3.12",
+      "cross_ref": "Eph.6.21-22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "historical_reference",
+      "confidence": 80,
+      "reasoning": "Ephesians mentions sending Tychicus 'that you may know how we are,' paralleling Titus' reference to sending Artemas or Tychicus. Literary parallel showing Paul's pattern of sending emissaries. The Tychicus reference provides historical link between epistles."
+    },
+    {
+      "anchor_ref": "Titus.3.12",
+      "cross_ref": "2Tim.4.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "historical_reference",
+      "confidence": 85,
+      "reasoning": "2 Timothy urges 'Do your best to come to me quickly,' paralleling Titus' 'Do your best to come to me at Nicopolis.' Literary parallel showing Paul's consistent practice of summoning co-workers. Both requests reveal Paul's itinerant ministry requiring mobile team."
+    },
+    {
+      "anchor_ref": "Titus.3.12",
+      "cross_ref": "2Tim.4.21",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "2 Timothy requests 'Do your best to get here before winter,' paralleling Titus' urgency: 'Do your best to come to me at Nicopolis, because I have decided to winter there.' Literary parallel showing Paul's seasonal planning constraints. Both texts reveal practical logistics of ancient travel."
+    },
+    {
+      "anchor_ref": "Titus.3.14",
+      "cross_ref": "Eph.4.28",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Ephesians instructs reformed thieves to 'work, doing something useful with their own hands,' echoing Titus' exhortation to 'devote themselves to doing what is good, in order to provide for urgent needs.' Both texts connect work with meeting needs. Thematic echo of Christian work ethic."
+    },
+    {
+      "anchor_ref": "Titus.3.14",
+      "cross_ref": "Titus.2.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Same as Titus 3:8\u2014the good works theme introduced in 2:14 (Christ purifying people 'eager to do what is good') finds repeated elaboration in chapter 3, culminating in 3:14's concrete application. Elaboration showing theological theme's practical outworking throughout epistle."
+    },
+    {
+      "anchor_ref": "Titus.3.14",
+      "cross_ref": "Titus.3.8",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Same as earlier reference\u20143:8 calls believers to devote themselves to good works, which 3:14 immediately reinforces: 'Our people must learn to devote themselves to doing what is good.' Elaboration through repetition and application. The exhortation is immediately reiterated for emphasis."
+    },
+    {
+      "anchor_ref": "Titus.3.15",
+      "cross_ref": "Col.4.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Colossians closes 'Grace be with you,' identical to Titus' closing benediction. Literary parallel showing standard Pauline epistolary formula. The grace benediction invokes divine enablement as final word\u2014readers need grace to obey letter's instructions."
+    }
+  ]
+}

@@ -1,0 +1,1561 @@
+{
+  "book": "Galatians",
+  "book_number": 48,
+  "verified": true,
+  "total_items": 192,
+  "improved_count": 67,
+  "category_distribution": {
+    "literary_parallel": 43,
+    "theological_principle": 61,
+    "elaboration": 28,
+    "contrast": 1,
+    "allusion": 9,
+    "narrative_continuation": 3,
+    "historical_reference": 8,
+    "quotation": 13,
+    "prophecy_fulfillment": 1,
+    "shared_metaphor": 7,
+    "christological_parallel": 2,
+    "typology": 1,
+    "parallel_instruction": 14,
+    "wisdom_principle": 1
+  },
+  "items": [
+    {
+      "anchor_ref": "Gal.1.3",
+      "cross_ref": "Rom.1.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Identical Pauline epistolary opening formula - 'grace and peace' triadic benediction pattern across letters"
+    },
+    {
+      "anchor_ref": "Gal.1.3",
+      "cross_ref": "Phil.1.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Same Pauline epistolary greeting formula across letters"
+    },
+    {
+      "anchor_ref": "Gal.1.3",
+      "cross_ref": "Phlm.1.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Identical Pauline greeting structure"
+    },
+    {
+      "anchor_ref": "Gal.1.4",
+      "cross_ref": "Rom.4.25",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach Christ's atoning death, but express it differently - shared doctrine without literary dependence"
+    },
+    {
+      "anchor_ref": "Gal.1.4",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Gal 2:20 expands on 1:4's statement of Christ giving himself - personal application of same truth"
+    },
+    {
+      "anchor_ref": "Gal.1.4",
+      "cross_ref": "1Tim.2.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'gave himself' formula about Christ's sacrifice - shared Pauline expression"
+    },
+    {
+      "anchor_ref": "Gal.1.4",
+      "cross_ref": "Titus.2.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "'Gave himself for us' - shared Pauline redemption formula"
+    },
+    {
+      "anchor_ref": "Gal.1.5",
+      "cross_ref": "Rom.11.36",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use doxological formula attributing glory to God - Pauline liturgical pattern"
+    },
+    {
+      "anchor_ref": "Gal.1.6",
+      "cross_ref": "2Cor.11.4",
+      "primary_category": "contrast",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both passages contrast true gospel with 'different gospel' - opposing truth and error"
+    },
+    {
+      "anchor_ref": "Gal.1.7",
+      "cross_ref": "Gal.5.10",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "5:10 returns to and expands 1:7's warning about troublemakers perverting the gospel"
+    },
+    {
+      "anchor_ref": "Gal.1.8",
+      "cross_ref": "2Cor.11.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 80,
+      "reasoning": "Both warn about false teachers masquerading as legitimate - contrasting true and false messengers"
+    },
+    {
+      "anchor_ref": "Gal.1.9",
+      "cross_ref": "Deut.4.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Paul echoes Deuteronomy's prohibition against adding/subtracting from divine revelation"
+    },
+    {
+      "anchor_ref": "Gal.1.9",
+      "cross_ref": "Deut.12.32",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Paul echoes Torah's command not to add to God's word"
+    },
+    {
+      "anchor_ref": "Gal.1.9",
+      "cross_ref": "1Cor.16.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both use anathema/curse formula against those opposing the Lord/gospel"
+    },
+    {
+      "anchor_ref": "Gal.1.9",
+      "cross_ref": "Rev.22.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 75,
+      "reasoning": "Both warn against altering divine revelation with curse, though in different contexts"
+    },
+    {
+      "anchor_ref": "Gal.1.10",
+      "cross_ref": "1Thes.2.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'pleasing God not people' formula - shared Pauline expression about apostolic integrity"
+    },
+    {
+      "anchor_ref": "Gal.1.12",
+      "cross_ref": "1Cor.2.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach divine revelation as source of Paul's message"
+    },
+    {
+      "anchor_ref": "Gal.1.12",
+      "cross_ref": "Gal.1.1",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1:12 elaborates on 1:1's claim of apostolic authority directly from Christ"
+    },
+    {
+      "anchor_ref": "Gal.1.12",
+      "cross_ref": "Gal.1.15-16",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1:15-16 immediately elaborates 1:12's revelation claim with Paul's conversion account"
+    },
+    {
+      "anchor_ref": "Gal.1.12",
+      "cross_ref": "Eph.3.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'revelation' language about Paul's reception of gospel mystery"
+    },
+    {
+      "anchor_ref": "Gal.1.16",
+      "cross_ref": "Rom.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both about gospel revelation, though connection is somewhat indirect"
+    },
+    {
+      "anchor_ref": "Gal.1.16",
+      "cross_ref": "Rom.8.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both use 'Son' + sending language about Christ's incarnation"
+    },
+    {
+      "anchor_ref": "Gal.1.16",
+      "cross_ref": "Rom.8.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both teach Christ's indwelling reality"
+    },
+    {
+      "anchor_ref": "Gal.1.16",
+      "cross_ref": "Gal.2.9",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2:9 continues narrative from 1:16 - Paul's Jerusalem visit following his revelation"
+    },
+    {
+      "anchor_ref": "Gal.1.16",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2:20's 'Son of God who loved me' elaborates 1:16's revelation of the Son"
+    },
+    {
+      "anchor_ref": "Gal.1.16",
+      "cross_ref": "Col.1.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach Christ revealed/in believers as mystery"
+    },
+    {
+      "anchor_ref": "Gal.1.19",
+      "cross_ref": "Matt.13.55",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Paul references same historical figure (James, Jesus' brother) mentioned in Gospels"
+    },
+    {
+      "anchor_ref": "Gal.1.19",
+      "cross_ref": "Gal.2.9",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2:9 continues narrative - same Jerusalem visit, James as pillar"
+    },
+    {
+      "anchor_ref": "Gal.1.19",
+      "cross_ref": "Gal.2.12",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2:12 continues James' role in narrative - men from James at Antioch"
+    },
+    {
+      "anchor_ref": "Gal.2.2",
+      "cross_ref": "Gal.1.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2:2's concern about running in vain elaborates 1:6's anxiety about gospel being perverted"
+    },
+    {
+      "anchor_ref": "Gal.2.4",
+      "cross_ref": "Gal.1.7",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2:4 elaborates 1:7 - identifies the troublemakers as false brothers infiltrating to spy on freedom"
+    },
+    {
+      "anchor_ref": "Gal.2.4",
+      "cross_ref": "Gal.5.1",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "5:1 elaborates and applies 2:4's freedom theme - contrasting freedom in Christ with slavery to law"
+    },
+    {
+      "anchor_ref": "Gal.2.4",
+      "cross_ref": "Gal.5.13",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "5:13 further elaborates 2:4's freedom theme with proper application"
+    },
+    {
+      "anchor_ref": "Gal.2.5",
+      "cross_ref": "Gal.1.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2:5 elaborates why Paul didn't yield - to preserve the gospel truth mentioned in 1:6"
+    },
+    {
+      "anchor_ref": "Gal.2.5",
+      "cross_ref": "Gal.2.14",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both about 'truth of the gospel' - 2:14 elaborates with Antioch confrontation example"
+    },
+    {
+      "anchor_ref": "Gal.2.6",
+      "cross_ref": "Deut.10.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Paul alludes to Deuteronomy's teaching that God shows no partiality"
+    },
+    {
+      "anchor_ref": "Gal.2.6",
+      "cross_ref": "Rom.2.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'God shows no partiality' formula - shared Pauline expression"
+    },
+    {
+      "anchor_ref": "Gal.2.6",
+      "cross_ref": "2Cor.12.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both about Paul's apostolic status relative to others"
+    },
+    {
+      "anchor_ref": "Gal.2.7",
+      "cross_ref": "1Thes.2.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'entrusted with gospel' formula about apostolic commission"
+    },
+    {
+      "anchor_ref": "Gal.2.9",
+      "cross_ref": "Rom.1.5",
+      "primary_category": "historical_reference",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both reference Paul's apostolic commission to Gentiles"
+    },
+    {
+      "anchor_ref": "Gal.2.15",
+      "cross_ref": "Phil.3.4-5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both about Jewish heritage/identity by birth"
+    },
+    {
+      "anchor_ref": "Gal.2.16",
+      "cross_ref": "Rom.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach justification by faith - core Pauline doctrine"
+    },
+    {
+      "anchor_ref": "Gal.2.16",
+      "cross_ref": "Rom.3.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Near-identical formula: 'by works of law no one will be justified' - shared Pauline statement"
+    },
+    {
+      "anchor_ref": "Gal.2.16",
+      "cross_ref": "Rom.3.28",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Both contrast justification by faith vs. works of law - central Pauline antithesis"
+    },
+    {
+      "anchor_ref": "Gal.2.16",
+      "cross_ref": "Rom.8.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both teach law's inability to save - contrasting law's weakness with God's solution"
+    },
+    {
+      "anchor_ref": "Gal.2.16",
+      "cross_ref": "Gal.3.11",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "3:11 elaborates 2:16 with OT proof - no one justified by law"
+    },
+    {
+      "anchor_ref": "Gal.2.16",
+      "cross_ref": "Eph.2.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach salvation by faith/grace not works"
+    },
+    {
+      "anchor_ref": "Gal.2.19",
+      "cross_ref": "Rom.6.10-14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach dying to sin/law and living to God through Christ"
+    },
+    {
+      "anchor_ref": "Gal.2.19",
+      "cross_ref": "Rom.7.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both teach 'died to the law' through Christ's body"
+    },
+    {
+      "anchor_ref": "Gal.2.19",
+      "cross_ref": "2Cor.5.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach dying to self to live for Christ"
+    },
+    {
+      "anchor_ref": "Gal.2.20",
+      "cross_ref": "Rom.6.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach crucifixion with Christ - dying to old self"
+    },
+    {
+      "anchor_ref": "Gal.2.20",
+      "cross_ref": "Rom.8.37",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach victory through Christ's love"
+    },
+    {
+      "anchor_ref": "Gal.2.20",
+      "cross_ref": "Gal.1.4",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2:20 personalizes and elaborates 1:4's statement about Christ giving himself"
+    },
+    {
+      "anchor_ref": "Gal.2.20",
+      "cross_ref": "1Tim.2.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'gave himself' redemption formula"
+    },
+    {
+      "anchor_ref": "Gal.2.20",
+      "cross_ref": "Titus.2.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'gave himself for us' formula"
+    },
+    {
+      "anchor_ref": "Gal.3.1",
+      "cross_ref": "1Cor.1.23",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'Christ crucified' formula as central gospel message"
+    },
+    {
+      "anchor_ref": "Gal.3.1",
+      "cross_ref": "Gal.5.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "5:7 elaborates 3:1's 'who bewitched you' with 'who hindered you' - same problem"
+    },
+    {
+      "anchor_ref": "Gal.3.2",
+      "cross_ref": "Rom.10.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach Spirit/faith comes through hearing the message"
+    },
+    {
+      "anchor_ref": "Gal.3.3",
+      "cross_ref": "Gal.4.9",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "4:9 elaborates 3:3's rebuke - returning to weak principles is foolish regression"
+    },
+    {
+      "anchor_ref": "Gal.3.4",
+      "cross_ref": "2Jn.1.8",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both warn against losing spiritual reward through regression"
+    },
+    {
+      "anchor_ref": "Gal.3.5",
+      "cross_ref": "1Cor.12.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both reference miraculous works of the Spirit"
+    },
+    {
+      "anchor_ref": "Gal.3.6",
+      "cross_ref": "Gen.15.6",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Direct quotation - 'Abraham believed God, and it was credited to him as righteousness' with implicit citation"
+    },
+    {
+      "anchor_ref": "Gal.3.6",
+      "cross_ref": "Rom.4.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both quote same Genesis 15:6 text about Abraham's faith - shared Pauline proof text"
+    },
+    {
+      "anchor_ref": "Gal.3.8",
+      "cross_ref": "Gen.12.3",
+      "primary_category": "quotation",
+      "secondary_category": "prophecy_fulfillment",
+      "confidence": 95,
+      "reasoning": "Paul explicitly quotes Genesis 'all nations blessed through you' as prophecy fulfilled in gospel"
+    },
+    {
+      "anchor_ref": "Gal.3.10",
+      "cross_ref": "Deut.27.26",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Direct quotation - 'Cursed is everyone who does not continue to do everything written in the Law'"
+    },
+    {
+      "anchor_ref": "Gal.3.10",
+      "cross_ref": "Jer.11.3",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Paul alludes to Jeremiah's curse for disobeying covenant"
+    },
+    {
+      "anchor_ref": "Gal.3.11",
+      "cross_ref": "Hab.2.4",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Direct quotation - 'the righteous will live by faith' from Habakkuk"
+    },
+    {
+      "anchor_ref": "Gal.3.11",
+      "cross_ref": "Rom.1.17",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both quote same Habakkuk 2:4 text - shared Pauline foundational proof text for justification by faith"
+    },
+    {
+      "anchor_ref": "Gal.3.11",
+      "cross_ref": "Heb.10.38",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both quote Habakkuk 2:4 about righteous living by faith"
+    },
+    {
+      "anchor_ref": "Gal.3.12",
+      "cross_ref": "Lev.18.5",
+      "primary_category": "quotation",
+      "secondary_category": "contrast",
+      "confidence": 95,
+      "reasoning": "Paul quotes Leviticus 'the one who does these things will live by them' to contrast law vs. faith"
+    },
+    {
+      "anchor_ref": "Gal.3.12",
+      "cross_ref": "Rom.10.5",
+      "primary_category": "literary_parallel",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Both quote same Leviticus 18:5 to contrast law-righteousness vs. faith-righteousness"
+    },
+    {
+      "anchor_ref": "Gal.3.13",
+      "cross_ref": "Deut.21.23",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Paul quotes Deuteronomy 'cursed is everyone who hangs on a tree' about Christ bearing curse"
+    },
+    {
+      "anchor_ref": "Gal.3.13",
+      "cross_ref": "Gal.4.5",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "4:5 elaborates 3:13's redemption - to redeem those under law for adoption"
+    },
+    {
+      "anchor_ref": "Gal.3.14",
+      "cross_ref": "Joel.2.28",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Abrahamic promise fulfilled - Spirit poured out on all nations per Joel's prophecy"
+    },
+    {
+      "anchor_ref": "Gal.3.15",
+      "cross_ref": "Heb.9.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both use covenant/testament legal analogy"
+    },
+    {
+      "anchor_ref": "Gal.3.16",
+      "cross_ref": "Gen.12.7",
+      "primary_category": "quotation",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Paul quotes Genesis 'to your seed' to make christological argument about covenant promise"
+    },
+    {
+      "anchor_ref": "Gal.3.16",
+      "cross_ref": "Gen.13.15",
+      "primary_category": "quotation",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Paul references Genesis seed promise"
+    },
+    {
+      "anchor_ref": "Gal.3.16",
+      "cross_ref": "Gen.17.7",
+      "primary_category": "quotation",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Paul quotes Genesis covenant seed promise"
+    },
+    {
+      "anchor_ref": "Gal.3.16",
+      "cross_ref": "Gen.24.7",
+      "primary_category": "allusion",
+      "secondary_category": "covenant_connection",
+      "confidence": 85,
+      "reasoning": "Paul alludes to Genesis covenant promises"
+    },
+    {
+      "anchor_ref": "Gal.3.17",
+      "cross_ref": "Exod.12.40",
+      "primary_category": "historical_reference",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "Paul cites specific 430-year timeframe from Exodus to argue covenant precedence"
+    },
+    {
+      "anchor_ref": "Gal.3.18",
+      "cross_ref": "Rom.4.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both contrast inheritance by law vs. promise"
+    },
+    {
+      "anchor_ref": "Gal.3.18",
+      "cross_ref": "Rom.11.6",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both contrast grace vs. works - mutually exclusive systems"
+    },
+    {
+      "anchor_ref": "Gal.3.19",
+      "cross_ref": "Exod.20.19",
+      "primary_category": "historical_reference",
+      "secondary_category": "covenant_connection",
+      "confidence": 85,
+      "reasoning": "Paul references Sinai mediator pattern from Exodus"
+    },
+    {
+      "anchor_ref": "Gal.3.19",
+      "cross_ref": "Deut.5.5",
+      "primary_category": "historical_reference",
+      "secondary_category": "covenant_connection",
+      "confidence": 85,
+      "reasoning": "Paul references Moses as mediator at Sinai per Deuteronomy"
+    },
+    {
+      "anchor_ref": "Gal.3.19",
+      "cross_ref": "Heb.2.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach law mediated through angels"
+    },
+    {
+      "anchor_ref": "Gal.3.20",
+      "cross_ref": "1Tim.2.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both about mediation - Moses mediated old, Christ mediates new (implicit contrast)"
+    },
+    {
+      "anchor_ref": "Gal.3.21",
+      "cross_ref": "Rom.8.2-4",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both teach law cannot give life - contrast law's limitation vs. Spirit's power"
+    },
+    {
+      "anchor_ref": "Gal.3.22",
+      "cross_ref": "Rom.3.11-19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach universal sinfulness under law's verdict"
+    },
+    {
+      "anchor_ref": "Gal.3.22",
+      "cross_ref": "Rom.11.32",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach God confined all under sin to show mercy"
+    },
+    {
+      "anchor_ref": "Gal.3.24",
+      "cross_ref": "Rom.10.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach Christ as goal/end of law"
+    },
+    {
+      "anchor_ref": "Gal.3.27",
+      "cross_ref": "Rom.6.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach baptism into Christ"
+    },
+    {
+      "anchor_ref": "Gal.3.27",
+      "cross_ref": "Rom.13.14",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'clothed with Christ' metaphor for Christian identity"
+    },
+    {
+      "anchor_ref": "Gal.3.28",
+      "cross_ref": "John.10.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both teach unity of believers across divisions"
+    },
+    {
+      "anchor_ref": "Gal.3.28",
+      "cross_ref": "John.17.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both teach oneness of believers"
+    },
+    {
+      "anchor_ref": "Gal.3.28",
+      "cross_ref": "1Cor.12.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Near-identical formula - 'baptized into one body... Jew/Greek, slave/free' - shared Pauline unity statement"
+    },
+    {
+      "anchor_ref": "Gal.3.28",
+      "cross_ref": "Eph.2.14-15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach Christ breaking down Jew/Gentile dividing wall"
+    },
+    {
+      "anchor_ref": "Gal.3.28",
+      "cross_ref": "Col.3.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Near-identical list - 'Greek/Jew, circumcised/uncircumcised, slave/free' - shared Pauline unity formula"
+    },
+    {
+      "anchor_ref": "Gal.3.29",
+      "cross_ref": "Rom.8.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach believers as heirs with Christ"
+    },
+    {
+      "anchor_ref": "Gal.3.29",
+      "cross_ref": "Gal.3.16",
+      "primary_category": "elaboration",
+      "secondary_category": "covenant_connection",
+      "confidence": 90,
+      "reasoning": "3:29 applies 3:16's seed argument - believers in Christ are Abraham's seed"
+    },
+    {
+      "anchor_ref": "Gal.4.3",
+      "cross_ref": "Gal.3.23",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "4:3 elaborates 3:23's 'held in custody' with 'enslaved under elemental principles'"
+    },
+    {
+      "anchor_ref": "Gal.4.3",
+      "cross_ref": "Col.2.8",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both warn against 'elemental principles/forces of the world' - shared Pauline phrase"
+    },
+    {
+      "anchor_ref": "Gal.4.3",
+      "cross_ref": "Col.2.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both reference dying to 'elemental spiritual forces' - contrasting bondage vs. freedom"
+    },
+    {
+      "anchor_ref": "Gal.4.4",
+      "cross_ref": "Mark.1.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both teach 'fullness of time' for God's redemptive action"
+    },
+    {
+      "anchor_ref": "Gal.4.4",
+      "cross_ref": "John.1.14",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both explicitly affirm Christ's incarnation - 'born of woman'/'Word became flesh'"
+    },
+    {
+      "anchor_ref": "Gal.4.4",
+      "cross_ref": "Eph.1.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach God's timing bringing plan to fulfillment"
+    },
+    {
+      "anchor_ref": "Gal.4.4",
+      "cross_ref": "Heb.2.14",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both affirm Christ's full humanity - 'born of woman'/'shared in flesh and blood'"
+    },
+    {
+      "anchor_ref": "Gal.4.5",
+      "cross_ref": "Rom.8.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach adoption as God's children replacing slavery"
+    },
+    {
+      "anchor_ref": "Gal.4.5",
+      "cross_ref": "Eph.1.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach predestined adoption through Christ"
+    },
+    {
+      "anchor_ref": "Gal.4.6",
+      "cross_ref": "Rom.8.15-16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Both use identical 'Abba, Father' formula about Spirit of adoption - shared Pauline expression"
+    },
+    {
+      "anchor_ref": "Gal.4.7",
+      "cross_ref": "Rom.8.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach progression: child \u2192 heir through God"
+    },
+    {
+      "anchor_ref": "Gal.4.8",
+      "cross_ref": "2Chr.13.9",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Paul echoes Chronicles' critique of false gods"
+    },
+    {
+      "anchor_ref": "Gal.4.8",
+      "cross_ref": "Jer.2.11",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Paul echoes Jeremiah's critique of serving what are not gods"
+    },
+    {
+      "anchor_ref": "Gal.4.8",
+      "cross_ref": "1Cor.8.4-6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach idols are not real gods - only one true God"
+    },
+    {
+      "anchor_ref": "Gal.4.8",
+      "cross_ref": "1Thes.1.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both describe conversion as turning from idols to serve living God - shared Pauline conversion pattern"
+    },
+    {
+      "anchor_ref": "Gal.4.9",
+      "cross_ref": "Col.2.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both use 'elemental principles' language contrasting freedom vs. bondage"
+    },
+    {
+      "anchor_ref": "Gal.4.10",
+      "cross_ref": "Rom.14.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both address observing special days - differing pastoral approaches"
+    },
+    {
+      "anchor_ref": "Gal.4.10",
+      "cross_ref": "Col.2.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both list 'days, months, seasons, years' - shared Pauline critique of calendar observance"
+    },
+    {
+      "anchor_ref": "Gal.4.13",
+      "cross_ref": "1Cor.2.3",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both reference Paul's physical weakness during ministry"
+    },
+    {
+      "anchor_ref": "Gal.4.14",
+      "cross_ref": "Matt.10.40",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both teach receiving messenger as receiving Christ"
+    },
+    {
+      "anchor_ref": "Gal.4.16",
+      "cross_ref": "Amos.5.10",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 80,
+      "reasoning": "Paul echoes Amos's observation that truth-tellers become enemies"
+    },
+    {
+      "anchor_ref": "Gal.4.17",
+      "cross_ref": "Gal.2.4",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "4:17 elaborates 2:4's false brothers - their zealous but malicious motives"
+    },
+    {
+      "anchor_ref": "Gal.4.17",
+      "cross_ref": "Gal.2.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "4:17 may elaborate on tactics of those from James"
+    },
+    {
+      "anchor_ref": "Gal.4.19",
+      "cross_ref": "Eph.4.13",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use maturity/formation metaphor for spiritual development - 'Christ formed in you'/'mature in Christ'"
+    },
+    {
+      "anchor_ref": "Gal.4.22",
+      "cross_ref": "Gen.16.15",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Paul references Hagar/Ishmael narrative as type of old covenant bondage"
+    },
+    {
+      "anchor_ref": "Gal.4.22",
+      "cross_ref": "Gen.21.2",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Paul references Sarah/Isaac narrative as type of new covenant freedom"
+    },
+    {
+      "anchor_ref": "Gal.4.23",
+      "cross_ref": "Rom.9.7-9",
+      "primary_category": "typology",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both use Isaac as child of promise vs. Ishmael as natural descent - typological interpretation"
+    },
+    {
+      "anchor_ref": "Gal.4.26",
+      "cross_ref": "Heb.12.22",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "covenant_connection",
+      "confidence": 85,
+      "reasoning": "Both use 'heavenly Jerusalem' metaphor for new covenant reality"
+    },
+    {
+      "anchor_ref": "Gal.4.26",
+      "cross_ref": "Rev.3.12",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both reference 'new Jerusalem' imagery"
+    },
+    {
+      "anchor_ref": "Gal.4.26",
+      "cross_ref": "Rev.21.2",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both use 'new Jerusalem coming down from heaven' imagery"
+    },
+    {
+      "anchor_ref": "Gal.4.26",
+      "cross_ref": "Rev.21.10",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both describe holy Jerusalem descending from heaven"
+    },
+    {
+      "anchor_ref": "Gal.4.28",
+      "cross_ref": "Gal.3.29",
+      "primary_category": "elaboration",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "4:28 elaborates 3:29 using Isaac typology - believers are children of promise like Isaac"
+    },
+    {
+      "anchor_ref": "Gal.4.29",
+      "cross_ref": "Gen.21.9",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Paul references Genesis text about Ishmael persecuting Isaac typologically"
+    },
+    {
+      "anchor_ref": "Gal.4.30",
+      "cross_ref": "Gen.21.10",
+      "primary_category": "quotation",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Direct quotation - 'Get rid of the slave woman and her son' applied typologically to covenants"
+    },
+    {
+      "anchor_ref": "Gal.4.30",
+      "cross_ref": "John.8.35",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 75,
+      "reasoning": "Both contrast slave vs. son/heir status - slave doesn't remain, son does"
+    },
+    {
+      "anchor_ref": "Gal.4.31",
+      "cross_ref": "Gal.3.29",
+      "primary_category": "elaboration",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "4:31 concludes typological argument applying to 3:29's heirs according to promise"
+    },
+    {
+      "anchor_ref": "Gal.5.1",
+      "cross_ref": "John.8.32",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both teach freedom through truth/Christ"
+    },
+    {
+      "anchor_ref": "Gal.5.1",
+      "cross_ref": "John.8.36",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach Son setting people free to be truly free"
+    },
+    {
+      "anchor_ref": "Gal.5.1",
+      "cross_ref": "Gal.2.4",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "5:1 applies and commands what 2:4 introduced - stand firm in freedom vs. slavery"
+    },
+    {
+      "anchor_ref": "Gal.5.3",
+      "cross_ref": "Gal.3.10",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "5:3 applies 3:10's principle - choosing circumcision obligates to entire law"
+    },
+    {
+      "anchor_ref": "Gal.5.5",
+      "cross_ref": "Rom.8.23-24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach Spirit-empowered waiting for righteousness/redemption hope"
+    },
+    {
+      "anchor_ref": "Gal.5.6",
+      "cross_ref": "1Cor.7.19",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both declare circumcision means nothing - shared Pauline formula about what truly matters"
+    },
+    {
+      "anchor_ref": "Gal.5.6",
+      "cross_ref": "1Thes.1.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both link faith working through love - Pauline triad pattern"
+    },
+    {
+      "anchor_ref": "Gal.5.7",
+      "cross_ref": "1Cor.9.24",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use running/race metaphor for Christian life"
+    },
+    {
+      "anchor_ref": "Gal.5.8",
+      "cross_ref": "Rom.8.28",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both reference 'him who calls you' about God's calling"
+    },
+    {
+      "anchor_ref": "Gal.5.9",
+      "cross_ref": "1Cor.5.6",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "Both quote same proverb - 'a little yeast leavens the whole batch' - shared Pauline maxim"
+    },
+    {
+      "anchor_ref": "Gal.5.10",
+      "cross_ref": "Gal.1.7",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "5:10 returns to 1:7's theme - confidence troublemakers will be judged"
+    },
+    {
+      "anchor_ref": "Gal.5.11",
+      "cross_ref": "1Cor.1.23",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both reference 'offense/stumbling block of the cross' - shared Pauline expression"
+    },
+    {
+      "anchor_ref": "Gal.5.13",
+      "cross_ref": "1Pet.2.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both command not to use freedom as cover for evil - similar apostolic instruction"
+    },
+    {
+      "anchor_ref": "Gal.5.14",
+      "cross_ref": "Lev.19.18",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Direct quotation - 'love your neighbor as yourself' summarizing law"
+    },
+    {
+      "anchor_ref": "Gal.5.14",
+      "cross_ref": "Rom.13.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Both quote Leviticus 19:18 as law's summary - shared Pauline use of same text"
+    },
+    {
+      "anchor_ref": "Gal.5.16",
+      "cross_ref": "Rom.8.4-6",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Both teach walking by Spirit vs. flesh - central Pauline antithesis"
+    },
+    {
+      "anchor_ref": "Gal.5.17",
+      "cross_ref": "Rom.7.15-23",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Both describe flesh vs. Spirit conflict opposing each other"
+    },
+    {
+      "anchor_ref": "Gal.5.18",
+      "cross_ref": "Rom.6.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach freedom from law through Spirit/grace"
+    },
+    {
+      "anchor_ref": "Gal.5.18",
+      "cross_ref": "Rom.8.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both use 'led by Spirit' formula identifying God's children"
+    },
+    {
+      "anchor_ref": "Gal.5.19-21",
+      "cross_ref": "Rom.13.12-13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both list sinful behaviors to reject - similar Pauline vice lists"
+    },
+    {
+      "anchor_ref": "Gal.5.19-21",
+      "cross_ref": "1Cor.6.9-10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both list vices with warning 'will not inherit kingdom' - shared Pauline list structure"
+    },
+    {
+      "anchor_ref": "Gal.5.19-21",
+      "cross_ref": "Eph.5.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both warn certain sins exclude from kingdom inheritance"
+    },
+    {
+      "anchor_ref": "Gal.5.19-21",
+      "cross_ref": "Rev.22.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Both list sins excluding from God's kingdom/city"
+    },
+    {
+      "anchor_ref": "Gal.5.22",
+      "cross_ref": "Eph.5.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both list fruit of Spirit/light - similar Pauline virtue lists"
+    },
+    {
+      "anchor_ref": "Gal.5.24",
+      "cross_ref": "Rom.6.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach crucifying old nature/flesh with Christ"
+    },
+    {
+      "anchor_ref": "Gal.5.24",
+      "cross_ref": "Col.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both command putting to death sinful nature - similar Pauline instruction"
+    },
+    {
+      "anchor_ref": "Gal.5.25",
+      "cross_ref": "Rom.8.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach living/walking by the Spirit"
+    },
+    {
+      "anchor_ref": "Gal.5.25",
+      "cross_ref": "Gal.5.16",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "5:25 elaborates 5:16's walk by Spirit with 'keep in step with Spirit'"
+    },
+    {
+      "anchor_ref": "Gal.5.26",
+      "cross_ref": "Phil.2.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both command against conceit/selfish ambition - similar Pauline instruction"
+    },
+    {
+      "anchor_ref": "Gal.6.1",
+      "cross_ref": "1Cor.2.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both reference spiritual people having discernment/responsibility"
+    },
+    {
+      "anchor_ref": "Gal.6.1",
+      "cross_ref": "Jas.5.19-20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both instruct about restoring those who wander from truth"
+    },
+    {
+      "anchor_ref": "Gal.6.1",
+      "cross_ref": "1Jn.5.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both address responding to a brother's sin"
+    },
+    {
+      "anchor_ref": "Gal.6.2",
+      "cross_ref": "Rom.15.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both command bearing others' burdens - similar Pauline instruction"
+    },
+    {
+      "anchor_ref": "Gal.6.3",
+      "cross_ref": "Rom.12.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both warn against thinking too highly of oneself - similar Pauline instruction"
+    },
+    {
+      "anchor_ref": "Gal.6.3",
+      "cross_ref": "1Cor.3.18",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both warn against self-deception about wisdom/importance"
+    },
+    {
+      "anchor_ref": "Gal.6.4",
+      "cross_ref": "2Cor.13.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both command self-examination - similar Pauline instruction"
+    },
+    {
+      "anchor_ref": "Gal.6.6",
+      "cross_ref": "1Cor.9.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach supporting those who teach - similar Pauline instruction"
+    },
+    {
+      "anchor_ref": "Gal.6.6",
+      "cross_ref": "1Cor.9.14",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach those preaching gospel should receive living from gospel"
+    },
+    {
+      "anchor_ref": "Gal.6.7",
+      "cross_ref": "1Cor.6.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'do not be deceived' formula warning about consequences"
+    },
+    {
+      "anchor_ref": "Gal.6.7",
+      "cross_ref": "2Cor.9.6",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both use sowing/reaping metaphor for moral/spiritual consequences"
+    },
+    {
+      "anchor_ref": "Gal.6.8",
+      "cross_ref": "Job.4.8",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "Paul echoes Job's sowing/reaping wisdom about moral consequences"
+    },
+    {
+      "anchor_ref": "Gal.6.8",
+      "cross_ref": "Rom.8.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Both contrast flesh leading to death vs. Spirit leading to life"
+    },
+    {
+      "anchor_ref": "Gal.6.9",
+      "cross_ref": "2Thes.3.13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both use 'never tire/grow weary of doing good' formula - shared Pauline exhortation"
+    },
+    {
+      "anchor_ref": "Gal.6.10",
+      "cross_ref": "Eph.2.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both reference 'household of faith/God' - believers as family"
+    },
+    {
+      "anchor_ref": "Gal.6.11",
+      "cross_ref": "1Cor.16.21",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference Paul's personal handwriting at letter's end - Pauline epistolary convention"
+    },
+    {
+      "anchor_ref": "Gal.6.13",
+      "cross_ref": "Rom.2.25",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 80,
+      "reasoning": "Both critique those who rely on circumcision but don't keep law"
+    },
+    {
+      "anchor_ref": "Gal.6.14",
+      "cross_ref": "Rom.6.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach dying to old world/sin through cross"
+    },
+    {
+      "anchor_ref": "Gal.6.14",
+      "cross_ref": "Rom.6.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach old self crucified with Christ"
+    },
+    {
+      "anchor_ref": "Gal.6.14",
+      "cross_ref": "1Cor.2.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'boast only in cross' formula - shared Pauline singular focus"
+    },
+    {
+      "anchor_ref": "Gal.6.14",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "6:14 elaborates 2:20's crucifixion with Christ - world crucified to Paul"
+    },
+    {
+      "anchor_ref": "Gal.6.15",
+      "cross_ref": "1Cor.7.19",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Nearly identical formula - 'circumcision/uncircumcision means nothing, what counts is...' - shared Pauline declaration"
+    },
+    {
+      "anchor_ref": "Gal.6.15",
+      "cross_ref": "2Cor.5.17",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both use 'new creation' formula about identity in Christ - shared Pauline expression"
+    },
+    {
+      "anchor_ref": "Gal.6.15",
+      "cross_ref": "Gal.5.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "6:15 restates 5:6's principle - circumcision meaningless, only new creation matters"
+    },
+    {
+      "anchor_ref": "Gal.6.17",
+      "cross_ref": "2Cor.1.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both reference sharing in Christ's sufferings"
+    },
+    {
+      "anchor_ref": "Gal.6.17",
+      "cross_ref": "2Cor.4.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference carrying marks/death of Jesus in body"
+    },
+    {
+      "anchor_ref": "Gal.6.18",
+      "cross_ref": "Rom.16.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'grace be with you' closing benediction - Pauline epistolary convention"
+    },
+    {
+      "anchor_ref": "Gal.6.18",
+      "cross_ref": "2Tim.4.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'grace be with you' closing formula - Pauline epistolary pattern"
+    }
+  ]
+}

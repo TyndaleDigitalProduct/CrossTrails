@@ -1,0 +1,818 @@
+{
+  "book": "2 Timothy",
+  "book_number": 55,
+  "verified": true,
+  "total_items": 100,
+  "improved_count": 89,
+  "category_distribution": {
+    "theological_principle": 35,
+    "literary_parallel": 8,
+    "elaboration": 15,
+    "thematic_echo": 15,
+    "parallel_instruction": 13,
+    "shared_metaphor": 9,
+    "allusion": 5
+  },
+  "items": [
+    {
+      "anchor_ref": "2Tim.1.1",
+      "cross_ref": "John.5.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of eternal life through Christ (theological_principle). 2 Tim 1:1 'chosen by the will of God to be an apostle of Christ Jesus...to tell them about the life he has promised through faith in Christ Jesus' and John 5:24 'those who listen to my message and believe in God who sent me have eternal life' both affirm that eternal/promised life comes through Christ. They also share similar vocabulary about life/message/belief (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.1.1",
+      "cross_ref": "Titus.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Pastoral Epistles share parallel greeting formula with identical structure and vocabulary (literary_parallel): 'This letter is from Paul, chosen...to be an apostle' / 'This letter is from Paul, a slave of God and an apostle.' Both also express the doctrine of faith and divine commissioning (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.1",
+      "cross_ref": "1Jn.5.10-11",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of eternal life in Christ (theological_principle). 2 Tim 1:1 'the life he has promised through faith in Christ Jesus' and 1 John 5:11 'God has given us eternal life, and this life is in his Son' both affirm eternal life through Christ. General thematic resonance about life and testimony (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.1.1",
+      "cross_ref": "1Jn.5.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of eternal life and knowing Christ (theological_principle). 2 Tim 1:1 'the life he has promised through faith in Christ Jesus' and 1 John 5:20 'he has given us understanding so that we can know the true one...And we live in fellowship with the true God because we live in fellowship with his Son' both affirm eternal life through Christ. Thematic connection about life and truth (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.1.2",
+      "cross_ref": "1Tim.1.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Pastoral Epistles share nearly identical greeting formula (literary_parallel): 'I am writing to Timothy, my dear son. May God the Father and Christ Jesus our Lord give you grace, mercy, and peace' / 'I am writing to Timothy, my true son in the faith. May God the Father and Christ Jesus our Lord give you grace, mercy, and peace.' Both also express the doctrine of divine grace and peace (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.4",
+      "cross_ref": "2Tim.4.9",
+      "primary_category": "elaboration",
+      "secondary_category": "thematic_echo",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 1:4 'I long to see you again' is elaborated by 4:9 'Timothy, please come as soon as you can' (elaboration). Both express the personal relationship theme and Paul's longing for Timothy's presence (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.1.6",
+      "cross_ref": "1Tim.4.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of spiritual gifts given through laying on of hands (theological_principle). 2 Tim 1:6 'fan into flames the spiritual gift God gave you when I laid my hands on you' and 1 Tim 4:14 'Do not neglect the spiritual gift you received through the prophecy spoken over you when the elders of the church laid their hands on you.' They also share similar vocabulary about gifts and laying on of hands (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.1.7",
+      "cross_ref": "Rom.8.15",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of the Holy Spirit's character - not fear but power/adoption (theological_principle). 2 Tim 1:7 'God has not given us a spirit of fear and timidity, but of power, love, and self-discipline' and Rom 8:15 'you have not received a spirit that makes you fearful slaves. Instead, you received God's Spirit when he adopted you.' Both use parallel 'spirit of' construction (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.1.8",
+      "cross_ref": "Rom.1.16",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of boldness in the gospel without shame (theological_principle). 2 Tim 1:8 'never be ashamed to tell others about our Lord' and Rom 1:16 'I am not ashamed of this Good News about Christ' both affirm boldness about the gospel. Both also give parallel instruction not to be ashamed (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.1.8",
+      "cross_ref": "Eph.3.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 65,
+      "reasoning": "General thematic connection about imprisonment for the gospel (thematic_echo). 2 Tim 1:8 'don't be ashamed of me, either, even though I'm in prison for him' and Eph 3:1 'I, Paul, a prisoner of Christ Jesus for the benefit of you Gentiles' both mention Paul's imprisonment. They also share the theological doctrine of suffering for Christ's mission (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.8",
+      "cross_ref": "2Tim.2.3",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Within 2 Timothy, 1:8 'suffer with me for the sake of the Good News' is elaborated by 2:3 'Endure suffering along with me, as a good soldier of Christ Jesus' (elaboration). Both address the doctrine of faithful suffering for Christ (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.9",
+      "cross_ref": "Rom.8.28",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 70,
+      "reasoning": "General thematic connection about God's calling and purpose (thematic_echo). 2 Tim 1:9 'God saved us and called us to live a holy life...according to his own purpose' and Rom 8:28 'God causes everything to work together for the good of those who love God and are called according to his purpose' both discuss divine calling and purpose. They share the theological doctrine of God's sovereign purpose in salvation (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.9",
+      "cross_ref": "Rom.11.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 65,
+      "reasoning": "Both address the theological doctrine of salvation, though the connection is weaker. 2 Tim 1:9 'God saved us and called us' and Rom 11:14 'I want somehow to make the people of Israel jealous...so I might save some of them' both discuss God's saving work, but in different contexts."
+    },
+    {
+      "anchor_ref": "2Tim.1.9",
+      "cross_ref": "Eph.2.8-9",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Both address the core theological doctrine of salvation by grace, not works (theological_principle). 2 Tim 1:9 'He saved us, not because we deserved it, but because that was his plan' and Eph 2:8-9 'God saved you by his grace...not by your own efforts...So no one can boast' both affirm grace-based salvation. Both also give parallel instruction about the nature of salvation (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.1.9",
+      "cross_ref": "Titus.3.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both Pastoral Epistles address the theological doctrine of salvation by grace, not works (theological_principle). 2 Tim 1:9 'He saved us, not because we deserved it' and Titus 3:5 'he saved us, not because of the righteous things we had done, but because of his mercy' use nearly identical structure and vocabulary (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.1.10",
+      "cross_ref": "1Cor.15.54",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of Christ defeating death through resurrection (theological_principle). 2 Tim 1:10 'Christ Jesus...broke the power of death and illuminated the way to life and immortality' and 1 Cor 15:54 'Death is swallowed up in victory' both affirm Christ's victory over death. General thematic connection about death and immortality (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.1.11",
+      "cross_ref": "1Tim.2.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Pastoral Epistles share nearly identical structure and vocabulary (literary_parallel): 2 Tim 1:11 'God chose me to be a preacher, an apostle, and a teacher of this Good News' and 1 Tim 2:7 'I have been chosen as a preacher and apostle to teach the Gentiles.' Both also express the doctrine of divine apostolic commissioning (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.12",
+      "cross_ref": "1Tim.6.20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both give parallel instruction to guard/protect what has been entrusted (parallel_instruction). 2 Tim 1:12 'I know the one in whom I trust, and I am sure that he is able to guard what I have entrusted to him' and 1 Tim 6:20 'Timothy, guard what God has entrusted to you' both use guard/entrust language. They share the theological doctrine of faithfulness and stewardship (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.13",
+      "cross_ref": "Rom.6.17",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 84,
+      "reasoning": "Both give parallel instruction about holding to sound teaching (parallel_instruction). 2 Tim 1:13 'Hold on to the pattern of wholesome teaching you learned from me' and Rom 6:17 'you wholeheartedly obey this teaching we have given you' both instruct about teaching adherence. They share the theological doctrine of sound doctrine and obedience (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.13",
+      "cross_ref": "1Tim.1.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Pastoral Epistles share distinctive vocabulary and structure about 'the faith' and 'love' in Christ Jesus (literary_parallel): 2 Tim 1:13 'a pattern shaped by the faith and love that you have in Christ Jesus' and 1 Tim 1:14 'He filled me with the faith and love that come from Christ Jesus.' Both express the doctrine of faith and love in Christ (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.1.14",
+      "cross_ref": "Rom.8.9",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of the Holy Spirit dwelling in believers (theological_principle). 2 Tim 1:14 'Through the power of the Holy Spirit who lives within us, carefully guard' and Rom 8:9 'the Spirit of God...lives in you' both affirm the indwelling Spirit. Both also give parallel instruction about life controlled by the Spirit (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.1.14",
+      "cross_ref": "Rom.8.11",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of the Holy Spirit dwelling within and giving life (theological_principle). 2 Tim 1:14 'the Holy Spirit who lives within us' and Rom 8:11 'The Spirit of God, who raised Jesus from the dead, lives in you' both affirm the indwelling Spirit. They share similar 'lives in/within' vocabulary (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.1.14",
+      "cross_ref": "Rom.8.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Both address the theological doctrine of the Holy Spirit, though different aspects. 2 Tim 1:14 'the Holy Spirit who lives within us' and Rom 8:16 'his Spirit joins with our spirit to affirm that we are God's children' both discuss the Spirit's work, but focus on different functions."
+    },
+    {
+      "anchor_ref": "2Tim.1.14",
+      "cross_ref": "Gal.4.6",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of the Holy Spirit dwelling within believers (theological_principle). 2 Tim 1:14 'the Holy Spirit who lives within us' and Gal 4:6 'God has sent the Spirit of his Son into our hearts' both affirm the indwelling Spirit. They share similar language about the Spirit within/in (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.1.15",
+      "cross_ref": "2Tim.4.10",
+      "primary_category": "elaboration",
+      "secondary_category": "exemplification",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 1:15's general statement 'everyone from the province of Asia has deserted me' is elaborated by 4:10's specific example 'Demas has deserted me because he loves the things of this life' (elaboration). 4:10 provides a concrete example of the desertion pattern mentioned in 1:15 (exemplification)."
+    },
+    {
+      "anchor_ref": "2Tim.1.15",
+      "cross_ref": "2Tim.4.16",
+      "primary_category": "elaboration",
+      "secondary_category": "exemplification",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 1:15's general statement 'everyone...has deserted me' is elaborated by 4:16's specific example 'The first time I was brought before the judge, no one came with me. Everyone abandoned me' (elaboration). 4:16 provides a concrete example of the abandonment mentioned in 1:15 (exemplification)."
+    },
+    {
+      "anchor_ref": "2Tim.1.16",
+      "cross_ref": "2Tim.4.19",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, both mention Onesiphorus and his household. 1:16 gives detailed blessing while 4:19 gives brief greeting, creating an elaboration relationship as the earlier passage develops what the later one simply mentions."
+    },
+    {
+      "anchor_ref": "2Tim.1.18",
+      "cross_ref": "Heb.6.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 70,
+      "reasoning": "Both address the theological doctrine of God rewarding faithful service (theological_principle). 2 Tim 1:18 'May the Lord show him special kindness on the day of Christ's return' and Heb 6:10 'God is not unjust. He will not forget how hard you have worked for him' both affirm divine recognition of service. General thematic connection about service and reward (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.1",
+      "cross_ref": "Eph.6.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both give parallel instruction to 'be strong' (parallel_instruction). 2 Tim 2:1 'be strong through the grace that God gives you in Christ Jesus' and Eph 6:10 'Be strong in the Lord and in his mighty power' both command strength. They share the theological doctrine of divine empowerment (theological_principle), though 2 Tim emphasizes grace while Eph emphasizes power."
+    },
+    {
+      "anchor_ref": "2Tim.2.2",
+      "cross_ref": "2Tim.1.13",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Within 2 Timothy, 2:2 elaborates on 1:13's instruction about teaching. 1:13 'Hold on to the pattern of wholesome teaching' is developed by 2:2 'entrust to reliable people who will be able to teach others' (elaboration). Both give parallel instruction about preserving sound teaching (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.2.3",
+      "cross_ref": "2Tim.1.8",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Within 2 Timothy, 2:3 'Endure suffering along with me' elaborates on 1:8 'suffer with me for the sake of the Good News' (elaboration). Both give parallel instruction to embrace suffering for Christ (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.2.3",
+      "cross_ref": "2Tim.4.5",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Within 2 Timothy, both address suffering for ministry. 2:3 'Endure suffering along with me, as a good soldier' and 4:5 'Don't be afraid of suffering for the Lord' form an elaboration relationship (elaboration). Both give parallel instruction about embracing suffering (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.2.5",
+      "cross_ref": "1Cor.9.25",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use athletic competition as metaphor for Christian life (shared_metaphor). 2 Tim 2:5 'athletes cannot win the prize unless they follow the rules' and 1 Cor 9:25 'All athletes are disciplined in their training. They do it to win a prize' both employ athlete imagery. They illustrate the theological doctrine of disciplined perseverance in faith (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.6",
+      "cross_ref": "1Cor.9.7",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "Both use farmer imagery as metaphor for ministry reward (shared_metaphor). 2 Tim 2:6 'hardworking farmers should be the first to enjoy the fruit of their labor' and 1 Cor 9:7 'What farmer plants a vineyard and doesn't have the right to eat some of its fruit?' both employ farmer imagery. They illustrate the wisdom principle that workers deserve their reward (wisdom_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.6",
+      "cross_ref": "1Cor.9.10",
+      "primary_category": "thematic_echo",
+      "secondary_category": "wisdom_principle",
+      "confidence": 70,
+      "reasoning": "General thematic connection about labor and reward (thematic_echo). 2 Tim 2:6 'hardworking farmers should be the first to enjoy the fruit of their labor' and 1 Cor 9:10 'the one who plows and the one who threshes should be able to do their work expecting a share of the harvest' both discuss work and reward. They share the wisdom principle that laborers deserve their harvest (wisdom_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.8",
+      "cross_ref": "Rom.1.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of Jesus as Davidic Messiah who was raised from the dead (theological_principle). 2 Tim 2:8 'Jesus Christ, a descendant of King David, was raised from the dead' and Rom 1:3 'In his earthly life he was born into King David's family line' both affirm Jesus' Davidic descent and resurrection. They share similar vocabulary and structure (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.2.9",
+      "cross_ref": "Eph.3.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 70,
+      "reasoning": "General thematic connection about Paul's imprisonment (thematic_echo). 2 Tim 2:9 'I am suffering and have been chained like a criminal' and Eph 3:1 'I, Paul, a prisoner of Christ Jesus' both mention imprisonment. They share the theological doctrine of suffering for the gospel mission (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.9",
+      "cross_ref": "Phil.1.12-14",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine that imprisonment advances rather than hinders the gospel (theological_principle). 2 Tim 2:9 'I am suffering and have been chained like a criminal. But the word of God cannot be chained' and Phil 1:12 'everything that has happened to me here has helped to spread the Good News' both affirm gospel advancement through suffering. General thematic connection about imprisonment and gospel (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.10",
+      "cross_ref": "Col.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of suffering for the sake of others' salvation (theological_principle). 2 Tim 2:10 'I am willing to endure anything if it will bring salvation and eternal glory in Christ Jesus to those God has chosen' and Col 1:24 'I am glad when I suffer for you in my body, for I am participating in the sufferings of Christ' both express sacrificial suffering for others. General thematic connection about suffering and the church (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.11",
+      "cross_ref": "Rom.6.2-11",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of dying and living with Christ (theological_principle). 2 Tim 2:11 'If we die with him, we will also live with him' and Rom 6:8 'since we died with Christ, we know we will also live with him' both express union with Christ in death and life. General thematic connection about death, life, and identification with Christ (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.11",
+      "cross_ref": "1Thes.5.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 70,
+      "reasoning": "Both address the theological doctrine of living with Christ through his death (theological_principle). 2 Tim 2:11 'If we die with him, we will also live with him' and 1 Thes 5:10 'Christ died for us so that...we can live with him forever' both affirm living with Christ. General thematic connection about death and life (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.12",
+      "cross_ref": "Matt.10.33",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of denial leading to being denied (theological_principle). 2 Tim 2:12 'If we deny him, he will deny us' and Matt 10:33 'everyone who denies me here on earth, I will also deny before my Father in heaven' both express reciprocal denial. They share similar if-then structure and vocabulary (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.2.12",
+      "cross_ref": "Rom.8.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine that enduring suffering leads to glorification with Christ (theological_principle). 2 Tim 2:12 'If we endure hardship, we will reign with him' and Rom 8:17 'we will also share in his glory if we share in his suffering' both affirm the suffering-to-glory pattern. They share parallel conditional structure (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.2.12",
+      "cross_ref": "1Pet.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of sharing in Christ's suffering leading to glory (theological_principle). 2 Tim 2:12 'If we endure hardship, we will reign with him' and 1 Pet 4:13 'be very glad\u2014for these trials make you partners with Christ in his suffering, so that you will have the wonderful joy of seeing his glory' both affirm suffering-to-glory pattern. Both give parallel instruction to embrace suffering (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.2.13",
+      "cross_ref": "Num.23.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of God's unchanging faithfulness (theological_principle). 2 Tim 2:13 'If we are unfaithful, he remains faithful, for he cannot deny who he is' and Num 23:19 'God is not a man, so he does not lie. He is not human, so he does not change his mind' both affirm God's unchangeable nature. 2 Tim alludes to Numbers' principle about God's character (allusion)."
+    },
+    {
+      "anchor_ref": "2Tim.2.13",
+      "cross_ref": "Rom.3.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of God's faithfulness despite human unfaithfulness (theological_principle). 2 Tim 2:13 'If we are unfaithful, he remains faithful' and Rom 3:3 'some of them were unfaithful; but just because they were unfaithful, does that mean God will be unfaithful?' both contrast human unfaithfulness with divine faithfulness. They share similar unfaithful/faithful vocabulary and structure (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.2.13",
+      "cross_ref": "1Cor.1.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of God's faithfulness (theological_principle). 2 Tim 2:13 'he remains faithful, for he cannot deny who he is' and 1 Cor 1:9 'God will do this, for he is faithful to do what he says' both affirm God's faithfulness, though 2 Tim focuses on faithfulness to his nature while 1 Cor focuses on faithfulness to promises."
+    },
+    {
+      "anchor_ref": "2Tim.2.14",
+      "cross_ref": "1Tim.1.4",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both give parallel instruction to avoid useless arguments (parallel_instruction). 2 Tim 2:14 'command them in God's presence to stop fighting over words' and 1 Tim 1:4 'Don't let them waste their time in endless discussion of myths' both warn against fruitless debates. They share the theological doctrine of sound teaching versus empty speculation (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.14",
+      "cross_ref": "1Tim.6.4",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both give parallel instruction against argumentativeness (parallel_instruction). 2 Tim 2:14 'stop fighting over words. Such arguments are useless' and 1 Tim 6:4 'Such a person...has an unhealthy desire to quibble over the meaning of words. This stirs up arguments' both warn against word-fighting. They share the theological doctrine of sound teaching versus contentious false teaching (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.14",
+      "cross_ref": "Titus.3.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both give parallel instruction to avoid useless arguments (parallel_instruction). 2 Tim 2:14 'stop fighting over words. Such arguments are useless' and Titus 3:9 'Do not get involved in foolish discussions...These things are useless' both use similar language warning against fruitless debates. They share the theological doctrine of productive versus useless teaching (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.17",
+      "cross_ref": "1Tim.1.20",
+      "primary_category": "thematic_echo",
+      "secondary_category": "exemplification",
+      "confidence": 70,
+      "reasoning": "General thematic connection about false teachers named Hymenaeus (thematic_echo). 2 Tim 2:17 mentions 'Hymenaeus and Philetus' as examples of spreading false teaching, while 1 Tim 1:20 mentions 'Hymenaeus and Alexander' as disciplined false teachers. 2 Tim provides specific examples of the false teaching pattern (exemplification)."
+    },
+    {
+      "anchor_ref": "2Tim.2.18",
+      "cross_ref": "1Tim.1.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of shipwrecked faith through abandoning truth (theological_principle). 2 Tim 2:18 'They have left the path of truth...they have undermined the faith of some' and 1 Tim 1:19 'some people have deliberately violated their consciences; as a result, their faith has been shipwrecked' both discuss faith being destroyed. General thematic connection about false teaching and faith (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.18",
+      "cross_ref": "1Tim.6.21",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Pastoral Epistles share distinctive phrase 'wandered from/left the faith' (literary_parallel). 2 Tim 2:18 'They have left the path of truth' and 1 Tim 6:21 'Some people have wandered from the faith by following such foolishness' use similar vocabulary. Both express the doctrine of apostasy through false teaching (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.19",
+      "cross_ref": "Num.16.5",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Tim 2:19 alludes to Num 16:5 (allusion): 'The Lord knows those who are his' echoes 'the LORD will show us who belongs to him.' The Old Testament narrative about Korah's rebellion provides background for distinguishing true from false followers. Both express the theological doctrine of God knowing his own (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.19",
+      "cross_ref": "John.10.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 70,
+      "reasoning": "Both address the theological doctrine of the Lord knowing his own people (theological_principle). 2 Tim 2:19 'The Lord knows those who are his' and John 10:14 'I am the good shepherd; I know my own sheep, and they know me' both affirm divine knowledge of believers. General thematic connection about knowing/belonging (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.2.20",
+      "cross_ref": "Rom.9.21",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both use potter/vessels metaphor for different purposes/destinies (shared_metaphor). 2 Tim 2:20 'some utensils are made of gold and silver, and some are made of wood and clay. The expensive utensils are used for special occasions' and Rom 9:21 'doesn't he [the potter] have a right to use the same lump of clay to make one jar for decoration and another to throw garbage into?' both employ vessel imagery. They illustrate the theological doctrine of God's sovereign purposes (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.21",
+      "cross_ref": "2Tim.3.17",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 2:21 'If you keep yourself pure, you will be a special utensil for honorable use...ready for the Master to use you for every good work' elaborates on 3:17 'God uses it to prepare and equip his people to do every good work' (elaboration). Both express the theological doctrine of being equipped for service (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.22",
+      "cross_ref": "1Tim.6.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "Pastoral Epistles share distinctive 'run from...pursue' parallel structure and nearly identical virtue lists (literary_parallel). 2 Tim 2:22 'Run from anything that stimulates youthful lusts. Instead, pursue righteous living, faithfulness, love, and peace' and 1 Tim 6:11 'run from all these evil things. Pursue righteousness and a godly life, along with faith, love, perseverance, and gentleness' both use the same two-part command structure. Both give parallel instruction about fleeing vice and pursuing virtue (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.2.23",
+      "cross_ref": "1Tim.4.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both give parallel instruction to avoid foolish controversies (parallel_instruction). 2 Tim 2:23 'don't get involved in foolish, ignorant arguments that only start fights' and 1 Tim 4:7 'Do not waste time arguing over godless ideas and old wives' tales' both warn against useless debates. They share the theological doctrine of sound teaching versus empty speculation (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.24",
+      "cross_ref": "1Tim.3.2-3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 84,
+      "reasoning": "Both give parallel instruction about character qualifications for ministry (parallel_instruction). 2 Tim 2:24 'A servant of the Lord must not quarrel but must be kind to everyone, be able to teach' and 1 Tim 3:2-3 'a church leader...must be able to teach...not be violent but gentle, not quarrelsome' share similar qualification language. They express the theological doctrine of godly leadership character (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.24",
+      "cross_ref": "Titus.1.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both give parallel instruction about character qualifications for ministry (parallel_instruction). 2 Tim 2:24 'A servant of the Lord must not quarrel but must be kind' and Titus 1:7 'a church leader...must not be...quick-tempered' both address temperament. They express the theological doctrine of godly leadership character (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.2.26",
+      "cross_ref": "1Tim.3.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 65,
+      "reasoning": "General thematic connection about the devil's trap (thematic_echo). 2 Tim 2:26 'escape from the devil's trap' and 1 Tim 3:7 'will not be disgraced and fall into the devil's trap' both mention Satan's snare. They share the theological doctrine of spiritual warfare and deception (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.1",
+      "cross_ref": "1Tim.4.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both give parallel instruction about end-times apostasy (parallel_instruction). 2 Tim 3:1 'in the last days there will be very difficult times' and 1 Tim 4:1 'in the last times some will turn away from the true faith' both warn about the last days. They share the theological doctrine of eschatological apostasy (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.1",
+      "cross_ref": "Jude.1.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine of end-times scoffers (theological_principle). 2 Tim 3:1 'in the last days there will be very difficult times' and Jude 18 'in the last times there would be scoffers whose purpose in life is to satisfy their ungodly desires' both predict last-days apostasy. They share similar 'last days/times' vocabulary (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.3.2-3",
+      "cross_ref": "Rom.1.29-31",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Both present extended vice lists with overlapping terms (literary_parallel): 'boastful and proud, scoffing at God, disobedient to their parents...unloving and unforgiving...They will hate what is good' parallels 'wickedness...greed, hate...They refuse to understand, break their promises, are heartless.' Both express the theological doctrine of human depravity (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.6",
+      "cross_ref": "Jude.1.4",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 70,
+      "reasoning": "General thematic connection about false teachers infiltrating (thematic_echo). 2 Tim 3:6 'They are the kind who work their way into people's homes' and Jude 4 'some ungodly people have wormed their way into your churches' both describe infiltration tactics. They share the theological doctrine of false teacher deception (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.8",
+      "cross_ref": "1Tim.6.5",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Indirect reference with shared vocabulary about corrupt minds opposing truth (allusion). 2 Tim 3:8 'These teachers oppose the truth just as Jannes and Jambres opposed Moses. They have depraved minds and a counterfeit faith' and 1 Tim 6:5 'These people always cause trouble. Their minds are corrupt, and they have turned their backs on the truth' both describe corrupted minds rejecting truth. They share the theological doctrine of spiritual/intellectual corruption (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.10",
+      "cross_ref": "1Tim.4.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 84,
+      "reasoning": "Both give parallel instruction about teaching and following Paul's example (parallel_instruction). 2 Tim 3:10 'you, Timothy, certainly know what I teach, and how I live' and 1 Tim 4:6 'If you explain these things to the brothers and sisters, Timothy, you will be a worthy servant of Christ Jesus' both address Timothy's teaching role. They share the theological doctrine of sound teaching (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.12",
+      "cross_ref": "John.15.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine that following Christ necessarily involves persecution (theological_principle). 2 Tim 3:12 'everyone who wants to live a godly life in Christ Jesus will suffer persecution' and John 15:20 'Since they persecuted me, naturally they will persecute you' both predict inevitable persecution. General thematic connection about godliness and persecution (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.3.14",
+      "cross_ref": "2Tim.1.13",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 3:14 'remain faithful to the things you have been taught' elaborates on 1:13 'Hold on to the pattern of wholesome teaching you learned from me' (elaboration). Both give parallel instruction to maintain sound teaching (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.3.14",
+      "cross_ref": "2Tim.2.2",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 3:14 'remain faithful to the things you have been taught' elaborates the teaching preservation theme from 2:2 'entrust to reliable people who will be able to teach others' (elaboration). Both give parallel instruction about preserving teaching (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.3.15",
+      "cross_ref": "John.5.39",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Both address the theological doctrine that Scripture points to salvation/eternal life through Christ (theological_principle). 2 Tim 3:15 'the holy Scriptures...have given you the wisdom to receive the salvation that comes by trusting in Christ Jesus' and John 5:39 'You search the Scriptures because you think they give you eternal life. But the Scriptures point to me!' both affirm Scripture's salvific purpose. General thematic connection about Scripture and salvation (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.3.16",
+      "cross_ref": "Rom.15.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Both address the theological doctrine of Scripture's instructional purpose (theological_principle). 2 Tim 3:16 'All Scripture is inspired by God and is useful to teach us' and Rom 15:4 'Such things were written in the Scriptures long ago to teach us' both affirm Scripture's teaching function. Both give parallel instruction about learning from Scripture (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.3.16",
+      "cross_ref": "2Pet.1.20-21",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of Scripture's divine origin and inspiration (theological_principle). 2 Tim 3:16 'All Scripture is inspired by God' and 2 Pet 1:20-21 'no prophecy in Scripture ever came from the prophet's own understanding...moved by the Holy Spirit' both affirm divine authorship. They share vocabulary about Scripture and God's Spirit (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.3.17",
+      "cross_ref": "1Tim.6.11",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 70,
+      "reasoning": "General thematic connection about being equipped as a person of God (thematic_echo). 2 Tim 3:17 'God uses it to prepare and equip his people' and 1 Tim 6:11 'you, Timothy, are a man of God' both discuss divine equipping. They share the theological doctrine of spiritual preparation for service (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.3.17",
+      "cross_ref": "2Tim.2.21",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 3:17 'prepare and equip his people to do every good work' elaborates on 2:21 'ready for the Master to use you for every good work' (elaboration). Both express the theological doctrine of being equipped for divine service (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.2",
+      "cross_ref": "1Tim.5.20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both give parallel instruction about public correction and rebuke (parallel_instruction). 2 Tim 4:2 'Patiently correct, rebuke, and encourage your people' and 1 Tim 5:20 'Those who sin should be reprimanded in front of the whole church' both address corrective ministry. They share the theological doctrine of church discipline (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.2",
+      "cross_ref": "Titus.1.13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both give parallel instruction to rebuke/reprimand sternly (parallel_instruction). 2 Tim 4:2 'Patiently correct, rebuke, and encourage' and Titus 1:13 'reprimand them sternly to make them strong in the faith' both address corrective ministry. They share the theological doctrine of sound faith through correction (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.3",
+      "cross_ref": "2Tim.3.1-2",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 4:3 'a time is coming when people will no longer listen to sound and wholesome teaching' elaborates on 3:1-2's description of last-days characteristics (elaboration). Both address the theological doctrine of end-times apostasy (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.4",
+      "cross_ref": "1Tim.1.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both address the theological doctrine of rejecting truth for myths (theological_principle). 2 Tim 4:4 'They will reject the truth and chase after myths' and 1 Tim 1:4 'endless discussion of myths and spiritual pedigrees' both warn about myths versus truth. They share vocabulary about myths (literary_parallel)."
+    },
+    {
+      "anchor_ref": "2Tim.4.5",
+      "cross_ref": "2Tim.1.8",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Within 2 Timothy, 4:5 'Don't be afraid of suffering for the Lord' elaborates on 1:8 'don't be ashamed...suffer with me' (elaboration). Both give parallel instruction to embrace suffering (parallel_instruction)."
+    },
+    {
+      "anchor_ref": "2Tim.4.7",
+      "cross_ref": "1Cor.9.24-27",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use athletic race/fight metaphor for Christian life (shared_metaphor). 2 Tim 4:7 'I have fought the good fight, I have finished the race, and I have remained faithful' and 1 Cor 9:24-27 'in a race everyone runs...I run with purpose in every step. I am not just shadowboxing' both employ athletic imagery. They illustrate the theological doctrine of disciplined perseverance to the end (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.7",
+      "cross_ref": "Phil.3.12-14",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use race metaphor for Christian life (shared_metaphor). 2 Tim 4:7 'I have finished the race' and Phil 3:12-14 'I press on to reach the end of the race' both employ running imagery. They illustrate the theological doctrine of pressing toward the goal of Christlikeness/glory (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.7",
+      "cross_ref": "1Tim.6.12",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use fight/combat metaphor for Christian life (shared_metaphor). 2 Tim 4:7 'I have fought the good fight' and 1 Tim 6:12 'Fight the good fight for the true faith' both use nearly identical fight imagery. They illustrate the theological doctrine of spiritual warfare for faith (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.8",
+      "cross_ref": "1Cor.9.25",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use prize/crown metaphor for final reward (shared_metaphor). 2 Tim 4:8 'the prize awaits me\u2014the crown of righteousness' and 1 Cor 9:25 'They do it to win a prize that will fade away; but we do it for an eternal prize' both employ prize/crown imagery. They illustrate the theological doctrine of eschatological reward (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.8",
+      "cross_ref": "Phil.3.14",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use prize metaphor for heavenly reward (shared_metaphor). 2 Tim 4:8 'the prize awaits me\u2014the crown of righteousness' and Phil 3:14 'receive the heavenly prize for which God, through Christ Jesus, is calling us' both employ prize imagery. They illustrate the theological doctrine of future glorification (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.8",
+      "cross_ref": "Col.1.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "thematic_echo",
+      "confidence": 70,
+      "reasoning": "Both address the theological doctrine of future hope/reward reserved in heaven (theological_principle). 2 Tim 4:8 'the prize awaits me\u2014the crown of righteousness' and Col 1:5 'what God has reserved for you in heaven' both speak of future heavenly reward. General thematic connection about hope and reward (thematic_echo)."
+    },
+    {
+      "anchor_ref": "2Tim.4.8",
+      "cross_ref": "Rev.2.10",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use crown metaphor for eschatological reward (shared_metaphor). 2 Tim 4:8 'the crown of righteousness' and Rev 2:10 'I will give you the crown of life' both employ crown imagery for eternal reward. They illustrate the theological doctrine of reward for faithful endurance (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.11",
+      "cross_ref": "Col.4.10",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 60,
+      "reasoning": "General thematic connection about Mark as a companion (thematic_echo). 2 Tim 4:11 'Bring Mark with you when you come' and Col 4:10 'Mark, Barnabas's cousin...sends you his greetings' both mention Mark, but in different contexts without strong doctrinal connection."
+    },
+    {
+      "anchor_ref": "2Tim.4.11",
+      "cross_ref": "Col.4.14",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 60,
+      "reasoning": "General thematic connection about Luke as a companion (thematic_echo). 2 Tim 4:11 'Only Luke is with me' and Col 4:14 'Luke, the beloved doctor, sends his greetings' both mention Luke, but in different contexts without strong doctrinal connection."
+    },
+    {
+      "anchor_ref": "2Tim.4.11",
+      "cross_ref": "Phlm.1.24",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 60,
+      "reasoning": "General thematic connection about Paul's companions (thematic_echo). 2 Tim 4:11 mentions 'Luke' and 'Mark' while Phlm 24 mentions 'Mark...Luke, my co-workers.' Both list companions but in different contexts without strong doctrinal connection."
+    },
+    {
+      "anchor_ref": "2Tim.4.12",
+      "cross_ref": "Eph.6.21-22",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 65,
+      "reasoning": "General thematic connection about Tychicus being sent (thematic_echo). 2 Tim 4:12 'I sent Tychicus to Ephesus' and Eph 6:21-22 'Tychicus will give you a full report' both mention Tychicus as messenger, but 2 Tim is past tense reporting while Eph is introduction."
+    },
+    {
+      "anchor_ref": "2Tim.4.12",
+      "cross_ref": "Col.4.7-8",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 65,
+      "reasoning": "General thematic connection about Tychicus as messenger (thematic_echo). 2 Tim 4:12 'I sent Tychicus to Ephesus' and Col 4:7-8 'Tychicus will give you a full report' both mention Tychicus, but different contexts (past sending vs. present introduction)."
+    },
+    {
+      "anchor_ref": "2Tim.4.14",
+      "cross_ref": "1Tim.1.20",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 65,
+      "reasoning": "General thematic connection about Alexander as opponent (thematic_echo). 2 Tim 4:14 'Alexander the coppersmith did me much harm' and 1 Tim 1:20 'Hymenaeus and Alexander' both mention Alexander negatively, but different contexts (personal harm vs. false teaching) and possibly different people."
+    },
+    {
+      "anchor_ref": "2Tim.4.17",
+      "cross_ref": "Ps.22.21",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "2 Tim 4:17 'I was rescued from the lion's mouth' alludes to Ps 22:21 'Snatch me from the lion's jaws' (allusion). Paul uses psalmist's deliverance language to describe his own rescue. Both express the theological doctrine of God's deliverance from danger (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.17",
+      "cross_ref": "Dan.6.22",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "2 Tim 4:17 'I was rescued from the lion's mouth' alludes to Dan 6:22 'My God sent his angel to shut the lions' mouths' (allusion). Paul's deliverance echoes Daniel's miraculous rescue from lions. Both express the theological doctrine of God's protective deliverance (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.18",
+      "cross_ref": "Ps.121.7",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 70,
+      "reasoning": "2 Tim 4:18 'the Lord will deliver me from every evil attack' alludes to psalm themes of divine protection (allusion), though the cross-reference text appears corrupted. Both would express the theological doctrine of God's ongoing deliverance (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.18",
+      "cross_ref": "Rom.11.36",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both conclude with doxology giving glory to God forever (literary_parallel). 2 Tim 4:18 'All glory to God forever and ever! Amen' and Rom 11:36 'All glory to him forever! Amen' share nearly identical doxological structure. They express the theological doctrine of God's eternal glory (theological_principle)."
+    },
+    {
+      "anchor_ref": "2Tim.4.19",
+      "cross_ref": "2Tim.1.16",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Within 2 Timothy, 4:19 'Give my greetings...to those living in the household of Onesiphorus' briefly mentions what 1:16 'May the Lord show special kindness to Onesiphorus and all his family' elaborates (elaboration). The earlier passage develops the blessing while the later simply sends greetings."
+    },
+    {
+      "anchor_ref": "2Tim.4.20",
+      "cross_ref": "Rom.16.23",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 60,
+      "reasoning": "General thematic connection about Erastus in Corinth (thematic_echo). 2 Tim 4:20 'Erastus stayed at Corinth' and Rom 16:23 'Erastus...sends you his greetings' both mention Erastus associated with Corinth, but different contexts and possibly different time periods."
+    }
+  ]
+}

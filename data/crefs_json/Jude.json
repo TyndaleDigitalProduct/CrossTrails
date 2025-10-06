@@ -1,0 +1,555 @@
+{
+  "book": "Jude",
+  "book_number": 65,
+  "verified": true,
+  "total_items": 67,
+  "improved_count": 67,
+  "category_distribution": {
+    "historical_reference": 8,
+    "literary_parallel": 21,
+    "thematic_echo": 22,
+    "allusion": 10,
+    "quotation": 1,
+    "typology": 3,
+    "prophecy_fulfillment": 1,
+    "elaboration": 1
+  },
+  "items": [
+    {
+      "anchor_ref": "Jude.1.1",
+      "cross_ref": "Matt.13.55",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Matthew identifies 'James and Joseph and Simon and Judas' as Jesus' brothers. Jude identifies himself as 'brother of James'\u2014this is historical reference to same family. Jude's self-identification as James' brother (rather than Jesus' brother) shows humility and leverages James' authority as Jerusalem church leader."
+    },
+    {
+      "anchor_ref": "Jude.1.1",
+      "cross_ref": "Rom.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both Paul and Jude use 'servant/slave' (doulos) of Jesus Christ as opening self-designation. Literary parallel showing early Christian leadership identifying through service rather than privilege. The slave metaphor emphasizes complete devotion and submission to Christ's lordship."
+    },
+    {
+      "anchor_ref": "Jude.1.1",
+      "cross_ref": "Rom.1.6-7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 80,
+      "reasoning": "Romans addresses recipients as 'called' (kl\u0113tois), echoing Jude's 'called' (kl\u0113tois). Literary parallel showing standard Christian self-understanding as divinely summoned community. Both texts root Christian identity in divine initiative rather than human choice."
+    },
+    {
+      "anchor_ref": "Jude.1.1",
+      "cross_ref": "Jas.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "Both James and Jude identify as 'servant of...Jesus Christ' rather than as Jesus' brothers. Literary parallel showing shared humility\u2014both suppress familial claim to emphasize servant status. The parallel also provides historical confirmation of their relationship as brothers who became Christian leaders."
+    },
+    {
+      "anchor_ref": "Jude.1.2",
+      "cross_ref": "2Pet.1.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both 2 Peter and Jude use identical triadic benediction: 'mercy, peace and love be yours in abundance.' This is direct literary parallel showing either common tradition or literary dependence. The identical formula suggests coordination between these two epistles addressing similar situations."
+    },
+    {
+      "anchor_ref": "Jude.1.3",
+      "cross_ref": "1Tim.6.12",
+      "primary_category": "thematic_echo",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "1 Timothy's 'Fight the good fight of the faith' echoes Jude's exhortation to 'contend for the faith.' Both use agonistic (contest) metaphor for doctrinal defense. Thematic echo showing early Christian understanding of orthodoxy as requiring active, even combative, protection."
+    },
+    {
+      "anchor_ref": "Jude.1.3",
+      "cross_ref": "Titus.1.4",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Titus addresses 'our common salvation/faith,' echoing Jude's 'salvation we share.' Both emphasize universal Christian possession of same faith/salvation. Thematic echo showing apostolic emphasis on unity\u2014despite diverse contexts, believers share identical gospel."
+    },
+    {
+      "anchor_ref": "Jude.1.3",
+      "cross_ref": "2Pet.3.1-2",
+      "primary_category": "thematic_echo",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "2 Peter writes to 'stimulate you to wholesome thinking...recall...what the holy prophets said,' paralleling Jude's urgency to 'contend for the faith...entrusted to God's holy people.' Both express pastoral urgency about preserving apostolic teaching against false teachers. Thematic echo with possible literary connection given extensive parallels between epistles."
+    },
+    {
+      "anchor_ref": "Jude.1.4",
+      "cross_ref": "Gal.2.4",
+      "primary_category": "thematic_echo",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Paul's 'false believers had infiltrated our ranks' parallels Jude's 'certain individuals...have secretly slipped in.' Both use infiltration metaphor for false teachers entering church. Thematic echo showing consistent apostolic concern with covert heresy\u2014danger comes from inside masquerading as orthodox."
+    },
+    {
+      "anchor_ref": "Jude.1.4",
+      "cross_ref": "2Pet.2.1-2",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 95,
+      "reasoning": "2 Peter warns 'false teachers among you...will secretly introduce destructive heresies,' nearly identical to Jude's 'ungodly people...who have secretly slipped in.' Direct literary parallel\u2014both describe covert infiltration by false teachers. The extensive parallels between Jude and 2 Peter suggest literary dependence or common source."
+    },
+    {
+      "anchor_ref": "Jude.1.4",
+      "cross_ref": "1Jn.2.21",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "1 John addresses deceivers among them ('but no lie comes from the truth'), echoing Jude's concern with infiltrators 'whose condemnation was written about long ago.' Both texts address internal threat from those claiming Christian identity while teaching falsehood."
+    },
+    {
+      "anchor_ref": "Jude.1.5",
+      "cross_ref": "Exod.14.21-31",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Jude references 'the Lord delivered his people out of Egypt' as historical event, but deploys it typologically: initial salvation doesn't guarantee final salvation. Historical reference becomes warning typology\u2014exodus generation saved from Egypt but perished in wilderness prefigures Christian apostasy danger."
+    },
+    {
+      "anchor_ref": "Jude.1.5",
+      "cross_ref": "Num.14.29-37",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Numbers records God's judgment: wilderness generation 'will not see the land I promised.' Jude references this as historical precedent for apostasy judgment: 'he later destroyed those who did not believe.' Historical reference deployed as warning typology\u2014unbelief after salvation leads to destruction."
+    },
+    {
+      "anchor_ref": "Jude.1.5",
+      "cross_ref": "Deut.2.15",
+      "primary_category": "historical_reference",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "Deuteronomy summarizes: 'the LORD's hand was against them until he had completely eliminated them.' Jude alludes to this total destruction of wilderness generation as warning. Historical reference emphasizing divine judgment's thoroughness against covenant unfaithfulness."
+    },
+    {
+      "anchor_ref": "Jude.1.5",
+      "cross_ref": "1Cor.10.5-10",
+      "primary_category": "thematic_echo",
+      "secondary_category": "typology",
+      "confidence": 95,
+      "reasoning": "Paul interprets wilderness rebellion typologically: 'God was not pleased with most of them...as examples for us.' Jude makes identical move\u2014exodus becomes typological warning. Thematic echo showing consistent early Christian hermeneutic: both authors deploy same OT event as typological pattern warning the church against apostasy."
+    },
+    {
+      "anchor_ref": "Jude.1.6",
+      "cross_ref": "2Pet.2.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter describes 'angels who sinned...sent to hell, putting them in chains,' nearly identical to Jude's 'angels...kept in darkness, bound with everlasting chains.' Direct literary parallel with identical vocabulary and theology. The parallels suggest literary dependence or common tradition about angelic rebellion."
+    },
+    {
+      "anchor_ref": "Jude.1.6",
+      "cross_ref": "2Pet.2.9",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Peter's pattern: 'the Lord knows how to...hold the unrighteous for punishment on the day of judgment' echoes Jude's structure\u2014angels held in chains 'for judgment on the great Day.' Both use interim imprisonment before final judgment pattern. Thematic echo of two-stage judgment theology."
+    },
+    {
+      "anchor_ref": "Jude.1.7",
+      "cross_ref": "Gen.19.4-25",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 90,
+      "reasoning": "Genesis narrates Sodom and Gomorrah's destruction for sexual sin, which Jude references as historical event deployed typologically: 'serve as an example of those who suffer the punishment of eternal fire.' Historical reference becomes warning typology\u2014divine judgment on sexual immorality prefigures eternal punishment."
+    },
+    {
+      "anchor_ref": "Jude.1.7",
+      "cross_ref": "Matt.10.15",
+      "primary_category": "allusion",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "Jesus invokes Sodom as judgment comparison: 'more bearable for Sodom on the day of judgment than for that town.' Jude echoes Jesus' use of Sodom as typological judgment warning. Allusion showing Jude draws on Jesus' eschatological teaching\u2014Sodom becomes standard judgment metaphor."
+    },
+    {
+      "anchor_ref": "Jude.1.7",
+      "cross_ref": "2Pet.2.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter references Sodom and Gomorrah reduced to ashes 'as an example of what is going to happen to the ungodly,' identical to Jude's deployment. Direct literary parallel\u2014both use Sodom identically as warning example. The parallel suggests coordination between these epistles."
+    },
+    {
+      "anchor_ref": "Jude.1.7",
+      "cross_ref": "2Pet.2.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "2 Peter condemns those who 'follow corrupt desire' (sexual immorality) and 'despise authority,' paralleling Jude's condemnation of those following Sodom's sexual sin and rejecting authority. Literary parallel showing both epistles link sexual immorality with authority rejection as marks of false teachers."
+    },
+    {
+      "anchor_ref": "Jude.1.8",
+      "cross_ref": "2Pet.2.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Same as previous\u20142 Peter's description of false teachers who 'pollute their own bodies, reject authority and heap abuse on celestial beings' matches Jude's 'ungodly people...pollute their own bodies, reject authority and heap abuse on celestial beings' nearly word-for-word. Direct literary parallel."
+    },
+    {
+      "anchor_ref": "Jude.1.9",
+      "cross_ref": "Dan.10.13",
+      "primary_category": "allusion",
+      "secondary_category": "historical_reference",
+      "confidence": 75,
+      "reasoning": "Daniel mentions 'Michael, one of the chief princes' in apocalyptic vision. Jude alludes to extra-biblical tradition (Testament of Moses) about Michael disputing over Moses' body. This is allusion drawing on broader Jewish tradition, not direct prophecy fulfillment. Jude uses midrashic material to make theological point about angelic humility."
+    },
+    {
+      "anchor_ref": "Jude.1.9",
+      "cross_ref": "Dan.10.21",
+      "primary_category": "allusion",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Daniel identifies 'Michael, your prince' as Israel's angelic defender. Jude alludes to Michael's role but focuses on his restraint in not slandering Satan. Allusion showing Jude assumes readers' familiarity with Jewish angelology\u2014Michael's authority is presupposed, his humility is emphasized."
+    },
+    {
+      "anchor_ref": "Jude.1.9",
+      "cross_ref": "Dan.12.1",
+      "primary_category": "allusion",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Daniel prophesies 'Michael, the great prince who protects your people, will arise.' Jude alludes to Michael's protective role while making different point: even archangel doesn't pronounce slanderous judgment. Allusion leverages Daniel's angelology for ethical argument about human speech."
+    },
+    {
+      "anchor_ref": "Jude.1.9",
+      "cross_ref": "Zech.3.2",
+      "primary_category": "quotation",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "Zechariah records angelic rebuke of Satan: 'The LORD rebuke you, Satan!' which Jude directly quotes Michael saying. This is quotation\u2014Jude applies Zechariah's phrase to Michael-Satan dispute. The quotation shows even archangel defers judgment to God rather than pronouncing own condemnation."
+    },
+    {
+      "anchor_ref": "Jude.1.9",
+      "cross_ref": "2Pet.2.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2 Peter states 'angels...do not heap abuse on such beings when bringing judgment before the Lord,' paralleling Jude's Michael not pronouncing judgment on Satan. Literary parallel showing both texts use angelic restraint as contrast to false teachers' presumption in slandering spiritual authorities."
+    },
+    {
+      "anchor_ref": "Jude.1.9",
+      "cross_ref": "Rev.12.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Revelation depicts 'Michael and his angels fought against the dragon,' echoing Jude's Michael opposing Satan. Both texts presuppose cosmic conflict between Michael and Satan. Thematic echo showing widespread early Christian angelology: Michael as divine warrior against satanic forces."
+    },
+    {
+      "anchor_ref": "Jude.1.10",
+      "cross_ref": "2Pet.2.12",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter describes false teachers as 'creatures of instinct...they blaspheme in matters they do not understand,' nearly identical to Jude's 'these people...slander whatever they do not understand...they destroy themselves by the very things that...they do by instinct.' Direct literary parallel with nearly identical wording."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "Gen.4.3-8",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "Genesis narrates Cain murdering Abel out of envy. Jude invokes 'the way of Cain' as typological warning\u2014Cain becomes type of those who reject God's way and harm the righteous. Historical reference deployed typologically: Cain prefigures all who choose self-will over God's will, leading to violence against faithful."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "Num.16.1-35",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "Numbers records Korah's rebellion against Moses' authority, resulting in earth swallowing rebels. Jude invokes 'Korah's rebellion' as typological warning. Historical reference deployed typologically: Korah becomes type of authority-rejecting rebels who face divine judgment. Pattern: rebellion against God-appointed leadership \u2192 destruction."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "Num.22.7",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "Numbers records Balaam seeking divination fees, attempting to curse Israel for profit. Jude invokes 'Balaam's error' as typology for greed-motivated false teaching. Historical reference deployed typologically: Balaam becomes type of prophet who compromises truth for financial gain."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "Num.31.16",
+      "primary_category": "historical_reference",
+      "secondary_category": "typology",
+      "confidence": 85,
+      "reasoning": "Numbers reveals Balaam's strategy: seduce Israelites into idolatry through Moabite women. Jude alludes to this as part of 'Balaam's error'\u2014not just greed but corrupting God's people. Historical reference supporting typology: Balaam as type of false teacher who leads believers into compromise."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "2Pet.2.15-16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 95,
+      "reasoning": "2 Peter references 'the way of Balaam...who loved the wages of wickedness,' paralleling Jude's 'rushed for profit into Balaam's error.' Literary parallel\u2014both use Balaam identically as type of greedy false teacher. The parallel reinforces literary connection between epistles."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "1Jn.3.12",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 John references 'Cain, who belonged to the evil one and murdered his brother,' echoing Jude's 'way of Cain.' Both deploy Cain typologically as paradigm of evil opposing righteousness. Thematic echo showing widespread early Christian use of Cain as archetypal antagonist to godliness."
+    },
+    {
+      "anchor_ref": "Jude.1.11",
+      "cross_ref": "Rev.2.14",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Revelation condemns those holding 'to the teaching of Balaam, who taught Balak to entice the Israelites to sin,' echoing Jude's Balaam reference. Both texts use Balaam as warning against compromising teachers who lead believers into moral/spiritual corruption. Thematic echo of consistent Balaam typology."
+    },
+    {
+      "anchor_ref": "Jude.1.12",
+      "cross_ref": "Ezek.34.8",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Ezekiel condemns 'shepherds who only take care of themselves,' which Jude echoes: false teachers are 'shepherds who feed only themselves.' Allusion to prophetic condemnation of self-serving leaders. Shared metaphor: shepherd supposed to care for flock, not exploit it for personal benefit."
+    },
+    {
+      "anchor_ref": "Jude.1.12",
+      "cross_ref": "Matt.15.13",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Jesus warns 'every plant that my heavenly Father has not planted will be pulled up by the roots,' echoing Jude's image of false teachers as 'autumn trees, without fruit and uprooted.' Both use plant metaphor for inauthentic believers destined for removal. Allusion to Jesus' teaching about recognizing false teachers."
+    },
+    {
+      "anchor_ref": "Jude.1.12",
+      "cross_ref": "1Cor.11.20-22",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Paul condemns Corinthians' abusive love feasts where some go hungry while others get drunk. Jude condemns false teachers who 'eat with you...without the slightest qualm\u2014shepherds who feed only themselves.' Both address love feast corruption through selfish consumption. Thematic echo of concern for communal meal integrity."
+    },
+    {
+      "anchor_ref": "Jude.1.12",
+      "cross_ref": "2Pet.2.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter condemns false teachers as 'blots and blemishes, reveling in their pleasures while they feast with you,' paralleling Jude's description of corrupted love feasts. Direct literary parallel\u2014both identify false teachers as defiling communal meals. The parallel reinforces extensive literary connection between epistles."
+    },
+    {
+      "anchor_ref": "Jude.1.13",
+      "cross_ref": "Phil.3.19",
+      "primary_category": "thematic_echo",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Paul describes enemies of the cross whose 'glory is in their shame,' paralleling Jude's false teachers who 'foam up their shame.' Both use shame metaphor for those who boast in what should humiliate. Thematic echo: false teachers publicly display what should be hidden in disgrace."
+    },
+    {
+      "anchor_ref": "Jude.1.13",
+      "cross_ref": "2Pet.2.17",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter describes false teachers as 'springs without water and mists driven by a storm. Blackest darkness is reserved for them,' nearly identical to Jude's 'clouds without rain...for whom blackest darkness has been reserved.' Direct literary parallel with nearly identical imagery and wording."
+    },
+    {
+      "anchor_ref": "Jude.1.14",
+      "cross_ref": "Gen.5.18-24",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Genesis provides genealogical information identifying 'Enoch...seventh from Adam' and his translation to heaven. Jude references this historical identity when introducing Enoch's prophecy. However, the actual prophecy Jude quotes ('See, the Lord is coming with thousands upon thousands of his holy ones') comes from the extra-biblical book of 1 Enoch, not Genesis. This is historical_reference to establish Enoch's identity, not quotation of Genesis text."
+    },
+    {
+      "anchor_ref": "Jude.1.14",
+      "cross_ref": "Deut.33.2",
+      "primary_category": "allusion",
+      "secondary_category": "thematic_echo",
+      "confidence": 75,
+      "reasoning": "Deuteronomy describes theophany: 'The LORD came...with myriads of holy ones,' which Jude's Enoch quotation echoes: 'the Lord is coming with thousands upon thousands of his holy ones.' Allusion showing continuity\u2014OT theophany language applies to Christ's parousia. Divine appearance always accompanied by angelic hosts."
+    },
+    {
+      "anchor_ref": "Jude.1.14",
+      "cross_ref": "1Chr.1.1-3",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Chronicles genealogy lists 'Adam, Seth, Enosh...Enoch,' confirming Enoch's historical position. Jude's 'seventh from Adam' reflects this genealogical tradition. Historical reference establishing Enoch's antiquity and authority as pre-flood prophet."
+    },
+    {
+      "anchor_ref": "Jude.1.14",
+      "cross_ref": "Zech.14.5",
+      "primary_category": "prophecy_fulfillment",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "Zechariah prophesies 'the LORD my God will come, and all the holy ones with him,' which Jude applies to Christ's coming with holy ones. Prophecy fulfillment\u2014OT theophany prophecy finds fulfillment in Christ's parousia. Jude interprets Zechariah's divine coming as Christ's return with angelic armies."
+    },
+    {
+      "anchor_ref": "Jude.1.14",
+      "cross_ref": "Matt.25.31",
+      "primary_category": "allusion",
+      "secondary_category": "thematic_echo",
+      "confidence": 90,
+      "reasoning": "Jesus teaches 'the Son of Man comes in his glory, and all the angels with him,' which Jude echoes through Enoch quotation about Lord coming with thousands of holy ones. Allusion to Jesus' eschatological teaching. Jude grounds his warning in Jesus' own parousia predictions."
+    },
+    {
+      "anchor_ref": "Jude.1.15",
+      "cross_ref": "2Pet.2.6-9",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Peter's pattern of historical judgments (flood, Sodom) as warnings parallels Jude's use of Enoch prophecy about coming judgment on ungodly. Both structure argument through precedent: past judgments guarantee future judgment. Thematic echo of argument from historical to eschatological judgment."
+    },
+    {
+      "anchor_ref": "Jude.1.16",
+      "cross_ref": "2Pet.2.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2 Peter describes false teachers following 'corrupt desire...arrogant...they are not afraid to heap abuse,' paralleling Jude's 'grumblers and faultfinders; they follow their own evil desires...they boast...flatter others.' Literary parallel\u2014both characterize false teachers through identical behavioral markers."
+    },
+    {
+      "anchor_ref": "Jude.1.16",
+      "cross_ref": "2Pet.2.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter condemns those who 'mouth empty, boastful words' and 'appeal to the lustful desires,' nearly identical to Jude's 'they boast about themselves and flatter others for their own advantage' following 'evil desires.' Direct literary parallel with shared vocabulary."
+    },
+    {
+      "anchor_ref": "Jude.1.17",
+      "cross_ref": "Heb.2.3",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Hebrews appeals to 'salvation...first announced by the Lord...confirmed to us by those who heard him,' echoing Jude's 'remember what the apostles...foretold.' Both ground authority in apostolic tradition as second-generation witnesses. Thematic echo of post-apostolic appeal to foundational teaching."
+    },
+    {
+      "anchor_ref": "Jude.1.17",
+      "cross_ref": "2Pet.3.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "2 Peter instructs 'recall...the command given by our Lord...through your apostles,' nearly identical to Jude's 'remember what the apostles...foretold.' Direct literary parallel\u2014both appeal to apostolic predictions as authentication of current warnings. The parallel suggests coordination or dependence."
+    },
+    {
+      "anchor_ref": "Jude.1.18",
+      "cross_ref": "2Pet.3.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "quotation",
+      "confidence": 95,
+      "reasoning": "2 Peter predicts 'scoffers will come in the last times, following their own evil desires,' which Jude quotes almost verbatim: 'In the last times there will be scoffers who will follow their own ungodly desires.' Direct literary parallel approaching quotation\u2014either Jude quotes Peter or both quote common apostolic tradition."
+    },
+    {
+      "anchor_ref": "Jude.1.18",
+      "cross_ref": "Jude.1.16",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Verse 16 describes false teachers as 'grumblers and faultfinders; they follow their own evil desires,' which v.18 elaborates through apostolic prediction: scoffers 'will follow their own ungodly desires.' The elaboration confirms current troublemakers fulfill apostolic warnings\u2014they are the predicted scoffers."
+    },
+    {
+      "anchor_ref": "Jude.1.20",
+      "cross_ref": "Eph.6.18",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Ephesians instructs 'pray in the Spirit on all occasions,' echoing Jude's 'praying in the Holy Spirit.' Both emphasize Spirit-empowered prayer as spiritual defense. Thematic echo showing consistent apostolic pneumatology: authentic prayer requires Spirit's enablement."
+    },
+    {
+      "anchor_ref": "Jude.1.20",
+      "cross_ref": "Col.2.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Colossians instructs 'rooted and built up in him,' echoing Jude's 'build yourselves up in your most holy faith.' Both use construction metaphor for spiritual growth. Thematic echo: believers must actively strengthen their faith foundation as defense against false teaching."
+    },
+    {
+      "anchor_ref": "Jude.1.20",
+      "cross_ref": "1Thes.5.11",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "1 Thessalonians commands 'encourage one another and build each other up,' paralleling Jude's 'build yourselves up.' Both use building metaphor for mutual spiritual strengthening. Thematic echo: community edification as defense against apostasy and persecution."
+    },
+    {
+      "anchor_ref": "Jude.1.21",
+      "cross_ref": "2Tim.1.18",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "2 Timothy prays for 'mercy from the Lord on that day,' echoing Jude's instruction to 'wait for the mercy of our Lord Jesus Christ to bring you to eternal life.' Both look to eschatological mercy as final hope. Thematic echo: perseverance sustained by expectation of future mercy at Christ's return."
+    },
+    {
+      "anchor_ref": "Jude.1.23",
+      "cross_ref": "Amos.4.11",
+      "primary_category": "allusion",
+      "secondary_category": "quotation",
+      "confidence": 85,
+      "reasoning": "Amos describes judgment survivors as 'burning stick snatched from the fire,' which Jude quotes: 'save others by snatching them from the fire.' Allusion approaching quotation\u2014Jude applies Amos' rescue imagery to evangelistic urgency. The metaphor emphasizes salvation's narrow margin: believers barely rescued from imminent destruction."
+    },
+    {
+      "anchor_ref": "Jude.1.23",
+      "cross_ref": "Zech.3.2-5",
+      "primary_category": "allusion",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Zechariah depicts Joshua the high priest in 'filthy clothes' being cleansed, which Jude alludes to: show mercy 'hating even the clothing stained by corrupted flesh.' Allusion to ritual purity concerns. The image emphasizes contamination danger\u2014even garments touched by sin must be avoided."
+    },
+    {
+      "anchor_ref": "Jude.1.23",
+      "cross_ref": "Rev.3.4",
+      "primary_category": "thematic_echo",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Revelation commends those 'who have not soiled their clothes...they will walk with me, dressed in white,' echoing Jude's concern about 'clothing stained by corrupted flesh.' Both use garment metaphor for moral purity. Thematic echo: clean garments symbolize moral/spiritual integrity."
+    },
+    {
+      "anchor_ref": "Jude.1.24",
+      "cross_ref": "Rom.16.25",
+      "primary_category": "literary_parallel",
+      "secondary_category": "thematic_echo",
+      "confidence": 85,
+      "reasoning": "Romans closes with doxology: 'to the only wise God...who is able to establish you,' paralleling Jude's 'To him who is able to keep you from stumbling.' Literary parallel\u2014both use doxologies emphasizing divine power to preserve believers. Standard epistolary closing formula celebrating God's sustaining grace."
+    },
+    {
+      "anchor_ref": "Jude.1.24",
+      "cross_ref": "2Cor.4.14",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "2 Corinthians affirms 'he who raised the Lord Jesus...will also raise us with Jesus and present us with you,' echoing Jude's confidence in being 'presented before his glorious presence without fault.' Both express eschatological hope of being presented faultless. Thematic echo: divine power ensures believers' final presentation in glory."
+    },
+    {
+      "anchor_ref": "Jude.1.24",
+      "cross_ref": "Phil.1.10",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Philippians prays believers 'may be pure and blameless for the day of Christ,' echoing Jude's vision of being presented 'without fault.' Both express eschatological goal of moral perfection at Christ's return. Thematic echo: divine preserving power ensures believers arrive at judgment blameless."
+    },
+    {
+      "anchor_ref": "Jude.1.24",
+      "cross_ref": "1Thes.5.23",
+      "primary_category": "thematic_echo",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Thessalonians prays God 'keep you blameless at the coming of our Lord Jesus Christ,' nearly identical to Jude's 'keep you from stumbling...present you before his glorious presence without fault.' Thematic echo: divine preservation ensures eschatological blamelessness. God's faithfulness guarantees perseverance."
+    },
+    {
+      "anchor_ref": "Jude.1.25",
+      "cross_ref": "Rom.16.27",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Romans closes 'to the only wise God be glory forever through Jesus Christ,' paralleling Jude's doxology: 'to the only God...be glory...through Jesus Christ.' Literary parallel\u2014both use similar doxological formulas ascribing glory to God through Christ. Standard Christian doxology pattern."
+    },
+    {
+      "anchor_ref": "Jude.1.25",
+      "cross_ref": "2Pet.3.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "2 Peter closes 'To him be glory both now and forever,' paralleling Jude's 'glory...now and forevermore.' Literary parallel\u2014both epistles close with similar doxologies. The parallel reinforces extensive literary connection between Jude and 2 Peter throughout."
+    }
+  ]
+}
