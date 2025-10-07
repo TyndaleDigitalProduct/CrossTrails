@@ -109,12 +109,12 @@ export default function CrossReferencesSidebar({
   }
 
   return (
-    <div className="space-y-6 w-full">
+  <div className="w-full">
       {displayReferences.map((group, groupIndex) => {
         const verseDisplay = group.anchor_verse.split('.').slice(-2).join(':'); // e.g., "2:1"
 
         return (
-          <div key={group.anchor_verse} className="mb-6">
+          <div key={group.anchor_verse} style={{ marginBottom: '20px' }}>
             {/* Verse number header - matching Figma */}
             <div className="text-[20px] text-[#403e3e] mb-2" style={{ fontFamily: 'Calibri, sans-serif', lineHeight: '1.5' }}>
               {verseDisplay}
@@ -127,22 +127,29 @@ export default function CrossReferencesSidebar({
 
                 return (
                   <div key={ref.reference}>
-                    <button
+                    <span
                       onClick={() => handleRefClick(ref.reference)}
-                      className={`block w-full text-left text-[16px] underline decoration-[#ff6a32] decoration-solid hover:decoration-2 ${
-                        isSelected ? 'font-semibold' : ''
-                      }`}
                       style={{
                         fontFamily: 'Calibri, sans-serif',
+                        fontSize: '16px',
                         lineHeight: '1.5',
                         color: '#ff6a32',
+                        textDecoration: 'underline',
+                        textDecorationColor: '#ff6a32',
+                        textDecorationThickness: '1px',
+                        textUnderlineOffset: '0.2em',
                         textDecorationSkipInk: 'none',
-                        textUnderlinePosition: 'from-font'
+                        cursor: 'pointer',
+                        background: 'none',
+                        border: 'none',
+                        padding: 0,
+                        margin: 0,
+                        fontWeight: isSelected ? 600 : 400
                       }}
                       title={`Click to select ${ref.display_ref}`}
                     >
                       {ref.display_ref}
-                    </button>
+                    </span>
                   </div>
                 )
               })}

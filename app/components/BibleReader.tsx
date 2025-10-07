@@ -44,16 +44,16 @@ export default function BibleReader({
       spanElements = renderTextWithSpans(verse.text, demoSpans, verse.verse_id, verse.verse_number);
     } else {
       // No cross-references, render plain text with verse number
-      spanElements = [
-        <span key="verse-num" className="text-[16.77px] align-super mr-1" style={{ fontFamily: 'Calibri, sans-serif' }}>
-          {verse.verse_number}
-        </span>,
-        <span key="text">{verseText}</span>
+          spanElements = [
+            <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>
+              {verse.verse_number}
+            </sup>,
+            <span key="text" style={{ fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', verticalAlign: 'baseline' }}>{verseText}</span>
       ];
     }
 
     return (
-      <p key={verse.verse_id} className="text-[26px] mb-4" style={{ fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E' }}>
+      <p key={verse.verse_id} style={{ marginBottom: '16px', fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', fontWeight: 400 }}>
         {spanElements}
       </p>
     )
@@ -109,9 +109,9 @@ export default function BibleReader({
 
     // Add verse number at the beginning
     elements.push(
-      <span key="verse-num" className="text-[16.77px] align-super mr-1" style={{ fontFamily: 'Calibri, sans-serif' }}>
-        {verseNumber}
-      </span>
+          <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>
+            {verseNumber}
+          </sup>
     );
 
     if (spans.length === 0) {
@@ -209,12 +209,12 @@ export default function BibleReader({
 
       {/* Chapter title */}
       <h2 className="text-[32px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
-        {book} {chapter}
+  <span style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '32px', lineHeight: '1.2', color: '#403E3E' }}>{book} {chapter}</span>
       </h2>
 
       {/* Chapter subtitle if we have it (for demo, using Matthew 2) */}
       {book === 'Matthew' && chapter === 2 && (
-        <h3 className="text-[24px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
+        <h3 className="text-[24px] font-bold mb-6" style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '24px', lineHeight: '1.2', color: '#403E3E' }}>
           Visitors from the East
         </h3>
       )}
