@@ -11,8 +11,16 @@ jest.mock('@/lib/bible-api/nltClient', () => ({
 const mockNltClient = nltClient as jest.Mocked<typeof nltClient>
 
 describe('getVerseContext', () => {
+  let consoleSpy: jest.SpyInstance
+
   beforeEach(() => {
     jest.clearAllMocks()
+    // Suppress console.error during tests to reduce noise
+    consoleSpy = jest.spyOn(console, 'error').mockImplementation(() => {})
+  })
+
+  afterEach(() => {
+    consoleSpy.mockRestore()
   })
 
   describe('basic verse fetching', () => {

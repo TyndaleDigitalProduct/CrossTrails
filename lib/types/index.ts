@@ -152,6 +152,120 @@ export interface CrossReferenceConnectionResponse {
   }[];
 }
 
+export interface CrossReferencePromptRequest {
+  crossReference: CrossReference;
+  userObservation?: string;
+  contextRange?: number; // Number of verses before/after to include
+  promptTemplate?: 'default' | 'study' | 'devotional' | 'academic';
+}
+
+export interface CrossReferencePromptResponse {
+  prompt: string;
+  sources: {
+    anchor_verse: {
+      reference: string;
+      text: string;
+      context?: string[];
+    };
+    cross_reference: {
+      reference: string;
+      text: string;
+      context?: string[];
+    };
+    connection_data: {
+      categories: string[];
+      strength: number;
+      reasoning?: string;
+      explanation?: string;
+    };
+  };
+  metadata: {
+    prompt_length: number;
+    context_verses_included: number;
+    template_used: string;
+  };
+}
+
+// ============================================================================
+// LLM Client Types
+// ============================================================================
+
+export interface LLMMessage {
+  role: 'system' | 'user' | 'assistant';
+  content: string;
+}
+
+export interface LLMRequest {
+  messages: LLMMessage[];
+  model?: string;
+  temperature?: number;
+  max_tokens?: number;
+  stream?: boolean;
+  metadata?: Record<string, any>;
+}
+
+export interface LLMResponse {
+  content: string;
+  model: string;
+  usage: {
+    prompt_tokens: number;
+    completion_tokens: number;
+    total_tokens: number;
+  };
+  finish_reason: 'stop' | 'length' | 'error';
+  metadata?: Record<string, any>;
+}
+
+export interface LLMStreamResponse {
+  content: string;
+  done: boolean;
+  model?: string;
+  usage?: {
+    prompt_tokens: number;
+    completion_tokens: number;
+    total_tokens: number;
+  };
+}
+
+export interface LLMProvider {
+  name: string;
+  supportedModels: string[];
+  supportsStreaming: boolean;
+  chat(request: LLMRequest): Promise<LLMResponse>;
+  stream?(request: LLMRequest): AsyncGenerator<LLMStreamResponse>;
+  healthCheck(): Promise<boolean>;
+}
+
+export interface LLMClientConfig {
+  provider: 'gloo' | 'openai' | 'azure' | 'anthropic';
+  model?: string;
+  temperature?: number;
+  max_tokens?: number;
+  baseUrl?: string;
+  apiKey?: string;
+  clientId?: string;
+  clientSecret?: string;
+}
+
+export interface CrossReferenceAnalysisRequest {
+  crossReference: CrossReference;
+  userObservation?: string;
+  analysisType?: 'default' | 'study' | 'devotional' | 'academic';
+  contextRange?: number;
+}
+
+export interface CrossReferenceAnalysisResponse {
+  analysis: string;
+  prompt_used: string;
+  sources: CrossReferencePromptResponse['sources'];
+  llm_metadata: {
+    model: string;
+    provider: string;
+    usage: LLMResponse['usage'];
+    response_time_ms: number;
+  };
+}
+
 // ============================================================================
 // AI Companion Types
 // ============================================================================
