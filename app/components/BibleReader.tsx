@@ -37,18 +37,43 @@ export default function BibleReader({
     const verseText = verse.text;
     let spanElements: ReactElement[] = [];
 
-    if (hasDemo) {
+    if (verse.verse_number === 1) {
+      // Entirety of verse 1 is underlined and is a link
+      spanElements = [
+        <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
+        <a
+          key="text"
+          href="#"
+          style={{
+            fontSize: '26px',
+            fontFamily: 'Calibri, sans-serif',
+            lineHeight: '1.55',
+            color: '#403E3E',
+            verticalAlign: 'baseline',
+            textDecoration: 'underline',
+            textDecorationColor: '#ff6a32',
+            textDecorationThickness: '1px',
+            textUnderlineOffset: '0.2em',
+            textDecorationSkipInk: 'none',
+            cursor: 'pointer'
+          }}
+          onClick={e => {
+            e.preventDefault();
+            handleSpanClick(verse.verse_id, verseText);
+          }}
+        >
+          {verseText}
+        </a>
+      ];
+    } else if (hasDemo) {
       // Demo: Add underlines to specific phrases (in production, this comes from data)
       const demoSpans = getDemoCrossReferenceSpans(verse.verse_number, verse.text);
-
       spanElements = renderTextWithSpans(verse.text, demoSpans, verse.verse_id, verse.verse_number);
     } else {
       // No cross-references, render plain text with verse number
-          spanElements = [
-            <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>
-              {verse.verse_number}
-            </sup>,
-            <span key="text" style={{ fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', verticalAlign: 'baseline' }}>{verseText}</span>
+      spanElements = [
+        <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
+        <span key="text" style={{ fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', verticalAlign: 'baseline' }}>{verseText}</span>
       ];
     }
 

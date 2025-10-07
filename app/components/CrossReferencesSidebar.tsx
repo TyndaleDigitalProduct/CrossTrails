@@ -111,46 +111,48 @@ export default function CrossReferencesSidebar({
   return (
   <div className="w-full">
       {displayReferences.map((group, groupIndex) => {
-        const verseDisplay = group.anchor_verse.split('.').slice(-2).join(':'); // e.g., "2:1"
+  const verseDisplay = group.anchor_verse.replace(/^Matthew\.?/, '').split('.').slice(-2).join(':'); // e.g., "2:1"
 
         return (
-          <div key={group.anchor_verse} style={{ marginBottom: '20px' }}>
+          <div key={group.anchor_verse} style={{ marginBottom: '20px', display: 'flex', alignItems: 'flex-start' }}>
             {/* Verse number header - matching Figma */}
-            <div className="text-[20px] text-[#403e3e] mb-2" style={{ fontFamily: 'Calibri, sans-serif', lineHeight: '1.5' }}>
+            <div style={{ fontFamily: 'Calibri, sans-serif', fontWeight: 400, fontSize: '20px', color: '#403e3e', lineHeight: '1.5', marginRight: '12px', whiteSpace: 'nowrap' }}>
               {verseDisplay}
             </div>
 
-            {/* Cross-reference list */}
-            <div className="space-y-1">
+            {/* Cross-reference links inline to the right */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px' }}>
               {group.cross_references.map((ref, refIndex) => {
                 const isSelected = selectedRefs.includes(ref.reference)
-
                 return (
-                  <div key={ref.reference}>
-                    <span
-                      onClick={() => handleRefClick(ref.reference)}
-                      style={{
-                        fontFamily: 'Calibri, sans-serif',
-                        fontSize: '16px',
-                        lineHeight: '1.5',
-                        color: '#ff6a32',
-                        textDecoration: 'underline',
-                        textDecorationColor: '#ff6a32',
-                        textDecorationThickness: '1px',
-                        textUnderlineOffset: '0.2em',
-                        textDecorationSkipInk: 'none',
-                        cursor: 'pointer',
-                        background: 'none',
-                        border: 'none',
-                        padding: 0,
-                        margin: 0,
-                        fontWeight: isSelected ? 600 : 400
-                      }}
-                      title={`Click to select ${ref.display_ref}`}
-                    >
-                      {ref.display_ref}
-                    </span>
-                  </div>
+                  <a
+                    key={ref.reference}
+                    href="#"
+                    onClick={e => {
+                      e.preventDefault();
+                      handleRefClick(ref.reference);
+                    }}
+                    style={{
+                      fontFamily: 'Calibri, sans-serif',
+                      fontSize: '16px',
+                      lineHeight: '1',
+                      color: '#ff6a32',
+                      textDecoration: 'underline',
+                      textDecorationColor: '#ff6a32',
+                      textDecorationThickness: '1px',
+                      textUnderlineOffset: '0.2em',
+                      textDecorationSkipInk: 'none',
+                      cursor: 'pointer',
+                      background: 'none',
+                      border: 'none',
+                      padding: 0,
+                      margin: 0,
+                      fontWeight: isSelected ? 600 : 400
+                    }}
+                    title={`Click to select ${ref.display_ref}`}
+                  >
+                    {ref.display_ref}
+                  </a>
                 )
               })}
             </div>
