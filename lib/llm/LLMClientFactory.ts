@@ -76,7 +76,7 @@ export class LLMClientFactory {
     }
   }
 
-  private getDefaultConfig(): LLMClientConfig {
+  getDefaultConfig(): LLMClientConfig {
     // Determine default provider based on available environment variables
     if (process.env.GLOO_CLIENT_ID && process.env.GLOO_CLIENT_SECRET) {
       return {
