@@ -1,4 +1,4 @@
-import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, ConnectionType } from '@/lib/types'
+import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, CrossReferenceCategory } from '@/lib/types'
 import { CrossReferenceDataAccess } from '@/lib/data-access/CrossReferenceDataAccess'
 import { LocalFileDataSource } from '@/lib/data-access/LocalFileDataSource'
 import { MockDataSource } from '@/lib/data-access/MockDataSource'
@@ -63,7 +63,7 @@ export async function getCrossReferenceConnection(
           reference: connection.bref || candidateRef,
           strength: connection.strength,
           categories: connection.categories || [],
-          type: connection.connection_type as ConnectionType,
+          type: connection.connection_type as CrossReferenceCategory,
           explanation: connection.explanation_seed || '',
           metadata: {
             thematic_overlap: calculateThematicOverlap(anchor_verse, candidateRef),

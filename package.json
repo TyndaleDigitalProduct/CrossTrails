@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "eslint",
     "type-check": "tsc --noEmit",
-    "test": "jest"
+    "generate-schema": "ts-json-schema-generator --path lib/types/index.ts --type CrossReferenceDataFile --out tests/unit/crossRefDataFile.schema.json",
+    "test": "npm run generate-schema && jest"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.63.0",
@@ -30,6 +31,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "ajv": "^8.17.1",
     "eslint": "^9.36.0",
     "eslint-config-next": "15.5.3",
     "eslint-plugin-react": "^7.37.5",
@@ -38,6 +40,7 @@
     "jiti": "^2.6.0",
     "tailwindcss": "^4",
     "ts-jest": "^29.4.4",
+    "ts-json-schema-generator": "^2.4.0",
     "typescript": "^5",
     "typescript-eslint": "^8.44.1"
   },

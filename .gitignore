@@ -35,6 +35,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
 # Cross-reference data files (private/proprietary)
 /data/crefs_json/
+/data/categories
