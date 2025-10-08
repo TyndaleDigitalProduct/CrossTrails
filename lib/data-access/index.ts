@@ -1,6 +1,5 @@
 import { CrossReferenceDataAccess } from './CrossReferenceDataAccess'
 import { VercelBlobDataSource } from './VercelBlobDataSource'
-import { LocalFileDataSource } from './LocalFileDataSource'
 import { MockDataSource } from './MockDataSource'
 import { isBlobConfigured } from '@/lib/utils/blob'
 
@@ -42,8 +41,12 @@ export class CrossReferenceDataAccessFactory {
       sources.push(new VercelBlobDataSource())
     }
     
-    // Second priority: Local files (for development)
-    sources.push(new LocalFileDataSource('data/crefs_json'))
+    // Only require LocalFileDataSource in dev
+    if (process.env.NODE_ENV === 'development') {
+      // Use require to avoid static import in prod build
+      const { LocalFileDataSource } = require('./LocalFileDataSource')
+      sources.push(new LocalFileDataSource('data/crefs_json'))
+    }
     
     // Fallback: Mock data
     sources.push(new MockDataSource())
