@@ -229,6 +229,18 @@ export default function HomePage() {
         onNavigate={handleNavigation}
         onSearch={handleSearch}
       />
+    
+      {/* Search Results Modal */}
+      {isSearchModalOpen && (
+        <SearchResultModal
+        term={currentTerms}
+        searchResults={searchResults}
+        loading={loading.search}
+        setIsSearchModalOpen={setIsSearchModalOpen}
+        setSearchResults={setSearchResults}
+        handleSearchResultClick={handleSearchResultClick}
+        />
+      )}
 
       {/* Main content area - matching Figma layout */}
       <main id="main-content" style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '55px' }}>
