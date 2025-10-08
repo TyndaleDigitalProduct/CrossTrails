@@ -9,13 +9,11 @@ export async function getBlobJSON<T>(filename: string): Promise<T> {
     if (!process.env.BLOB_READ_WRITE_TOKEN) {
       throw new Error('BLOB_READ_WRITE_TOKEN is not defined')
     }
-    // console.log('BLOB_READ_WRITE_TOKEN:', process.env.BLOB_READ_WRITE_TOKEN);
-    // console.log(`[getBlobJSON] Fetching blob: ${filename}`)
-    // Get the download URL for the blob
-    const url = await getDownloadUrl(`https://nudzgmi4ybxinxi0.public.blob.vercel-storage.com/${filename}`, {
-      token: process.env.BLOB_READ_WRITE_TOKEN,
-    })
-    // console.log(`[getBlobJSON] Download URL: ${url}`)
+    // If the blob were private this is how we would get the URL
+    // const url = await getDownloadUrl(filename, {
+    //   token: process.env.BLOB_READ_WRITE_TOKEN,
+    // })
+    const url = `https://nudzgmi4ybxinxi0.public.blob.vercel-storage.com/${filename}`
     if (!url) {
       throw new Error(`Blob not found: ${filename}`)
     }

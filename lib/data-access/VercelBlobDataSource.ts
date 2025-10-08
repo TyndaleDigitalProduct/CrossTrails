@@ -1,8 +1,8 @@
 import { getBlobJSON, isBlobConfigured } from '@/lib/utils/blob'
-import type { DataSource, CrossReferenceDataFile } from '@/lib/types'
+import type { CrossReferenceDataFile } from '@/lib/types'
+import type { CrossReferenceDataSource, CrossReferenceBookData } from '@/lib/data-access/CrossReferenceDataAccess.ts'
 
-export class VercelBlobDataSource implements DataSource {
-  private baseFilename: string
+export class VercelBlobDataSource implements CrossReferenceDataSource {
 
   async loadBookData(bookAbbrevation: string): Promise<CrossReferenceDataFile | null> {
     return this.getBookData(bookAbbrevation)
@@ -32,14 +32,20 @@ async getVerseData(verseRef: string): Promise<CrossReferenceDataFile | null> {
     }
 
     return {
+      book: bookAbbrev,
+      book_number: 0,
+      verified: true,
+      total_items: verseData.length,
+      improved_count: 0,
+      category_distribution: {},
       items: verseData.map(item => ({
         anchor_ref: item.anchor_ref || verseRef,
         cross_ref: item.cross_ref || item.reference,
         primary_category: item.primary_category || 'theological_principle',
         secondary_category: item.secondary_category,
         confidence: item.confidence || item.strength * 100,
-        reasoning: item.reasoning || item.explanation || 'Connection identified in cross-reference data'
-      }))
+        reasoning: item.reasoning || item.explanation || 'Connection identified in cross-reference data',
+      })),
     }
   } catch (error) {
     console.error(`[VercelBlobDataSource] Error loading blob for verse "${verseRef}":`, error)
@@ -58,7 +64,7 @@ async getVerseData(verseRef: string): Promise<CrossReferenceDataFile | null> {
         return bookData
       } catch {
         // Fallback to filtering main cross-references file
-        const allCrossRefsData = await getBlobJSON<Record<string, any[]>>(this.baseFilename)
+        const allCrossRefsData = await getBlobJSON<Record<string, any[]>>(bookFilename)
         
         // Filter for verses that start with the book abbreviation
         const bookEntries: any[] = []
@@ -76,6 +82,12 @@ async getVerseData(verseRef: string): Promise<CrossReferenceDataFile | null> {
         }
 
         return {
+          book: bookAbbrevation,
+          book_number: 0,
+          verified: true,
+          total_items: bookEntries.length,
+          improved_count: 0,
+          category_distribution: {},
           items: bookEntries.map(item => ({
             anchor_ref: item.anchor_ref,
             cross_ref: item.cross_ref || item.reference,
@@ -91,7 +103,15 @@ async getVerseData(verseRef: string): Promise<CrossReferenceDataFile | null> {
       return null
     }
   }
+  async loadBooksData(books: string[]): Promise<Record<string, CrossReferenceBookData>> {
+    // implement or stub
+    throw new Error('Not implemented')
+  }
 
+  async loadAllData(): Promise<Record<string, CrossReferenceBookData>> {
+    // implement or stub
+    throw new Error('Not implemented')
+  }
   getName(): string {
     return 'Vercel Blob Storage'
   }

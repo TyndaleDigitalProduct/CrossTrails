@@ -84,7 +84,7 @@ async function getCrossReferencesForVerse(verseId: string, minStrength: number):
     const crossRefs: CrossReference[] = mcpResponse.connections.map(conn => {
       // Parse reference to get book, chapter, verse
       const refParts = conn.reference.split('.')
-      let book = refParts[0]
+      const book = refParts[0]
       let chapter = 1
       let verse = 1
 
