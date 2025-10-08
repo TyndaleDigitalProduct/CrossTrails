@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { LLMClientFactory } from '@/lib/llm/LLMClientFactory'
 import cacheService from '@/lib/utils/cache'
 import rateLimitService from '@/lib/utils/rateLimit'
-import errorHandler, { validate } from '@/lib/utils/errorHandler'
+import { validate } from '@/lib/utils/errorHandler'
 
 export const runtime = 'nodejs'
 

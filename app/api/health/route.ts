@@ -3,7 +3,6 @@ import { ensureValidToken, tokenInfo, testAuthentication } from '../../../lib/ut
 import { checkNLTHealth } from '../../../lib/bible-api/nltHealth'
 import { LLMClientFactory } from '@/lib/llm/LLMClientFactory'
 import { getBlobHealth } from '@/lib/utils/blob'
-import { blob } from 'stream/consumers'
 
 // --- Service checks ---
 
