@@ -1,0 +1,119 @@
+{
+  "$ref": "#/definitions/CrossReferenceDataFile",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "definitions": {
+    "CrossReferenceCategory": {
+      "enum": [
+        "allusion",
+        "christological_parallel",
+        "contrast",
+        "covenant_connection",
+        "elaboration",
+        "exemplification",
+        "greek_word",
+        "hebrew_word",
+        "historical_pattern",
+        "historical_reference",
+        "legal_parallel",
+        "literary_parallel",
+        "narrative_continuation",
+        "numerology",
+        "parallel_account",
+        "parallel_instruction",
+        "prophecy_fulfillment",
+        "prophetic_parallel",
+        "quotation",
+        "ritual_practice",
+        "septuagint_difference",
+        "shared_metaphor",
+        "thematic_echo",
+        "theological_principle",
+        "typology",
+        "wisdom_parallel",
+        "wisdom_principle"
+      ],
+      "type": "string"
+    },
+    "CrossReferenceDataFile": {
+      "additionalProperties": false,
+      "properties": {
+        "book": {
+          "type": "string"
+        },
+        "book_number": {
+          "type": "number"
+        },
+        "category_distribution": {
+          "additionalProperties": {
+            "type": "number"
+          },
+          "type": "object"
+        },
+        "improved_count": {
+          "type": "number"
+        },
+        "items": {
+          "items": {
+            "$ref": "#/definitions/CrossReferenceDataItem"
+          },
+          "type": "array"
+        },
+        "total_items": {
+          "type": "number"
+        },
+        "verified": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "book",
+        "book_number",
+        "verified",
+        "total_items",
+        "improved_count",
+        "category_distribution",
+        "items"
+      ],
+      "type": "object"
+    },
+    "CrossReferenceDataItem": {
+      "additionalProperties": false,
+      "properties": {
+        "anchor_ref": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "number"
+        },
+        "cross_ref": {
+          "type": "string"
+        },
+        "primary_category": {
+          "$ref": "#/definitions/CrossReferenceCategory"
+        },
+        "reasoning": {
+          "type": "string"
+        },
+        "secondary_category": {
+          "anyOf": [
+            {
+              "$ref": "#/definitions/CrossReferenceCategory"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      },
+      "required": [
+        "anchor_ref",
+        "cross_ref",
+        "primary_category",
+        "secondary_category",
+        "confidence",
+        "reasoning"
+      ],
+      "type": "object"
+    }
+  }
+}

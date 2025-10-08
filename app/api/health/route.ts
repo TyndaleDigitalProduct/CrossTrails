@@ -1,6 +1,8 @@
 import { NextResponse } from 'next/server'
-import { ensureValidToken, tokenInfo } from '../../../lib/utils/auth'
+import { ensureValidToken, tokenInfo, testAuthentication } from '../../../lib/utils/auth'
 import { checkNLTHealth } from '../../../lib/bible-api/nltHealth'
+import { LLMClientFactory } from '@/lib/llm/LLMClientFactory'
+import { getBlobHealth } from '@/lib/utils/blob'
 
 // --- Service checks ---
 
@@ -10,6 +12,40 @@ async function checkNLTAPI() {
   } catch (err) {
     console.error('checkNLTAPI error:', err)
     return 'unhealthy'
+  }
+}
+
+async function checkLLMProvider() {
+  try {
+    const factory = LLMClientFactory.getInstance()
+    const defaultProvider = await factory.getDefaultProvider()
+    const isHealthy = await defaultProvider.healthCheck()
+    
+    return {
+      status: isHealthy ? 'healthy' : 'unhealthy',
+      provider: defaultProvider.name,
+      default_config: factory.getDefaultConfig()
+    }
+  } catch (error) {
+    return {
+      status: 'error',
+      error: error instanceof Error ? error.message : 'LLM provider check failed'
+    }
+  }
+}
+
+async function checkGlooAuth() {
+  try {
+    const isHealthy = await testAuthentication()
+    return {
+      status: isHealthy ? 'healthy' : 'unhealthy',
+      configured: !!(process.env.GLOO_CLIENT_ID && process.env.GLOO_CLIENT_SECRET)
+    }
+  } catch (error) {
+    return {
+      status: 'error',
+      error: error instanceof Error ? error.message : 'Gloo auth check failed'
+    }
   }
 }
 
@@ -47,7 +83,10 @@ export async function GET() {
     database: 'not_applicable',
     nlt_api: await checkNLTAPI(),
     environment_vars: checkEnvironmentVars(),
-    authentication: await checkAuth()
+    authentication: await checkAuth(),
+    llm_provider: await checkLLMProvider(),
+    gloo_auth: await checkGlooAuth(),
+    blob_storage: await getBlobHealth()
   }
 
   const checks = {

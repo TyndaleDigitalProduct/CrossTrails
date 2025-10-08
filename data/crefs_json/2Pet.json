@@ -1,0 +1,951 @@
+{
+  "book": "2 Peter",
+  "book_number": 61,
+  "verified": true,
+  "total_items": 116,
+  "improved_count": 78,
+  "category_distribution": {
+    "exemplification": 11,
+    "parallel_instruction": 17,
+    "literary_parallel": 18,
+    "contrast": 3,
+    "theological_principle": 31,
+    "elaboration": 15,
+    "prophetic_parallel": 7,
+    "historical_reference": 6,
+    "quotation": 1,
+    "wisdom_principle": 1,
+    "shared_metaphor": 5,
+    "christological_parallel": 1
+  },
+  "items": [
+    {
+      "anchor_ref": "2Pet.2.1",
+      "cross_ref": "Deut.13.1-3",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:1 'false prophets...false teachers' uses Deut 13:1-3 as OT example of false prophets warning. **exemplification** (primary, tier 5, OT example pattern) + **historical_reference** (secondary, cites OT precedent)."
+    },
+    {
+      "anchor_ref": "2Pet.2.1",
+      "cross_ref": "Matt.7.15",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:1 'false teachers among you' parallels Matt 7:15 'false prophets...wolves in sheep's clothing' - both warn against deceptive teachers. **parallel_instruction** (primary, tier 3) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.1",
+      "cross_ref": "1Tim.4.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:1 'destructive heresies' parallels 1 Tim 4:1 'some will abandon the faith...follow deceiving spirits' - both warn of apostasy. **parallel_instruction** (primary, tier 3, similar warnings) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.1",
+      "cross_ref": "Jude.1.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:1 'ungodly people...secretly slip in among you' closely parallels Jude 1:4 'ungodly people have wormed their way into your churches' - nearly identical vocabulary warning against infiltrators. **literary_parallel** (primary, tier 3, very close verbal parallel) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.3",
+      "cross_ref": "Rom.16.18",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:3 'make up clever lies to get hold of your money' parallels Rom 16:18 'smooth talk and glowing words...deceive innocent people' - both expose false teachers' greed. **parallel_instruction** (primary, tier 3) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.3",
+      "cross_ref": "1Thes.2.5",
+      "primary_category": "contrast",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:3 false teachers' greed contrasts 1 Thess 2:5 Paul's denial 'never used flattery to cover up greed' - true vs false apostles. **contrast** (primary, tier 3, opposing motives) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.4",
+      "cross_ref": "Gen.6.1-4",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:4 'God did not spare even the angels who sinned' references Gen 6:1-4 sons of God/Nephilim as OT judgment example. **exemplification** (primary, tier 5, uses OT example) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.4",
+      "cross_ref": "Jude.1.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:4 'angels who sinned...threw them into hell...in gloomy pits of darkness' virtually identical to Jude 1:6 'angels who did not stay within their proper domain...kept in darkness, bound with everlasting chains' - extremely close verbal parallel. **literary_parallel** (primary, tier 3, nearly word-for-word) + **theological_principle** (secondary, angelic judgment)."
+    },
+    {
+      "anchor_ref": "2Pet.2.4",
+      "cross_ref": "Rev.20.1-2",
+      "primary_category": "theological_principle",
+      "secondary_category": "prophetic_parallel",
+      "confidence": 80,
+      "reasoning": "2 Pet 2:4 angels 'in gloomy pits...kept until judgment' connects to Rev 20:1-2 Satan bound in abyss. **theological_principle** (primary, tier 6, demonic imprisonment) + **prophetic_parallel** (secondary, eschatological binding)."
+    },
+    {
+      "anchor_ref": "2Pet.2.5",
+      "cross_ref": "Gen.6.5-8.18",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:5 'did not spare the ancient world...sent a flood' uses Gen 6:5-8:18 Noah/flood as OT example of judgment + rescue. **exemplification** (primary, tier 5, OT example of divine judgment) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.5",
+      "cross_ref": "1Pet.3.20",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:5 'Noah...preached God's righteousness' elaborates 1 Pet 3:20 Noah/flood account with additional detail about Noah's preaching. **elaboration** (primary, tier 4, expands earlier reference) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.5",
+      "cross_ref": "2Pet.3.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:5 flood judgment elaborated in 2 Pet 3:6 'world was destroyed by a mighty flood' - later chapter expands flood typology. **elaboration** (primary, tier 4, develops same theme) + **theological_principle** (secondary, judgment pattern)."
+    },
+    {
+      "anchor_ref": "2Pet.2.6",
+      "cross_ref": "Gen.19.24",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:6 'turned the cities of Sodom and Gomorrah into heaps of ashes' uses Gen 19:24 destruction as OT example of judgment. **exemplification** (primary, tier 5, OT example) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.6",
+      "cross_ref": "Matt.10.15",
+      "primary_category": "theological_principle",
+      "secondary_category": "exemplification",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:6 Sodom as judgment example connects to Matt 10:15 'more bearable for Sodom...than for that town' - both use Sodom as warning. **theological_principle** (primary, tier 6, divine judgment severity) + **exemplification** (secondary, shared example)."
+    },
+    {
+      "anchor_ref": "2Pet.2.6",
+      "cross_ref": "Rom.9.29",
+      "primary_category": "exemplification",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:6 Sodom/Gomorrah connects to Rom 9:29 citing Isaiah 'we would have become like Sodom...like Gomorrah' - both cite same OT example. **exemplification** (primary, tier 5, shared OT example) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.6",
+      "cross_ref": "Jude.1.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "exemplification",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:6 'Sodom and Gomorrah...example of what is going to happen to the ungodly' closely parallels Jude 1:7 'Sodom and Gomorrah...serve as an example of those who suffer the punishment of eternal fire' - nearly identical use of same example. **literary_parallel** (primary, tier 3, very close verbal parallel) + **exemplification** (secondary, same OT example)."
+    },
+    {
+      "anchor_ref": "2Pet.2.7",
+      "cross_ref": "Gen.19.1-16",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:7 'rescued Lot...righteous man' uses Gen 19:1-16 Lot's rescue as OT example of God saving righteous. **exemplification** (primary, tier 5, OT example of rescue) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.7",
+      "cross_ref": "2Pet.3.17",
+      "primary_category": "elaboration",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:7 warning against 'filthy lives' elaborated in 2 Pet 3:17 'be on guard...not led away by errors of lawless people and lose your secure footing'. **elaboration** (primary, tier 4) + **wisdom_principle** (secondary, practical warning)."
+    },
+    {
+      "anchor_ref": "2Pet.2.9",
+      "cross_ref": "Jude.1.6",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:9 'Lord knows how to rescue...and to hold unrighteous until day of judgment' parallels Jude 1:6 judgment/punishment theme - both affirm God's sovereign judgment. **theological_principle** (primary, tier 6, divine judgment) + **literary_parallel** (secondary, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.10",
+      "cross_ref": "2Pet.3.3",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:10 'who follow their own twisted sexual desire...scoff at supernatural beings' elaborated in 2 Pet 3:3 'scoffers...following their own desires'. **elaboration** (primary, tier 4, develops scoffers theme) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.10",
+      "cross_ref": "Jude.1.7-8",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:10 'indulge in corrupt desires...despise authority' very closely parallels Jude 1:7-8 'gave themselves up to sexual immorality...reject authority and heap abuse on celestial beings' - nearly identical description. **literary_parallel** (primary, tier 3, very close verbal parallel) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.10",
+      "cross_ref": "Jude.1.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:10 'arrogant...no respect' parallels Jude 1:16 'loud-mouthed boasters' - both describe false teachers' arrogance. **literary_parallel** (primary, tier 3, shared description) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.10",
+      "cross_ref": "Jude.1.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:10 'follow their own twisted sexual desire' parallels Jude 1:18 'follow their own ungodly desires' - nearly identical phrasing. **literary_parallel** (primary, tier 3, very close verbal parallel) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.11",
+      "cross_ref": "Jude.1.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:11 'even angels...do not dare to bring...slanderous accusation' directly parallels Jude 1:9 'even Michael the archangel...did not dare to condemn him' - virtually identical teaching. **literary_parallel** (primary, tier 3, nearly word-for-word) + **theological_principle** (secondary, angelic restraint)."
+    },
+    {
+      "anchor_ref": "2Pet.2.12",
+      "cross_ref": "Jude.1.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:12 'like unthinking animals...creatures of instinct...born to be caught and destroyed' virtually identical to Jude 1:10 'like unreasoning animals...guided by instinct...these very things are destroying them' - extremely close verbal parallel. **literary_parallel** (primary, tier 3, nearly word-for-word) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.13",
+      "cross_ref": "Rom.13.13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:13 'delight in debauchery...revelry in broad daylight' parallels Rom 13:13 'don't participate in...wild parties and getting drunk' - both condemn public immorality. **parallel_instruction** (primary, tier 3, similar ethical teaching) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.13",
+      "cross_ref": "1Cor.11.20-21",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "contrast",
+      "confidence": 80,
+      "reasoning": "2 Pet 2:13 'feast with you...stain on your fellowship' relates to 1 Cor 11:20-21 abuse of Lord's Supper fellowship. **parallel_instruction** (primary, tier 3, table fellowship abuse) + **contrast** (secondary, proper vs improper fellowship)."
+    },
+    {
+      "anchor_ref": "2Pet.2.13",
+      "cross_ref": "Jude.1.12",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:13 'blemishes...blots on your love feasts' closely parallels Jude 1:12 'blemishes at your love feasts' - nearly identical description. **literary_parallel** (primary, tier 3, very close verbal parallel) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.14",
+      "cross_ref": "Eph.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:14 'can't stop sinning...experts in greed' connects to Eph 2:3 'gratifying the cravings of our flesh...by nature deserving of wrath' - both describe enslavement to sin. **theological_principle** (primary, tier 6, human depravity) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.14",
+      "cross_ref": "2Pet.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:14 'seduce the unstable' elaborated in 2 Pet 2:18 'lure back into sin those who have barely escaped' - expands seduction theme. **elaboration** (primary, tier 4) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.14",
+      "cross_ref": "2Pet.3.16",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:14 'seduce the unstable' connects to 2 Pet 3:16 'ignorant and unstable people twist...to their own destruction' - consistent description of vulnerable victims. **elaboration** (primary, tier 4, develops 'unstable' theme) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.15",
+      "cross_ref": "Num.22.5-7",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:15 'Balaam son of Beor, who loved to earn money by doing wrong' references Num 22:5-7 Balaam hired by Balak. **exemplification** (primary, tier 5, OT example of greedy prophet) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.15",
+      "cross_ref": "Num.22.17",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:15 Balaam 'loved to earn money' references Num 22:17 'I will reward you handsomely' - Balaam's greed. **exemplification** (primary, tier 5, OT example) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.15",
+      "cross_ref": "Deut.23.5",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:15 Balaam example connects to Deut 23:5 'the LORD your God would not listen to Balaam...turned the intended curse into a blessing' - OT Balaam reference. **exemplification** (primary, tier 5, OT example) + **historical_reference** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.15",
+      "cross_ref": "Jude.1.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": "exemplification",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:15 'way of Balaam' parallels Jude 1:11 'rushed into Balaam's error for profit' - both use Balaam as example of greed. **literary_parallel** (primary, tier 3, shared OT example) + **exemplification** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.15",
+      "cross_ref": "Rev.2.14",
+      "primary_category": "exemplification",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:15 Balaam example connects to Rev 2:14 'teaching of Balaam...to eat food sacrificed to idols' - both cite Balaam as warning. **exemplification** (primary, tier 5, shared OT example) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.16",
+      "cross_ref": "Num.22.21-28",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:16 'rebuked by his donkey\u2014an animal...spoke with a human voice' directly references Num 22:21-28 Balaam's talking donkey. **exemplification** (primary, tier 5, OT narrative example) + **historical_reference** (secondary, cites specific OT event)."
+    },
+    {
+      "anchor_ref": "2Pet.2.17",
+      "cross_ref": "Jude.1.12-13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 95,
+      "reasoning": "2 Pet 2:17 'springs without water...mists driven by a storm...gloomy darkness' very closely parallels Jude 1:12-13 'clouds without rain...blown along by the winds...wandering stars...blackest darkness' - virtually identical metaphors. **literary_parallel** (primary, tier 3, very close verbal parallel with shared imagery) + **shared_metaphor** (secondary, waterless/fruitless imagery)."
+    },
+    {
+      "anchor_ref": "2Pet.2.18",
+      "cross_ref": "2Pet.1.4",
+      "primary_category": "contrast",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:18 'lure them back into sin...corruption caused by evil desires in the world' contrasts 2 Pet 1:4 'escape the corruption...caused by evil desires' - shows failure vs success. **contrast** (primary, tier 3, opposite spiritual trajectories) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.18",
+      "cross_ref": "Jude.1.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:18 'boast about themselves with empty, foolish speech' parallels Jude 1:16 'loud-mouthed boasters' - similar descriptions of false teachers' speech. **literary_parallel** (primary, tier 3, shared vocabulary) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.20",
+      "cross_ref": "Matt.12.45",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:20 'worse off than they were before' directly parallels Matt 12:45 'final condition...worse than the first' - both teach apostasy leaves person worse off. **theological_principle** (primary, tier 6, apostasy consequences) + **parallel_instruction** (secondary, same warning)."
+    },
+    {
+      "anchor_ref": "2Pet.2.21",
+      "cross_ref": "Ezek.18.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "prophetic_parallel",
+      "confidence": 85,
+      "reasoning": "2 Pet 2:21 'better never to have known the way of righteousness...than to know it and turn away' connects to Ezek 18:24 'righteous person turns from their righteousness...they will die' - both teach responsibility of those who knew truth. **theological_principle** (primary, tier 6, accountability) + **prophetic_parallel** (secondary, OT prophetic warning)."
+    },
+    {
+      "anchor_ref": "2Pet.2.21",
+      "cross_ref": "Heb.6.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:21 'turn away from the sacred command' parallels Heb 6:4-6 'those who have once been enlightened...if they fall away' - both warn about apostasy. **theological_principle** (primary, tier 6, apostasy danger) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.2.21",
+      "cross_ref": "Heb.10.26",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 2:21 apostasy theme directly parallels Heb 10:26 'if we deliberately keep on sinning after we have received the knowledge of the truth' - both teach severity of informed rejection. **theological_principle** (primary, tier 6, willful apostasy) + **parallel_instruction** (secondary, similar warnings)."
+    },
+    {
+      "anchor_ref": "2Pet.3.2",
+      "cross_ref": "Jude.1.17",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:2 'remember what the holy prophets said...and what our Lord and Savior commanded through your apostles' very closely parallels Jude 1:17 'remember what the apostles of our Lord Jesus Christ predicted' - nearly identical appeal to apostolic teaching. **literary_parallel** (primary, tier 3, very close verbal parallel) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.3",
+      "cross_ref": "1Tim.4.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "prophetic_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:3 'in the last days scoffers will come' parallels 1 Tim 4:1 'in later times some will abandon the faith' - both prophesy end-times apostasy. **parallel_instruction** (primary, tier 3, similar eschatological warning) + **prophetic_parallel** (secondary, future apostasy prediction)."
+    },
+    {
+      "anchor_ref": "2Pet.3.3",
+      "cross_ref": "2Pet.2.10",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:3 'scoffers will come, mocking...following their own desires' elaborates 2 Pet 2:10 earlier description of those who 'follow their own twisted sexual desire'. **elaboration** (primary, tier 4, expands earlier theme) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.3",
+      "cross_ref": "Jude.1.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:3 'scoffers will come...following their own evil desires' virtually identical to Jude 1:18 'in the last times there will be scoffers...follow their own ungodly desires' - nearly word-for-word parallel. **literary_parallel** (primary, tier 3, very close verbal parallel) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.4",
+      "cross_ref": "Jer.17.15",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "exemplification",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:4 scoffers asking 'where is this coming he promised?' parallels Jer 17:15 'Where is the word of the LORD? Let it now be fulfilled!' - both cite skeptics mocking delayed fulfillment. **prophetic_parallel** (primary, tier 5, parallel skeptical challenge) + **exemplification** (secondary, OT example of same doubt)."
+    },
+    {
+      "anchor_ref": "2Pet.3.5",
+      "cross_ref": "Gen.1.6-9",
+      "primary_category": "historical_reference",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:5 'by God's word the heavens came into being...water' references Gen 1:6-9 creation account - waters separated. **historical_reference** (primary, tier 5, refers to Genesis creation) + **theological_principle** (secondary, creation by divine word)."
+    },
+    {
+      "anchor_ref": "2Pet.3.5",
+      "cross_ref": "Heb.11.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:5 'by God's word the heavens came into being' directly parallels Heb 11:3 'universe was formed at God's command' - both teach creation by divine word. **theological_principle** (primary, tier 6, creation doctrine) + **parallel_instruction** (secondary, same teaching)."
+    },
+    {
+      "anchor_ref": "2Pet.3.6",
+      "cross_ref": "Gen.7.11-21",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:6 'world of that time was destroyed by a mighty flood' references Gen 7:11-21 Noah's flood. **historical_reference** (primary, tier 5, cites Genesis flood) + **exemplification** (secondary, OT judgment example)."
+    },
+    {
+      "anchor_ref": "2Pet.3.7",
+      "cross_ref": "Matt.10.15",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "2 Pet 3:7 'reserved for fire...kept for the day of judgment' connects to Matt 10:15 judgment day warnings. **prophetic_parallel** (primary, tier 5, eschatological judgment) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.7",
+      "cross_ref": "2Thes.1.7",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:7 'day of judgment and destruction' parallels 2 Thess 1:7-8 'Lord Jesus is revealed from heaven in blazing fire...punish those who do not know God' - both describe fiery judgment. **prophetic_parallel** (primary, tier 5, eschatological fire judgment) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.8",
+      "cross_ref": "Ps.90.4",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:8 'with the Lord a day is like a thousand years, and a thousand years are like a day' directly quotes/alludes to Ps 90:4 'a thousand years in your sight are like a day' - nearly exact wording. **quotation** (primary, tier 1, clear citation of Psalm) + **theological_principle** (secondary, God's timelessness)."
+    },
+    {
+      "anchor_ref": "2Pet.3.9",
+      "cross_ref": "Hab.2.3",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:9 'Lord isn't really being slow...patient' responds to Hab 2:3 'revelation awaits an appointed time...though it linger, wait for it' - both defend apparent delay. **prophetic_parallel** (primary, tier 5, defends prophetic delay) + **theological_principle** (secondary, divine patience)."
+    },
+    {
+      "anchor_ref": "2Pet.3.9",
+      "cross_ref": "Rom.2.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:9 'patient with you, not wanting anyone to perish' directly parallels Rom 2:4 'God's kindness is intended to turn you from your sin' - both teach God's patience leads to repentance. **theological_principle** (primary, tier 6, divine patience/mercy) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.9",
+      "cross_ref": "1Tim.2.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:9 'not wanting anyone to perish, but everyone to come to repentance' closely parallels 1 Tim 2:4 'wants all people to be saved and to come to a knowledge of the truth' - both teach God's universal salvific will. **theological_principle** (primary, tier 6, God's desire for all to be saved) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.9",
+      "cross_ref": "Rev.2.21",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "2 Pet 3:9 'patient...giving more time for everyone to repent' connects to Rev 2:21 'I have given her time to repent' - both describe God granting time for repentance. **theological_principle** (primary, tier 6, patience/repentance) + **shared_metaphor** (secondary, time/opportunity imagery)."
+    },
+    {
+      "anchor_ref": "2Pet.3.10",
+      "cross_ref": "Matt.24.43-44",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:10 'day of the Lord will come as unexpectedly as a thief' parallels Matt 24:43 'if a homeowner knew exactly when a burglar was coming' - both use thief metaphor for unexpected return. **parallel_instruction** (primary, tier 3, similar eschatological warning) + **shared_metaphor** (secondary, thief imagery)."
+    },
+    {
+      "anchor_ref": "2Pet.3.10",
+      "cross_ref": "1Thes.5.2",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:10 'day of the Lord will come as unexpectedly as a thief' closely parallels 1 Thess 5:2 'day of the Lord will come like a thief in the night' - nearly identical phrasing. **parallel_instruction** (primary, tier 3, very similar teaching) + **shared_metaphor** (secondary, thief metaphor)."
+    },
+    {
+      "anchor_ref": "2Pet.3.10",
+      "cross_ref": "Rev.3.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:10 coming 'as a thief' parallels Rev 3:3 'I will come like a thief' - both use thief imagery for Christ's return. **parallel_instruction** (primary, tier 3, similar warning) + **shared_metaphor** (secondary, thief metaphor)."
+    },
+    {
+      "anchor_ref": "2Pet.3.10",
+      "cross_ref": "Rev.16.5",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "2 Pet 3:10 elements destroyed by fire connects to Rev 16:5 judgment themes. **prophetic_parallel** (primary, tier 5, eschatological judgment) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.12",
+      "cross_ref": "Ps.50.3",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:12 'day of God...heavens will be on fire' connects to Ps 50:3 'Our God comes...fire devours everything' - both describe God's coming with fire. **prophetic_parallel** (primary, tier 5, theophany with fire) + **shared_metaphor** (secondary, fire imagery)."
+    },
+    {
+      "anchor_ref": "2Pet.3.12",
+      "cross_ref": "1Cor.1.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:12 'looking forward to the day of God and hurrying it along' connects to 1 Cor 1:7 'eagerly wait for our Lord Jesus Christ to be revealed' - both describe eager expectation. **theological_principle** (primary, tier 6, eschatological hope) + **parallel_instruction** (secondary, waiting for Christ)."
+    },
+    {
+      "anchor_ref": "2Pet.3.13",
+      "cross_ref": "Rev.21.1",
+      "primary_category": "prophetic_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:13 'we are looking forward to the new heavens and new earth he has promised' directly parallels Rev 21:1 'I saw a new heaven and a new earth' - both describe promised new creation. **prophetic_parallel** (primary, tier 5, eschatological new creation) + **theological_principle** (secondary, resurrection hope)."
+    },
+    {
+      "anchor_ref": "2Pet.3.13",
+      "cross_ref": "Rev.21.27",
+      "primary_category": "theological_principle",
+      "secondary_category": "prophetic_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:13 new earth 'filled with God's righteousness' parallels Rev 21:27 'nothing impure will ever enter it' - both describe perfect holiness of new creation. **theological_principle** (primary, tier 6, eschatological holiness) + **prophetic_parallel** (secondary, new creation purity)."
+    },
+    {
+      "anchor_ref": "2Pet.3.13",
+      "cross_ref": "Rev.22.15",
+      "primary_category": "contrast",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:13 new earth of righteousness contrasts Rev 22:15 'outside are the dogs...those who love and practice falsehood' - righteous vs unrighteous destinies. **contrast** (primary, tier 3, opposite eternal states) + **theological_principle** (secondary, final judgment)."
+    },
+    {
+      "anchor_ref": "2Pet.3.14",
+      "cross_ref": "1Thes.3.13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:14 'make every effort to be found...without spot or blemish...at peace with him' parallels 1 Thess 3:13 'blameless and holy...when our Lord Jesus comes' - both exhort to readiness for Christ's return. **parallel_instruction** (primary, tier 3, similar eschatological exhortation) + **theological_principle** (secondary, holiness for parousia)."
+    },
+    {
+      "anchor_ref": "2Pet.3.14",
+      "cross_ref": "1Pet.1.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:14 'be found living peaceful lives that are pure and blameless' parallels 1 Pet 1:7 'genuineness of your faith...when Jesus Christ is revealed' - Peter's consistent teaching on preparation for Christ's return. **literary_parallel** (primary, tier 3, author's repeated theme) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.15",
+      "cross_ref": "Rom.2.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "elaboration",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:15 'Lord's patience gives people time to be saved' elaborates Rom 2:4 'God's kindness is intended to turn you from your sin' - Peter endorses Paul's teaching on divine patience. **theological_principle** (primary, tier 6, God's patience for salvation) + **elaboration** (secondary, Peter expands Paul's teaching)."
+    },
+    {
+      "anchor_ref": "2Pet.3.15",
+      "cross_ref": "Eph.3.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "2 Pet 3:15 'our beloved brother Paul...wrote to you with the wisdom God gave him' acknowledges Eph 3:3 Paul's revelation of mystery. **theological_principle** (primary, tier 6, Paul's inspired wisdom)."
+    },
+    {
+      "anchor_ref": "2Pet.3.15",
+      "cross_ref": "Col.1.25-27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "2 Pet 3:15 Paul's God-given wisdom connects to Col 1:25-27 Paul's stewardship of God's mystery. **theological_principle** (primary, tier 6, apostolic revelation)."
+    },
+    {
+      "anchor_ref": "2Pet.3.16",
+      "cross_ref": "2Pet.2.14",
+      "primary_category": "elaboration",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:16 'ignorant and unstable people twist' elaborates 2 Pet 2:14 earlier description of those who 'seduce the unstable' - consistent warning about vulnerable people. **elaboration** (primary, tier 4, expands earlier theme) + **wisdom_principle** (secondary, warning against false teaching)."
+    },
+    {
+      "anchor_ref": "2Pet.3.17",
+      "cross_ref": "1Cor.10.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:17 'be on guard...not be led away by errors...and lose your secure footing' parallels 1 Cor 10:12 'if you think you are standing firm, be careful that you don't fall' - both warn against spiritual complacency. **parallel_instruction** (primary, tier 3, similar warning) + **wisdom_principle** (secondary, vigilance)."
+    },
+    {
+      "anchor_ref": "2Pet.3.17",
+      "cross_ref": "2Pet.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:17 'led away by errors of lawless people' elaborates 2 Pet 2:18 false teachers who 'lure back into sin'. **elaboration** (primary, tier 4, develops earlier warning) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.17",
+      "cross_ref": "Rev.2.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:17 warning not to 'lose your secure footing' parallels Rev 2:5 'remember the height from which you have fallen' - both warn against falling away. **parallel_instruction** (primary, tier 3, similar warning) + **wisdom_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.18",
+      "cross_ref": "Rom.11.36",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Pet 3:18 doxology 'To him be glory both now and forever! Amen' parallels Rom 11:36 'To him be the glory forever! Amen' - similar concluding praise. **theological_principle** (primary, tier 6, doxology to Christ)."
+    },
+    {
+      "anchor_ref": "2Pet.3.18",
+      "cross_ref": "2Tim.4.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Pet 3:18 'To him be glory...forever' parallels 2 Tim 4:18 'To him be glory for ever and ever. Amen' - similar concluding doxology. **theological_principle** (primary, tier 6, eternal glory to Christ)."
+    },
+    {
+      "anchor_ref": "2Pet.3.18",
+      "cross_ref": "2Pet.1.2",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 3:18 'grow in...grace and knowledge of our Lord' directly elaborates 2 Pet 1:2 opening 'grace and peace...through the knowledge' - letter concludes by restating opening theme. **elaboration** (primary, tier 4, bookends letter theme) + **theological_principle** (secondary, spiritual growth)."
+    },
+    {
+      "anchor_ref": "2Pet.3.18",
+      "cross_ref": "2Pet.1.11",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 3:18 concluding doxology connects to 2 Pet 1:11 'rich welcome into...eternal kingdom of our Lord' - both emphasize Christ's kingdom/glory. **elaboration** (primary, tier 4, restates earlier theme) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.3.18",
+      "cross_ref": "2Pet.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "2 Pet 3:18 'grow in grace and knowledge' contrasts 2 Pet 2:20 those who 'escape...but are again entangled' - growth vs falling away. **elaboration** (primary, tier 4, positive counterpoint to earlier warning) + **contrast** (secondary, perseverance vs apostasy)."
+    },
+    {
+      "anchor_ref": "2Pet.1.1",
+      "cross_ref": "Rom.1.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:1 'Simon Peter, a slave and apostle of Jesus Christ' parallels Rom 1:1 'Paul, a slave of Christ Jesus' - both apostolic self-introductions using identical 'slave/servant' terminology. **parallel_instruction** (primary, tier 3, similar apostolic greeting formula) + **theological_principle** (secondary, apostolic authority and faith)."
+    },
+    {
+      "anchor_ref": "2Pet.1.1",
+      "cross_ref": "Rom.1.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "2 Pet 1:1 'faith as precious as ours' relates to Rom 1:12 'encouraged by each other's faith' - both about mutual/shared faith. **parallel_instruction** (primary, tier 3, teaching on shared faith) + **theological_principle** (secondary, faith equality)."
+    },
+    {
+      "anchor_ref": "2Pet.1.1",
+      "cross_ref": "Titus.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:1 'our God and Savior Jesus Christ' matches Titus 2:13 'our God and Savior, Jesus Christ' - both use rare construction equating Jesus with God. **theological_principle** (primary, tier 6, Christ's divinity) + **christological_parallel** (secondary, tier 4, identical christological formula)."
+    },
+    {
+      "anchor_ref": "2Pet.1.1",
+      "cross_ref": "1Pet.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:1 'Simon Peter, an apostle of Jesus Christ' directly parallels 1 Pet 1:1 'Peter, an apostle of Jesus Christ' - Peter's nearly identical self-introduction formula across his two letters. **literary_parallel** (primary, tier 3, same author's signature greeting) + **theological_principle** (secondary, apostolic identity)."
+    },
+    {
+      "anchor_ref": "2Pet.1.2",
+      "cross_ref": "2Pet.3.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:2 'May God give you more and more grace and peace' elaborated in 2 Pet 3:18 'grow in...grace and knowledge of our Lord' - letter closes by expanding opening grace theme. **elaboration** (primary, tier 4) + **theological_principle** (secondary, spiritual growth)."
+    },
+    {
+      "anchor_ref": "2Pet.1.2",
+      "cross_ref": "Jude.1.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:2 'May God give you more and more mercy, peace, and love' closely parallels Jude 1:2 'May God give you more and more mercy, peace, and love' - nearly identical greeting formula. **literary_parallel** (primary, tier 3, very close verbal parallel) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.1.3",
+      "cross_ref": "1Pet.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:3 'His divine power...called us to receive his own glory and goodness' connects to 1 Pet 2:9 'called you out of darkness into his wonderful light' - Peter's consistent teaching on divine calling. **theological_principle** (primary, tier 6, divine calling/power) + **christological_parallel** (secondary, Christ's role)."
+    },
+    {
+      "anchor_ref": "2Pet.1.4",
+      "cross_ref": "2Cor.7.1",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:4 'escape the corruption in the world caused by human desires' parallels 2 Cor 7:1 'let us cleanse ourselves from everything that can defile' - both teach sanctification from worldly corruption. **theological_principle** (primary, tier 6, sanctification) + **parallel_instruction** (secondary, practical holiness)."
+    },
+    {
+      "anchor_ref": "2Pet.1.4",
+      "cross_ref": "Jas.1.27",
+      "primary_category": "theological_principle",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:4 'escape corruption in the world' relates to Jas 1:27 'keep oneself from being polluted by the world' - both contrast divine purity with worldly corruption. **theological_principle** (primary, tier 6, holiness) + **wisdom_principle** (secondary, tier 6, practical piety)."
+    },
+    {
+      "anchor_ref": "2Pet.1.5",
+      "cross_ref": "Col.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:5 'supplement your faith with...goodness...knowledge' parallels Col 2:3 'all the treasures of wisdom and knowledge...are hidden in Christ' - both teach spiritual knowledge/wisdom. **theological_principle** (primary, tier 6, spiritual knowledge) + **wisdom_principle** (secondary, tier 6, virtue development)."
+    },
+    {
+      "anchor_ref": "2Pet.1.6",
+      "cross_ref": "1Cor.9.25",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:6 'godliness with self-control' parallels 1 Cor 9:25 'everyone who competes...goes into strict training' - both teach self-discipline. **wisdom_principle** (primary, tier 6, self-discipline) + **theological_principle** (secondary, spiritual training)."
+    },
+    {
+      "anchor_ref": "2Pet.1.6",
+      "cross_ref": "Gal.5.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:6 'self-control, patient endurance, godliness' connects to Gal 5:22 'fruit of the Spirit is...patience, kindness, goodness, faithfulness, gentleness and self-control' - both list spiritual virtues. **theological_principle** (primary, tier 6, fruit of Spirit) + **parallel_instruction** (secondary, virtue lists)."
+    },
+    {
+      "anchor_ref": "2Pet.1.7",
+      "cross_ref": "John.13.34-35",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:7 'show genuine love to everyone' parallels John 13:34-35 'love one another...everyone will know you are my disciples' - both command mutual love. **parallel_instruction** (primary, tier 3, love command) + **theological_principle** (secondary, Christian love)."
+    },
+    {
+      "anchor_ref": "2Pet.1.7",
+      "cross_ref": "Rom.12.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:7 'love for other believers...love for everyone' parallels Rom 12:10 'love each other with genuine affection' - both teach brotherly love. **parallel_instruction** (primary, tier 3, similar teaching) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.1.7",
+      "cross_ref": "1Pet.1.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:7 'show genuine love to everyone' directly parallels 1 Pet 1:22 'love each other deeply with all your heart' - Peter's consistent teaching on brotherly love across both letters. **literary_parallel** (primary, tier 3, author's repeated instruction) + **parallel_instruction** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.1.8",
+      "cross_ref": "John.15.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:8 'productive and useful in your knowledge of our Lord' parallels John 15:2 'every branch...that does bear fruit he prunes so that it will be even more fruitful' - both teach spiritual fruitfulness. **theological_principle** (primary, tier 6, spiritual fruitfulness) + **shared_metaphor** (secondary, tier 7, fruit/productivity imagery)."
+    },
+    {
+      "anchor_ref": "2Pet.1.8",
+      "cross_ref": "Col.1.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:8 'productive...in your knowledge' parallels Col 1:10 'bearing fruit in every good work, growing in the knowledge of God' - both connect productivity and knowledge. **parallel_instruction** (primary, tier 3, similar exhortation) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.1.8",
+      "cross_ref": "2Pet.1.2-3",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:8 'productive and useful in your knowledge of our Lord Jesus Christ' elaborates 2 Pet 1:2-3 earlier teaching on 'knowing God and Jesus our Lord' and receiving 'everything we need for living a godly life' - shows result of knowing Christ. **elaboration** (primary, tier 4, develops earlier theme) + **theological_principle** (secondary)."
+    },
+    {
+      "anchor_ref": "2Pet.1.10",
+      "cross_ref": "Rom.8.28",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:10 'work hard to prove you really are among those God has called and chosen' connects to Rom 8:28 'those who are called according to his purpose' - both teach God's calling. **theological_principle** (primary, tier 6, divine calling/election) + **parallel_instruction** (secondary, perseverance)."
+    },
+    {
+      "anchor_ref": "2Pet.1.10",
+      "cross_ref": "Jude.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:10 'doing these things, you will never fall away' parallels Jude 1:24 'able to keep you from stumbling and to present you before his glorious presence' - both assure God keeps believers from stumbling. **theological_principle** (primary, tier 6, perseverance) + **literary_parallel** (secondary, shared assurance language)."
+    },
+    {
+      "anchor_ref": "2Pet.1.13-14",
+      "cross_ref": "John.13.36",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "2 Pet 1:13-14 'I must soon leave this earthly life' alludes to John 13:36 where Jesus told Peter 'you will follow later' - recalls Jesus' prophecy of Peter's death. **historical_reference** (primary, tier 5, recalls Jesus' words about Peter's destiny)."
+    },
+    {
+      "anchor_ref": "2Pet.1.13-14",
+      "cross_ref": "John.21.18-19",
+      "primary_category": "historical_reference",
+      "secondary_category": "prophecy_fulfillment",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:13-14 'our Lord Jesus Christ has made clear to me that I must soon leave this earthly life' directly references John 21:18-19 where Jesus prophesied 'when you are old...someone else will...lead you where you do not want to go...indicating the kind of death by which Peter would glorify God' - Peter acknowledges Jesus' death prophecy being fulfilled. **historical_reference** (primary, tier 5, refers to Jesus' prophecy) + **prophecy_fulfillment** (secondary, tier 2, fulfillment of Jesus' prediction)."
+    },
+    {
+      "anchor_ref": "2Pet.1.13-14",
+      "cross_ref": "2Cor.5.1",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:13-14 'as long as I live in this earthly body...soon I must leave this earthly life' parallels 2 Cor 5:1 'earthly tent we live in is destroyed, we have a building from God' - both use tent/dwelling metaphor for mortal body. **shared_metaphor** (primary, tier 7, tent/tabernacle imagery) + **theological_principle** (secondary, mortality/resurrection)."
+    },
+    {
+      "anchor_ref": "2Pet.1.13-14",
+      "cross_ref": "2Cor.5.4",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:13-14 body as temporary dwelling parallels 2 Cor 5:4 'while we live in these earthly bodies, we groan and sigh' about earthly tent - both use tent metaphor. **shared_metaphor** (primary, tier 7, tent/dwelling imagery) + **theological_principle** (secondary, resurrection hope)."
+    },
+    {
+      "anchor_ref": "2Pet.1.13-14",
+      "cross_ref": "2Pet.3.1",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:13-14 'I want to remind you of these things' elaborated in 2 Pet 3:1 'This is my second letter to you...In both...I have tried to stimulate your wholesome thinking and refresh your memory' - letter's reminding purpose. **elaboration** (primary, tier 4, develops theme) + **theological_principle** (secondary, apostolic teaching)."
+    },
+    {
+      "anchor_ref": "2Pet.1.16-18",
+      "cross_ref": "Matt.17.1-6",
+      "primary_category": "historical_reference",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:16-18 'we saw his majestic splendor with our own eyes...on the holy mountain...voice from the majestic glory of God' directly references Matt 17:1-6 transfiguration account - Peter recounts witnessing Jesus' transfiguration on the mountain with voice from heaven. **historical_reference** (primary, tier 5, eyewitness account of Gospel event) + **christological_parallel** (secondary, Christ's glory)."
+    },
+    {
+      "anchor_ref": "2Pet.1.16-18",
+      "cross_ref": "Mark.13.26",
+      "primary_category": "christological_parallel",
+      "secondary_category": "prophetic_parallel",
+      "confidence": 85,
+      "reasoning": "2 Pet 1:16-18 'power and coming of our Lord Jesus Christ' connects to Mark 13:26 'they will see the Son of Man coming in clouds with great power and glory' - both describe Christ's parousia in power and glory. **christological_parallel** (primary, tier 4, Christ's parousia/glory) + **prophetic_parallel** (secondary, eschatological coming)."
+    },
+    {
+      "anchor_ref": "2Pet.1.16-18",
+      "cross_ref": "Luke.9.28-32",
+      "primary_category": "historical_reference",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:16-18 'we were with him on the holy mountain' references Luke 9:28-32 'Jesus took Peter, John and James...went up on a mountain to pray...the appearance of his face changed' - Peter's eyewitness testimony of transfiguration. **historical_reference** (primary, tier 5, recounts Gospel event) + **christological_parallel** (secondary, Christ's divine glory)."
+    },
+    {
+      "anchor_ref": "2Pet.1.19",
+      "cross_ref": "Luke.1.78",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "prophetic_parallel",
+      "confidence": 80,
+      "reasoning": "2 Pet 1:19 'a lamp shining in a dark place, until the day dawns' parallels Luke 1:78 'rising sun will come to us from heaven to shine on those living in darkness' - both use light/dawn imagery. **shared_metaphor** (primary, tier 7, light/darkness imagery) + **prophetic_parallel** (secondary, messianic prophecy)."
+    },
+    {
+      "anchor_ref": "2Pet.1.19",
+      "cross_ref": "2Cor.4.6",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:19 'until the day dawns, and Christ the Morning Star shines in your hearts' parallels 2 Cor 4:6 'God...made his light shine in our hearts to give us the light of the knowledge of God's glory' - both use light metaphor for divine revelation. **shared_metaphor** (primary, tier 7, light imagery) + **theological_principle** (secondary, revelation/knowledge)."
+    },
+    {
+      "anchor_ref": "2Pet.1.19",
+      "cross_ref": "1Pet.1.10-12",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:19 'pay close attention to what they [the prophets] wrote...the prophets were not serving themselves but you' parallels 1 Pet 1:10-12 'the prophets...searched intently...trying to find out...it was revealed to them that they were not serving themselves but you' - Peter's consistent teaching on prophetic revelation. **theological_principle** (primary, tier 6, prophetic Scripture) + **literary_parallel** (secondary, author's repeated emphasis)."
+    },
+    {
+      "anchor_ref": "2Pet.1.19",
+      "cross_ref": "Rev.22.16",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:19 'Christ the Morning Star shines in your hearts' connects to Rev 22:16 'I am...the bright Morning Star' - Christ as morning star. **shared_metaphor** (primary, tier 7, morning star imagery) + **christological_parallel** (secondary, Christ's light/glory)."
+    },
+    {
+      "anchor_ref": "2Pet.1.21",
+      "cross_ref": "1Cor.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "2 Pet 1:21 'those prophets were moved by the Holy Spirit, and they spoke from God' parallels 1 Cor 2:13 'we speak...not in words taught us by human wisdom but in words taught by the Spirit' - both teach Spirit-inspired revelation. **theological_principle** (primary, tier 6, Spirit-inspired revelation) + **parallel_instruction** (secondary, both teach on spiritual communication)."
+    },
+    {
+      "anchor_ref": "2Pet.1.21",
+      "cross_ref": "2Tim.3.16",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "2 Pet 1:21 'moved by the Holy Spirit, they spoke from God' directly parallels 2 Tim 3:16 'All Scripture is God-breathed' - both teach divine inspiration of Scripture. **theological_principle** (primary, tier 6, Scripture inspiration doctrine) + **parallel_instruction** (secondary, both instruct on Scripture's nature)."
+    }
+  ]
+}

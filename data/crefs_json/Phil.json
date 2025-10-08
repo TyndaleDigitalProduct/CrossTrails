@@ -1,0 +1,1142 @@
+{
+  "book": "Philippians",
+  "book_number": 50,
+  "verified": true,
+  "total_items": 140,
+  "improved_count": 58,
+  "category_distribution": {
+    "literary_parallel": 29,
+    "theological_principle": 48,
+    "parallel_instruction": 18,
+    "elaboration": 16,
+    "historical_reference": 4,
+    "christological_parallel": 7,
+    "allusion": 4,
+    "shared_metaphor": 10,
+    "contrast": 1,
+    "ritual_practice": 2,
+    "wisdom_principle": 1
+  },
+  "items": [
+    {
+      "anchor_ref": "Phil.1.1",
+      "cross_ref": "2Cor.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both opening verses share identical Pauline epistolary structure with 'Paul and Timothy' co-authorship formula. This is standard literary convention in Paul's letters showing deliberate stylistic pattern."
+    },
+    {
+      "anchor_ref": "Phil.1.2-3",
+      "cross_ref": "Rom.1.7-8",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Standard Pauline greeting formula ('grace and peace') followed by thanksgiving section. This is consistent epistolary structure across Paul's letters."
+    },
+    {
+      "anchor_ref": "Phil.1.6",
+      "cross_ref": "1Cor.1.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both passages affirm God's faithfulness to complete His work in believers until Christ's return. This is a core Pauline theological doctrine about perseverance and divine sovereignty in salvation."
+    },
+    {
+      "anchor_ref": "Phil.1.7",
+      "cross_ref": "2Cor.7.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Paul expresses deep affection for his churches using similar affectionate language in both letters. This reflects Pauline relational vocabulary and his pastoral heart across epistles."
+    },
+    {
+      "anchor_ref": "Phil.1.8",
+      "cross_ref": "Rom.1.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both use God-witness formula ('God is my witness') - a standard Pauline rhetorical device to emphasize sincerity. This is literary convention appearing across multiple letters."
+    },
+    {
+      "anchor_ref": "Phil.1.9",
+      "cross_ref": "1Thes.3.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both passages express Paul's prayer/desire that love would abound/increase among believers. This represents consistent apostolic instruction about Christian love across contexts."
+    },
+    {
+      "anchor_ref": "Phil.1.10",
+      "cross_ref": "Rom.12.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both passages emphasize discernment and testing/approving what is excellent/God's will. This is a core Pauline teaching on spiritual maturity and moral wisdom."
+    },
+    {
+      "anchor_ref": "Phil.1.10",
+      "cross_ref": "1Cor.1.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both references speak to being blameless on the day of Christ. This reflects Pauline eschatological theology about believers' sanctification in preparation for Christ's return."
+    },
+    {
+      "anchor_ref": "Phil.1.11",
+      "cross_ref": "John.15.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Both passages use fruit/fruitfulness metaphor for spiritual productivity through Christ. The shared imagery (fruit of righteousness/abiding bearing fruit) elevates this beyond mere thematic echo to shared metaphor with theological principle."
+    },
+    {
+      "anchor_ref": "Phil.1.12",
+      "cross_ref": "2Tim.2.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both prison epistles express that Paul's chains/imprisonment have advanced the gospel. This is parallel imprisonment testimony using similar vocabulary showing literary and theological consistency."
+    },
+    {
+      "anchor_ref": "Phil.1.13",
+      "cross_ref": "Eph.3.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both references describe Paul as 'prisoner of/for Christ Jesus.' This is standard self-identification formula in Paul's prison epistles showing consistent literary pattern."
+    },
+    {
+      "anchor_ref": "Phil.1.13",
+      "cross_ref": "Eph.4.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both use 'prisoner in/of the Lord' formula. This is consistent Pauline self-designation in prison context across Ephesians and Philippians."
+    },
+    {
+      "anchor_ref": "Phil.1.14",
+      "cross_ref": "Phil.1.20",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Phil 1:20 expands on 1:14's theme of bold proclamation. Paul develops his imprisonment testimony from others' boldness (v14) to his own confidence (v20) within same chapter."
+    },
+    {
+      "anchor_ref": "Phil.1.15",
+      "cross_ref": "Phil.2.3",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Phil 2:3 prescribes humility vs. selfish ambition, elaborating on the negative example of those preaching from envy/rivalry in 1:15. This shows contrast between wrong and right motivations."
+    },
+    {
+      "anchor_ref": "Phil.1.19",
+      "cross_ref": "2Cor.1.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both passages emphasize the power of prayer support for deliverance/salvation. This reflects Paul's consistent theology of corporate prayer and divine deliverance across his letters."
+    },
+    {
+      "anchor_ref": "Phil.1.20",
+      "cross_ref": "Rom.5.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both express confidence/hope that will not disappoint/put to shame. This reflects Pauline teaching on Christian assurance and hope grounded in God's faithfulness."
+    },
+    {
+      "anchor_ref": "Phil.1.20",
+      "cross_ref": "Rom.14.8",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "Both passages use 'whether by life or death' formula to express total devotion to Christ/the Lord. This is parallel theological principle with similar rhetorical structure."
+    },
+    {
+      "anchor_ref": "Phil.1.20",
+      "cross_ref": "1Cor.6.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both passages emphasize glorifying Christ/God in the body. This is core Pauline theology about embodied Christian living and stewarding the body for God's glory."
+    },
+    {
+      "anchor_ref": "Phil.1.20",
+      "cross_ref": "Eph.6.19",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both prison epistles request prayer for boldness in proclamation. This shows consistent vocabulary and concern in Paul's imprisonment context across letters."
+    },
+    {
+      "anchor_ref": "Phil.1.21",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both express cruciform spirituality: 'Christ lives in me' (Gal) and 'to live is Christ' (Phil). This is parallel Pauline theology of union with Christ using similar paradoxical life-in-Christ language."
+    },
+    {
+      "anchor_ref": "Phil.1.21",
+      "cross_ref": "Col.1.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both emphasize Christ as the center/glory of Christian life. Col 1:27 'Christ in you, the hope of glory' parallels Phil's 'to live is Christ' teaching about Christ-centered existence."
+    },
+    {
+      "anchor_ref": "Phil.1.22",
+      "cross_ref": "Rom.1.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both passages use 'fruit' language for ministry effectiveness. This reflects consistent Pauline vocabulary about productive gospel ministry across contexts."
+    },
+    {
+      "anchor_ref": "Phil.1.23",
+      "cross_ref": "2Cor.5.8",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both express Paul's desire to depart and be with Christ/the Lord. This is parallel theology about death as gain and immediate presence with Christ, using similar vocabulary."
+    },
+    {
+      "anchor_ref": "Phil.1.23",
+      "cross_ref": "2Tim.4.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both use 'departure' language for death. This is consistent Pauline euphemistic vocabulary across letters for describing death/martyrdom."
+    },
+    {
+      "anchor_ref": "Phil.1.26",
+      "cross_ref": "Phil.2.24",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Phil 2:24 elaborates Paul's hope to visit mentioned in 1:26. This is narrative development within the letter showing Paul's continued confidence in visiting Philippi."
+    },
+    {
+      "anchor_ref": "Phil.1.27",
+      "cross_ref": "Eph.4.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both use 'walk worthy of' formula with imperative force. This represents consistent apostolic instruction about ethical living matching one's calling in Christ."
+    },
+    {
+      "anchor_ref": "Phil.1.27",
+      "cross_ref": "Phil.4.1-2",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Phil 4:1-2 develops the unity theme from 1:27's call to 'stand firm in one spirit, striving together.' This elaborates the practical application of unity in addressing specific conflict."
+    },
+    {
+      "anchor_ref": "Phil.1.28",
+      "cross_ref": "2Tim.2.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach that suffering with Christ leads to glory/salvation. This reflects consistent Pauline theology of the suffering-glory pattern in Christian experience."
+    },
+    {
+      "anchor_ref": "Phil.1.28",
+      "cross_ref": "Heb.13.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both encourage confidence in face of opposition/fear. This is common NT teaching on courage grounded in God's faithfulness, though less directly parallel."
+    },
+    {
+      "anchor_ref": "Phil.1.29",
+      "cross_ref": "Matt.5.11-12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach that suffering for Christ is a privilege/blessing. This reflects consistent NT theology about the honor of suffering for Jesus' name, elevating beyond mere thematic echo."
+    },
+    {
+      "anchor_ref": "Phil.1.30",
+      "cross_ref": "1Thes.2.2",
+      "primary_category": "historical_reference",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Paul references the same conflict/struggle he experienced in Thessalonica, which the Philippians witnessed. This is historical self-reference with parallel vocabulary across letters."
+    },
+    {
+      "anchor_ref": "Phil.2.1",
+      "cross_ref": "2Cor.13.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both use triadic formulas listing spiritual realities (comfort, fellowship, etc.). This reflects Pauline rhetorical style with theological content about trinitarian blessings."
+    },
+    {
+      "anchor_ref": "Phil.2.1",
+      "cross_ref": "Col.3.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both exhort to compassion/tender affection as Christian virtues. This represents consistent apostolic instruction about Christ-like character across contexts."
+    },
+    {
+      "anchor_ref": "Phil.2.2",
+      "cross_ref": "1Pet.3.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both command unity and like-mindedness among believers. This represents consistent apostolic instruction about church unity appearing across different NT authors."
+    },
+    {
+      "anchor_ref": "Phil.2.3",
+      "cross_ref": "Rom.12.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both command preferring/honoring others above oneself. This represents parallel apostolic instruction on humility and mutual honor within the body of Christ."
+    },
+    {
+      "anchor_ref": "Phil.2.3",
+      "cross_ref": "Gal.5.26",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "contrast",
+      "confidence": 88,
+      "reasoning": "Both address selfish ambition/conceit, with Galatians negatively prohibiting what Philippians positively reframes. This is parallel instruction with contrasting formulation."
+    },
+    {
+      "anchor_ref": "Phil.2.3",
+      "cross_ref": "1Pet.5.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both command humility. This represents consistent apostolic instruction across different NT authors teaching the fundamental Christian virtue of humility."
+    },
+    {
+      "anchor_ref": "Phil.2.4",
+      "cross_ref": "1Cor.10.24",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both command looking to others' interests, not just one's own. This is nearly identical apostolic instruction about selflessness using similar vocabulary."
+    },
+    {
+      "anchor_ref": "Phil.2.6",
+      "cross_ref": "John.1.1-2",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both passages express high Christology of Christ's pre-existence and divine nature. Phil 2:6 'being in the form of God' parallels John 1:1 'the Word was God' - these are among NT's most explicit deity affirmations."
+    },
+    {
+      "anchor_ref": "Phil.2.6",
+      "cross_ref": "John.5.18",
+      "primary_category": "christological_parallel",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Phil 2:6 affirms what John 5:18's opponents accused as blasphemy: Jesus' equality with God. Both texts express high Christology of functional deity, with contrasting recognition/rejection."
+    },
+    {
+      "anchor_ref": "Phil.2.7",
+      "cross_ref": "John.1.14",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both express incarnation theology using parallel language: Phil 2:7 'taking the form of a servant, being made in human likeness' parallels John 1:14 'the Word became flesh.' These are two of NT's most explicit incarnation statements."
+    },
+    {
+      "anchor_ref": "Phil.2.7",
+      "cross_ref": "Rom.8.3",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both express incarnation using 'likeness' language: Phil 2:7 'likeness of men' and Rom 8:3 'likeness of sinful flesh.' This is parallel Pauline Christology about Christ's genuine humanity with theological purpose (redemption)."
+    },
+    {
+      "anchor_ref": "Phil.2.9",
+      "cross_ref": "Eph.1.20-21",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "Both describe Christ's exaltation with God giving Him supreme authority above all. This is parallel Pauline high Christology about Christ's post-resurrection cosmic supremacy."
+    },
+    {
+      "anchor_ref": "Phil.2.9",
+      "cross_ref": "Heb.1.3-4",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "Both passages describe Christ's exaltation and receiving the supreme name. This is parallel high Christology about Christ's divine status and supremacy in NT theology."
+    },
+    {
+      "anchor_ref": "Phil.2.10",
+      "cross_ref": "Rom.14.11",
+      "primary_category": "allusion",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Both allude to Isaiah 45:23 about universal worship. Phil applies YHWH's exclusive worship claim to Jesus, while Rom applies it to God's judgment. This shows high Christology through shared OT allusion."
+    },
+    {
+      "anchor_ref": "Phil.2.11",
+      "cross_ref": "John.13.13",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both affirm Jesus as 'Lord' (Kyrios). Phil 2:11's universal confession 'Jesus Christ is Lord' parallels John 13:13 where Jesus affirms being called 'Lord.' Both express Christ's lordship - core NT Christology."
+    },
+    {
+      "anchor_ref": "Phil.2.13",
+      "cross_ref": "Rom.8.28",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both teach divine sovereignty in working out His purposes. Phil 2:13 'God who works in you' parallels Rom 8:28 'God works for good.' This is consistent Pauline theology of divine agency."
+    },
+    {
+      "anchor_ref": "Phil.2.13",
+      "cross_ref": "1Cor.12.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both affirm God as the one who works/produces all things in believers. This is consistent Pauline theology of divine empowerment and sovereignty over spiritual work."
+    },
+    {
+      "anchor_ref": "Phil.2.13",
+      "cross_ref": "Heb.13.21",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both express God working in believers to accomplish His will/pleasure. This is common NT theology of divine enablement for Christian obedience."
+    },
+    {
+      "anchor_ref": "Phil.2.14",
+      "cross_ref": "1Cor.10.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "historical_reference",
+      "confidence": 88,
+      "reasoning": "Both prohibit complaining/grumbling, with 1 Cor referencing Israel's wilderness grumbling. This is parallel apostolic instruction with historical warning example."
+    },
+    {
+      "anchor_ref": "Phil.2.15",
+      "cross_ref": "Matt.5.45",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 80,
+      "reasoning": "Both teach believers as 'children of God' displaying distinctive character. Phil 2:15 'blameless children of God' echoes Matt 5:45's teaching about being children of the Father. This is shared theology with verbal echo."
+    },
+    {
+      "anchor_ref": "Phil.2.15",
+      "cross_ref": "John.12.36",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "Both use light metaphor for believers/discipleship. Phil 2:15 'shine like stars' and John 12:36 'children of light' share the light imagery for Christian witness."
+    },
+    {
+      "anchor_ref": "Phil.2.15",
+      "cross_ref": "Eph.5.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both command being blameless/imitating God as beloved children. This is parallel apostolic instruction about distinctive Christian character befitting God's children."
+    },
+    {
+      "anchor_ref": "Phil.2.16",
+      "cross_ref": "1Thes.2.19",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both express converts as Paul's crown/boast on the day of Christ/the Lord's coming. This is consistent Pauline vocabulary about eschatological joy in fruitful ministry."
+    },
+    {
+      "anchor_ref": "Phil.2.17",
+      "cross_ref": "Rom.15.16",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both use sacrificial/priestly metaphor for Paul's ministry. Phil 2:17 'poured out as drink offering' and Rom 15:16 'priestly service of the gospel' share cultic imagery for apostolic work."
+    },
+    {
+      "anchor_ref": "Phil.2.17",
+      "cross_ref": "2Tim.4.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 92,
+      "reasoning": "Both use identical 'poured out as drink offering' metaphor for Paul's impending death/sacrifice. This is near-exact parallel vocabulary showing consistent self-understanding across letters."
+    },
+    {
+      "anchor_ref": "Phil.2.20",
+      "cross_ref": "1Cor.16.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both commend Timothy as doing 'the work of the Lord' with genuine character. This is consistent Pauline commendation vocabulary for Timothy across letters."
+    },
+    {
+      "anchor_ref": "Phil.2.21",
+      "cross_ref": "1Cor.10.24",
+      "primary_category": "contrast",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Phil 2:21 laments those seeking their own interests (negative example), while 1 Cor 10:24 commands seeking others' good (positive instruction). These represent contrasting approaches to the same selfishness issue."
+    },
+    {
+      "anchor_ref": "Phil.2.22",
+      "cross_ref": "1Cor.4.17",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "Both describe Timothy using father-son language and commend his faithful service. This is parallel Pauline vocabulary for describing his relationship with Timothy across multiple letters."
+    },
+    {
+      "anchor_ref": "Phil.2.22",
+      "cross_ref": "1Tim.1.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "Both use 'my true/genuine son' language for Timothy. This is consistent Pauline formula for expressing paternal relationship with Timothy appearing across multiple letters."
+    },
+    {
+      "anchor_ref": "Phil.2.24",
+      "cross_ref": "Phil.1.25",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "Phil 2:24 reaffirms and elaborates the confidence expressed in 1:25 about Paul's hope to visit Philippi. This is clear internal elaboration within the same letter."
+    },
+    {
+      "anchor_ref": "Phil.2.25",
+      "cross_ref": "Phil.4.18",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "Phil 4:18 elaborates on Epaphroditus' role mentioned in 2:25 as the one who brought Philippian's gift to Paul. This is clear internal elaboration about the same person and event."
+    },
+    {
+      "anchor_ref": "Phil.2.26",
+      "cross_ref": "Phil.1.8",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Phil 2:26 describes Epaphroditus longing for the Philippians, elaborating Paul's own longing expressed in 1:8. This shows parallel affections within the letter's relational dynamics."
+    },
+    {
+      "anchor_ref": "Phil.2.29",
+      "cross_ref": "1Cor.16.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both command honoring/submitting to faithful workers. This is parallel apostolic instruction about recognizing and honoring those who serve sacrificially."
+    },
+    {
+      "anchor_ref": "Phil.2.29",
+      "cross_ref": "1Cor.16.18",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both command honoring/recognizing faithful ministers. This is parallel apostolic instruction using similar vocabulary about esteeming those who serve."
+    },
+    {
+      "anchor_ref": "Phil.2.29",
+      "cross_ref": "1Tim.5.17",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both instruct giving honor to faithful leaders/workers. This represents consistent apostolic instruction about honoring those who serve well in ministry."
+    },
+    {
+      "anchor_ref": "Phil.2.30",
+      "cross_ref": "1Cor.16.17",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both express that representatives 'supplied what was lacking' in others' ministry/presence. This is parallel Pauline vocabulary about delegates completing fellowship."
+    },
+    {
+      "anchor_ref": "Phil.3.1",
+      "cross_ref": "Phil.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Phil 3:1 continues and reemphasizes the joy theme from 2:18. This is clear thematic elaboration within Philippians' sustained joy motif across chapters."
+    },
+    {
+      "anchor_ref": "Phil.3.1",
+      "cross_ref": "Phil.4.4",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "Phil 4:4 'Rejoice in the Lord always' elaborates 3:1's 'Rejoice in the Lord.' This is direct thematic development of the joy command, nearly identical wording within the letter."
+    },
+    {
+      "anchor_ref": "Phil.3.2",
+      "cross_ref": "Ps.22.16",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both use 'dogs' as derogatory metaphor. Phil 3:2 'beware of the dogs' (Judaizers) echoes Ps 22:16's 'dogs surround me' (enemies). This is shared pejorative metaphor across contexts."
+    },
+    {
+      "anchor_ref": "Phil.3.2",
+      "cross_ref": "Ps.22.20",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 83,
+      "reasoning": "Both use 'dogs' metaphor for enemies/evil. This is shared pejorative imagery drawing on common biblical metaphorical tradition."
+    },
+    {
+      "anchor_ref": "Phil.3.2",
+      "cross_ref": "Rev.22.15",
+      "primary_category": "shared_metaphor",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both use 'dogs' metaphor for those outside God's people. This is consistent biblical metaphorical usage for unclean/excluded persons across testaments."
+    },
+    {
+      "anchor_ref": "Phil.3.3",
+      "cross_ref": "John.4.21-24",
+      "primary_category": "theological_principle",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Both contrast true spiritual worship vs. physical/locational worship. Phil 3:3 'worship by the Spirit' and John 4:24 'worship in spirit and truth' teach same principle of spiritual vs. fleshly worship."
+    },
+    {
+      "anchor_ref": "Phil.3.3",
+      "cross_ref": "Rom.2.29",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both contrast true spiritual circumcision vs. physical circumcision. This is parallel Pauline teaching on the true people of God defined by Spirit/heart, not flesh/law."
+    },
+    {
+      "anchor_ref": "Phil.3.3",
+      "cross_ref": "Gal.6.15",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "Both diminish physical circumcision in favor of new creation/spiritual reality. This is parallel Pauline anti-Judaizer polemic using similar theological argument across letters."
+    },
+    {
+      "anchor_ref": "Phil.3.3",
+      "cross_ref": "Col.2.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both teach spiritual circumcision in Christ vs. fleshly circumcision. This is parallel Pauline theology about true circumcision being spiritual transformation in Christ."
+    },
+    {
+      "anchor_ref": "Phil.3.5",
+      "cross_ref": "Luke.1.59",
+      "primary_category": "ritual_practice",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference eighth-day circumcision as Jewish ritual practice. This is shared reference to standard Jewish covenantal observance, showing ritual pattern."
+    },
+    {
+      "anchor_ref": "Phil.3.5",
+      "cross_ref": "Luke.2.21",
+      "primary_category": "ritual_practice",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both reference eighth-day circumcision ritual. Phil 3:5 (Paul) and Luke 2:21 (Jesus) both describe standard Jewish covenant practice of circumcision on eighth day."
+    },
+    {
+      "anchor_ref": "Phil.3.5",
+      "cross_ref": "Rom.11.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "Both passages list Paul's Jewish credentials using nearly identical vocabulary ('Israelite, tribe of Benjamin'). This is consistent autobiographical formula across Paul's letters."
+    },
+    {
+      "anchor_ref": "Phil.3.5",
+      "cross_ref": "2Cor.11.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both list Paul's Jewish credentials using parallel rhetorical questions/statements ('Hebrew, Israelite, descendant of Abraham'). This is consistent Pauline autobiographical pattern across contexts."
+    },
+    {
+      "anchor_ref": "Phil.3.6",
+      "cross_ref": "Gal.1.13",
+      "primary_category": "historical_reference",
+      "secondary_category": "literary_parallel",
+      "confidence": 93,
+      "reasoning": "Both reference Paul's pre-conversion persecution of the church. This is parallel autobiographical testimony using similar vocabulary about Paul's zealous persecution across letters."
+    },
+    {
+      "anchor_ref": "Phil.3.8",
+      "cross_ref": "John.17.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both emphasize knowing Christ/God as supreme value and eternal life. Phil 3:8 'surpassing worth of knowing Christ' and John 17:3 'eternal life... to know you' share theology of knowledge of God as ultimate good."
+    },
+    {
+      "anchor_ref": "Phil.3.8",
+      "cross_ref": "Eph.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both emphasize knowledge of Christ/Son of God as spiritual maturity goal. This is consistent Pauline theology about growing in Christ-knowledge."
+    },
+    {
+      "anchor_ref": "Phil.3.8",
+      "cross_ref": "2Pet.3.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 78,
+      "reasoning": "Both emphasize growing in knowledge of Christ/Lord as Christian goal. This is common NT theology about progressing in Christ-knowledge."
+    },
+    {
+      "anchor_ref": "Phil.3.9",
+      "cross_ref": "Rom.1.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "Both teach righteousness through faith, not works. This is core Pauline justification theology using parallel vocabulary about faith-righteousness appearing across Romans and Philippians."
+    },
+    {
+      "anchor_ref": "Phil.3.9",
+      "cross_ref": "Rom.3.21-22",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Both explicitly contrast righteousness through law vs. righteousness through faith in Christ. This is parallel Pauline justification teaching using nearly identical theological vocabulary and structure."
+    },
+    {
+      "anchor_ref": "Phil.3.9",
+      "cross_ref": "Rom.9.30",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "Both contrast righteousness by law vs. righteousness by faith. This is parallel Pauline theology about two competing systems of righteousness across his letters."
+    },
+    {
+      "anchor_ref": "Phil.3.9",
+      "cross_ref": "Rom.10.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both contrast 'their own righteousness' (through law) vs. 'righteousness of God' (through faith). This is parallel Pauline justification vocabulary using identical contrast structure."
+    },
+    {
+      "anchor_ref": "Phil.3.9",
+      "cross_ref": "Gal.2.16",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Both explicitly contrast justification by works of law vs. faith in Christ using nearly identical vocabulary. This is core parallel Pauline anti-Judaizer theology across Galatians and Philippians."
+    },
+    {
+      "anchor_ref": "Phil.3.10",
+      "cross_ref": "Rom.6.3-5",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both teach union with Christ in death and resurrection. Phil 3:10 'fellowship of his sufferings... conformity to his death' parallels Rom 6:3-5's baptism into death/resurrection. This is core Pauline cruciform theology."
+    },
+    {
+      "anchor_ref": "Phil.3.10",
+      "cross_ref": "Rom.8.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "Both teach suffering with Christ leads to glorification with Christ. This is parallel Pauline theology of the suffering-glory pattern using similar vocabulary across letters."
+    },
+    {
+      "anchor_ref": "Phil.3.10",
+      "cross_ref": "Rom.8.29",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both emphasize conformity to Christ's image/death as God's purpose. This is parallel Pauline theology about believers being conformed to Christ."
+    },
+    {
+      "anchor_ref": "Phil.3.10",
+      "cross_ref": "Gal.6.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both express Paul's identification with Christ's sufferings through bearing marks/sharing suffering. This is parallel Pauline cruciform spirituality across letters."
+    },
+    {
+      "anchor_ref": "Phil.3.11",
+      "cross_ref": "1Cor.15.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach resurrection order/hope for believers. This is consistent Pauline eschatological theology about believers' future resurrection in Christ."
+    },
+    {
+      "anchor_ref": "Phil.3.11",
+      "cross_ref": "Rev.20.5-6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both reference resurrection from the dead as privileged hope. This is shared NT eschatological theology, though with different emphasis (Paul's personal hope vs. John's millennial vision)."
+    },
+    {
+      "anchor_ref": "Phil.3.12",
+      "cross_ref": "1Tim.6.12",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both use athletic/pursuit metaphor for Christian life ('take hold of'/'lay hold on'). This is shared metaphorical language for spiritual striving in Pauline literature."
+    },
+    {
+      "anchor_ref": "Phil.3.12",
+      "cross_ref": "1Tim.6.19",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'lay hold of' language for grasping eternal life/that for which Christ grasped them. This is shared vocabulary for spiritual attainment in Pauline corpus."
+    },
+    {
+      "anchor_ref": "Phil.3.13",
+      "cross_ref": "Luke.9.62",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use 'not looking back' metaphor for single-minded forward focus. Luke 9:62 'no one who puts hand to plow and looks back' parallels Phil 3:13 'forgetting what is behind.' This is shared imagery for undivided commitment."
+    },
+    {
+      "anchor_ref": "Phil.3.14",
+      "cross_ref": "1Cor.9.24",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "Both use race/prize metaphor for Christian life. This is parallel Pauline athletic imagery: 1 Cor 9:24 'run to win the prize' and Phil 3:14 'press on toward the goal for the prize.'"
+    },
+    {
+      "anchor_ref": "Phil.3.14",
+      "cross_ref": "2Tim.4.7-8",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "literary_parallel",
+      "confidence": 93,
+      "reasoning": "Both use race/crown metaphor for Christian life completion. This is parallel Pauline athletic imagery with similar vocabulary about finishing the race and receiving the prize/crown."
+    },
+    {
+      "anchor_ref": "Phil.3.14",
+      "cross_ref": "Heb.12.1",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both use race metaphor for Christian perseverance. This is shared NT athletic imagery for spiritual endurance, though different authors."
+    },
+    {
+      "anchor_ref": "Phil.3.15",
+      "cross_ref": "1Cor.2.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both use 'mature/perfect' (teleios) to describe spiritually advanced believers. This is consistent Pauline vocabulary for spiritual maturity across letters."
+    },
+    {
+      "anchor_ref": "Phil.3.15",
+      "cross_ref": "Phil.1.9-10",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Phil 3:15 elaborates the maturity/discernment theme from 1:9-10. This is internal thematic development within Philippians about spiritual perception and growth."
+    },
+    {
+      "anchor_ref": "Phil.3.17",
+      "cross_ref": "1Cor.4.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "Both command imitating Paul. This is parallel apostolic instruction using identical imperative vocabulary ('become imitators of me') across Paul's letters."
+    },
+    {
+      "anchor_ref": "Phil.3.17",
+      "cross_ref": "1Pet.5.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both emphasize leaders as examples to follow. This represents consistent apostolic instruction about exemplary leadership across different NT authors."
+    },
+    {
+      "anchor_ref": "Phil.3.18",
+      "cross_ref": "Gal.6.12",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "Both warn against those avoiding the cross's offense. This is parallel Pauline anti-Judaizer polemic identifying 'enemies of the cross' with similar concern across letters."
+    },
+    {
+      "anchor_ref": "Phil.3.20",
+      "cross_ref": "Eph.2.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both teach believers' citizenship is heavenly, not earthly. This is parallel Pauline theology about Christians as citizens of heaven/God's kingdom using similar vocabulary."
+    },
+    {
+      "anchor_ref": "Phil.3.20",
+      "cross_ref": "Heb.12.22-23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both describe believers' citizenship/belonging to heavenly Jerusalem. This is shared NT theology about Christians' ultimate allegiance to heavenly realm."
+    },
+    {
+      "anchor_ref": "Phil.3.21",
+      "cross_ref": "Rom.8.29",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both teach conformity to Christ's glorified body/image. This is parallel Pauline eschatological theology about believers' future transformation to Christ's likeness."
+    },
+    {
+      "anchor_ref": "Phil.3.21",
+      "cross_ref": "1Cor.15.28",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "Both describe Christ's subjection of all things. This is consistent Pauline theology about Christ's cosmic authority and eschatological victory."
+    },
+    {
+      "anchor_ref": "Phil.3.21",
+      "cross_ref": "1Cor.15.43-53",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "Both teach transformation from lowly/perishable to glorious/imperishable body. This is parallel Pauline resurrection theology using similar vocabulary about bodily transformation."
+    },
+    {
+      "anchor_ref": "Phil.4.1",
+      "cross_ref": "Phil.1.8",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Phil 4:1 reiterates and elaborates Paul's affection from 1:8. This is internal elaboration expressing intensified longing within the letter's relational framework."
+    },
+    {
+      "anchor_ref": "Phil.4.2",
+      "cross_ref": "Phil.2.2",
+      "primary_category": "elaboration",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "Phil 4:2 applies 2:2's call for unity to specific individuals (Euodia and Syntyche). This is direct elaboration turning general exhortation into specific application within same letter."
+    },
+    {
+      "anchor_ref": "Phil.4.4",
+      "cross_ref": "Phil.3.1",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Phil 4:4 'Rejoice in the Lord always' directly elaborates and intensifies 3:1's 'Rejoice in the Lord.' This is explicit thematic development with repetition for emphasis within Philippians."
+    },
+    {
+      "anchor_ref": "Phil.4.5",
+      "cross_ref": "Heb.10.37",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both reference Christ's imminent return ('the Lord is near'/'He who is coming will come'). This is shared NT eschatological expectation of Christ's return."
+    },
+    {
+      "anchor_ref": "Phil.4.5",
+      "cross_ref": "Jas.5.8-9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both connect ethical behavior (gentleness/patience) with Christ's nearness. This is parallel instruction grounding ethics in eschatological imminence across different NT authors."
+    },
+    {
+      "anchor_ref": "Phil.4.6",
+      "cross_ref": "Matt.6.25",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both command not to be anxious/worry. Matt 6:25 'do not worry' and Phil 4:6 'do not be anxious about anything' represent parallel instruction against anxiety with similar vocabulary."
+    },
+    {
+      "anchor_ref": "Phil.4.6",
+      "cross_ref": "1Pet.5.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both command casting anxiety/concerns to God. This is parallel apostolic instruction about dealing with anxiety through prayer and trust, using similar vocabulary."
+    },
+    {
+      "anchor_ref": "Phil.4.7",
+      "cross_ref": "John.14.27",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both promise peace of God/Christ that transcends understanding/worldly peace. This is shared NT theology about supernatural divine peace, though from different sources (Paul/Jesus)."
+    },
+    {
+      "anchor_ref": "Phil.4.9",
+      "cross_ref": "Rom.15.33",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both use 'God of peace will be with you' formula. This is standard Pauline benediction/promise pattern appearing across multiple letters."
+    },
+    {
+      "anchor_ref": "Phil.4.9",
+      "cross_ref": "Rom.16.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "Both use 'the God of peace will be with you' formula. This is identical Pauline peace-benediction appearing in letter closings."
+    },
+    {
+      "anchor_ref": "Phil.4.9",
+      "cross_ref": "1Cor.14.33",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "Both identify God as 'God of peace.' This is consistent Pauline theological vocabulary about God's character across letters."
+    },
+    {
+      "anchor_ref": "Phil.4.9",
+      "cross_ref": "1Thes.5.23",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both invoke 'God of peace' in closing benediction context. This is standard Pauline epistolary formula appearing in letter conclusions."
+    },
+    {
+      "anchor_ref": "Phil.4.11",
+      "cross_ref": "1Tim.6.6",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "Both teach contentment principle. Phil 4:11 'learned to be content' and 1 Tim 6:6 'godliness with contentment is great gain' express parallel practical wisdom in Pauline corpus."
+    },
+    {
+      "anchor_ref": "Phil.4.12",
+      "cross_ref": "1Cor.4.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both describe Paul's experience of hunger/need in ministry. This is parallel autobiographical testimony using similar vocabulary about apostolic hardship."
+    },
+    {
+      "anchor_ref": "Phil.4.12",
+      "cross_ref": "2Cor.11.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference Paul's experience of material need. This is parallel autobiographical testimony about apostolic self-sufficiency and need across Paul's letters."
+    },
+    {
+      "anchor_ref": "Phil.4.13",
+      "cross_ref": "2Cor.12.9-10",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "Both express strength through Christ in weakness. Phil 4:13 'I can do all things through Christ' parallels 2 Cor 12:9 'power is made perfect in weakness.' This is parallel Pauline theology of divine sufficiency."
+    },
+    {
+      "anchor_ref": "Phil.4.15",
+      "cross_ref": "2Cor.11.8-9",
+      "primary_category": "historical_reference",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both reference Philippians' unique financial support of Paul. This is historical self-reference with parallel vocabulary about Macedonian generosity across letters."
+    },
+    {
+      "anchor_ref": "Phil.4.15",
+      "cross_ref": "Phil.1.5",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "Phil 4:15 elaborates 1:5's reference to Philippians' 'partnership in the gospel' with specific historical details about their financial giving. This is clear internal elaboration within the letter."
+    },
+    {
+      "anchor_ref": "Phil.4.16",
+      "cross_ref": "1Thes.2.9",
+      "primary_category": "historical_reference",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both reference Paul's Thessalonian ministry context and support. This is parallel autobiographical testimony about ministry in Thessalonica across different letters."
+    },
+    {
+      "anchor_ref": "Phil.4.17",
+      "cross_ref": "1Cor.9.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both discuss giving and spiritual return/credit. This is shared Pauline theology about reciprocal blessing in gospel partnership, though with different emphasis."
+    },
+    {
+      "anchor_ref": "Phil.4.18",
+      "cross_ref": "2Cor.9.12",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both use sacrificial/offering metaphor for financial gifts. This is parallel Pauline cultic imagery for describing monetary support as worship offering."
+    },
+    {
+      "anchor_ref": "Phil.4.18",
+      "cross_ref": "Phil.2.25",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Phil 4:18 elaborates 2:25's reference to Epaphroditus bringing gifts. This is direct internal elaboration identifying what was brought within the same letter."
+    },
+    {
+      "anchor_ref": "Phil.4.19",
+      "cross_ref": "Ps.23.1",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both express God's provision for all needs. Phil 4:19 'my God will supply every need' echoes Ps 23:1 'The Lord is my shepherd, I shall not want.' This is allusion to shepherd-provision theme."
+    },
+    {
+      "anchor_ref": "Phil.4.19",
+      "cross_ref": "2Cor.9.8",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both promise God's abundant provision for givers. This is parallel Pauline theology about divine supply for generous believers using similar vocabulary."
+    },
+    {
+      "anchor_ref": "Phil.4.20",
+      "cross_ref": "Rom.11.36",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "Both use doxology formula ascribing glory to God. This is standard Pauline liturgical pattern appearing in multiple letters."
+    },
+    {
+      "anchor_ref": "Phil.4.22",
+      "cross_ref": "Phil.1.13",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Phil 4:22 'saints in Caesar's household' elaborates 1:13's reference to 'the whole imperial guard.' This is internal elaboration about gospel penetration into Roman power structures."
+    },
+    {
+      "anchor_ref": "Phil.4.23",
+      "cross_ref": "Rom.16.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both use 'grace be with you' closing benediction. This is standard Pauline epistolary closing formula appearing across multiple letters."
+    },
+    {
+      "anchor_ref": "Phil.4.23",
+      "cross_ref": "Gal.6.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both use 'grace of our Lord Jesus Christ be with your spirit' formula. This is identical Pauline closing benediction pattern appearing in letter conclusions."
+    },
+    {
+      "anchor_ref": "Phil.4.23",
+      "cross_ref": "2Tim.4.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Both use 'The Lord be with your spirit' and 'Grace be with you' closing formulas. This is standard Pauline epistolary closing pattern appearing in multiple letters."
+    }
+  ]
+}
