@@ -1,0 +1,1766 @@
+{
+  "book": "Ephesians",
+  "book_number": 49,
+  "verified": true,
+  "total_items": 218,
+  "improved_count": 167,
+  "category_distribution": {
+    "literary_parallel": 36,
+    "theological_principle": 60,
+    "elaboration": 38,
+    "christological_parallel": 11,
+    "shared_metaphor": 13,
+    "allusion": 7,
+    "narrative_continuation": 2,
+    "parallel_instruction": 44,
+    "quotation": 3,
+    "parallel_account": 2,
+    "historical_reference": 2
+  },
+  "items": [
+    {
+      "anchor_ref": "Eph.1.2",
+      "cross_ref": "Rom.1.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both are Pauline greeting formulas with nearly identical structure: 'grace and peace to you from God our Father and the Lord Jesus Christ.' This is literary_parallel (shared epistolary convention) + theological_principle (grace/peace theology)."
+    },
+    {
+      "anchor_ref": "Eph.1.2",
+      "cross_ref": "Titus.1.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Identical Pauline greeting formula structure across epistles. Literary_parallel captures the formulaic nature better than generic allusion."
+    },
+    {
+      "anchor_ref": "Eph.1.4",
+      "cross_ref": "2Thes.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's election and sanctification. Primary theological_principle (election doctrine) with literary_parallel (similar Pauline vocabulary: 'God chose you')."
+    },
+    {
+      "anchor_ref": "Eph.1.4",
+      "cross_ref": "1Pet.1.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach divine election and sanctification. Theological_principle (soteriology) is sufficient; no strong literary connection beyond shared doctrine."
+    },
+    {
+      "anchor_ref": "Eph.1.4",
+      "cross_ref": "1Pet.1.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both affirm God's eternal plan before creation. Theological_principle (divine sovereignty) sufficient; different contexts and vocabulary."
+    },
+    {
+      "anchor_ref": "Eph.1.5",
+      "cross_ref": "Rom.8.15",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both discuss adoption (huiothesia). Theological_principle (adoption doctrine) primary; literary_parallel (Paul's distinctive adoption vocabulary across epistles) secondary."
+    },
+    {
+      "anchor_ref": "Eph.1.5",
+      "cross_ref": "Rom.8.29",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach predestination and conformity to Christ. Theological_principle (soteriology/predestination) is sufficient."
+    },
+    {
+      "anchor_ref": "Eph.1.6",
+      "cross_ref": "Rom.3.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss grace and redemption. Theological_principle (justification) with literary_parallel (Paul's 'grace' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.1.6",
+      "cross_ref": "Col.1.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph-Col parallels show extensive literary similarity. Both discuss being in 'the beloved/Son he loves' with similar vocabulary. Literary_parallel primary due to Eph-Col connection."
+    },
+    {
+      "anchor_ref": "Eph.1.7",
+      "cross_ref": "Col.1.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Nearly identical phrasing: 'redemption through his blood, the forgiveness of sins' (Eph) / 'redemption, the forgiveness of sins' (Col). Strong literary_parallel (Eph-Col connection) + theological_principle (redemption)."
+    },
+    {
+      "anchor_ref": "Eph.1.7",
+      "cross_ref": "Heb.9.12",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both discuss redemption through blood. Theological_principle (atonement) with shared_metaphor (blood imagery)."
+    },
+    {
+      "anchor_ref": "Eph.1.9",
+      "cross_ref": "Rom.16.25",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's mystery revealed. Theological_principle (mystery revealed) with literary_parallel (Paul's 'mystery' vocabulary pattern)."
+    },
+    {
+      "anchor_ref": "Eph.1.9",
+      "cross_ref": "Eph.3.3",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 3:3 explicitly elaborates the mystery mentioned in 1:9. Perfect elaboration with theological_principle (mystery of Christ)."
+    },
+    {
+      "anchor_ref": "Eph.1.9",
+      "cross_ref": "Eph.3.9",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 3:9 further elaborates the mystery from 1:9. Clear elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.1.10",
+      "cross_ref": "Mark.1.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both discuss 'fullness of time' but in different contexts (cosmic reconciliation vs. kingdom arrival). Theological_principle (eschatology) sufficient; thematic_echo too weak."
+    },
+    {
+      "anchor_ref": "Eph.1.10",
+      "cross_ref": "Gal.4.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both use 'fullness of time' (pleroma) language. Theological_principle (divine timing) with literary_parallel (Paul's distinctive pleroma usage)."
+    },
+    {
+      "anchor_ref": "Eph.1.10",
+      "cross_ref": "Col.1.16",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both affirm Christ's cosmic supremacy over 'all things in heaven and earth.' Christological_parallel (Christ's universal lordship) with literary_parallel (Eph-Col connection)."
+    },
+    {
+      "anchor_ref": "Eph.1.10",
+      "cross_ref": "Col.1.20",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both describe Christ reconciling all things. Christological_parallel (Christ's cosmic reconciliation) + literary_parallel (Eph-Col shared theology)."
+    },
+    {
+      "anchor_ref": "Eph.1.11",
+      "cross_ref": "Rom.8.28-29",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's purpose and predestination. Theological_principle (divine sovereignty) with literary_parallel (Paul's 'purpose' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.1.11",
+      "cross_ref": "Eph.3.11",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 3:11 elaborates God's eternal purpose from 1:11. Clear elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.1.12",
+      "cross_ref": "Eph.1.6",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Eph 1:12 repeats the 'for the praise of his glory' refrain from 1:6 in the christological hymn structure. Elaboration sufficient (threefold refrain pattern)."
+    },
+    {
+      "anchor_ref": "Eph.1.12",
+      "cross_ref": "Eph.1.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both are part of the threefold 'praise of his glory' refrain in the christological hymn (vv. 6, 12, 14). Literary_parallel captures the structured pattern."
+    },
+    {
+      "anchor_ref": "Eph.1.13",
+      "cross_ref": "2Cor.1.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both discuss Holy Spirit as seal/deposit. Theological_principle (pneumatology) with shared_metaphor (seal imagery)."
+    },
+    {
+      "anchor_ref": "Eph.1.13",
+      "cross_ref": "Eph.4.30",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 4:30 references back to the sealing by the Spirit mentioned in 1:13. Elaboration (ethical implications) + theological_principle (Spirit's sealing)."
+    },
+    {
+      "anchor_ref": "Eph.1.13",
+      "cross_ref": "Col.1.5",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both discuss 'word of truth, the gospel' with nearly identical phrasing. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.1.14",
+      "cross_ref": "Rom.8.23",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss Spirit as 'firstfruits' or 'deposit' guaranteeing redemption. Theological_principle (eschatological salvation) with literary_parallel (Paul's deposit/firstfruits vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.1.14",
+      "cross_ref": "2Cor.1.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both use 'deposit' (arrabon) for the Spirit. Theological_principle + literary_parallel (Paul's distinctive arrabon vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.1.14",
+      "cross_ref": "2Cor.5.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Identical 'deposit' (arrabon) language for the Spirit. Strong theological_principle + literary_parallel."
+    },
+    {
+      "anchor_ref": "Eph.1.16",
+      "cross_ref": "Col.1.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both are Pauline prayer reports with similar structure and vocabulary ('have not stopped praying for you'). Literary_parallel (Eph-Col) primary."
+    },
+    {
+      "anchor_ref": "Eph.1.17",
+      "cross_ref": "1Cor.2.9-12",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss Spirit's revelation of God's wisdom. Theological_principle (revelation) with literary_parallel (Paul's 'spirit of wisdom' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.1.18",
+      "cross_ref": "Eph.1.11",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Eph 1:18 elaborates the 'hope' and 'inheritance' mentioned in 1:11. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.1.18",
+      "cross_ref": "Eph.4.4",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Eph 4:4 references the 'one hope' from 1:18. Elaboration + theological_principle (unity)."
+    },
+    {
+      "anchor_ref": "Eph.1.19",
+      "cross_ref": "Eph.3.7",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eph 3:7 references the power mentioned in 1:19. Elaboration within Ephesians' power theology."
+    },
+    {
+      "anchor_ref": "Eph.1.19",
+      "cross_ref": "Eph.3.16",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eph 3:16 prays for the power mentioned in 1:19. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Eph.1.19",
+      "cross_ref": "Eph.6.10",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eph 6:10 applies the power from 1:19 ethically ('be strong in the Lord's mighty power'). Elaboration."
+    },
+    {
+      "anchor_ref": "Eph.1.19",
+      "cross_ref": "Phil.3.21",
+      "primary_category": "theological_principle",
+      "secondary_category": "christological_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's power for transformation. Theological_principle (divine power) with christological_parallel (Christ's power)."
+    },
+    {
+      "anchor_ref": "Eph.1.21",
+      "cross_ref": "Phil.2.9",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both affirm Christ's exaltation above all powers/names. Christological_parallel (Christ's supremacy) primary."
+    },
+    {
+      "anchor_ref": "Eph.1.21",
+      "cross_ref": "Col.1.16",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Both list cosmic powers under Christ's authority with similar vocabulary ('thrones, dominions, rulers, authorities'). Christological_parallel + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.1.21",
+      "cross_ref": "Col.2.10",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both affirm Christ as head over all powers. Christological_parallel + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.1.22",
+      "cross_ref": "Eph.4.15",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 4:15 applies the 'head' imagery from 1:22 to church growth. Elaboration (ethical application) + theological_principle (ecclesiology)."
+    },
+    {
+      "anchor_ref": "Eph.1.22",
+      "cross_ref": "Col.1.18",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Both declare Christ as 'head' of the body/church with similar vocabulary. Christological_parallel + literary_parallel (Eph-Col shared body metaphor)."
+    },
+    {
+      "anchor_ref": "Eph.1.22",
+      "cross_ref": "Col.2.19",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Both use 'head' and body growth metaphor. Shared_metaphor (body imagery) + christological_parallel (Christ as head)."
+    },
+    {
+      "anchor_ref": "Eph.1.23",
+      "cross_ref": "Eph.3.19",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Eph 3:19 elaborates the 'fullness' from 1:23. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.1.23",
+      "cross_ref": "Eph.4.10",
+      "primary_category": "elaboration",
+      "secondary_category": "christological_parallel",
+      "confidence": 85,
+      "reasoning": "Eph 4:10 elaborates Christ filling all things from 1:23. Elaboration + christological_parallel."
+    },
+    {
+      "anchor_ref": "Eph.1.23",
+      "cross_ref": "Col.1.19",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Both discuss 'fullness' (pleroma) dwelling in Christ. Christological_parallel (Christ's fullness) + literary_parallel (Eph-Col pleroma theology)."
+    },
+    {
+      "anchor_ref": "Eph.1.23",
+      "cross_ref": "Col.3.11",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both affirm Christ as 'all in all.' Christological_parallel + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.2.1",
+      "cross_ref": "Eph.2.5",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 2:5 repeats and elaborates 'dead in transgressions' from 2:1. Perfect elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.1",
+      "cross_ref": "Col.2.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Nearly identical language: 'dead in your transgressions.' Literary_parallel (Eph-Col) + theological_principle (spiritual death/life)."
+    },
+    {
+      "anchor_ref": "Eph.2.3",
+      "cross_ref": "Gal.5.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss sinful nature/flesh. Theological_principle (hamartiology) with literary_parallel (Paul's flesh vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.2.3",
+      "cross_ref": "Col.3.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both discuss 'wrath' on disobedience with similar vocabulary. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.5",
+      "cross_ref": "Rom.5.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both discuss salvation while dead/helpless. Theological_principle (grace in salvation) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.2.5",
+      "cross_ref": "Rom.6.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss being raised to new life. Theological_principle (resurrection with Christ) + literary_parallel (Paul's raised-with-Christ vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.2.5",
+      "cross_ref": "Eph.2.1",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 2:5 repeats and elaborates 2:1 ('dead in transgressions... made alive'). Clear elaboration."
+    },
+    {
+      "anchor_ref": "Eph.2.5",
+      "cross_ref": "Col.2.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Nearly identical phrasing: 'made you alive with Christ.' Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.7",
+      "cross_ref": "Titus.3.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's kindness appearing. Theological_principle (divine grace) + literary_parallel (Pauline 'kindness' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.2.8",
+      "cross_ref": "John.4.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both discuss God's gift, but different contexts (salvation vs. living water). Theological_principle sufficient; thematic_echo too weak."
+    },
+    {
+      "anchor_ref": "Eph.2.9",
+      "cross_ref": "Rom.3.28",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both teach justification apart from works. Theological_principle (sola fide) + literary_parallel (Paul's faith/works contrast vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.2.9",
+      "cross_ref": "2Tim.1.9",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both affirm salvation 'not by works.' Theological_principle + literary_parallel (Pauline formula)."
+    },
+    {
+      "anchor_ref": "Eph.2.9",
+      "cross_ref": "Titus.3.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both affirm salvation 'not by works.' Theological_principle + literary_parallel (Pauline formula)."
+    },
+    {
+      "anchor_ref": "Eph.2.11",
+      "cross_ref": "Col.2.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both discuss circumcision/uncircumcision in similar contexts. Literary_parallel (Eph-Col) + theological_principle (Gentile inclusion)."
+    },
+    {
+      "anchor_ref": "Eph.2.12",
+      "cross_ref": "Rom.9.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both discuss Israel's covenants. Theological_principle (covenant theology) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.2.12",
+      "cross_ref": "1Thes.4.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both contrast having/not having hope using similar Pauline vocabulary. Literary_parallel captures the shared phrasing."
+    },
+    {
+      "anchor_ref": "Eph.2.13",
+      "cross_ref": "Col.1.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss peace/reconciliation through Christ's blood. Literary_parallel (Eph-Col) + theological_principle (atonement)."
+    },
+    {
+      "anchor_ref": "Eph.2.14",
+      "cross_ref": "1Cor.12.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both discuss unity in one body. Theological_principle (ecclesial unity) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.2.15",
+      "cross_ref": "2Cor.5.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss 'new creation' in Christ. Theological_principle (new creation) + literary_parallel (Paul's 'new' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.2.15",
+      "cross_ref": "Gal.3.28",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both teach unity transcending Jew/Gentile division. Theological_principle (unity in Christ) + literary_parallel (Paul's unity formula)."
+    },
+    {
+      "anchor_ref": "Eph.2.15",
+      "cross_ref": "Col.1.21-22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss reconciliation and peace. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.15",
+      "cross_ref": "Col.2.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Both discuss abolishing/canceling the law's requirements with similar vocabulary. Strong literary_parallel (Eph-Col) + theological_principle (law's end)."
+    },
+    {
+      "anchor_ref": "Eph.2.16",
+      "cross_ref": "Col.1.20",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss reconciliation through the cross. Literary_parallel (Eph-Col) + theological_principle (atonement)."
+    },
+    {
+      "anchor_ref": "Eph.2.17",
+      "cross_ref": "Zech.9.10",
+      "primary_category": "allusion",
+      "secondary_category": "prophecy_fulfillment",
+      "confidence": 80,
+      "reasoning": "Paul alludes to Zechariah's peace proclamation to near and far. Allusion + prophecy_fulfillment (messianic peace realized)."
+    },
+    {
+      "anchor_ref": "Eph.2.18",
+      "cross_ref": "Eph.3.12",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 3:12 elaborates the 'access to the Father' from 2:18. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.18",
+      "cross_ref": "Eph.4.4",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Eph 4:4 references 'one Spirit' from 2:18's Trinitarian access. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.20",
+      "cross_ref": "Matt.16.18",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both use building/foundation metaphor for church, but different foundations (Peter vs. apostles/prophets). Shared_metaphor + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.20",
+      "cross_ref": "1Cor.3.11",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use foundation metaphor (though different foundations: Christ vs. apostles/prophets). Shared_metaphor + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.2.20",
+      "cross_ref": "1Pet.2.4-8",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use building/stone metaphor for church. Shared_metaphor (building imagery) + theological_principle (ecclesiology)."
+    },
+    {
+      "anchor_ref": "Eph.2.20",
+      "cross_ref": "Rev.21.14",
+      "primary_category": "shared_metaphor",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Both mention twelve apostles as foundation, but different contexts (church vs. New Jerusalem). Shared_metaphor sufficient."
+    },
+    {
+      "anchor_ref": "Eph.2.21",
+      "cross_ref": "1Cor.3.16",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use temple metaphor for church/believers. Shared_metaphor (temple imagery) + theological_principle (ecclesiology)."
+    },
+    {
+      "anchor_ref": "Eph.2.21",
+      "cross_ref": "Eph.4.15-16",
+      "primary_category": "elaboration",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Eph 4:15-16 elaborates the growth/building theme from 2:21. Elaboration + shared_metaphor (building/body imagery)."
+    },
+    {
+      "anchor_ref": "Eph.3.1",
+      "cross_ref": "Eph.4.1",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Eph 3:1 begins with 'For this reason I, Paul...' and 4:1 resumes with 'As a prisoner for the Lord, then, I urge you...' after the prayer digression. Narrative_continuation captures the resumed thought."
+    },
+    {
+      "anchor_ref": "Eph.3.1",
+      "cross_ref": "2Tim.1.8",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference Paul's imprisonment with similar vocabulary. Literary_parallel (Pauline self-reference pattern) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.3.2",
+      "cross_ref": "Col.1.25",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss Paul's stewardship/commission with nearly identical language. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.3",
+      "cross_ref": "Eph.1.9-10",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 3:3 explicitly elaborates the mystery from 1:9-10. Perfect elaboration."
+    },
+    {
+      "anchor_ref": "Eph.3.3",
+      "cross_ref": "Col.1.26",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss the mystery now revealed with similar vocabulary. Literary_parallel (Eph-Col mystery language) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.5",
+      "cross_ref": "Eph.1.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eph 3:5 discusses revelation to apostles/prophets, elaborating the 'Spirit of wisdom and revelation' from 1:17. Elaboration."
+    },
+    {
+      "anchor_ref": "Eph.3.6",
+      "cross_ref": "Eph.2.14-16",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 3:6 explicitly states the mystery: Gentiles are fellow heirs, elaborating 2:14-16's reconciliation theme. Perfect elaboration."
+    },
+    {
+      "anchor_ref": "Eph.3.7",
+      "cross_ref": "Rom.15.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both discuss God's power working through Paul's ministry with similar vocabulary. Literary_parallel (Pauline ministry vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.3.7",
+      "cross_ref": "Col.1.23",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both describe Paul as servant of the gospel. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.7",
+      "cross_ref": "Col.1.25",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss Paul's commission as servant with similar vocabulary. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.8",
+      "cross_ref": "1Cor.15.9-10",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both express Paul's self-assessment as 'least' with similar vocabulary. Literary_parallel (Pauline humility formula)."
+    },
+    {
+      "anchor_ref": "Eph.3.9",
+      "cross_ref": "Rom.16.25",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss the mystery hidden for ages now revealed. Theological_principle (mystery revealed) + literary_parallel (Paul's mystery vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.3.10",
+      "cross_ref": "Rom.11.33",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both discuss God's wisdom. Theological_principle (divine wisdom) sufficient; different contexts."
+    },
+    {
+      "anchor_ref": "Eph.3.10",
+      "cross_ref": "1Cor.2.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's wisdom/mystery. Theological_principle + literary_parallel (Paul's wisdom vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.3.10",
+      "cross_ref": "Eph.1.21",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Eph 3:10 elaborates that the 'rulers and authorities' from 1:21 learn God's wisdom through the church. Elaboration."
+    },
+    {
+      "anchor_ref": "Eph.3.10",
+      "cross_ref": "Eph.6.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eph 6:12 references the 'rulers and authorities' from 3:10. Elaboration (different perspective: learning wisdom vs. opposing believers)."
+    },
+    {
+      "anchor_ref": "Eph.3.10",
+      "cross_ref": "1Pet.1.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both discuss angels/powers learning about salvation. Theological_principle (revelation to spiritual beings) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.3.11",
+      "cross_ref": "Eph.1.11",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 3:11 elaborates God's 'eternal purpose' from 1:11. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.12",
+      "cross_ref": "Eph.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 3:12 elaborates the 'access to the Father' from 2:18. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.12",
+      "cross_ref": "Heb.4.16",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "Both encourage bold access to God with confidence. Theological_principle + parallel_instruction (similar exhortation)."
+    },
+    {
+      "anchor_ref": "Eph.3.14",
+      "cross_ref": "Phil.2.10",
+      "primary_category": "shared_metaphor",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both reference bowing/kneeling, but different contexts (prayer vs. universal worship). Shared_metaphor (kneeling imagery) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.3.16",
+      "cross_ref": "Phil.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both discuss God's power/strength. Theological_principle + literary_parallel (Paul's strength vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.3.16",
+      "cross_ref": "Phil.4.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both discuss God's riches providing. Theological_principle + literary_parallel (Paul's 'riches' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.3.16",
+      "cross_ref": "Col.1.11",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both pray for God's power/strength with similar vocabulary. Literary_parallel (Eph-Col prayer language) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.3.17",
+      "cross_ref": "John.14.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both discuss Christ/God dwelling in believers, but different contexts. Theological_principle (divine indwelling) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.3.17",
+      "cross_ref": "Col.2.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both use 'rooted' metaphor for spiritual stability. Literary_parallel (Eph-Col) + shared_metaphor (root imagery)."
+    },
+    {
+      "anchor_ref": "Eph.3.18",
+      "cross_ref": "John.1.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 70,
+      "reasoning": "Both discuss Christ's fullness, but different contexts. Theological_principle sufficient."
+    },
+    {
+      "anchor_ref": "Eph.3.18",
+      "cross_ref": "Col.2.9-10",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both discuss fullness in Christ. Christological_parallel (Christ's fullness) + literary_parallel (Eph-Col pleroma theology)."
+    },
+    {
+      "anchor_ref": "Eph.3.19",
+      "cross_ref": "Col.2.10",
+      "primary_category": "christological_parallel",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both discuss believers' fullness in Christ. Christological_parallel + literary_parallel (Eph-Col pleroma theology)."
+    },
+    {
+      "anchor_ref": "Eph.3.20",
+      "cross_ref": "Eph.1.19-20",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Eph 3:20 doxology references the power from 1:19-20. Elaboration (doxological application)."
+    },
+    {
+      "anchor_ref": "Eph.3.20",
+      "cross_ref": "Col.1.29",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both discuss God's power working in believers. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.4.1",
+      "cross_ref": "Eph.3.1",
+      "primary_category": "narrative_continuation",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "Eph 4:1 resumes the interrupted thought from 3:1 ('For this reason...' / 'Therefore I urge you...'). Clear narrative_continuation."
+    },
+    {
+      "anchor_ref": "Eph.4.1",
+      "cross_ref": "Phil.1.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference Paul's imprisonment with similar vocabulary. Literary_parallel (Pauline self-reference)."
+    },
+    {
+      "anchor_ref": "Eph.4.1",
+      "cross_ref": "Phil.1.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference imprisonment 'in/for the Lord.' Literary_parallel (Pauline imprisonment references)."
+    },
+    {
+      "anchor_ref": "Eph.4.2",
+      "cross_ref": "Col.3.12-13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Both give nearly identical virtue lists: humility, gentleness, patience, bearing with one another. Parallel_instruction (household code pattern) + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.3",
+      "cross_ref": "Col.3.14-15",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both instruct about unity and peace. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.4",
+      "cross_ref": "Rom.12.5",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both use 'one body' metaphor. Theological_principle (unity) + shared_metaphor (body imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.4",
+      "cross_ref": "1Cor.12.12-13",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 90,
+      "reasoning": "Both teach 'one body, one Spirit' with similar vocabulary. Theological_principle (unity) + shared_metaphor (body/Spirit imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.4",
+      "cross_ref": "Eph.2.16",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 4:4 elaborates the 'one body' from 2:16. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.4.4",
+      "cross_ref": "Eph.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 4:4 references 'one Spirit' from 2:18. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.4.7",
+      "cross_ref": "Rom.12.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss grace/gifts measured to each person. Theological_principle + literary_parallel (Paul's grace-gift vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.7",
+      "cross_ref": "1Cor.12.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss Spirit's gifts given to each person. Theological_principle + literary_parallel (Paul's gift vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.9",
+      "cross_ref": "John.3.13",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both discuss Christ's descent/ascent, but different contexts (incarnation vs. post-resurrection). Christological_parallel sufficient."
+    },
+    {
+      "anchor_ref": "Eph.4.9",
+      "cross_ref": "1Pet.3.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 75,
+      "reasoning": "Both may reference descent to the dead (if that's the interpretation). Theological_principle + allusion (1 Pet alludes to Eph's descent)."
+    },
+    {
+      "anchor_ref": "Eph.4.10",
+      "cross_ref": "Eph.1.23",
+      "primary_category": "elaboration",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "Eph 4:10 elaborates Christ 'filling all things' from 1:23. Elaboration + christological_parallel."
+    },
+    {
+      "anchor_ref": "Eph.4.11",
+      "cross_ref": "1Cor.12.28",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both list church offices/gifts. Theological_principle (church offices) + literary_parallel (Paul's office lists)."
+    },
+    {
+      "anchor_ref": "Eph.4.12",
+      "cross_ref": "1Cor.12.27",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both discuss body of Christ. Theological_principle + shared_metaphor (body imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.13",
+      "cross_ref": "Eph.1.23",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Eph 4:13 references 'fullness of Christ' from 1:23. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.4.13",
+      "cross_ref": "Col.1.28",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both discuss maturity/perfection in Christ with similar vocabulary. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.4.14",
+      "cross_ref": "1Cor.14.20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Both contrast childishness with maturity. Parallel_instruction + shared_metaphor (children imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.14",
+      "cross_ref": "Eph.6.11",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Eph 6:11 elaborates protection against 'schemes' from 4:14. Elaboration (armor of God as answer to deceit)."
+    },
+    {
+      "anchor_ref": "Eph.4.15",
+      "cross_ref": "Eph.1.22",
+      "primary_category": "elaboration",
+      "secondary_category": "shared_metaphor",
+      "confidence": 90,
+      "reasoning": "Eph 4:15 applies the 'head' imagery from 1:22 to church growth. Elaboration + shared_metaphor (body/head imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.16",
+      "cross_ref": "Col.2.19",
+      "primary_category": "literary_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 95,
+      "reasoning": "Nearly identical language about body growth from the head with joints/ligaments. Strong literary_parallel (Eph-Col) + shared_metaphor."
+    },
+    {
+      "anchor_ref": "Eph.4.17",
+      "cross_ref": "Rom.1.21",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss Gentile futility/darkened minds. Theological_principle (hamartiology) + literary_parallel (Paul's futility vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.17",
+      "cross_ref": "Eph.2.2",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "Eph 4:17 references the former way of life from 2:2 ('as the Gentiles do... as you used to'). Elaboration (no longer walk that way) + contrast."
+    },
+    {
+      "anchor_ref": "Eph.4.19",
+      "cross_ref": "Rom.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both describe God giving people over to sin. Theological_principle (divine judgment) + literary_parallel (Paul's 'gave over' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.19",
+      "cross_ref": "Col.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both command putting to death similar vices (sensuality, impurity, greed). Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.22",
+      "cross_ref": "Rom.6.6",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both use 'old self/man' metaphor. Theological_principle (sanctification) + shared_metaphor (clothing imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.22",
+      "cross_ref": "Col.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both command putting off/to death old self. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.22",
+      "cross_ref": "Col.3.8-9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical commands to 'put off' old self with similar vocabulary. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.22",
+      "cross_ref": "Jas.1.21",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Both command putting off/getting rid of sin. Parallel_instruction + shared_metaphor (clothing imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.23",
+      "cross_ref": "Rom.12.2",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both command renewal of mind. Parallel_instruction + literary_parallel (Paul's renewal vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.24",
+      "cross_ref": "2Cor.5.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both discuss new creation/self. Theological_principle + shared_metaphor (new/old imagery)."
+    },
+    {
+      "anchor_ref": "Eph.4.24",
+      "cross_ref": "Col.3.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical command to 'put on new self' with similar vocabulary. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.25",
+      "cross_ref": "Zech.8.16",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 80,
+      "reasoning": "Paul may allude to Zechariah's command to speak truth. Allusion + parallel_instruction (similar ethical command)."
+    },
+    {
+      "anchor_ref": "Eph.4.25",
+      "cross_ref": "Col.3.8-9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both command putting away lying. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.28",
+      "cross_ref": "1Thes.4.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both command working with hands. Parallel_instruction + literary_parallel (Paul's work ethic vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.29",
+      "cross_ref": "Matt.12.36",
+      "primary_category": "theological_principle",
+      "secondary_category": "parallel_instruction",
+      "confidence": 75,
+      "reasoning": "Both address speech accountability, but different contexts. Theological_principle + parallel_instruction (speech ethics)."
+    },
+    {
+      "anchor_ref": "Eph.4.29",
+      "cross_ref": "Rom.14.19",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both command edifying speech. Parallel_instruction + literary_parallel (Paul's edification vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.4.29",
+      "cross_ref": "Col.3.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both command putting away corrupt/filthy speech. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.30",
+      "cross_ref": "Eph.1.13-14",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Eph 4:30 references the Spirit's sealing from 1:13-14. Perfect elaboration (ethical implication)."
+    },
+    {
+      "anchor_ref": "Eph.4.30",
+      "cross_ref": "1Thes.5.19",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both command not grieving/quenching the Spirit. Parallel_instruction + literary_parallel (Paul's Spirit commands)."
+    },
+    {
+      "anchor_ref": "Eph.4.31",
+      "cross_ref": "Col.3.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical vice lists to put away (anger, rage, malice, slander). Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.4.31",
+      "cross_ref": "1Pet.2.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both command putting away similar vices (malice, slander). Parallel_instruction sufficient."
+    },
+    {
+      "anchor_ref": "Eph.4.32",
+      "cross_ref": "Col.3.12-13",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical commands: be kind, compassionate, forgiving. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.1",
+      "cross_ref": "Matt.5.48",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both command imitating God/being perfect as Father is perfect. Parallel_instruction sufficient (similar ethical exhortation)."
+    },
+    {
+      "anchor_ref": "Eph.5.2",
+      "cross_ref": "John.13.34",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both command loving as Christ loved. Parallel_instruction + theological_principle (Christlike love)."
+    },
+    {
+      "anchor_ref": "Eph.5.2",
+      "cross_ref": "Gal.1.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss Christ giving himself for us. Theological_principle (atonement) + literary_parallel (Paul's self-giving vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.5.2",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss Christ's self-giving love. Theological_principle + literary_parallel (Paul's 'loved me and gave himself' formula)."
+    },
+    {
+      "anchor_ref": "Eph.5.3",
+      "cross_ref": "Col.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical commands about sexual immorality, impurity, greed. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.4",
+      "cross_ref": "Eph.4.29",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Eph 5:4 elaborates corrupt speech from 4:29 with specific examples. Elaboration."
+    },
+    {
+      "anchor_ref": "Eph.5.4",
+      "cross_ref": "Col.3.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both command avoiding filthy/obscene speech. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.5",
+      "cross_ref": "1Cor.6.9-10",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both warn certain sinners won't inherit kingdom with similar vice lists. Theological_principle + literary_parallel (Paul's exclusion warnings)."
+    },
+    {
+      "anchor_ref": "Eph.5.5",
+      "cross_ref": "Col.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both identify greed as idolatry and warn against it. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.6",
+      "cross_ref": "Rom.1.18",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both discuss God's wrath on disobedience. Theological_principle + literary_parallel (Paul's wrath vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.5.6",
+      "cross_ref": "Col.2.4",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both warn against deceptive words/arguments. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.6",
+      "cross_ref": "Col.2.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both warn against deception. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.6",
+      "cross_ref": "Col.3.6",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Nearly identical warning about God's wrath on disobedience. Strong literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.8",
+      "cross_ref": "John.8.12",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both use light/darkness metaphor, but different contexts. Shared_metaphor + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.8",
+      "cross_ref": "Eph.2.2",
+      "primary_category": "elaboration",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "Eph 5:8 contrasts current light with former darkness from 2:2. Elaboration + contrast (then/now)."
+    },
+    {
+      "anchor_ref": "Eph.5.11",
+      "cross_ref": "Rom.13.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both command rejecting darkness/deeds. Parallel_instruction + shared_metaphor (light/darkness)."
+    },
+    {
+      "anchor_ref": "Eph.5.13",
+      "cross_ref": "John.3.20-21",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both discuss light exposing deeds. Shared_metaphor (light/exposure) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.14",
+      "cross_ref": "John.5.25",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 75,
+      "reasoning": "Possible liturgical citation or hymn fragment about awakening/rising. Allusion (unknown source) + shared_metaphor (sleep/wake)."
+    },
+    {
+      "anchor_ref": "Eph.5.14",
+      "cross_ref": "Rom.13.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both command waking from sleep. Parallel_instruction + shared_metaphor (sleep/wake imagery)."
+    },
+    {
+      "anchor_ref": "Eph.5.16",
+      "cross_ref": "Col.4.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical command to 'make the most of every opportunity.' Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.17",
+      "cross_ref": "1Thes.4.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both command understanding God's will. Parallel_instruction + literary_parallel (Paul's 'God's will' vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.5.18",
+      "cross_ref": "Pr.20.1",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 80,
+      "reasoning": "Paul may allude to Proverbs' warning against drunkenness. Allusion + wisdom_principle (practical warning)."
+    },
+    {
+      "anchor_ref": "Eph.5.18",
+      "cross_ref": "Pr.23.31",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 80,
+      "reasoning": "Paul may allude to Proverbs' warning against wine. Allusion + wisdom_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.19",
+      "cross_ref": "Col.3.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical commands about singing psalms/hymns/spiritual songs. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.5.21",
+      "cross_ref": "1Pet.5.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both command mutual submission/humility. Parallel_instruction sufficient."
+    },
+    {
+      "anchor_ref": "Eph.5.22",
+      "cross_ref": "Gen.3.16",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Paul may allude to Genesis creation order, though not directly quoting. Allusion + theological_principle (order in creation)."
+    },
+    {
+      "anchor_ref": "Eph.5.23",
+      "cross_ref": "1Cor.11.3",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both discuss headship. Theological_principle (authority order) + shared_metaphor (head imagery)."
+    },
+    {
+      "anchor_ref": "Eph.5.26",
+      "cross_ref": "John.15.3",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 75,
+      "reasoning": "Both discuss cleansing through word. Shared_metaphor (washing/cleansing) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.26",
+      "cross_ref": "John.17.17",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 75,
+      "reasoning": "Both discuss sanctification through word/truth. Theological_principle + shared_metaphor."
+    },
+    {
+      "anchor_ref": "Eph.5.26",
+      "cross_ref": "Heb.10.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Both discuss cleansing/washing. Theological_principle + shared_metaphor (washing imagery)."
+    },
+    {
+      "anchor_ref": "Eph.5.27",
+      "cross_ref": "Eph.1.4",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 5:27 elaborates the holiness/blamelessness from 1:4. Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.27",
+      "cross_ref": "Col.1.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both describe presenting holy and blameless. Literary_parallel (Eph-Col) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.29",
+      "cross_ref": "1Cor.12.27",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use body metaphor for church. Shared_metaphor + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.30",
+      "cross_ref": "1Cor.6.15",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both discuss believers as members of Christ's body. Theological_principle + shared_metaphor."
+    },
+    {
+      "anchor_ref": "Eph.5.30",
+      "cross_ref": "1Cor.12.27",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use body/members metaphor. Shared_metaphor + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.5.31",
+      "cross_ref": "Gen.2.24",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "Paul quotes Genesis 2:24 ('For this reason a man will leave... and be united... one flesh'). Clear quotation + theological_principle (marriage theology)."
+    },
+    {
+      "anchor_ref": "Eph.5.31",
+      "cross_ref": "Matt.19.5",
+      "primary_category": "parallel_account",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both quote Genesis 2:24 on marriage. Parallel_account (both quoting same OT text) appropriate."
+    },
+    {
+      "anchor_ref": "Eph.5.33",
+      "cross_ref": "1Pet.3.1-2",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both instruct wives about submission. Parallel_instruction (household code pattern) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.5.33",
+      "cross_ref": "1Pet.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both instruct wives about submission. Parallel_instruction sufficient."
+    },
+    {
+      "anchor_ref": "Eph.6.1",
+      "cross_ref": "Col.3.20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical household code: children obey parents. Strong parallel_instruction + literary_parallel (Eph-Col household codes)."
+    },
+    {
+      "anchor_ref": "Eph.6.2-3",
+      "cross_ref": "Exod.20.12",
+      "primary_category": "quotation",
+      "secondary_category": "legal_parallel",
+      "confidence": 95,
+      "reasoning": "Paul quotes the fifth commandment ('Honor your father and mother'). Quotation + legal_parallel (Decalogue)."
+    },
+    {
+      "anchor_ref": "Eph.6.2-3",
+      "cross_ref": "Deut.5.16",
+      "primary_category": "quotation",
+      "secondary_category": "legal_parallel",
+      "confidence": 95,
+      "reasoning": "Paul quotes Deuteronomy's version of the fifth commandment. Quotation + legal_parallel."
+    },
+    {
+      "anchor_ref": "Eph.6.2-3",
+      "cross_ref": "Matt.15.4",
+      "primary_category": "parallel_account",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both reference the fifth commandment. Parallel_account (both citing same commandment)."
+    },
+    {
+      "anchor_ref": "Eph.6.4",
+      "cross_ref": "Col.3.21",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical household code for fathers. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.6.5-7",
+      "cross_ref": "Col.3.22-23",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical household code for slaves with extensive vocabulary overlap. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.6.5-7",
+      "cross_ref": "Titus.2.9-10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both instruct slaves. Parallel_instruction + literary_parallel (Pauline household codes)."
+    },
+    {
+      "anchor_ref": "Eph.6.8",
+      "cross_ref": "Col.3.24-25",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "Both promise reward from the Lord. Parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.6.9",
+      "cross_ref": "Job.31.13-14",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "Paul may allude to Job's principle of equality before God. Allusion + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.6.9",
+      "cross_ref": "Col.4.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical household code for masters. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.6.11",
+      "cross_ref": "Rom.13.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both command putting on armor/weapons of light. Parallel_instruction + shared_metaphor (armor imagery)."
+    },
+    {
+      "anchor_ref": "Eph.6.11",
+      "cross_ref": "1Thes.5.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 90,
+      "reasoning": "Both command putting on armor. Parallel_instruction + shared_metaphor (armor imagery)."
+    },
+    {
+      "anchor_ref": "Eph.6.12",
+      "cross_ref": "Eph.3.10",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Eph 6:12 elaborates the spiritual powers from 3:10 (different perspective: opposing vs. learning). Elaboration + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.6.14",
+      "cross_ref": "1Thes.5.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both list armor pieces. Parallel_instruction + shared_metaphor (armor imagery)."
+    },
+    {
+      "anchor_ref": "Eph.6.16",
+      "cross_ref": "1Jn.5.4",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Both discuss faith overcoming/extinguishing evil. Theological_principle + shared_metaphor (shield/victory imagery)."
+    },
+    {
+      "anchor_ref": "Eph.6.17",
+      "cross_ref": "1Thes.5.8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 90,
+      "reasoning": "Both command taking helmet of salvation. Parallel_instruction + shared_metaphor (armor imagery)."
+    },
+    {
+      "anchor_ref": "Eph.6.17",
+      "cross_ref": "Heb.4.12",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use sword metaphor for God's word. Shared_metaphor (sword imagery) + theological_principle."
+    },
+    {
+      "anchor_ref": "Eph.6.18",
+      "cross_ref": "Rom.8.26-27",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 80,
+      "reasoning": "Both discuss Spirit-enabled prayer. Theological_principle + literary_parallel (Paul's prayer vocabulary)."
+    },
+    {
+      "anchor_ref": "Eph.6.18",
+      "cross_ref": "Phil.4.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both command constant prayer. Parallel_instruction + literary_parallel (Paul's prayer commands)."
+    },
+    {
+      "anchor_ref": "Eph.6.18",
+      "cross_ref": "Col.4.2-3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 95,
+      "reasoning": "Nearly identical commands about devoted prayer and alertness. Strong parallel_instruction + literary_parallel (Eph-Col)."
+    },
+    {
+      "anchor_ref": "Eph.6.19",
+      "cross_ref": "Col.4.3-4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "Nearly identical prayer requests for bold proclamation of the mystery/gospel. Strong literary_parallel (Eph-Col) + parallel_instruction."
+    },
+    {
+      "anchor_ref": "Eph.6.21",
+      "cross_ref": "2Tim.4.12",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both mention Tychicus being sent. Historical_reference (Paul's coworkers) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.6.21",
+      "cross_ref": "Titus.3.12",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 75,
+      "reasoning": "Both mention sending coworkers. Historical_reference (Paul's mission plans) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.6.22",
+      "cross_ref": "Col.4.7-9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "Nearly identical statements about sending Tychicus with nearly word-for-word correspondence. Strong literary_parallel (Eph-Col) + historical_reference."
+    },
+    {
+      "anchor_ref": "Eph.6.23",
+      "cross_ref": "Gal.6.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both use Pauline closing formula with peace. Literary_parallel (epistolary closing pattern) sufficient."
+    },
+    {
+      "anchor_ref": "Eph.6.23",
+      "cross_ref": "2Thes.3.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both use Pauline peace benediction formula. Literary_parallel (epistolary closing) sufficient."
+    }
+  ]
+}

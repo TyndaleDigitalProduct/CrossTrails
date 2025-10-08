@@ -1,0 +1,1368 @@
+{
+  "book": "James",
+  "book_number": 59,
+  "verified": true,
+  "total_items": 168,
+  "improved_count": 89,
+  "category_distribution": {
+    "literary_parallel": 2,
+    "parallel_instruction": 35,
+    "wisdom_parallel": 12,
+    "shared_metaphor": 13,
+    "elaboration": 17,
+    "allusion": 42,
+    "theological_principle": 21,
+    "wisdom_principle": 3,
+    "christological_parallel": 1,
+    "quotation": 6,
+    "contrast": 3,
+    "exemplification": 1,
+    "historical_reference": 12
+  },
+  "items": [
+    {
+      "anchor_ref": "Jas.1.1",
+      "cross_ref": "1Pet.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both James and 1 Peter open with identical epistolary formula: greeting to dispersed/scattered believers. This is literary convention showing shared apostolic tradition, not merely theological principle."
+    },
+    {
+      "anchor_ref": "Jas.1.2",
+      "cross_ref": "1Pet.1.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both passages command believers to rejoice in trials. This is parallel apostolic instruction about response to suffering, with shared theological grounding about trials producing spiritual maturity."
+    },
+    {
+      "anchor_ref": "Jas.1.3",
+      "cross_ref": "1Pet.1.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both passages teach that testing/trials produce endurance/genuineness of faith. Parallel apostolic instruction with shared theological truth about purpose of suffering."
+    },
+    {
+      "anchor_ref": "Jas.1.5",
+      "cross_ref": "Pr.2.3-6",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James 1:5 (ask God for wisdom) parallels Proverbs' teaching about seeking wisdom from God. Both are wisdom literature maxims about obtaining divine wisdom - classic wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.1.5",
+      "cross_ref": "Matt.7.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both passages give instruction to ask and you will receive. James on asking for wisdom parallels Jesus' Sermon on the Mount instruction about prayer. This is parallel_instruction, not mere thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.1.6",
+      "cross_ref": "Matt.21.22",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both passages instruct about believing without doubting in prayer. James echoes Jesus' teaching on faith in prayer - parallel apostolic instruction building on Jesus' words."
+    },
+    {
+      "anchor_ref": "Jas.1.6",
+      "cross_ref": "Mark.11.24",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both passages instruct believers to have faith without doubting when praying. James parallels Jesus' teaching on prayer faith from Mark 11."
+    },
+    {
+      "anchor_ref": "Jas.1.10-11",
+      "cross_ref": "Ps.102.4",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "Both passages use grass/flower withering metaphor for human frailty. James alludes to Psalm's imagery - shared_metaphor is more specific than generic allusion."
+    },
+    {
+      "anchor_ref": "Jas.1.10-11",
+      "cross_ref": "Ps.102.11",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "Both use withering/fading imagery for transience. James alludes to psalm with shared metaphor of human mortality."
+    },
+    {
+      "anchor_ref": "Jas.1.10-11",
+      "cross_ref": "1Pet.1.24",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "Both James and Peter use grass/flower withering metaphor (both alluding to Isaiah 40:6-7). Shared_metaphor is primary since both employ same imagery."
+    },
+    {
+      "anchor_ref": "Jas.1.12",
+      "cross_ref": "1Cor.9.25",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use crown/wreath metaphor for eternal reward. James' 'crown of life' parallels Paul's 'imperishable crown' - shared athletic/victory imagery with theological truth about perseverance."
+    },
+    {
+      "anchor_ref": "Jas.1.12",
+      "cross_ref": "2Tim.4.8",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both use crown metaphor for eschatological reward. James' 'crown of life' parallels Paul's 'crown of righteousness' - shared imagery with theological principle about perseverance."
+    },
+    {
+      "anchor_ref": "Jas.1.12",
+      "cross_ref": "Jas.5.11",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James 5:11 elaborates on 1:12's theme of endurance bringing blessing. Same letter, same author developing his teaching on perseverance. Elaboration is accurate."
+    },
+    {
+      "anchor_ref": "Jas.1.12",
+      "cross_ref": "Rev.2.10",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both explicitly use 'crown of life' metaphor for faithful endurance unto death. This is shared_metaphor with theological principle, not mere thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.1.12",
+      "cross_ref": "Rev.3.11",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "Both use crown metaphor for reward of perseverance. Revelation's 'hold on to your crown' parallels James' 'crown of life' - shared victory imagery."
+    },
+    {
+      "anchor_ref": "Jas.1.14",
+      "cross_ref": "Pr.19.3",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both wisdom passages teach about self-caused trouble/sin. James' wisdom teaching parallels Proverbs' maxim about personal responsibility for folly - classic wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.1.16",
+      "cross_ref": "1Cor.6.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both use 'do not be deceived' formula warning against error. This is literary convention in apostolic writings, not merely theological principle - shared warning formula."
+    },
+    {
+      "anchor_ref": "Jas.1.17",
+      "cross_ref": "Gen.1.16",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James alludes to Genesis creation account ('Father of lights') to teach about God's unchanging goodness. Indirect reference to heavenly lights from Genesis with theological application."
+    },
+    {
+      "anchor_ref": "Jas.1.17",
+      "cross_ref": "Ps.136.7",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "James' 'Father of lights' may allude to Psalm's language about God creating heavenly lights. Allusion with theological truth about God's unchanging character."
+    },
+    {
+      "anchor_ref": "Jas.1.17",
+      "cross_ref": "Matt.7.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach that God gives good gifts. James echoes Jesus' Sermon on the Mount teaching - parallel instruction about God's generous character, not mere thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.1.18",
+      "cross_ref": "John.1.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 82,
+      "reasoning": "Both teach about spiritual birth/regeneration by God's will. Shared theological principle about new birth with birth metaphor, stronger than thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.1.18",
+      "cross_ref": "1Pet.1.23",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both teach regeneration through God's word with birth metaphor. Shared theological principle (new birth) and shared metaphor (birth/begotten imagery)."
+    },
+    {
+      "anchor_ref": "Jas.1.19",
+      "cross_ref": "Pr.10.19",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James' 'quick to hear, slow to speak' parallels Proverbs' wisdom about restraining speech. Both are wisdom maxims about speech control - textbook wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.1.19",
+      "cross_ref": "Pr.15.1",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "James' 'slow to anger' teaching parallels Proverbs' wisdom about gentle response turning away wrath. Both wisdom literature teaching anger control - wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.1.19",
+      "cross_ref": "Eccl.7.9",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James' 'slow to anger' directly parallels Ecclesiastes 7:9 'do not be quickly provoked in your spirit.' Both wisdom sayings about anger control - clear wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.1.21",
+      "cross_ref": "Eph.1.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 82,
+      "reasoning": "Both teach about 'word of truth' bringing salvation. Shared theological principle about salvific word with James alluding to Pauline teaching."
+    },
+    {
+      "anchor_ref": "Jas.1.21",
+      "cross_ref": "Eph.4.22",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "Both instruct to 'put off/away' old sinful nature using clothing metaphor. Parallel apostolic instruction with shared putting off/away imagery."
+    },
+    {
+      "anchor_ref": "Jas.1.21",
+      "cross_ref": "1Pet.2.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "Both command putting away malice/wickedness and receiving God's word. Nearly identical apostolic instruction - clear parallel_instruction between James and Peter."
+    },
+    {
+      "anchor_ref": "Jas.1.22",
+      "cross_ref": "Matt.7.21",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "James' 'doers of the word, not hearers only' parallels Jesus' Sermon teaching that doers, not just hearers/sayers, enter kingdom. James alludes to Jesus' teaching with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.1.22",
+      "cross_ref": "Matt.7.26",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 88,
+      "reasoning": "James' 'hearers but not doers deceive themselves' directly alludes to Jesus' parable of foolish man hearing but not doing. Clear allusion with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.1.22",
+      "cross_ref": "Rom.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 85,
+      "reasoning": "Both teach that doers, not hearers, are justified. Shared theological principle with similar literary formula about hearing vs. doing."
+    },
+    {
+      "anchor_ref": "Jas.1.25",
+      "cross_ref": "John.13.17",
+      "primary_category": "wisdom_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both teach blessing comes from doing/practicing what you know. Practical wisdom principle about knowledge requiring action - wisdom_principle is more specific than thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.1.25",
+      "cross_ref": "Rom.8.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "shared_metaphor",
+      "confidence": 80,
+      "reasoning": "Both describe God's law as bringing freedom/liberty. Shared theological principle about law with shared freedom metaphor."
+    },
+    {
+      "anchor_ref": "Jas.1.25",
+      "cross_ref": "Gal.6.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 78,
+      "reasoning": "Both refer to 'law of Christ/liberty.' Shared theological understanding of Christian law, though connection is general."
+    },
+    {
+      "anchor_ref": "Jas.1.25",
+      "cross_ref": "Jas.2.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James 2:12 elaborates on 1:25's 'law of liberty' theme - same author developing his teaching within same letter. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.1.25",
+      "cross_ref": "1Pet.2.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 78,
+      "reasoning": "Both teach about Christian freedom/liberty properly used. Shared theological principle about nature of freedom in Christ."
+    },
+    {
+      "anchor_ref": "Jas.1.27",
+      "cross_ref": "Deut.14.29",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "James alludes to Deuteronomy's command to care for widows and orphans. Allusion with practical wisdom principle about justice."
+    },
+    {
+      "anchor_ref": "Jas.1.27",
+      "cross_ref": "1Jn.2.15-17",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both instruct believers to remain unstained/unspotted by the world. Parallel apostolic instruction with shared theological principle about worldliness."
+    },
+    {
+      "anchor_ref": "Jas.2.1",
+      "cross_ref": "Pr.24.23",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "James' teaching against partiality parallels Proverbs' wisdom saying against showing partiality in judgment. Both wisdom literature condemning favoritism - wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.2.1",
+      "cross_ref": "1Cor.2.8",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both explicitly call Jesus 'Lord of glory' - distinctive high Christological title. This is christological_parallel, not generic theological principle."
+    },
+    {
+      "anchor_ref": "Jas.2.4",
+      "cross_ref": "John.7.23-24",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "allusion",
+      "confidence": 82,
+      "reasoning": "Both instruct against wrong judgment/discrimination. James may allude to Jesus' teaching about judging rightly - parallel instruction, not mere thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.2.5",
+      "cross_ref": "Luke.6.20",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James directly alludes to Jesus' Beatitude 'blessed are you poor, for yours is the kingdom.' Clear allusion with theological principle about kingdom inheritance."
+    },
+    {
+      "anchor_ref": "Jas.2.5",
+      "cross_ref": "1Cor.1.26-28",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach that God chose the poor/lowly of world. Shared theological principle about divine election of the humble."
+    },
+    {
+      "anchor_ref": "Jas.2.7",
+      "cross_ref": "1Pet.4.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both discuss bearing Christ's name with honor. Shared theological principle about Christian identity and persecution."
+    },
+    {
+      "anchor_ref": "Jas.2.8",
+      "cross_ref": "Lev.19.18",
+      "primary_category": "quotation",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "James directly quotes Leviticus 19:18 'love your neighbor as yourself' calling it the 'royal law.' This is quotation, not mere allusion."
+    },
+    {
+      "anchor_ref": "Jas.2.8",
+      "cross_ref": "Matt.7.12",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "James' 'royal law' of loving neighbor alludes to Jesus' Golden Rule and love command. Allusion with theological principle, stronger than thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.2.8",
+      "cross_ref": "Rom.13.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach that love fulfills the law (both quoting Lev 19:18). Shared theological principle about love as law's fulfillment."
+    },
+    {
+      "anchor_ref": "Jas.2.10",
+      "cross_ref": "Matt.5.19",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 82,
+      "reasoning": "Both teach about keeping whole law vs. breaking parts. James may allude to Jesus' Sermon teaching - shared theological principle about law's unity."
+    },
+    {
+      "anchor_ref": "Jas.2.10",
+      "cross_ref": "Gal.5.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach that keeping one commandment obligates keeping entire law. Shared theological principle about law's indivisibility."
+    },
+    {
+      "anchor_ref": "Jas.2.11",
+      "cross_ref": "Exod.20.13-14",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James alludes to Decalogue (murder and adultery commands) to illustrate law's unity. Clear allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.2.11",
+      "cross_ref": "Deut.5.17-18",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James alludes to Deuteronomy's restatement of murder/adultery commands. Allusion with theological principle about law's unity."
+    },
+    {
+      "anchor_ref": "Jas.2.11",
+      "cross_ref": "Matt.19.18",
+      "primary_category": "allusion",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both reference same commandments (murder, adultery). James alludes to Jesus' citation of Decalogue, though less direct than OT references."
+    },
+    {
+      "anchor_ref": "Jas.2.12",
+      "cross_ref": "Jas.1.25",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James 2:12 elaborates on 1:25's 'law of liberty' teaching. Same author developing same theme within letter. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.13",
+      "cross_ref": "Matt.18.32-35",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "James' 'mercy triumphs over judgment' alludes to Jesus' parable teaching that those who show no mercy receive no mercy. Allusion with practical wisdom principle."
+    },
+    {
+      "anchor_ref": "Jas.2.15",
+      "cross_ref": "Matt.25.35-36",
+      "primary_category": "allusion",
+      "secondary_category": "exemplification",
+      "confidence": 85,
+      "reasoning": "James' example of hungry/naked person alludes to Jesus' sheep/goats judgment scene. James uses similar scenario to exemplify true faith."
+    },
+    {
+      "anchor_ref": "Jas.2.16",
+      "cross_ref": "1Jn.3.17-18",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "Both instruct that love must be shown in deeds, not just words. Very similar apostolic instruction about faith/love demonstrated through action."
+    },
+    {
+      "anchor_ref": "Jas.2.17",
+      "cross_ref": "Gal.5.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both teach that genuine faith must express itself through action. Shared theological principle about faith's necessary expression in works."
+    },
+    {
+      "anchor_ref": "Jas.2.17",
+      "cross_ref": "Jas.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "James 2:20 elaborates on 2:17's teaching that faith without works is dead. Same immediate context, same argument. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.17",
+      "cross_ref": "Jas.2.26",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "James 2:26 concludes and elaborates on 2:17's thesis about dead faith. Same argument, final summation. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.18",
+      "cross_ref": "Matt.7.16-17",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "James' 'show me your faith by your works' alludes to Jesus' teaching that tree is known by its fruit. Allusion with practical wisdom principle about visible evidence."
+    },
+    {
+      "anchor_ref": "Jas.2.18",
+      "cross_ref": "Rom.3.28",
+      "primary_category": "contrast",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "James and Paul appear to contrast on faith/works (though addressing different issues). Contrast in emphasis with shared underlying theological principle about salvation."
+    },
+    {
+      "anchor_ref": "Jas.2.19",
+      "cross_ref": "Deut.6.4",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "James alludes to Shema ('God is one') to show even demons believe monotheism. Clear allusion with theological principle about inadequacy of mere belief."
+    },
+    {
+      "anchor_ref": "Jas.2.19",
+      "cross_ref": "Matt.8.29",
+      "primary_category": "exemplification",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "James uses demons' knowledge of God (exemplified in Gospel accounts of demons recognizing Jesus) to illustrate inadequacy of mere intellectual belief. Exemplification."
+    },
+    {
+      "anchor_ref": "Jas.2.20",
+      "cross_ref": "Gal.5.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both teach faith must work/express itself actively. Shared theological principle about faith's necessary outworking."
+    },
+    {
+      "anchor_ref": "Jas.2.20",
+      "cross_ref": "Jas.2.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James 2:20 elaborates on 2:14's opening question about faith without works. Same argument developing. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.20",
+      "cross_ref": "Jas.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "James 2:20 restates and elaborates 2:17's thesis. Same immediate context. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.20",
+      "cross_ref": "Jas.2.26",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "James 2:26 concludes 2:20's argument. Same discourse. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.21",
+      "cross_ref": "Gen.22.9",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Abraham's binding of Isaac as historical example proving faith requires works. Historical_reference with exemplification - Abraham illustrates principle."
+    },
+    {
+      "anchor_ref": "Jas.2.21",
+      "cross_ref": "Gen.22.12",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Abraham's Aqedah to exemplify faith demonstrated by works. Historical reference used as exemplification."
+    },
+    {
+      "anchor_ref": "Jas.2.22",
+      "cross_ref": "Heb.11.17",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "historical_reference",
+      "confidence": 85,
+      "reasoning": "Both authors use Abraham's offering of Isaac to teach about faith. Parallel apostolic instruction using same historical reference."
+    },
+    {
+      "anchor_ref": "Jas.2.23",
+      "cross_ref": "Gen.15.6",
+      "primary_category": "quotation",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "James directly quotes Genesis 15:6 'Abraham believed God, and it was credited to him as righteousness.' Clear quotation with historical reference."
+    },
+    {
+      "anchor_ref": "Jas.2.23",
+      "cross_ref": "Rom.4.3-5",
+      "primary_category": "theological_principle",
+      "secondary_category": "quotation",
+      "confidence": 88,
+      "reasoning": "Both quote Genesis 15:6 about Abraham's faith. Shared theological principle (both quote same text) but different applications. Both quotation secondary."
+    },
+    {
+      "anchor_ref": "Jas.2.25",
+      "cross_ref": "Josh.2.4",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Rahab's hiding of spies as historical example proving faith requires action. Historical reference with exemplification."
+    },
+    {
+      "anchor_ref": "Jas.2.25",
+      "cross_ref": "Josh.2.6",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Rahab's actions from Joshua 2 to exemplify faith demonstrated through works. Historical reference as exemplification."
+    },
+    {
+      "anchor_ref": "Jas.2.25",
+      "cross_ref": "Josh.2.15",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Rahab story (sending spies away) as example of faith with works. Historical reference used as exemplification."
+    },
+    {
+      "anchor_ref": "Jas.2.25",
+      "cross_ref": "Heb.11.31",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "historical_reference",
+      "confidence": 88,
+      "reasoning": "Both James and Hebrews use Rahab as example of faith. Parallel apostolic instruction using same historical reference."
+    },
+    {
+      "anchor_ref": "Jas.2.26",
+      "cross_ref": "Gal.5.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both teach that faith must express itself through action. Shared theological principle about faith's active nature."
+    },
+    {
+      "anchor_ref": "Jas.2.26",
+      "cross_ref": "Jas.2.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "James 2:26 concludes argument begun in 2:14. Final elaboration of opening thesis. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.26",
+      "cross_ref": "Jas.2.17",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "James 2:26 restates 2:17 with body/spirit analogy. Final elaboration of earlier statement. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.2.26",
+      "cross_ref": "Jas.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "James 2:26 provides concluding elaboration to 2:20. Same argument. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.3.1",
+      "cross_ref": "Rom.2.21",
+      "primary_category": "wisdom_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both teach that teachers face stricter judgment. This is practical wisdom principle about teaching responsibility, not abstract theological doctrine."
+    },
+    {
+      "anchor_ref": "Jas.3.2",
+      "cross_ref": "Jas.1.4",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "James 3:2 elaborates on 1:4's theme of perfection/maturity. Same letter developing maturity theme. Elaboration."
+    },
+    {
+      "anchor_ref": "Jas.3.2",
+      "cross_ref": "Jas.1.26",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "James 3:2 elaborates on 1:26's teaching about controlling tongue. Same letter, same topic developed. Clear elaboration."
+    },
+    {
+      "anchor_ref": "Jas.3.3",
+      "cross_ref": "Ps.32.9",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "Both use horse/bridle metaphor for control. James may allude to Psalm's imagery - shared_metaphor is primary."
+    },
+    {
+      "anchor_ref": "Jas.3.5",
+      "cross_ref": "Pr.26.20",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 88,
+      "reasoning": "Both wisdom passages use fire metaphor to teach about destructive speech/gossip. Wisdom_parallel with shared fire metaphor."
+    },
+    {
+      "anchor_ref": "Jas.3.6",
+      "cross_ref": "Pr.16.27",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": "shared_metaphor",
+      "confidence": 88,
+      "reasoning": "Both wisdom passages use fire metaphor for destructive speech. James parallels Proverbs' wisdom with shared fire imagery."
+    },
+    {
+      "anchor_ref": "Jas.3.6",
+      "cross_ref": "Matt.12.36-37",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James' teaching about tongue corrupting person alludes to Jesus' teaching that words reveal heart and bring judgment. Allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.3.6",
+      "cross_ref": "Matt.15.11",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "James on tongue's defilement alludes to Jesus' teaching about what defiles. Allusion with theological principle, stronger than thematic echo."
+    },
+    {
+      "anchor_ref": "Jas.3.6",
+      "cross_ref": "Matt.15.18-19",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James' teaching about tongue coming from evil within alludes to Jesus' teaching that mouth speaks from heart's overflow. Clear allusion."
+    },
+    {
+      "anchor_ref": "Jas.3.8",
+      "cross_ref": "Ps.140.3",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 88,
+      "reasoning": "James alludes to Psalm's serpent tongue imagery ('full of deadly poison'). Allusion with shared snake/poison metaphor."
+    },
+    {
+      "anchor_ref": "Jas.3.8",
+      "cross_ref": "Rom.3.13",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "Both use poison/venom metaphor for destructive speech. Shared_metaphor primary, both may allude to Psalm 140."
+    },
+    {
+      "anchor_ref": "Jas.3.9",
+      "cross_ref": "Gen.1.26-27",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "James alludes to Genesis creation account ('made in God's likeness/image') to ground ethics of speech. Clear allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.3.9",
+      "cross_ref": "Gen.5.1",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James alludes to Genesis 5:1's restatement of image of God theme. Allusion with theological principle about human dignity."
+    },
+    {
+      "anchor_ref": "Jas.3.9",
+      "cross_ref": "1Cor.11.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both reference image/likeness of God doctrine. Shared theological principle about imago Dei."
+    },
+    {
+      "anchor_ref": "Jas.3.12",
+      "cross_ref": "Matt.7.16",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 88,
+      "reasoning": "James' teaching that source determines output alludes to Jesus' teaching that tree produces fruit according to its nature. Allusion with wisdom principle."
+    },
+    {
+      "anchor_ref": "Jas.3.13",
+      "cross_ref": "Jas.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "James 3:13 elaborates on 2:18's 'show me' theme - wisdom shown by deeds as faith shown by works. Same letter, parallel argument structure. Elaboration."
+    },
+    {
+      "anchor_ref": "Jas.3.14",
+      "cross_ref": "2Cor.12.20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both warn against jealousy and selfish ambition. Parallel apostolic instruction against same vices."
+    },
+    {
+      "anchor_ref": "Jas.3.15",
+      "cross_ref": "Jas.1.5",
+      "primary_category": "contrast",
+      "secondary_category": "elaboration",
+      "confidence": 88,
+      "reasoning": "James 3:15 contrasts with 1:5 - earthly wisdom vs. wisdom from above. Contrast elaborating earlier teaching. Contrast is primary."
+    },
+    {
+      "anchor_ref": "Jas.3.15",
+      "cross_ref": "Jas.1.17",
+      "primary_category": "contrast",
+      "secondary_category": "elaboration",
+      "confidence": 88,
+      "reasoning": "James 3:15 contrasts with 1:17 - earthly wisdom vs. gifts from above. Contrast elaborating divine vs. worldly sources."
+    },
+    {
+      "anchor_ref": "Jas.3.16",
+      "cross_ref": "1Cor.3.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both warn that jealousy/envy causes disorder and reveals carnality. Parallel apostolic instruction against jealousy."
+    },
+    {
+      "anchor_ref": "Jas.3.16",
+      "cross_ref": "Gal.5.20-21",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both list jealousy/selfish ambition as works of flesh. Parallel apostolic vice lists - parallel_instruction."
+    },
+    {
+      "anchor_ref": "Jas.3.17",
+      "cross_ref": "Rom.12.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both describe pure/sincere love without hypocrisy. Parallel apostolic instruction on authentic love."
+    },
+    {
+      "anchor_ref": "Jas.3.17",
+      "cross_ref": "Heb.12.11",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "Both use 'harvest of righteousness/peace' metaphor for spiritual fruit. Shared agricultural metaphor with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.3.18",
+      "cross_ref": "Matt.5.9",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James' 'harvest of righteousness sown in peace by peacemakers' alludes to Jesus' Beatitude 'blessed are the peacemakers.' Clear allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.3.18",
+      "cross_ref": "Phil.1.11",
+      "primary_category": "shared_metaphor",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both use 'fruit/harvest of righteousness' metaphor for spiritual results. Shared agricultural metaphor."
+    },
+    {
+      "anchor_ref": "Jas.4.2",
+      "cross_ref": "1Jn.3.15",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "Both teach that hatred/murder violates Christian ethics. Parallel apostolic instruction on murder/hatred."
+    },
+    {
+      "anchor_ref": "Jas.4.3",
+      "cross_ref": "1Jn.3.22",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach about conditions for answered prayer. Parallel apostolic instruction on effective prayer."
+    },
+    {
+      "anchor_ref": "Jas.4.3",
+      "cross_ref": "1Jn.5.14",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach about praying according to God's will. Parallel apostolic instruction on prayer."
+    },
+    {
+      "anchor_ref": "Jas.4.4",
+      "cross_ref": "John.15.19",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James' 'friendship with world is enmity with God' alludes to Jesus' teaching about world hating disciples. Allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.4.4",
+      "cross_ref": "1Jn.2.15",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both command not to love the world. Very similar apostolic instruction - nearly identical parallel_instruction with theological grounding."
+    },
+    {
+      "anchor_ref": "Jas.4.5",
+      "cross_ref": "1Cor.6.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach that Spirit dwells in believers. Shared theological principle about indwelling Spirit."
+    },
+    {
+      "anchor_ref": "Jas.4.5",
+      "cross_ref": "2Cor.6.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 80,
+      "reasoning": "Both teach that God dwells in believers. Shared theological principle about divine indwelling."
+    },
+    {
+      "anchor_ref": "Jas.4.6",
+      "cross_ref": "Pr.3.34",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_parallel",
+      "confidence": 95,
+      "reasoning": "James directly quotes Proverbs 3:34 'God opposes proud but gives grace to humble.' Clear quotation of wisdom saying."
+    },
+    {
+      "anchor_ref": "Jas.4.6",
+      "cross_ref": "Matt.23.12",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 85,
+      "reasoning": "James' humble-exalted theme alludes to Jesus' repeated teaching about humble being exalted. Allusion with wisdom principle."
+    },
+    {
+      "anchor_ref": "Jas.4.6",
+      "cross_ref": "1Pet.5.5",
+      "primary_category": "quotation",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "Both quote Proverbs 3:34 identically and instruct humility. Both quotation with parallel apostolic instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.7",
+      "cross_ref": "Eph.6.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both instruct about spiritual warfare against devil. Parallel apostolic instruction with shared theological principle."
+    },
+    {
+      "anchor_ref": "Jas.4.7",
+      "cross_ref": "1Pet.5.6-9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "Both instruct to humble yourself, resist devil who will flee. Very similar parallel apostolic instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.8",
+      "cross_ref": "Ps.73.28",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James' 'draw near to God' alludes to Psalm's 'nearness to God is my good.' Allusion with theological principle about intimacy with God."
+    },
+    {
+      "anchor_ref": "Jas.4.8",
+      "cross_ref": "Zech.1.3",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 88,
+      "reasoning": "James clearly alludes to Zechariah's 'return to me and I will return to you.' Allusion with parallel instruction (mutual drawing near)."
+    },
+    {
+      "anchor_ref": "Jas.4.8",
+      "cross_ref": "Mal.3.7",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 88,
+      "reasoning": "James alludes to Malachi's 'return to me and I will return to you.' Allusion with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.9",
+      "cross_ref": "Luke.6.25",
+      "primary_category": "allusion",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "James' 'woe to you who laugh now' alludes to Jesus' Beatitudes contrasting laughter/mourning. Allusion with contrast between worldly and godly responses."
+    },
+    {
+      "anchor_ref": "Jas.4.10",
+      "cross_ref": "Job.5.11",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "James' teaching about humble being lifted parallels Job's wisdom saying. Wisdom_parallel with allusion."
+    },
+    {
+      "anchor_ref": "Jas.4.10",
+      "cross_ref": "1Pet.5.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "Both instruct 'humble yourselves before the Lord and he will lift you up.' Nearly identical parallel apostolic instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.11",
+      "cross_ref": "Matt.7.1",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 88,
+      "reasoning": "James' prohibition on judging alludes to Jesus' Sermon command 'do not judge.' Allusion with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.11",
+      "cross_ref": "2Cor.12.20",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "Both warn against slander/gossip. Parallel apostolic instruction against speaking evil."
+    },
+    {
+      "anchor_ref": "Jas.4.11",
+      "cross_ref": "1Pet.2.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both command putting away slander/evil speaking. Parallel apostolic instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.12",
+      "cross_ref": "Matt.10.28",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James' teaching about God as judge who can destroy alludes to Jesus' teaching about fearing God who can destroy. Allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.4.12",
+      "cross_ref": "Rom.2.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach you have no right to judge since you're under judgment yourself. Parallel apostolic instruction."
+    },
+    {
+      "anchor_ref": "Jas.4.12",
+      "cross_ref": "Rom.14.4",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both teach 'who are you to judge another?' Parallel apostolic instruction with theological grounding."
+    },
+    {
+      "anchor_ref": "Jas.4.12",
+      "cross_ref": "Jas.5.9",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "James 5:9 elaborates on 4:12's warning against judging - same letter, same theme developed. Elaboration."
+    },
+    {
+      "anchor_ref": "Jas.4.13-14",
+      "cross_ref": "Pr.27.1",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": "allusion",
+      "confidence": 92,
+      "reasoning": "James' 'do not boast about tomorrow' parallels Proverbs 27:1 'do not boast about tomorrow.' Clear wisdom_parallel with allusion."
+    },
+    {
+      "anchor_ref": "Jas.4.13-14",
+      "cross_ref": "Luke.12.18-20",
+      "primary_category": "allusion",
+      "secondary_category": "exemplification",
+      "confidence": 85,
+      "reasoning": "James' teaching about planning without God alludes to Jesus' parable of rich fool planning future. Allusion with exemplification pattern."
+    },
+    {
+      "anchor_ref": "Jas.4.16",
+      "cross_ref": "1Cor.5.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 78,
+      "reasoning": "Both warn against arrogant boasting. Parallel apostolic instruction, though connection is general."
+    },
+    {
+      "anchor_ref": "Jas.4.17",
+      "cross_ref": "Luke.12.47",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "James' 'knowing good but not doing it is sin' echoes Jesus' teaching about servant who knows master's will. Wisdom principle with allusion."
+    },
+    {
+      "anchor_ref": "Jas.5.1",
+      "cross_ref": "Pr.11.4",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "James' warning about wealth useless on judgment day parallels Proverbs' wisdom about riches worthless in day of wrath. Wisdom_parallel."
+    },
+    {
+      "anchor_ref": "Jas.5.1",
+      "cross_ref": "Pr.11.28",
+      "primary_category": "wisdom_parallel",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "James' warning to rich parallels Proverbs' wisdom about trusting in riches. Wisdom_parallel with allusion."
+    },
+    {
+      "anchor_ref": "Jas.5.2",
+      "cross_ref": "Matt.6.19",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 88,
+      "reasoning": "James' description of corrupted wealth alludes to Jesus' Sermon warning about earthly treasures that moth and rust destroy. Clear allusion."
+    },
+    {
+      "anchor_ref": "Jas.5.4",
+      "cross_ref": "Lev.19.13",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 88,
+      "reasoning": "James alludes to Leviticus' command not to withhold wages. Allusion with parallel instruction (don't defraud laborers)."
+    },
+    {
+      "anchor_ref": "Jas.5.4",
+      "cross_ref": "Deut.24.14-15",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 90,
+      "reasoning": "James alludes to Deuteronomy's command to pay laborers promptly. Clear allusion with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.5.4",
+      "cross_ref": "Ps.18.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 82,
+      "reasoning": "James' 'cries have reached Lord's ears' alludes to Psalm's language about God hearing prayers. Allusion with theological principle about divine justice."
+    },
+    {
+      "anchor_ref": "Jas.5.5",
+      "cross_ref": "Jer.12.3",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 82,
+      "reasoning": "James alludes to Jeremiah's imagery of fattening for slaughter day. Allusion with shared slaughter metaphor."
+    },
+    {
+      "anchor_ref": "Jas.5.5",
+      "cross_ref": "Jer.25.34",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 82,
+      "reasoning": "James alludes to Jeremiah's slaughter imagery for judgment. Allusion with shared metaphor."
+    },
+    {
+      "anchor_ref": "Jas.5.5",
+      "cross_ref": "Luke.16.19-23",
+      "primary_category": "allusion",
+      "secondary_category": "exemplification",
+      "confidence": 82,
+      "reasoning": "James' warning about rich living in luxury while poor suffer alludes to Jesus' parable of rich man and Lazarus. Allusion with exemplification."
+    },
+    {
+      "anchor_ref": "Jas.5.7",
+      "cross_ref": "Deut.11.14",
+      "primary_category": "allusion",
+      "secondary_category": "shared_metaphor",
+      "confidence": 85,
+      "reasoning": "James alludes to Deuteronomy's early and late rains. Allusion with shared agricultural metaphor."
+    },
+    {
+      "anchor_ref": "Jas.5.7",
+      "cross_ref": "Jer.5.24",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 82,
+      "reasoning": "Both use early and late rain metaphor. Shared_metaphor with allusion to prophetic imagery."
+    },
+    {
+      "anchor_ref": "Jas.5.7",
+      "cross_ref": "Joel.2.23",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "allusion",
+      "confidence": 82,
+      "reasoning": "Both use early and late rain metaphor for God's blessing. Shared_metaphor with allusion."
+    },
+    {
+      "anchor_ref": "Jas.5.8",
+      "cross_ref": "Rom.13.11-12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both instruct about nearness of Lord's coming. Parallel apostolic instruction with eschatological theological principle."
+    },
+    {
+      "anchor_ref": "Jas.5.8",
+      "cross_ref": "Heb.10.37",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both teach Lord's coming is near. Shared eschatological theological principle."
+    },
+    {
+      "anchor_ref": "Jas.5.9",
+      "cross_ref": "Matt.24.33",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "James' 'Judge stands at door' alludes to Jesus' teaching about Son of Man near 'at the gates.' Allusion with eschatological principle."
+    },
+    {
+      "anchor_ref": "Jas.5.9",
+      "cross_ref": "1Cor.4.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both instruct not to judge before Lord comes. Parallel apostolic instruction with eschatological principle."
+    },
+    {
+      "anchor_ref": "Jas.5.9",
+      "cross_ref": "Jas.4.12",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "James 5:9 elaborates 4:12's teaching against judging. Same letter, same theme. Elaboration."
+    },
+    {
+      "anchor_ref": "Jas.5.11",
+      "cross_ref": "Job.1.20-22",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Job's patient endurance as historical example. Historical_reference with exemplification - Job illustrates perseverance."
+    },
+    {
+      "anchor_ref": "Jas.5.11",
+      "cross_ref": "Job.2.7-10",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Job's suffering and steadfastness as example. Historical_reference with exemplification."
+    },
+    {
+      "anchor_ref": "Jas.5.11",
+      "cross_ref": "Job.42.10-17",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "James references Job's final blessing/restoration as example of Lord's compassion. Historical_reference with exemplification."
+    },
+    {
+      "anchor_ref": "Jas.5.11",
+      "cross_ref": "Ps.103.8",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James' description of Lord as compassionate and merciful alludes to Psalm's attributes of God. Allusion with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.5.12",
+      "cross_ref": "Matt.5.34-37",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "allusion",
+      "confidence": 92,
+      "reasoning": "James' prohibition on oaths closely parallels Jesus' Sermon instruction about oaths - nearly identical parallel_instruction. James clearly alludes to Jesus' teaching."
+    },
+    {
+      "anchor_ref": "Jas.5.13",
+      "cross_ref": "Col.3.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "Both instruct about singing in worship/response to circumstances. Parallel apostolic instruction."
+    },
+    {
+      "anchor_ref": "Jas.5.14",
+      "cross_ref": "Mark.6.13",
+      "primary_category": "historical_reference",
+      "secondary_category": "ritual_practice",
+      "confidence": 85,
+      "reasoning": "James references apostolic practice (Mark describes disciples anointing with oil) as basis for instruction. Historical_reference with ritual_practice."
+    },
+    {
+      "anchor_ref": "Jas.5.15",
+      "cross_ref": "Mark.16.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 78,
+      "reasoning": "Both teach about healing through faith/prayer. Shared theological principle about divine healing."
+    },
+    {
+      "anchor_ref": "Jas.5.15",
+      "cross_ref": "Jas.1.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "James 5:15 elaborates 1:6's teaching on prayer of faith. Same letter developing faith-prayer theme. Elaboration with theological principle."
+    },
+    {
+      "anchor_ref": "Jas.5.16",
+      "cross_ref": "Matt.18.15-18",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 82,
+      "reasoning": "James' instruction on confessing sins alludes to Jesus' teaching on addressing sin in community. Allusion with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.5.16",
+      "cross_ref": "1Jn.1.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 85,
+      "reasoning": "Both instruct about confessing sins for forgiveness/healing. Parallel apostolic instruction with theological grounding."
+    },
+    {
+      "anchor_ref": "Jas.5.17",
+      "cross_ref": "1Kgs.17.1-7",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 95,
+      "reasoning": "James explicitly references Elijah's prayer stopping rain as historical example. Clear historical_reference with exemplification about prayer power."
+    },
+    {
+      "anchor_ref": "Jas.5.17",
+      "cross_ref": "Luke.4.25",
+      "primary_category": "historical_reference",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "Both reference same Elijah historical event. Shared historical_reference (both cite 1 Kings)."
+    },
+    {
+      "anchor_ref": "Jas.5.18",
+      "cross_ref": "1Kgs.18.42-45",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 95,
+      "reasoning": "James references Elijah's prayer bringing rain as historical example of effective prayer. Historical_reference with exemplification."
+    },
+    {
+      "anchor_ref": "Jas.5.19",
+      "cross_ref": "Matt.18.15",
+      "primary_category": "allusion",
+      "secondary_category": "parallel_instruction",
+      "confidence": 85,
+      "reasoning": "James' instruction on restoring wandering brother alludes to Jesus' teaching on confronting sinning brother. Allusion with parallel instruction."
+    },
+    {
+      "anchor_ref": "Jas.5.20",
+      "cross_ref": "Pr.10.12",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_parallel",
+      "confidence": 90,
+      "reasoning": "James appears to quote or closely allude to Proverbs 10:12 'love covers multitude of sins.' Near-quotation of wisdom saying."
+    },
+    {
+      "anchor_ref": "Jas.5.20",
+      "cross_ref": "1Pet.4.8",
+      "primary_category": "quotation",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "Both quote Proverbs 10:12 about love covering sins. Shared quotation with parallel apostolic instruction about love."
+    }
+  ]
+}

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CrossTrails API Tester</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            border-radius: 8px;
+            padding: 30px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c3e50;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .cross-ref-box {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .button-group {
+            margin: 20px 0;
+        }
+        button {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background: #2980b9;
+        }
+        button:disabled {
+            background: #95a5a6;
+            cursor: not-allowed;
+        }
+        .loading {
+            background: #f39c12 !important;
+        }
+        .result {
+            background: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            white-space: pre-wrap;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        .success {
+            border-left: 5px solid #27ae60;
+            background: #d5f4e6;
+        }
+        .error {
+            border-left: 5px solid #e74c3c;
+            background: #f8d7da;
+        }
+        .info {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+        .stream-container {
+            background: #2c3e50;
+            color: #ecf0f1;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 14px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .stream-chunk {
+            margin: 2px 0;
+            padding: 2px 0;
+        }
+        .stream-event {
+            color: #3498db;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 CrossTrails API Endpoint Tester</h1>
+        
+        <div class="info">
+            <strong>Test Data:</strong> Using cross-reference from John.json - John.1.9 → 1Jn.2.8 (Johannine corpus connection)
+        </div>
+
+        <div class="cross-ref-box">
+            <h3>📖 Test Cross-Reference Data:</h3>
+            <pre id="crossRefData"></pre>
+        </div>
+
+        <div class="button-group">
+            <h3>🧪 Test Endpoints:</h3>
+            <button onclick="testProviders()">GET /api/llm/providers</button>
+            <button onclick="testPromptGeneration()">POST /api/cross-refs/prompt</button>
+            <button onclick="testAnalysis()">POST /api/cross-refs/analyze</button>
+            <button onclick="testStreaming()">POST /api/cross-refs/analyze/stream</button>
+            <button onclick="testProviderHealth()">POST /api/llm/providers (Health Check)</button>
+        </div>
+
+        <div id="results"></div>
+        <div id="streamResults"></div>
+    </div>
+
+    <script>
+        const baseUrl = 'http://localhost:3000';
+        
+        // The cross-reference data formatted properly for the MCP tools
+        const crossReference = {
+            reference: "1Jn.2.8",  // This becomes the cross-reference
+            anchor_ref: "John.1.9", // This becomes the anchor
+            connection: {
+                categories: ["literary_parallel", "theological_principle"],
+                strength: 0.88,
+                type: "thematic",
+                explanation: "Johannine corpus connection shares distinctive vocabulary and themes about light and darkness"
+            }
+        };
+
+        const testData = {
+            crossReference: crossReference,
+            userObservation: "Both passages deal with themes of light overcoming darkness in John's theological framework",
+            promptTemplate: "default",
+            contextRange: 2
+        };
+
+        // Display the test data
+        document.getElementById('crossRefData').textContent = JSON.stringify(testData, null, 2);
+
+        function addResult(title, status, data, isError = false) {
+            const resultsDiv = document.getElementById('results');
+            const resultDiv = document.createElement('div');
+            resultDiv.className = `result ${isError ? 'error' : 'success'}`;
+            
+            const timestamp = new Date().toLocaleTimeString();
+            resultDiv.innerHTML = `
+                <strong>[${timestamp}] ${title}</strong>
+                <div>Status: ${status}</div>
+                <div>${typeof data === 'string' ? data : JSON.stringify(data, null, 2)}</div>
+            `;
+            
+            resultsDiv.insertBefore(resultDiv, resultsDiv.firstChild);
+        }
+
+        function setButtonLoading(button, loading = true) {
+            button.disabled = loading;
+            button.className = loading ? 'loading' : '';
+            if (loading) {
+                button.textContent = button.textContent + ' (Loading...)';
+            }
+        }
+
+        async function testProviders() {
+            const button = event.target;
+            setButtonLoading(button, true);
+            
+            try {
+                const response = await fetch(`${baseUrl}/api/llm/providers`);
+                const result = await response.json();
+                
+                addResult('GET /api/llm/providers', response.status, result, !response.ok);
+                
+            } catch (error) {
+                addResult('GET /api/llm/providers', 'ERROR', `Network error: ${error.message}`, true);
+            } finally {
+                button.disabled = false;
+                button.className = '';
+                button.textContent = 'GET /api/llm/providers';
+            }
+        }
+
+        async function testPromptGeneration() {
+            const button = event.target;
+            setButtonLoading(button, true);
+            
+            try {
+                const response = await fetch(`${baseUrl}/api/cross-refs/prompt`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(testData)
+                });
+                
+                const result = await response.json();
+                addResult('POST /api/cross-refs/prompt', response.status, result, !response.ok);
+                
+            } catch (error) {
+                addResult('POST /api/cross-refs/prompt', 'ERROR', `Network error: ${error.message}`, true);
+            } finally {
+                button.disabled = false;
+                button.className = '';
+                button.textContent = 'POST /api/cross-refs/prompt';
+            }
+        }
+
+        async function testAnalysis() {
+            const button = event.target;
+            setButtonLoading(button, true);
+            
+            try {
+                const response = await fetch(`${baseUrl}/api/cross-refs/analyze`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(testData)
+                });
+                
+                const result = await response.json();
+                addResult('POST /api/cross-refs/analyze', response.status, result, !response.ok);
+                
+            } catch (error) {
+                addResult('POST /api/cross-refs/analyze', 'ERROR', `Network error: ${error.message}`, true);
+            } finally {
+                button.disabled = false;
+                button.className = '';
+                button.textContent = 'POST /api/cross-refs/analyze';
+            }
+        }
+
+        async function testStreaming() {
+            const button = event.target;
+            setButtonLoading(button, true);
+            
+            const streamDiv = document.getElementById('streamResults');
+            streamDiv.innerHTML = '<div class="stream-container"><div class="stream-event">🚀 Starting streaming test...</div></div>';
+            const streamContainer = streamDiv.querySelector('.stream-container');
+            
+            try {
+                const response = await fetch(`${baseUrl}/api/cross-refs/analyze/stream`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(testData)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+
+                const reader = response.body.getReader();
+                const decoder = new TextDecoder();
+
+                while (true) {
+                    const { done, value } = await reader.read();
+                    if (done) break;
+
+                    const chunk = decoder.decode(value);
+                    const lines = chunk.split('\\n');
+                    
+                    for (const line of lines) {
+                        if (line.startsWith('event:') || line.startsWith('data:')) {
+                            const chunkDiv = document.createElement('div');
+                            chunkDiv.className = 'stream-chunk';
+                            if (line.startsWith('event:')) {
+                                chunkDiv.className += ' stream-event';
+                            }
+                            chunkDiv.textContent = line;
+                            streamContainer.appendChild(chunkDiv);
+                        }
+                    }
+                    
+                    streamContainer.scrollTop = streamContainer.scrollHeight;
+                }
+                
+                addResult('POST /api/cross-refs/analyze/stream', 'COMPLETED', 'Streaming completed successfully');
+                
+            } catch (error) {
+                addResult('POST /api/cross-refs/analyze/stream', 'ERROR', `Streaming error: ${error.message}`, true);
+            } finally {
+                button.disabled = false;
+                button.className = '';
+                button.textContent = 'POST /api/cross-refs/analyze/stream';
+            }
+        }
+
+        async function testProviderHealth() {
+            const button = event.target;
+            setButtonLoading(button, true);
+            
+            const healthTestData = {
+                provider: "gloo",
+                model: "gpt-4o-mini"
+            };
+            
+            try {
+                const response = await fetch(`${baseUrl}/api/llm/providers`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(healthTestData)
+                });
+                
+                const result = await response.json();
+                addResult('POST /api/llm/providers (Health)', response.status, result, !response.ok);
+                
+            } catch (error) {
+                addResult('POST /api/llm/providers (Health)', 'ERROR', `Network error: ${error.message}`, true);
+            } finally {
+                button.disabled = false;
+                button.className = '';
+                button.textContent = 'POST /api/llm/providers (Health Check)';
+            }
+        }
+
+        // Auto-test the providers endpoint on page load
+        window.onload = function() {
+            setTimeout(() => {
+                console.log('Auto-testing providers endpoint...');
+                testProviders();
+            }, 1000);
+        };
+    </script>
+</body>
+</html>

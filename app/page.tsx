@@ -79,6 +79,8 @@ export default function HomePage() {
       }
       
       const data = await response.json()
+      // console.log('Cross-references API response:', data)
+      
       setCrossReferences([{
         anchor_verse: verseIds[0],
         cross_references: data.cross_references,
@@ -145,23 +147,23 @@ export default function HomePage() {
     setIsSearchModalOpen(false)
     setSearchResults([])
   }
-  
+
   const handleVerseSelection = (verseIds: string[]) => {
     setSelectedVerses(verseIds)
     setSelectedCrossRefs([]) // Clear cross-ref selection when verses change
   }
-  
+
   const handleCrossRefSelection = (refIds: string[]) => {
     setSelectedCrossRefs(refIds)
   }
-  
+
   const handleAIExploration = async (observation: string) => {
     if (!selectedVerses.length || !selectedCrossRefs.length) {
       return
     }
-    
+
     setLoading(prev => ({ ...prev, ai: true }))
-    
+
     try {
       const response = await fetch('/api/explore', {
         method: 'POST',
@@ -174,134 +176,122 @@ export default function HomePage() {
           selectedCrossRefs
         })
       })
-      
+
       if (!response.ok) {
         throw new Error('Failed to get AI insights')
       }
-      
+
       // Handle streaming response
       // TODO: Implement streaming response handling
-      
+
     } catch (err) {
       console.error('Error getting AI insights:', err)
     } finally {
       setLoading(prev => ({ ...prev, ai: false }))
     }
   }
-  
+
   return (
     <div className="min-h-screen flex flex-col bg-[#f5f5f5]">
-    {/* Header */}
-    <Header
-    currentBook={currentBook}
-    currentChapter={currentChapter}
-    onNavigate={handleNavigation}
-    onSearch={handleSearch}
-    />
-    
-    {/* Search Results Modal */}
-    {isSearchModalOpen && (
-      <SearchResultModal
-      term={currentTerms}
-      searchResults={searchResults}
-      loading={loading.search}
-      setIsSearchModalOpen={setIsSearchModalOpen}
-      setSearchResults={setSearchResults}
-      handleSearchResultClick={handleSearchResultClick}
+      {/* Header */}
+      <Header
+        currentBook={currentBook}
+        currentChapter={currentChapter}
+        onNavigate={handleNavigation}
+        onSearch={handleSearch}
       />
-    )}
-    
-    {/* Main content area - matching Figma layout */}
-    <main id="main-content" style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '55px' }}>
-    {/* Frame 8 - Container for BibleReader and CrossReferences */}
-    <div style={{
-      display: 'flex',
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-      alignItems: 'flex-start',
-      padding: '0px',
-      gap: '70px',
-      isolation: 'isolate',
-      width: '1076px',
-      maxWidth: '1076px'
-    }}>
-    {/* Frame 10 - Bible reading area */}
-    <div style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'flex-start',
-      padding: '0px',
-      gap: '8px',
-      width: '742px',
-      flex: 'none',
-      order: 0,
-      flexGrow: 0,
-      zIndex: 0
-    }}>
-    {error ? (
-      <div className="py-8">
-      <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-      <p className="text-red-800">
-      Error loading content: {error}
-      </p>
-      <button
-      onClick={() => loadVerses(currentBook, currentChapter)}
-      className="mt-2 btn-primary"
-      >
-      Try Again
-      </button>
-      </div>
-      </div>
-    ) : (
-      <BibleReader
-      book={currentBook}
-      chapter={currentChapter}
-      verses={verses}
-      selectedVerses={selectedVerses}
-      onVerseSelect={handleVerseSelection}
-      loading={loading.verses}
-      />
-    )}
-    </div>
-    
-    {/* Frame 8 - Cross-references sidebar */}
-    <aside style={{
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
-      padding: '0px',
-      gap: '8px',
-      width: '220.33px',
-      flex: 'none',
-      order: 1,
-      flexGrow: 0,
-      zIndex: 1
-    }}>
-    <CrossReferencesSidebar
-    crossReferences={crossReferences}
-    selectedRefs={selectedCrossRefs}
-    onRefSelect={handleCrossRefSelection}
-    loading={loading.crossRefs}
-    />
-    </aside>
-    </div>
-    </main>
-    
-    {/* AI Companion Modal - show when we have selections */}
-    {selectedVerses.length > 0 && selectedCrossRefs.length > 0 && (
-      <AICompanion
-      selectedVerses={selectedVerses}
-      selectedCrossRefs={selectedCrossRefs}
-      onSubmitObservation={handleAIExploration}
-      conversation_history={[]} // TODO: Implement conversation history
-      isOpen={selectedCrossRefs.length > 0}
-      onClose={() => setSelectedCrossRefs([])}
-      crossRefReference={selectedCrossRefs[0]}
-      crossRefText="Sample cross-reference text will be fetched from API"
-      />
-    )}
+
+      {/* Main content area - matching Figma layout */}
+      <main id="main-content" style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '55px' }}>
+        {/* Frame 8 - Container for BibleReader and CrossReferences */}
+        <div style={{
+          display: 'flex',
+          flexDirection: 'row',
+          justifyContent: 'space-between',
+          alignItems: 'flex-start',
+          padding: '0px',
+          gap: '70px',
+          isolation: 'isolate',
+          width: '1076px',
+          maxWidth: '1076px'
+        }}>
+          {/* Frame 10 - Bible reading area */}
+          <div style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'flex-start',
+            padding: '0px',
+            gap: '8px',
+            width: '742px',
+            flex: 'none',
+            order: 0,
+            flexGrow: 0,
+            zIndex: 0
+          }}>
+            {error ? (
+              <div className="py-8">
+                <div className="bg-red-50 border border-red-200 rounded-lg p-4">
+                  <p className="text-red-800">
+                    Error loading content: {error}
+                  </p>
+                  <button
+                    onClick={() => loadVerses(currentBook, currentChapter)}
+                    className="mt-2 btn-primary"
+                  >
+                    Try Again
+                  </button>
+                </div>
+              </div>
+            ) : (
+              <BibleReader
+                book={currentBook}
+                chapter={currentChapter}
+                verses={verses}
+                selectedVerses={selectedVerses}
+                onVerseSelect={handleVerseSelection}
+                loading={loading.verses}
+              />
+            )}
+          </div>
+
+          {/* Frame 8 - Cross-references sidebar */}
+          <aside style={{
+            display: 'flex',
+            flexDirection: 'column',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '0px',
+            gap: '8px',
+            width: '220.33px',
+            flex: 'none',
+            order: 1,
+            flexGrow: 0,
+            zIndex: 1
+          }}>
+            <CrossReferencesSidebar
+              crossReferences={crossReferences}
+              selectedRefs={selectedCrossRefs}
+              onRefSelect={handleCrossRefSelection}
+              loading={loading.crossRefs}
+            />
+          </aside>
+        </div>
+      </main>
+
+      {/* AI Companion Modal - show when we have selections */}
+      {selectedVerses.length > 0 && selectedCrossRefs.length > 0 && (
+        <AICompanion
+          selectedVerses={selectedVerses}
+          selectedCrossRefs={selectedCrossRefs}
+          onSubmitObservation={handleAIExploration}
+          conversation_history={[]} // TODO: Implement conversation history
+          isOpen={selectedCrossRefs.length > 0}
+          onClose={() => setSelectedCrossRefs([])}
+          crossRefReference={selectedCrossRefs[0]}
+          crossRefText="Sample cross-reference text will be fetched from API"
+        />
+      )}
     </div>
   )
 }

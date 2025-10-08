@@ -2,7 +2,17 @@
 
 This document describes all the API endpoints in our CrossTrails app.
 
-# NOTE: Details on this page are NOT correct
+## ⚠️ IMPORTANT: Data Format Requirements
+
+**Before using any API endpoint, read [API_DATA_FORMATS.md](./API_DATA_FORMATS.md)**
+
+The API endpoints require specific TypeScript interface formats. Raw JSON data from files must be transformed before use. See the data format guide for:
+- ✅ Correct CrossReference object structure
+- ❌ Common format errors that cause 500 errors  
+- 🔄 Data transformation methods
+- 🧪 Testing your data format
+
+# NOTE: Some details on this page may be outdated - refer to API_DATA_FORMATS.md for current requirements
 
 ## Base URL
 

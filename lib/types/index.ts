@@ -41,24 +41,69 @@ export interface CrossReference {
     chapter: number;
     verse: number;
   };
+  anchor_ref?: string; // e.g., "Phlm.1" (optional, for data linkage)
+  category?: CrossReferenceCategory; // optional, for granular category
+  reasoning?: string; // optional, explanation of the connection
 }
 
 export interface ConnectionData {
   categories: string[]; // e.g., ["salvation", "love", "sacrifice"]
   strength: number; // 0.0 to 1.0
-  type: ConnectionType;
+  type: CrossReferenceCategory;
   explanation?: string; // Brief explanation of connection
+  reasoning?: string; // optional, detailed reasoning from data
 }
 
-export type ConnectionType =
-  | "parallel"
-  | "contrast"
-  | "fulfillment"
-  | "prophecy"
-  | "quotation"
+// Expanded category system based on category_cheat_sheet.json
+export type CrossReferenceCategory =
   | "allusion"
-  | "thematic"
-  | "historical";
+  | "christological_parallel"
+  | "contrast"
+  | "covenant_connection"
+  | "elaboration"
+  | "exemplification"
+  | "greek_word"
+  | "hebrew_word"
+  | "historical_pattern"
+  | "historical_reference"
+  | "legal_parallel"
+  | "literary_parallel"
+  | "narrative_continuation"
+  | "numerology"
+  | "parallel_account"
+  | "parallel_instruction"
+  | "prophecy_fulfillment"
+  | "prophetic_parallel"
+  | "quotation"
+  | "ritual_practice"
+  | "septuagint_difference"
+  | "shared_metaphor"
+  | "thematic_echo"
+  | "theological_principle"
+  | "typology"
+  | "wisdom_parallel"
+  | "wisdom_principle";
+
+// Types for cross-reference data files (e.g., Phlm.json)
+export interface CrossReferenceDataFile {
+  book: string;
+  book_number: number;
+  verified: boolean;
+  total_items: number;
+  improved_count: number;
+  category_distribution: Record<string, number>;
+  items: CrossReferenceDataItem[];
+}
+
+export interface CrossReferenceDataItem {
+  anchor_ref: string; // e.g., "Phlm.1"
+  cross_ref: string; // e.g., "Eph.3.1"
+  primary_category: CrossReferenceCategory;
+  secondary_category: CrossReferenceCategory | null;
+  confidence: number; // 0 to 100
+  reasoning: string;
+  // Optionally add more fields if present in data
+}
 
 export interface CrossReferenceGroup {
   anchor_verse: string; // e.g., "John.3.16"
@@ -97,7 +142,7 @@ export interface CrossReferenceConnectionResponse {
     reference: string;
     strength: number;
     categories: string[];
-    type: ConnectionType;
+    type: CrossReferenceCategory;
     explanation: string;
     metadata: {
       thematic_overlap: number;
@@ -105,6 +150,120 @@ export interface CrossReferenceConnectionResponse {
       literary_connection: boolean;
     };
   }[];
+}
+
+export interface CrossReferencePromptRequest {
+  crossReference: CrossReference;
+  userObservation?: string;
+  contextRange?: number; // Number of verses before/after to include
+  promptTemplate?: 'default' | 'study' | 'devotional' | 'academic';
+}
+
+export interface CrossReferencePromptResponse {
+  prompt: string;
+  sources: {
+    anchor_verse: {
+      reference: string;
+      text: string;
+      context?: string[];
+    };
+    cross_reference: {
+      reference: string;
+      text: string;
+      context?: string[];
+    };
+    connection_data: {
+      categories: string[];
+      strength: number;
+      reasoning?: string;
+      explanation?: string;
+    };
+  };
+  metadata: {
+    prompt_length: number;
+    context_verses_included: number;
+    template_used: string;
+  };
+}
+
+// ============================================================================
+// LLM Client Types
+// ============================================================================
+
+export interface LLMMessage {
+  role: 'system' | 'user' | 'assistant';
+  content: string;
+}
+
+export interface LLMRequest {
+  messages: LLMMessage[];
+  model?: string;
+  temperature?: number;
+  max_tokens?: number;
+  stream?: boolean;
+  metadata?: Record<string, any>;
+}
+
+export interface LLMResponse {
+  content: string;
+  model: string;
+  usage: {
+    prompt_tokens: number;
+    completion_tokens: number;
+    total_tokens: number;
+  };
+  finish_reason: 'stop' | 'length' | 'error';
+  metadata?: Record<string, any>;
+}
+
+export interface LLMStreamResponse {
+  content: string;
+  done: boolean;
+  model?: string;
+  usage?: {
+    prompt_tokens: number;
+    completion_tokens: number;
+    total_tokens: number;
+  };
+}
+
+export interface LLMProvider {
+  name: string;
+  supportedModels: string[];
+  supportsStreaming: boolean;
+  chat(request: LLMRequest): Promise<LLMResponse>;
+  stream?(request: LLMRequest): AsyncGenerator<LLMStreamResponse>;
+  healthCheck(): Promise<boolean>;
+}
+
+export interface LLMClientConfig {
+  provider: 'gloo' | 'openai' | 'azure' | 'anthropic';
+  model?: string;
+  temperature?: number;
+  max_tokens?: number;
+  baseUrl?: string;
+  apiKey?: string;
+  clientId?: string;
+  clientSecret?: string;
+}
+
+export interface CrossReferenceAnalysisRequest {
+  crossReference: CrossReference;
+  userObservation?: string;
+  analysisType?: 'default' | 'study' | 'devotional' | 'academic';
+  contextRange?: number;
+}
+
+export interface CrossReferenceAnalysisResponse {
+  analysis: string;
+  prompt_used: string;
+  sources: CrossReferencePromptResponse['sources'];
+  llm_metadata: {
+    model: string;
+    provider: string;
+    usage: LLMResponse['usage'];
+    response_time_ms: number;
+  };
 }
 
 // ============================================================================

@@ -1,0 +1,152 @@
+{
+  "CATEGORY CHEAT SHEET": {
+    "purpose": "Quick definitions + clear examples for all 22 biblical cross-reference categories",
+    "use": "Reference when choosing primary and secondary categories"
+  },
+
+  "CATEGORIES_WITH_EXAMPLES": {
+    "quotation": {
+      "definition": "Direct quotation with citation formula and exact word-for-word correspondence",
+      "example": "Heb.3.7-11 → Ps.95.7-11: 'That is why the Holy Spirit says, \"Today when you hear his voice...\"'",
+      "look_for": "NLT quotation marks + citation language ('Isaiah says', 'it is written')",
+      "not_confused_with": "allusion (indirect reference without exact words)"
+    },
+    "allusion": {
+      "definition": "Indirect reference or echo of earlier passage concepts/phrases. Can use exact phrases but not full quotes.",
+      "example": "Rom.2.6 → Ps.62.12: Paul echoing psalm's concept about divine judgment according to deeds",
+      "look_for": "Normal paragraph flow, conceptual connections without quotation marks",
+      "not_confused_with": "quotation (exact words + citation formula)"
+    },
+    "prophecy_fulfillment": {
+      "definition": "OT prophecy fulfilled in NT events with recognition/application",
+      "example": "Luke.2.32 → Isa.49.6: Simeon recognizing Jesus as fulfillment of 'light to the Gentiles' prophecy",
+      "look_for": "NT author/character recognizing OT prophecy being fulfilled",
+      "not_confused_with": "theological_principle (general discussions about inspiration)"
+    },
+    "typology": {
+      "definition": "Person, event, or institution prefigures/foreshadows another",
+      "example": "Luke.9.17 → 2Kgs.4.44: Elisha's miracle feeding prefigures Jesus' feeding miracle",
+      "look_for": "Earlier event/person pointing forward to later fulfillment",
+      "not_confused_with": "historical_reference (citing past events) or parallel_account (same events)"
+    },
+    "parallel_account": {
+      "definition": "SAME EVENT described in different books",
+      "example": "Gen.36.20-28 → 1Chr.1.38-42: Same genealogy in different books",
+      "look_for": "Identical events, different authors/books (Gospel parallels, Kings/Chronicles)",
+      "not_confused_with": "similar topics by different people (theological_principle + allusion) or similar events but not precisely the same"
+    },
+    "legal_parallel": {
+      "definition": "Same law appearing in different PENTATEUCH law codes",
+      "example": "Eye for eye appearing in Exodus, Leviticus, Deuteronomy",
+      "look_for": "PENTATEUCH ONLY - parallel laws within Torah",
+      "not_confused_with": "NT citing OT law (historical_reference or ritual_practice or allusion or quotation)"
+    },
+    "historical_reference": {
+      "definition": "Later text refers back to specific earlier biblical events",
+      "example": "1Cor.15.8 → Acts.22.14: Paul referencing his Damascus road encounter",
+      "look_for": "Specific past biblical events being cited",
+      "not_confused_with": "Jesus' parables using familiar situations (exemplification)"
+    },
+    "numerology": {
+      "definition": "Shared significant number or numerical pattern",
+      "example": "References to '70' with theological meaning across passages",
+      "look_for": "Numbers with symbolic/theological significance beyond literal count",
+      "not_confused_with": "coincidental number matches without meaning"
+    },
+    "narrative_continuation": {
+      "definition": "Sequential events in the same narrative/story",
+      "example": "Gen.24.59 → Gen.35.8: Unnamed nurse becomes identified as Deborah",
+      "look_for": "Story progression, character development within same narrative",
+      "not_confused_with": "elaboration (expanding concepts vs. continuing story)"
+    },
+    "theological_principle": {
+      "definition": "Same theological truth or doctrine (actual theology, not general morality)",
+      "example": "John.10.33 → Rom.9.5: Both affirm Jesus' divine nature",
+      "look_for": "Divine sovereignty, salvation, inspiration, covenant themes, other specific theological ideas or themes",
+      "not_confused_with": "wisdom_principle (practical guidance vs. doctrinal truth) or principle that isn't specifically theological in nature"
+    },
+    "ritual_practice": {
+      "definition": "Religious rituals, temple practices, or liturgical elements",
+      "example": "John.5.1 → Lev.23.1-2: Jesus observing festival requirements",
+      "look_for": "Worship practices, ceremonial observances, festival keeping",
+      "not_confused_with": "legal_parallel (ritual observance vs. law codes)"
+    },
+    "shared_metaphor": {
+      "definition": "Same metaphor or symbolic imagery used in both passages",
+      "example": "2Cor.11.2 → Hos.2.19: Both use marriage metaphor for covenant relationship",
+      "look_for": "Identical imagery/symbolism (shepherd, bride, light, water)",
+      "not_confused_with": "thematic_echo (specific imagery vs. general themes)"
+    },
+    "wisdom_parallel": {
+      "definition": "Similar wisdom saying or proverbial truth (specifically two wisdom sayings)",
+      "example": "Two proverbs teaching similar practical wisdom",
+      "look_for": "Parallel wisdom literature, similar practical maxims",
+      "not_confused_with": "wisdom_principle (wisdom applied across genres)"
+    },
+    "elaboration": {
+      "definition": "One passage expands on, clarifies, or develops another",
+      "example": "2Cor.7.5 → 2Cor.4.8: Paul elaborating his earlier suffering metaphor with geographical details",
+      "look_for": "Additional detail, expansion, clarification of earlier passage",
+      "not_confused_with": "narrative_continuation (concept development vs. story progression)"
+    },
+    "contrast": {
+      "definition": "Passages directly opposing each other or correcting earlier understanding",
+      "example": "John.20.28 → John.10.33: Thomas affirming what Jews reject as blasphemy",
+      "look_for": "Direct opposition, contrasting responses to same issue",
+      "not_confused_with": "general differences (must be directly contrastive)"
+    },
+    "hebrew_word": {
+      "definition": "Passages sharing distinctive Hebrew word or phrase",
+      "example": "OT passages connected by specific Hebrew terminology",
+      "look_for": "Distinctive Hebrew vocabulary connections",
+      "not_confused_with": "conceptual connections without specific word links"
+    },
+    "greek_word": {
+      "definition": "Passages sharing distinctive Greek word or phrase",
+      "example": "NT passages connected by specific Greek terminology",
+      "look_for": "Distinctive Greek vocabulary connections",
+      "not_confused_with": "conceptual connections without specific word links"
+    },
+    "thematic_echo": {
+      "definition": "General thematic similarity (catch-all - use sparingly)",
+      "example": "Broad thematic connections when more specific categories don't fit",
+      "look_for": "Last resort when no specific category captures connection",
+      "not_confused_with": "more specific categories - always try these first"
+    },
+    "exemplification": {
+      "definition": "Historical narrative exemplifies/illustrates moral/theological principle without explicit citation",
+      "example": "Matt.18.25 → 2Kgs.4.1: Jesus using debt slavery scenarios to teach about forgiveness",
+      "look_for": "Jesus/authors drawing on familiar situations to teach principles",
+      "not_confused_with": "historical_reference (teaching illustration vs. citing past events)"
+    },
+    "wisdom_principle": {
+      "definition": "Practical moral/life guidance principles across different literary contexts",
+      "example": "Acts.1.26 → Pr.16.33: Practical guidance about decision-making through lots",
+      "look_for": "Practical life guidance, leadership principles, moral advice",
+      "not_confused_with": "theological_principle (practical guidance vs. doctrinal truth)"
+    },
+    "septuagint_difference": {
+      "definition": "Connection due to NT author using Greek vs Hebrew sources",
+      "example": "Textual variations where NT follows Greek OT instead of Hebrew",
+      "look_for": "NT quotations differing from Hebrew due to Greek source",
+      "not_confused_with": "translation differences without textual source implications"
+    },
+    "historical_pattern": {
+      "definition": "Recurring behavioral patterns within same historical period/context",
+      "example": "Recurring Philistine political responses during pre-monarchy period",
+      "look_for": "Repeated behaviors/dynamics within specific historical contexts",
+      "not_confused_with": "parallel_account (pattern vs. same event) or historical_reference (pattern vs. citing event)"
+    }
+  },
+
+  "QUICK_CATEGORY_SELECTION_TIPS": {
+    "start_specific": "Always try most specific category first before generics",
+    "check_testament": "OT→NT often prophecy_fulfillment, quotation, allusion, typology",
+    "same_author": "Often elaboration or theological_principle, especially in Paul's letters",
+    "same_book": "Often narrative_continuation, elaboration",
+    "jesus_teaching": "Often exemplification + wisdom_principle/theological_principle",
+    "imagery_heavy": "shared_metaphor likely, but check for more specific first",
+    "doctrinal_content": "theological_principle primary, often with secondary",
+    "practical_advice": "wisdom_principle primary or secondary"
+  }
+}

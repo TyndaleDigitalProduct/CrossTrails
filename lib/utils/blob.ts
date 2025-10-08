@@ -1,54 +1,72 @@
+import { getDownloadUrl } from '@vercel/blob'
 /**
- * Vercel Blob Storage Utilities
- *
- * Provides simple access to proprietary JSON data stored in Vercel Blob.
- * Files are uploaded via Vercel dashboard and accessed at runtime.
+ * Utility function to fetch JSON data from Vercel Blob storage
+ * @param filename - The blob filename (e.g., 'Matt.json')
+ * @returns Promise containing the parsed JSON data
  */
-
-import { head } from '@vercel/blob';
-
-/**
- * Fetches and parses a JSON file from Vercel Blob storage
- *
- * @param filename - Name of the blob file (e.g., 'cross-references.json')
- * @returns Parsed JSON data
- * @throws Error if file doesn't exist or isn't valid JSON
- *
- * @example
- * const crossRefs = await getBlobJSON<Record<string, CrossReference[]>>('cross-references.json');
- * const refs = crossRefs['John.3.16'];
- */
-export async function getBlobJSON<T = any>(filename: string): Promise<T> {
+export async function getBlobJSON<T>(filename: string): Promise<T> {
   try {
-    // Get blob metadata (includes URL)
-    const blob = await head(filename);
-
-    // Fetch the actual file content
-    const response = await fetch(blob.url);
-
-    if (!response.ok) {
-      throw new Error(`Failed to fetch blob: ${response.status} ${response.statusText}`);
+    if (!process.env.BLOB_READ_WRITE_TOKEN) {
+      throw new Error('BLOB_READ_WRITE_TOKEN is not defined')
+    }
+    // If the blob were private this is how we would get the URL
+    // const url = await getDownloadUrl(filename, {
+    //   token: process.env.BLOB_READ_WRITE_TOKEN,
+    // })
+    const url = `https://nudzgmi4ybxinxi0.public.blob.vercel-storage.com/${filename}`
+    if (!url) {
+      throw new Error(`Blob not found: ${filename}`)
     }
 
-    return await response.json();
+    // Fetch the blob content
+    const response = await fetch(url)
+    if (!response.ok) {
+      throw new Error(`Failed to fetch blob: ${filename}`)
+    }
+
+    const text = await response.text()
+    return JSON.parse(text) as T
   } catch (error) {
-    throw new Error(
-      `Failed to load '${filename}' from Blob storage: ${error instanceof Error ? error.message : 'Unknown error'}`
-    );
+    console.error(`Error fetching blob ${filename}:`, error)
+    throw error
   }
 }
 
 /**
- * Checks if a blob file exists
- *
- * @param filename - Name of the blob file
- * @returns True if file exists, false otherwise
+ * Check if blob storage is available and configured
  */
-export async function blobExists(filename: string): Promise<boolean> {
+export function isBlobConfigured(): boolean {
+  return !!process.env.BLOB_READ_WRITE_TOKEN
+}
+
+/**
+ * Get blob storage status for health checks
+ */
+export async function getBlobHealth(): Promise<{
+  status: 'healthy' | 'unhealthy'
+  configured: boolean
+  error?: string
+}> {
   try {
-    await head(filename);
-    return true;
-  } catch {
-    return false;
+    if (!isBlobConfigured()) {
+      return {
+        status: 'unhealthy',
+        configured: false,
+        error: 'BLOB_READ_WRITE_TOKEN not configured'
+      }
+    }
+
+    // Try to fetch a known file or check access
+    // For now, just return healthy if token exists
+    return {
+      status: 'healthy',
+      configured: true
+    }
+  } catch (error) {
+    return {
+      status: 'unhealthy',
+      configured: true,
+      error: error instanceof Error ? error.message : 'Unknown error'
+    }
   }
 }

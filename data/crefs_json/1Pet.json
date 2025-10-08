@@ -1,0 +1,1444 @@
+{
+  "book": "1 Peter",
+  "book_number": 60,
+  "verified": true,
+  "total_items": 178,
+  "improved_count": 52,
+  "category_distribution": {
+    "theological_principle": 71,
+    "thematic_echo": 33,
+    "exemplification": 2,
+    "parallel_instruction": 19,
+    "elaboration": 24,
+    "quotation": 9,
+    "allusion": 10,
+    "typology": 2,
+    "christological_parallel": 8
+  },
+  "items": [
+    {
+      "anchor_ref": "1Pet.1.2",
+      "cross_ref": "Rom.8.29",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 1.2 shares doctrine with Rom.8.29. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.1.2",
+      "cross_ref": "2Thes.2.13",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 1.2 shares doctrine with 2Thes.2.13. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.1.2",
+      "cross_ref": "Heb.12.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 1.2 shares doctrine with Heb.12.24. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.1.4",
+      "cross_ref": "Col.1.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.4 shares theological concept with Col.1.5. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.4",
+      "cross_ref": "Col.1.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.4 shares theological concept with Col.1.12. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.4",
+      "cross_ref": "2Tim.4.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.4 shares theological concept with 2Tim.4.8. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.5",
+      "cross_ref": "John.10.28",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.5 echoes teaching from John.10.28. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.5",
+      "cross_ref": "Phil.4.7",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 1.5 shares doctrine with Phil.4.7. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.1.6",
+      "cross_ref": "Rom.5.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.6 shares theological concept with Rom.5.2. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.6",
+      "cross_ref": "Jas.1.2",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 1.6 echoes theme from Jas.1.2. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.7",
+      "cross_ref": "Job.23.10",
+      "primary_category": "exemplification",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 1.7 uses Job.23.10 Job as example of testing. **exemplification** (tier 5) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.7",
+      "cross_ref": "Jas.1.3",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 1.7 echoes theme from Jas.1.3. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.8",
+      "cross_ref": "John.20.29",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.8 echoes teaching from John.20.29. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.8",
+      "cross_ref": "2Cor.5.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 1.8 shares ethical instruction with 2Cor.5.7. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.9",
+      "cross_ref": "Rom.6.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 1.9 shares doctrine with Rom.6.22. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.1.10",
+      "cross_ref": "Matt.13.17",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.10 echoes teaching from Matt.13.17. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.10",
+      "cross_ref": "Matt.26.24",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.10 echoes teaching from Matt.26.24. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.11",
+      "cross_ref": "Luke.24.26",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.11 echoes teaching from Luke.24.26. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.11",
+      "cross_ref": "2Pet.1.21",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 1.11 echoes theme from 2Pet.1.21. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.12",
+      "cross_ref": "Eph.3.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.12 shares theological concept with Eph.3.10. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.14",
+      "cross_ref": "Rom.12.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.14 shares theological concept with Rom.12.2. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.14",
+      "cross_ref": "Eph.2.3",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.14 shares theological concept with Eph.2.3. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.14",
+      "cross_ref": "Eph.4.17-18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.14 shares theological concept with Eph.4.17-18. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.14",
+      "cross_ref": "1Pet.1.2",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 1.14 elaborates theme from 1Pet.1.2. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.14",
+      "cross_ref": "1Pet.4.2",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 1.14 elaborates theme from 1Pet.4.2. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.15",
+      "cross_ref": "2Cor.7.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.15 shares theological concept with 2Cor.7.1. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.15",
+      "cross_ref": "1Thes.4.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.15 shares theological concept with 1Thes.4.7. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.15",
+      "cross_ref": "1Jn.3.3",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 1.15 echoes theme from 1Jn.3.3. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.16",
+      "cross_ref": "Lev.11.44-45",
+      "primary_category": "quotation",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Pet 1:16 'For the Scriptures say, You must be holy because I am holy' directly quotes Lev.11.44-45 with citation formula. **quotation** (tier 1) + **parallel_instruction** (tier 3, both command holiness)."
+    },
+    {
+      "anchor_ref": "1Pet.1.16",
+      "cross_ref": "Lev.19.2",
+      "primary_category": "quotation",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Pet 1:16 'For the Scriptures say, You must be holy because I am holy' directly quotes Lev.19.2 with citation formula. **quotation** (tier 1) + **parallel_instruction** (tier 3, both command holiness)."
+    },
+    {
+      "anchor_ref": "1Pet.1.16",
+      "cross_ref": "Lev.20.7",
+      "primary_category": "quotation",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Pet 1:16 'For the Scriptures say, You must be holy because I am holy' directly quotes Lev.20.7 with citation formula. **quotation** (tier 1) + **parallel_instruction** (tier 3, both command holiness)."
+    },
+    {
+      "anchor_ref": "1Pet.1.17",
+      "cross_ref": "Ps.89.26",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.17 alludes to Ps.89.26. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.17",
+      "cross_ref": "Jer.3.19",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.17 alludes to Jer.3.19. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.19",
+      "cross_ref": "Exod.12.5",
+      "primary_category": "typology",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "1 Pet 1:19 'precious blood of Christ, spotless Lamb' references Exod.12.5 Passover lamb. **typology** (tier 2, Passover lamb prefigures Christ) + **christological_parallel** (tier 4)."
+    },
+    {
+      "anchor_ref": "1Pet.1.19",
+      "cross_ref": "John.1.29",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 1.19 parallels John.1.29 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.19",
+      "cross_ref": "Heb.9.14",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 1.19 parallels Heb.9.14 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.20",
+      "cross_ref": "Eph.1.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.20 shares theological concept with Eph.1.4. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.1.21",
+      "cross_ref": "John.14.6",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.21 echoes teaching from John.14.6. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.21",
+      "cross_ref": "Rom.4.24",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 1.21 shares doctrine with Rom.4.24. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.1.22",
+      "cross_ref": "John.13.34",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.22 echoes teaching from John.13.34. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.22",
+      "cross_ref": "Rom.12.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 1.22 shares ethical instruction with Rom.12.10. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.23",
+      "cross_ref": "John.1.13",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.23 echoes teaching from John.1.13. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.23",
+      "cross_ref": "John.3.3",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 1.23 echoes teaching from John.3.3. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.1.23",
+      "cross_ref": "Heb.4.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 1.23 shares theological concept with Heb.4.12. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.1",
+      "cross_ref": "Eph.4.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.1 shares theological concept with Eph.4.22. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.1",
+      "cross_ref": "Eph.4.31",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.1 shares theological concept with Eph.4.31. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.2",
+      "cross_ref": "1Cor.3.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 2.2 shares doctrine with 1Cor.3.2. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.2.2",
+      "cross_ref": "Heb.5.12-13",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 2.2 shares doctrine with Heb.5.12-13. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.2.4",
+      "cross_ref": "Ps.118.22",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 2.4 parallels Ps.118.22 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.4",
+      "cross_ref": "1Pet.2.7",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.4 elaborates theme from 1Pet.2.7. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.5",
+      "cross_ref": "Exod.19.6",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.5 echoes theme from Exod.19.6. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.5",
+      "cross_ref": "Eph.2.21-22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.5 shares theological concept with Eph.2.21-22. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.5",
+      "cross_ref": "1Tim.3.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.5 shares theological concept with 1Tim.3.15. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.5",
+      "cross_ref": "Heb.13.15",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 2.5 parallels Heb.13.15 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.5",
+      "cross_ref": "Rev.1.6",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.5 echoes theme from Rev.1.6. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.6",
+      "cross_ref": "Rom.9.32-33",
+      "primary_category": "quotation",
+      "secondary_category": "prophecy_fulfillment",
+      "confidence": 95,
+      "reasoning": "1 Pet 2:6 'As the Scriptures say, I am placing a cornerstone...' quotes Rom.9.32-33. **quotation** (tier 1) + **prophecy_fulfillment** (tier 2, Isaiah's cornerstone fulfilled in Christ)."
+    },
+    {
+      "anchor_ref": "1Pet.2.6",
+      "cross_ref": "Eph.2.20",
+      "primary_category": "quotation",
+      "secondary_category": "prophecy_fulfillment",
+      "confidence": 95,
+      "reasoning": "1 Pet 2:6 'As the Scriptures say, I am placing a cornerstone...' quotes Eph.2.20. **quotation** (tier 1) + **prophecy_fulfillment** (tier 2, Isaiah's cornerstone fulfilled in Christ)."
+    },
+    {
+      "anchor_ref": "1Pet.2.7",
+      "cross_ref": "Ps.118.22",
+      "primary_category": "quotation",
+      "secondary_category": "christological_parallel",
+      "confidence": 95,
+      "reasoning": "1 Pet 2:7 quotes Ps.118.22 'stone the builders rejected' applied to Christ. **quotation** (tier 1) + **christological_parallel** (tier 4)."
+    },
+    {
+      "anchor_ref": "1Pet.2.7",
+      "cross_ref": "Matt.21.42",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 2.7 echoes teaching from Matt.21.42. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.8",
+      "cross_ref": "Luke.2.34",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 2.8 echoes teaching from Luke.2.34. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.8",
+      "cross_ref": "Rom.9.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.8 shares theological concept with Rom.9.22. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.9",
+      "cross_ref": "Exod.19.5-6",
+      "primary_category": "quotation",
+      "secondary_category": "covenant_connection",
+      "confidence": 95,
+      "reasoning": "1 Pet 2:9 'you are a chosen people, royal priests...' quotes Exod.19.5-6 covenant language. **quotation** (tier 1) + **covenant_connection** (tier 2, OT covenant applied to church)."
+    },
+    {
+      "anchor_ref": "1Pet.2.9",
+      "cross_ref": "Deut.7.6",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.9 echoes theme from Deut.7.6. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.9",
+      "cross_ref": "Deut.10.15",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.9 echoes theme from Deut.10.15. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.9",
+      "cross_ref": "1Pet.2.5",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.9 elaborates theme from 1Pet.2.5. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.9",
+      "cross_ref": "Rev.1.6",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.9 echoes theme from Rev.1.6. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.10",
+      "cross_ref": "Hos.1.6",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 2.10 alludes to Hos.1.6. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.10",
+      "cross_ref": "Hos.1.9",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 2.10 alludes to Hos.1.9. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.10",
+      "cross_ref": "Hos.2.23",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 2.10 alludes to Hos.2.23. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.10",
+      "cross_ref": "Rom.9.25",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.10 shares theological concept with Rom.9.25. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.10",
+      "cross_ref": "Rom.10.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.10 shares theological concept with Rom.10.19. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.11",
+      "cross_ref": "Rom.13.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.11 shares theological concept with Rom.13.14. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.11",
+      "cross_ref": "Gal.5.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.11 shares theological concept with Gal.5.16. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.11",
+      "cross_ref": "Jas.4.1",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.11 echoes theme from Jas.4.1. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.12",
+      "cross_ref": "Phil.2.15",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.12 shares theological concept with Phil.2.15. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.12",
+      "cross_ref": "Titus.2.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.12 shares theological concept with Titus.2.14. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.13-14",
+      "cross_ref": "Rom.13.1-7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Pet 2.13-14 parallels Rom.13.1-7 on civic submission. **parallel_instruction** (tier 3, both teach submission to authorities) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.13-14",
+      "cross_ref": "Titus.3.1",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.13-14 shares theological concept with Titus.3.1. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.15",
+      "cross_ref": "1Pet.2.12",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.15 elaborates theme from 1Pet.2.12. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.15",
+      "cross_ref": "1Pet.3.17",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.15 elaborates theme from 1Pet.3.17. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.16",
+      "cross_ref": "Gal.5.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 2.16 shares theological concept with Gal.5.13. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.2.17",
+      "cross_ref": "Pr.24.21",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 2.17 alludes to Pr.24.21. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.17",
+      "cross_ref": "Rom.12.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 2.17 shares ethical instruction with Rom.12.10. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.17",
+      "cross_ref": "Rom.13.7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Pet 2.17 parallels Rom.13.7 on civic submission. **parallel_instruction** (tier 3, both teach submission to authorities) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.18",
+      "cross_ref": "Eph.6.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Pet 2.18 parallels Eph.6.5 household code. **parallel_instruction** (tier 3, shared ethical instruction structure) + **literary_parallel** (tier 3, shared vocabulary/formula)."
+    },
+    {
+      "anchor_ref": "1Pet.2.18",
+      "cross_ref": "Jas.3.17",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 2.18 echoes theme from Jas.3.17. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.20",
+      "cross_ref": "1Pet.3.14",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.20 elaborates theme from 1Pet.3.14. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.20",
+      "cross_ref": "1Pet.3.17",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.20 elaborates theme from 1Pet.3.17. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.21",
+      "cross_ref": "1Pet.3.9",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.21 elaborates theme from 1Pet.3.9. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.21",
+      "cross_ref": "1Pet.3.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.21 elaborates theme from 1Pet.3.18. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.23",
+      "cross_ref": "1Pet.3.9",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.23 elaborates theme from 1Pet.3.9. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.25",
+      "cross_ref": "Heb.13.20",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 2.25 parallels Heb.13.20 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.2.25",
+      "cross_ref": "1Pet.5.4",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 2.25 elaborates theme from 1Pet.5.4. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.1",
+      "cross_ref": "1Cor.7.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.1 shares theological concept with 1Cor.7.16. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.1",
+      "cross_ref": "1Cor.9.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.1 shares theological concept with 1Cor.9.19. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.1",
+      "cross_ref": "1Pet.2.18",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3.1 elaborates theme from 1Pet.2.18. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.3",
+      "cross_ref": "1Tim.2.9",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.3 shares theological concept with 1Tim.2.9. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.4",
+      "cross_ref": "Rom.2.29",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.4 shares theological concept with Rom.2.29. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.5",
+      "cross_ref": "1Tim.5.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.5 shares theological concept with 1Tim.5.5. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.6",
+      "cross_ref": "Gen.18.12",
+      "primary_category": "exemplification",
+      "secondary_category": "historical_reference",
+      "confidence": 93,
+      "reasoning": "1 Pet 3:6 uses Gen.18.12 Sarah as example for wives. **exemplification** (tier 5, OT figure as model) + **historical_reference** (tier 5)."
+    },
+    {
+      "anchor_ref": "1Pet.3.7",
+      "cross_ref": "Eph.5.25",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Pet 3.7 parallels Eph.5.25 household code. **parallel_instruction** (tier 3, shared ethical instruction structure) + **literary_parallel** (tier 3, shared vocabulary/formula)."
+    },
+    {
+      "anchor_ref": "1Pet.3.7",
+      "cross_ref": "Col.3.19",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Pet 3.7 parallels Col.3.19 household code. **parallel_instruction** (tier 3, shared ethical instruction structure) + **literary_parallel** (tier 3, shared vocabulary/formula)."
+    },
+    {
+      "anchor_ref": "1Pet.3.8",
+      "cross_ref": "Rom.15.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 3.8 shares ethical instruction with Rom.15.5. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.8",
+      "cross_ref": "Eph.4.2",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 3.8 shares ethical instruction with Eph.4.2. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.8",
+      "cross_ref": "Eph.4.32",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 3.8 shares ethical instruction with Eph.4.32. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.9",
+      "cross_ref": "Matt.5.44",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3:9 'don't repay evil for evil' parallels Matt.5.44. **parallel_instruction** (tier 3, same ethical command) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.9",
+      "cross_ref": "Rom.12.17",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3:9 'don't repay evil for evil' parallels Rom.12.17. **parallel_instruction** (tier 3, same ethical command) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.9",
+      "cross_ref": "1Thes.5.15",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3:9 'don't repay evil for evil' parallels 1Thes.5.15. **parallel_instruction** (tier 3, same ethical command) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.9",
+      "cross_ref": "Heb.6.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.9 shares theological concept with Heb.6.14. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.13",
+      "cross_ref": "Titus.2.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.13 shares theological concept with Titus.2.14. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.15",
+      "cross_ref": "Col.4.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.15 shares theological concept with Col.4.6. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.16",
+      "cross_ref": "1Pet.2.12",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3.16 elaborates theme from 1Pet.2.12. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.17",
+      "cross_ref": "1Pet.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3.17 elaborates theme from 1Pet.2.20. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.17",
+      "cross_ref": "1Pet.4.15-16",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3.17 elaborates theme from 1Pet.4.15-16. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.18",
+      "cross_ref": "Eph.2.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.18 shares theological concept with Eph.2.18. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.18",
+      "cross_ref": "Heb.9.26",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 3.18 parallels Heb.9.26 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.18",
+      "cross_ref": "Heb.9.28",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 3.18 parallels Heb.9.28 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.19",
+      "cross_ref": "1Pet.4.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 3.19 elaborates theme from 1Pet.4.6. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.20",
+      "cross_ref": "Gen.6.1-7.24",
+      "primary_category": "typology",
+      "secondary_category": "historical_reference",
+      "confidence": 95,
+      "reasoning": "1 Pet 3:20 'those who disobeyed God long ago when God waited patiently while Noah was buildi...' uses Gen.6.1-7.24 Noah's flood as type of baptism. **typology** (tier 2, flood prefigures baptism) + **historical_reference** (tier 5)."
+    },
+    {
+      "anchor_ref": "1Pet.3.21",
+      "cross_ref": "Heb.9.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.21 shares theological concept with Heb.9.13. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.21",
+      "cross_ref": "Heb.10.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.21 shares theological concept with Heb.10.22. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.22",
+      "cross_ref": "Matt.28.18",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 3.22 echoes teaching from Matt.28.18. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.22",
+      "cross_ref": "Mark.16.19",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 3.22 echoes teaching from Mark.16.19. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.3.22",
+      "cross_ref": "Rom.8.38",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.22 shares theological concept with Rom.8.38. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.22",
+      "cross_ref": "Heb.1.4",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.22 shares theological concept with Heb.1.4. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.22",
+      "cross_ref": "Heb.1.6",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.22 shares theological concept with Heb.1.6. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.3.22",
+      "cross_ref": "Heb.4.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 3.22 shares theological concept with Heb.4.14. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.1",
+      "cross_ref": "Rom.6.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.1 shares theological concept with Rom.6.7. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.1",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.1 shares theological concept with Gal.2.20. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.1",
+      "cross_ref": "Col.3.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.1 shares theological concept with Col.3.5. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.1",
+      "cross_ref": "1Pet.2.21",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 4.1 elaborates theme from 1Pet.2.21. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.2",
+      "cross_ref": "Rom.6.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.2 shares theological concept with Rom.6.2. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.2",
+      "cross_ref": "1Pet.1.14",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 4.2 elaborates theme from 1Pet.1.14. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.3",
+      "cross_ref": "Rom.13.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.3 shares theological concept with Rom.13.13. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.3",
+      "cross_ref": "Eph.2.2",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.3 shares theological concept with Eph.2.2. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.6",
+      "cross_ref": "1Pet.3.19",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 4.6 elaborates theme from 1Pet.3.19. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.7",
+      "cross_ref": "Rom.13.11-12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.7 shares theological concept with Rom.13.11-12. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.8",
+      "cross_ref": "Pr.10.12",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 92,
+      "reasoning": "1 Pet 4:8 'love covers multitude of sins' alludes to Pr.10.12. **allusion** (tier 7, no citation formula but clear reference) + **wisdom_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.8",
+      "cross_ref": "Jas.5.20",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 4.8 echoes theme from Jas.5.20. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.8",
+      "cross_ref": "1Pet.1.22",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 4.8 elaborates theme from 1Pet.1.22. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.10",
+      "cross_ref": "Rom.12.6-8",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 4.10 shares ethical instruction with Rom.12.6-8. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.11",
+      "cross_ref": "1Cor.10.31",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.11 shares theological concept with 1Cor.10.31. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.12",
+      "cross_ref": "1Pet.1.6-7",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 4.12 elaborates theme from 1Pet.1.6-7. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.13",
+      "cross_ref": "Rom.8.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.13 shares theological concept with Rom.8.17. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.13",
+      "cross_ref": "2Cor.1.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.13 shares theological concept with 2Cor.1.5. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.14",
+      "cross_ref": "Matt.5.11",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 4.14 echoes teaching from Matt.5.11. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.14",
+      "cross_ref": "John.15.21",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 4.14 echoes teaching from John.15.21. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.15",
+      "cross_ref": "1Thes.4.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.15 shares theological concept with 1Thes.4.11. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.15",
+      "cross_ref": "2Thes.3.11",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.15 shares theological concept with 2Thes.3.11. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.15",
+      "cross_ref": "1Tim.5.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.15 shares theological concept with 1Tim.5.13. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.17",
+      "cross_ref": "2Thes.1.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 4.17 shares theological concept with 2Thes.1.8. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.4.18",
+      "cross_ref": "Pr.11.31",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_principle",
+      "confidence": 95,
+      "reasoning": "1 Pet 4:18 quotes Pr.11.31 'if righteous barely saved...'. **quotation** (tier 1) + **wisdom_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.19",
+      "cross_ref": "Ps.31.5",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 4.19 alludes to Ps.31.5. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.4.19",
+      "cross_ref": "1Pet.2.20",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 4.19 elaborates theme from 1Pet.2.20. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.1",
+      "cross_ref": "Luke.24.48",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 5.1 echoes teaching from Luke.24.48. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.1",
+      "cross_ref": "Rev.1.9",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 5.1 echoes theme from Rev.1.9. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.2",
+      "cross_ref": "John.21.16",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 5.2 echoes teaching from John.21.16. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.3",
+      "cross_ref": "2Cor.1.24",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.3 shares theological concept with 2Cor.1.24. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.3",
+      "cross_ref": "Phil.3.17",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.3 shares theological concept with Phil.3.17. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.3",
+      "cross_ref": "Titus.2.7",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.3 shares theological concept with Titus.2.7. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.4",
+      "cross_ref": "1Cor.9.25",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.4 shares theological concept with 1Cor.9.25. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.4",
+      "cross_ref": "Heb.13.20-21",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 5.4 parallels Heb.13.20-21 on Christ's person/work. **christological_parallel** (tier 4, shared focus on Christ) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.5",
+      "cross_ref": "Pr.3.34",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_principle",
+      "confidence": 95,
+      "reasoning": "1 Pet 5:5 'God opposes proud, gives grace to humble' quotes Pr.3.34. **quotation** (tier 1) + **wisdom_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.5",
+      "cross_ref": "Jas.4.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 91,
+      "reasoning": "1 Pet 5.5 parallels Jas.4.6 on humility. **parallel_instruction** (tier 3, both command humility before God) + **wisdom_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.6",
+      "cross_ref": "Jas.4.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 91,
+      "reasoning": "1 Pet 5.6 parallels Jas.4.10 on humility. **parallel_instruction** (tier 3, both command humility before God) + **wisdom_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.7",
+      "cross_ref": "Ps.55.22",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 5.7 alludes to Ps.55.22. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.7",
+      "cross_ref": "Matt.6.25",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 5.7 echoes teaching from Matt.6.25. **thematic_echo** (tier 7, similar theme without direct quotation) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.7",
+      "cross_ref": "Heb.13.5",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.7 shares theological concept with Heb.13.5. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.8",
+      "cross_ref": "Job.1.7",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 83,
+      "reasoning": "1 Pet 5.8 alludes to Job.1.7. **allusion** (tier 7, OT reference without citation formula) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.8",
+      "cross_ref": "Jas.4.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 5.8 echoes theme from Jas.4.7. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.9",
+      "cross_ref": "Eph.6.11-13",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 5.9 shares doctrine with Eph.6.11-13. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.5.9",
+      "cross_ref": "Jas.4.7",
+      "primary_category": "thematic_echo",
+      "secondary_category": "theological_principle",
+      "confidence": 80,
+      "reasoning": "1 Pet 5.9 echoes theme from Jas.4.7. **thematic_echo** (tier 7) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.10",
+      "cross_ref": "1Thes.2.12",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.10 shares theological concept with 1Thes.2.12. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.10",
+      "cross_ref": "2Tim.2.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Pet 5.10 shares theological concept with 2Tim.2.10. **theological_principle** (tier 6, doctrinal connection)."
+    },
+    {
+      "anchor_ref": "1Pet.5.10",
+      "cross_ref": "1Pet.1.6",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Pet 5.10 elaborates theme from 1Pet.1.6. **elaboration** (tier 4, internal development of same theme) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.12",
+      "cross_ref": "Heb.13.22",
+      "primary_category": "theological_principle",
+      "secondary_category": "literary_parallel",
+      "confidence": 87,
+      "reasoning": "1 Pet 5.12 shares doctrine with Heb.13.22. **theological_principle** (tier 6, doctrinal connection) + **literary_parallel** (tier 3, shared theological vocabulary)."
+    },
+    {
+      "anchor_ref": "1Pet.5.14",
+      "cross_ref": "Rom.16.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 5.14 shares ethical instruction with Rom.16.16. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    },
+    {
+      "anchor_ref": "1Pet.5.14",
+      "cross_ref": "Eph.6.23",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Pet 5.14 shares ethical instruction with Eph.6.23. **parallel_instruction** (tier 3) + **theological_principle** (tier 6)."
+    }
+  ]
+}

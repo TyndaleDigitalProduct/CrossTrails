@@ -1,0 +1,1191 @@
+{
+  "book": "1 Timothy",
+  "book_number": 54,
+  "verified": true,
+  "total_items": 146,
+  "improved_count": 121,
+  "category_distribution": {
+    "theological_principle": 23,
+    "literary_parallel": 33,
+    "parallel_instruction": 24,
+    "elaboration": 22,
+    "historical_reference": 6,
+    "christological_parallel": 6,
+    "allusion": 16,
+    "quotation": 4,
+    "wisdom_principle": 7,
+    "shared_metaphor": 3,
+    "exemplification": 1,
+    "contrast": 1
+  },
+  "items": [
+    {
+      "anchor_ref": "1Tim.1.1",
+      "cross_ref": "Col.1.27",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "1 Tim 1:1 'by command of God our Savior and Christ Jesus our hope' and Col 1:27 'Christ in you, the hope of glory' both describe Christ as hope. **theological_principle** (tier 6, shared doctrine of Christ as Christian hope) + **allusion** (tier 7, thematic echo of hope language)."
+    },
+    {
+      "anchor_ref": "1Tim.1.1",
+      "cross_ref": "Titus.1.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "1 Tim 1:1 'by command of God our Savior' and Titus 1:3 'at just the right time...by the command of God our Savior' share distinctive Pastoral Epistles phrase 'God our Savior' with 'command' terminology. **literary_parallel** (tier 3, Pastoral Epistles vocabulary) + **theological_principle** (tier 6, God's saving nature)."
+    },
+    {
+      "anchor_ref": "1Tim.1.1",
+      "cross_ref": "Titus.3.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "1 Tim 1:1 'God our Savior' and Titus 3:4 'God our Savior revealed his kindness and love' use identical Pastoral Epistles phrase 'God our Savior.' **literary_parallel** (tier 3, distinctive shared terminology) + **theological_principle** (tier 6, God as Savior doctrine)."
+    },
+    {
+      "anchor_ref": "1Tim.1.2",
+      "cross_ref": "2Tim.1.2",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 98,
+      "reasoning": "1 Tim 1:2 'To Timothy, my true son in the faith' and 2 Tim 1:2 'To Timothy, my dear son' are nearly identical letter openings with same recipient and similar endearment. **literary_parallel** (tier 3, Pastoral Epistles standard greeting structure)."
+    },
+    {
+      "anchor_ref": "1Tim.1.2",
+      "cross_ref": "Titus.1.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "1 Tim 1:2 'To Timothy, my true son in the faith' and Titus 1:4 'To Titus, my true son in the faith' use identical Pastoral Epistles greeting formula with 'true son in the faith.' **literary_parallel** (tier 3, shared letter opening structure)."
+    },
+    {
+      "anchor_ref": "1Tim.1.3",
+      "cross_ref": "Gal.1.6-7",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:3 'to stop those who teach false doctrines' and Gal 1:6-7 'turning to a different gospel...twist the truth' both confront false teaching. **parallel_instruction** (tier 3, similar commands to oppose doctrinal error) + **theological_principle** (tier 6, protecting sound doctrine)."
+    },
+    {
+      "anchor_ref": "1Tim.1.3",
+      "cross_ref": "1Tim.6.3",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:3 'stop those who teach false doctrines' introduces theme that 6:3 'teach false doctrines and do not agree to the sound instruction of our Lord' develops further. **elaboration** (tier 4, 1 Tim develops false teaching theme) + **literary_parallel** (tier 3, repeated 'false doctrines' phrase)."
+    },
+    {
+      "anchor_ref": "1Tim.1.4",
+      "cross_ref": "1Tim.4.7",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:4 'myths and endless genealogies' introduces concept that 4:7 'do not waste time on godless myths' reiterates with 'myths' terminology. **elaboration** (tier 4, theme developed) + **literary_parallel** (tier 3, repeated 'myths' vocabulary)."
+    },
+    {
+      "anchor_ref": "1Tim.1.4",
+      "cross_ref": "Titus.3.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 1:4 'myths and endless genealogies' and Titus 3:9 'Do not get involved...in genealogies' share distinctive Pastoral Epistles warning against 'genealogies.' **literary_parallel** (tier 3, shared specific vocabulary) + **parallel_instruction** (tier 3, avoid speculation)."
+    },
+    {
+      "anchor_ref": "1Tim.1.5",
+      "cross_ref": "Rom.13.10",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 1:5 'The purpose of my instruction is love' and Rom 13:10 'love is the fulfillment of the law' both identify love as ultimate goal. **theological_principle** (tier 6, love as supreme principle)."
+    },
+    {
+      "anchor_ref": "1Tim.1.5",
+      "cross_ref": "Gal.5.14",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 1:5 'love that comes from a pure heart' and Gal 5:14 'the whole law...summed up in a single command: Love your neighbor' both emphasize love's supremacy. **theological_principle** (tier 6, love fulfills law)."
+    },
+    {
+      "anchor_ref": "1Tim.1.5",
+      "cross_ref": "2Tim.1.5",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 92,
+      "reasoning": "1 Tim 1:5 'sincere faith' and 2 Tim 1:5 'your sincere faith' use identical phrase 'sincere faith' - distinctive Pastoral Epistles terminology. **literary_parallel** (tier 3, shared specific phrase)."
+    },
+    {
+      "anchor_ref": "1Tim.1.6",
+      "cross_ref": "2Tim.2.23",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:6 'turned to meaningless talk' and 2 Tim 2:23 'foolish and ignorant controversies' warn against similar empty speculation. **literary_parallel** (tier 3, Pastoral Epistles warning pattern) + **parallel_instruction** (tier 3, avoid fruitless disputes)."
+    },
+    {
+      "anchor_ref": "1Tim.1.6",
+      "cross_ref": "Titus.1.10",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:6 'turned to meaningless talk' and Titus 1:10 'many rebellious people who engage in useless talk' share Pastoral Epistles vocabulary about 'meaningless/useless talk.' **literary_parallel** (tier 3, shared terminology) + **parallel_instruction** (tier 3, confront empty words)."
+    },
+    {
+      "anchor_ref": "1Tim.1.9",
+      "cross_ref": "Gal.3.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 87,
+      "reasoning": "1 Tim 1:9 'the law was not intended for people who do what is right' and Gal 3:19 'Why...was the law given? It was...added because of transgressions' both discuss law's purpose for sinners. **theological_principle** (tier 6, law's function for lawbreakers)."
+    },
+    {
+      "anchor_ref": "1Tim.1.9",
+      "cross_ref": "Gal.5.23",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 1:9 'law was not intended for people who do what is right' and Gal 5:23 'There is no law against these things [fruit of Spirit]' both state law doesn't constrain the righteous. **theological_principle** (tier 6, law vs. righteousness)."
+    },
+    {
+      "anchor_ref": "1Tim.1.10",
+      "cross_ref": "1Tim.6.3",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:10 'whatever contradicts the sound doctrine' introduces 'sound doctrine' phrase that 6:3 'sound instruction' elaborates. **elaboration** (tier 4, theme developed) + **literary_parallel** (tier 3, repeated 'sound' teaching vocabulary)."
+    },
+    {
+      "anchor_ref": "1Tim.1.10",
+      "cross_ref": "2Tim.4.3",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:10 'sound doctrine' and 2 Tim 4:3 'won't endure sound teaching' use distinctive Pastoral Epistles phrase 'sound doctrine/teaching.' **literary_parallel** (tier 3, shared terminology) + **parallel_instruction** (tier 3, maintain sound teaching)."
+    },
+    {
+      "anchor_ref": "1Tim.1.10",
+      "cross_ref": "Titus.1.9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 1:10 'sound doctrine' and Titus 1:9 'must hold firmly to the trustworthy message...so he can encourage others with sound doctrine' share identical Pastoral Epistles phrase. **literary_parallel** (tier 3, repeated vocabulary) + **parallel_instruction** (tier 3, teach sound doctrine)."
+    },
+    {
+      "anchor_ref": "1Tim.1.10",
+      "cross_ref": "Titus.2.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 1:10 'sound doctrine' and Titus 2:1 'promote the kind of living that reflects sound doctrine' use identical Pastoral Epistles terminology. **literary_parallel** (tier 3, shared phrase) + **parallel_instruction** (tier 3, teach sound doctrine)."
+    },
+    {
+      "anchor_ref": "1Tim.1.11",
+      "cross_ref": "Gal.2.7",
+      "primary_category": "historical_reference",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 1:11 'glorious Good News entrusted to me' and Gal 2:7 'God had given me the responsibility of preaching the gospel' both reference Paul's apostolic commission. **historical_reference** (tier 5, Paul's calling) + **theological_principle** (tier 6, gospel entrusted)."
+    },
+    {
+      "anchor_ref": "1Tim.1.12",
+      "cross_ref": "Gal.1.15-16",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 88,
+      "reasoning": "1 Tim 1:12 'Christ Jesus...considered me trustworthy and appointed me' and Gal 1:15-16 'God called me by his grace...revealed his Son to me' both recount Paul's apostolic appointment. **historical_reference** (tier 5, Paul's conversion) + **exemplification** (tier 5, Paul as example)."
+    },
+    {
+      "anchor_ref": "1Tim.1.12",
+      "cross_ref": "Phil.4.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 1:12 'Christ...gave me strength' and Phil 4:13 'I can do everything through Christ who gives me strength' share doctrine of Christ's empowerment. **theological_principle** (tier 6, Christ strengthens believers)."
+    },
+    {
+      "anchor_ref": "1Tim.1.13",
+      "cross_ref": "1Cor.15.9",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:13 'I was a blasphemer...violent persecutor' and 1 Cor 15:9 'I persecuted the church of God' both recall Paul's pre-conversion persecution. **historical_reference** (tier 5, Paul's past) + **exemplification** (tier 5, Paul's testimony as example)."
+    },
+    {
+      "anchor_ref": "1Tim.1.14",
+      "cross_ref": "Rom.5.20",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:14 'the grace of our Lord overflowed for me' and Rom 5:20 'where sin increased, grace increased all the more' both describe grace's abundance. **theological_principle** (tier 6, superabundant grace) + **allusion** (tier 7, 'overflowed' echoes grace abounding)."
+    },
+    {
+      "anchor_ref": "1Tim.1.14",
+      "cross_ref": "2Tim.1.13",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:14 'faith and love that come from Christ Jesus' and 2 Tim 1:13 'faith and love that are in Christ Jesus' use nearly identical Pastoral Epistles phrase about faith and love in Christ. **literary_parallel** (tier 3, shared expression) + **theological_principle** (tier 6, faith and love source)."
+    },
+    {
+      "anchor_ref": "1Tim.1.15",
+      "cross_ref": "Luke.15.2",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "1 Tim 1:15 'Christ came to save sinners' and Luke 15:2 'This man welcomes sinners' both emphasize Christ's mission to sinners. **theological_principle** (tier 6, Christ's saving mission) + **allusion** (tier 7, echoes Jesus welcoming sinners)."
+    },
+    {
+      "anchor_ref": "1Tim.1.15",
+      "cross_ref": "Luke.19.10",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:15 'Christ Jesus came to save sinners' and Luke 19:10 'the Son of Man came to seek and save those who are lost' express identical mission with similar vocabulary ('came to save'). **theological_principle** (tier 6, Christ's saving purpose) + **allusion** (tier 7, echoes Jesus' mission statement)."
+    },
+    {
+      "anchor_ref": "1Tim.1.15",
+      "cross_ref": "Rom.5.8",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 1:15 'Christ came to save sinners' and Rom 5:8 'while we were still sinners, Christ died for us' both emphasize salvation for sinners. **theological_principle** (tier 6, salvation of sinners)."
+    },
+    {
+      "anchor_ref": "1Tim.1.17",
+      "cross_ref": "Rom.16.27",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:17 'honor and glory forever...Amen' and Rom 16:27 'to God be the glory forever...Amen' share doxological structure with 'glory forever, Amen.' **literary_parallel** (tier 3, similar doxology format) + **theological_principle** (tier 6, God's eternal glory)."
+    },
+    {
+      "anchor_ref": "1Tim.1.17",
+      "cross_ref": "1Tim.6.15",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 93,
+      "reasoning": "1 Tim 1:17 'the King eternal, immortal, invisible' introduces divine attributes that 6:15 'blessed and only Sovereign, King of kings' elaborates. **elaboration** (tier 4, theme developed) + **literary_parallel** (tier 3, both doxologies with 'King' title)."
+    },
+    {
+      "anchor_ref": "1Tim.1.18",
+      "cross_ref": "1Tim.6.12",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:18 'fight the good fight' introduces phrase that 6:12 'Fight the good fight of the faith' repeats verbatim. **elaboration** (tier 4, theme returns) + **literary_parallel** (tier 3, identical phrase)."
+    },
+    {
+      "anchor_ref": "1Tim.1.19",
+      "cross_ref": "2Tim.4.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 1:19 'cling to your faith' and 2 Tim 4:7 'I have fought the good fight...I have kept the faith' share Pastoral Epistles emphasis on 'keeping the faith.' **literary_parallel** (tier 3, shared vocabulary) + **theological_principle** (tier 6, maintain faith)."
+    },
+    {
+      "anchor_ref": "1Tim.1.20",
+      "cross_ref": "1Cor.5.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 1:20 'handed them over to Satan' and 1 Cor 5:5 'hand this man over to Satan' use identical church discipline formula. **parallel_instruction** (tier 3, same disciplinary action) + **theological_principle** (tier 6, church discipline principle)."
+    },
+    {
+      "anchor_ref": "1Tim.1.20",
+      "cross_ref": "2Tim.2.17",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 90,
+      "reasoning": "1 Tim 1:20 'Hymenaeus' and 2 Tim 2:17 'Hymenaeus and Philetus' both reference same false teacher Hymenaeus. **historical_reference** (tier 5, same person) + **exemplification** (tier 5, negative example of false teaching)."
+    },
+    {
+      "anchor_ref": "1Tim.1.20",
+      "cross_ref": "2Tim.4.14",
+      "primary_category": "historical_reference",
+      "secondary_category": "exemplification",
+      "confidence": 88,
+      "reasoning": "1 Tim 1:20 'Alexander the coppersmith' and 2 Tim 4:14 'Alexander the metalworker did me much harm' may reference same person. **historical_reference** (tier 5, possibly same Alexander) + **exemplification** (tier 5, warning example)."
+    },
+    {
+      "anchor_ref": "1Tim.2.2",
+      "cross_ref": "Rom.13.1",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 2:2 'pray...for all who are in authority' and Rom 13:1 'Everyone must submit to governing authorities' both address Christian relationship with rulers. **parallel_instruction** (tier 3, instructions about authorities) + **theological_principle** (tier 6, respect for government)."
+    },
+    {
+      "anchor_ref": "1Tim.2.4",
+      "cross_ref": "1Tim.4.10",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 2:4 'wants everyone to be saved' introduces theme that 4:10 'Savior of all people' elaborates. **elaboration** (tier 4, universal salvation offer developed) + **theological_principle** (tier 6, God's saving will)."
+    },
+    {
+      "anchor_ref": "1Tim.2.4",
+      "cross_ref": "2Tim.2.25",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 2:4 'wants everyone...to come to a knowledge of the truth' and 2 Tim 2:25 'God will grant them repentance leading them to a knowledge of the truth' share distinctive Pastoral Epistles phrase 'knowledge of the truth.' **literary_parallel** (tier 3, shared terminology) + **theological_principle** (tier 6, knowing truth brings salvation)."
+    },
+    {
+      "anchor_ref": "1Tim.2.5",
+      "cross_ref": "Rom.3.29-30",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 2:5 'there is one God and one mediator' and Rom 3:29-30 'there is only one God' both emphasize God's oneness. **theological_principle** (tier 6, monotheism and universal access)."
+    },
+    {
+      "anchor_ref": "1Tim.2.6",
+      "cross_ref": "Gal.1.4",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 2:6 'gave his life as a ransom for all' and Gal 1:4 'Jesus gave his life for our sins' both describe Christ's sacrificial death for all. **christological_parallel** (tier 4, Christ's saving work) + **theological_principle** (tier 6, substitutionary atonement)."
+    },
+    {
+      "anchor_ref": "1Tim.2.6",
+      "cross_ref": "Gal.2.20",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 2:6 'gave his life as a ransom' and Gal 2:20 'Son of God...loved me and gave himself for me' both describe Christ giving himself. **christological_parallel** (tier 4, Christ's self-giving) + **theological_principle** (tier 6, Christ's self-giving)."
+    },
+    {
+      "anchor_ref": "1Tim.2.7",
+      "cross_ref": "2Tim.1.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 95,
+      "reasoning": "1 Tim 2:7 'I was appointed...an apostle and teacher' and 2 Tim 1:1 'Paul, an apostle of Christ Jesus' share Pastoral Epistles apostolic self-designation. **literary_parallel** (tier 3, similar opening formulae)."
+    },
+    {
+      "anchor_ref": "1Tim.2.8",
+      "cross_ref": "Ps.24.4",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 87,
+      "reasoning": "1 Tim 2:8 'lift up holy hands in prayer' and Ps 24:4 'clean hands and a pure heart' both emphasize pure hands in worship. **allusion** (tier 7, echoes clean hands requirement) + **theological_principle** (tier 6, purity in worship)."
+    },
+    {
+      "anchor_ref": "1Tim.2.8",
+      "cross_ref": "Ps.63.4",
+      "primary_category": "allusion",
+      "secondary_category": "ritual_practice",
+      "confidence": 88,
+      "reasoning": "1 Tim 2:8 'lift up holy hands' and Ps 63:4 'I will lift up my hands to you in prayer' both describe raising hands in prayer. **allusion** (tier 7, echoes Psalm prayer posture) + **ritual_practice** (tier 2, prayer gesture)."
+    },
+    {
+      "anchor_ref": "1Tim.2.9",
+      "cross_ref": "1Pet.3.3-5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 2:9 'women should wear decent...clothing...not with elaborate hairstyles or gold' and 1 Pet 3:3-5 'don't be concerned about...fancy hairstyles, gold jewelry' give nearly identical instructions on women's adornment. **parallel_instruction** (tier 3, same specific guidance) + **wisdom_principle** (tier 6, modest appearance)."
+    },
+    {
+      "anchor_ref": "1Tim.2.11",
+      "cross_ref": "1Cor.14.34",
+      "primary_category": "parallel_instruction",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 2:11 'women should learn quietly and submissively' and 1 Cor 14:34 'women should be silent during the church meetings' both address women's role in worship. **parallel_instruction** (tier 3, similar instructions about women)."
+    },
+    {
+      "anchor_ref": "1Tim.2.12",
+      "cross_ref": "Eph.5.22",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 82,
+      "reasoning": "1 Tim 2:12 'I do not let women...have authority over a man' and Eph 5:22 'wives, submit to your own husbands' both address male-female roles. **theological_principle** (tier 6, gender roles in Christian context)."
+    },
+    {
+      "anchor_ref": "1Tim.2.13",
+      "cross_ref": "Gen.1.27",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 2:13 'God made Adam first, then Eve' alludes to Gen 1:27 creation account emphasizing creation order. **allusion** (tier 7, references creation narrative) + **theological_principle** (tier 6, creation order significance)."
+    },
+    {
+      "anchor_ref": "1Tim.2.13",
+      "cross_ref": "Gen.2.7",
+      "primary_category": "allusion",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "1 Tim 2:13 'God made Adam first' directly alludes to Gen 2:7 'the LORD God formed the man from the dust.' **allusion** (tier 7, references Adam's creation)."
+    },
+    {
+      "anchor_ref": "1Tim.2.13",
+      "cross_ref": "Gen.2.22",
+      "primary_category": "allusion",
+      "secondary_category": null,
+      "confidence": 90,
+      "reasoning": "1 Tim 2:13 'Adam first, then Eve' alludes to Gen 2:22 'he made a woman from the rib...brought her to the man.' **allusion** (tier 7, references Eve's creation after Adam)."
+    },
+    {
+      "anchor_ref": "1Tim.2.14",
+      "cross_ref": "Gen.3.1-6",
+      "primary_category": "allusion",
+      "secondary_category": "exemplification",
+      "confidence": 92,
+      "reasoning": "1 Tim 2:14 'it was the woman who was deceived' alludes to Gen 3:1-6 where serpent deceives Eve. **allusion** (tier 7, references Fall narrative) + **exemplification** (tier 5, Eve as example of deception)."
+    },
+    {
+      "anchor_ref": "1Tim.2.14",
+      "cross_ref": "Gen.3.13",
+      "primary_category": "quotation",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "1 Tim 2:14 'the woman was deceived' closely echoes Gen 3:13 where Eve says 'The serpent deceived me' - nearly direct citation. **quotation** (tier 1, direct reference to Eve's words)."
+    },
+    {
+      "anchor_ref": "1Tim.3.2-7",
+      "cross_ref": "Titus.1.6-9",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 98,
+      "reasoning": "1 Tim 3:2-7 'overseer must be...above reproach, faithful to his wife, temperate, self-controlled, respectable, hospitable, able to teach' and Titus 1:6-9 list nearly identical elder qualifications with extensive vocabulary overlap. **literary_parallel** (tier 3, Pastoral Epistles share distinctive qualification lists) + **parallel_instruction** (tier 3, same leadership requirements)."
+    },
+    {
+      "anchor_ref": "1Tim.3.7",
+      "cross_ref": "2Cor.8.21",
+      "primary_category": "wisdom_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 3:7 'must have a good reputation with people outside the church' and 2 Cor 8:21 'we are taking pains to do what is right...in the eyes of the Lord and also in the eyes of men' both emphasize positive witness to outsiders. **wisdom_principle** (tier 6, maintaining good external reputation)."
+    },
+    {
+      "anchor_ref": "1Tim.3.7",
+      "cross_ref": "2Tim.2.26",
+      "primary_category": "shared_metaphor",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "1 Tim 3:7 'so that...he will not fall into the devil's trap' and 2 Tim 2:26 'escape from the trap of the devil' share Pastoral Epistles metaphor of devil's trap. **shared_metaphor** (tier 7, same devil's trap imagery)."
+    },
+    {
+      "anchor_ref": "1Tim.3.9",
+      "cross_ref": "1Tim.1.19",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 3:9 'keep a clear conscience' echoes 1:19 'cling to your faith and keep your conscience clear.' **elaboration** (tier 4, conscience theme returns) + **literary_parallel** (tier 3, repeated 'clear conscience' phrase)."
+    },
+    {
+      "anchor_ref": "1Tim.3.15",
+      "cross_ref": "Matt.16.16-18",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 85,
+      "reasoning": "1 Tim 3:15 'the church...is the pillar and foundation of the truth' and Matt 16:18 'I will build my church' both emphasize church as truth's foundation. **theological_principle** (tier 6, church's role supporting truth) + **allusion** (tier 7, echoes Jesus building church)."
+    },
+    {
+      "anchor_ref": "1Tim.3.15",
+      "cross_ref": "Eph.2.19-21",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 3:15 'church...pillar and foundation' and Eph 2:19-21 'built on the foundation...the whole building' both use architectural metaphors for church. **shared_metaphor** (tier 7, building/foundation imagery) + **theological_principle** (tier 6, church as God's structure)."
+    },
+    {
+      "anchor_ref": "1Tim.3.16",
+      "cross_ref": "Matt.4.11",
+      "primary_category": "christological_parallel",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 3:16 'seen by angels' and Matt 4:11 'angels came and took care of Jesus' both mention angels attending Christ. **christological_parallel** (tier 4, angels minister to Christ)."
+    },
+    {
+      "anchor_ref": "1Tim.3.16",
+      "cross_ref": "John.1.14",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 3:16 'Christ was revealed in a human body' and John 1:14 'the Word became flesh' both describe incarnation. **christological_parallel** (tier 4, Christ's incarnation) + **theological_principle** (tier 6, deity becoming human)."
+    },
+    {
+      "anchor_ref": "1Tim.3.16",
+      "cross_ref": "Rom.1.3-4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "christological_parallel",
+      "confidence": 93,
+      "reasoning": "1 Tim 3:16 hymn 'revealed in flesh...vindicated by Spirit...preached among nations' and Rom 1:3-4 'descended from David...declared to be the Son of God' share creedal/hymnic structure about Christ. **literary_parallel** (tier 3, similar credal formulas) + **christological_parallel** (tier 4, Christ's identity and work)."
+    },
+    {
+      "anchor_ref": "1Tim.3.16",
+      "cross_ref": "1Jn.4.2-3",
+      "primary_category": "theological_principle",
+      "secondary_category": "christological_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 3:16 'Christ was revealed in a human body' and 1 John 4:2-3 'Jesus Christ came in a real body' both affirm incarnation against false teaching. **theological_principle** (tier 6, Christ's true humanity) + **christological_parallel** (tier 4, incarnation doctrine)."
+    },
+    {
+      "anchor_ref": "1Tim.3.16",
+      "cross_ref": "1Jn.5.6",
+      "primary_category": "christological_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 3:16 'vindicated by the Spirit' and 1 John 5:6 'the Spirit...is truth' both connect Spirit to confirming Christ's identity. **christological_parallel** (tier 4, Spirit vindicates Christ) + **theological_principle** (tier 6, Spirit's testimony)."
+    },
+    {
+      "anchor_ref": "1Tim.4.1",
+      "cross_ref": "John.16.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "1 Tim 4:1 'the Holy Spirit tells us clearly' and John 16:13 'the Spirit...will tell you about the future' both describe Spirit's prophetic revelation. **theological_principle** (tier 6, Spirit reveals future)."
+    },
+    {
+      "anchor_ref": "1Tim.4.1",
+      "cross_ref": "2Tim.3.1",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 4:1 'in the last times some will...follow deceptive spirits' and 2 Tim 3:1 'in the last days there will be very difficult times' share Pastoral Epistles warnings about 'last times/days.' **literary_parallel** (tier 3, shared eschatological warnings) + **parallel_instruction** (tier 3, prepare for apostasy)."
+    },
+    {
+      "anchor_ref": "1Tim.4.1",
+      "cross_ref": "2Pet.3.3",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 4:1 'some will turn away from the true faith' and 2 Pet 3:3 'in the last days scoffers will come' both warn of future apostasy. **parallel_instruction** (tier 3, warnings about end times deception) + **theological_principle** (tier 6, eschatological apostasy)."
+    },
+    {
+      "anchor_ref": "1Tim.4.2",
+      "cross_ref": "Eph.4.19",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 4:2 'consciences are seared' and Eph 4:19 'lost all sensitivity' both describe hardened moral sense. **theological_principle** (tier 6, conscience corruption)."
+    },
+    {
+      "anchor_ref": "1Tim.4.3",
+      "cross_ref": "Gen.9.3",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 4:3 'God created foods to be received with thanks' alludes to Gen 9:3 'everything that lives and moves...will be food for you.' **allusion** (tier 7, references God's food provision) + **theological_principle** (tier 6, all food clean)."
+    },
+    {
+      "anchor_ref": "1Tim.4.3",
+      "cross_ref": "Rom.14.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 4:3 'God created foods to be received with thanks' and Rom 14:6 'those who eat...do so to honor the Lord, giving thanks to God' both affirm eating with thanksgiving. **parallel_instruction** (tier 3, receive food with gratitude) + **theological_principle** (tier 6, food freedom)."
+    },
+    {
+      "anchor_ref": "1Tim.4.3",
+      "cross_ref": "1Cor.10.30-31",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 4:3 'God created foods to be received with thanks' and 1 Cor 10:30-31 'If I give thanks...whatever you do, do it all for the glory of God' both emphasize thanksgiving for food. **theological_principle** (tier 6, grateful eating glorifies God)."
+    },
+    {
+      "anchor_ref": "1Tim.4.4",
+      "cross_ref": "Gen.1.31",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 4:4 'everything God created is good' alludes to Gen 1:31 'God saw all that he had made, and it was very good.' **allusion** (tier 7, echoes creation goodness) + **theological_principle** (tier 6, creation's goodness)."
+    },
+    {
+      "anchor_ref": "1Tim.4.6",
+      "cross_ref": "2Tim.3.15",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 4:6 'nourished on the words of faith and the good teaching' and 2 Tim 3:15 'from childhood you have known the sacred writings' share Pastoral Epistles emphasis on being formed by teaching. **literary_parallel** (tier 3, similar formation language) + **parallel_instruction** (tier 3, be grounded in truth)."
+    },
+    {
+      "anchor_ref": "1Tim.4.7",
+      "cross_ref": "1Tim.1.4",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 4:7 'do not waste time on godless myths' returns to 1:4 'myths and endless genealogies.' **elaboration** (tier 4, myths theme repeated) + **literary_parallel** (tier 3, repeated 'myths' vocabulary)."
+    },
+    {
+      "anchor_ref": "1Tim.4.7",
+      "cross_ref": "2Tim.2.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 4:7 'do not waste time on godless myths' and 2 Tim 2:16 'Avoid godless chatter' share Pastoral Epistles vocabulary ('godless') and similar warnings. **literary_parallel** (tier 3, shared terminology) + **parallel_instruction** (tier 3, avoid empty teaching)."
+    },
+    {
+      "anchor_ref": "1Tim.4.7",
+      "cross_ref": "Titus.1.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 93,
+      "reasoning": "1 Tim 4:7 'godless myths' and Titus 1:14 'Jewish myths' share Pastoral Epistles warnings against 'myths.' **literary_parallel** (tier 3, repeated vocabulary) + **parallel_instruction** (tier 3, reject myths)."
+    },
+    {
+      "anchor_ref": "1Tim.4.8",
+      "cross_ref": "1Tim.6.6",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 4:8 'training in godliness is helpful for everything' introduces godliness theme that 6:6 'godliness with contentment is itself great wealth' develops. **elaboration** (tier 4, godliness theme expanded) + **literary_parallel** (tier 3, repeated 'godliness' emphasis)."
+    },
+    {
+      "anchor_ref": "1Tim.4.9",
+      "cross_ref": "1Tim.1.15",
+      "primary_category": "literary_parallel",
+      "secondary_category": null,
+      "confidence": 93,
+      "reasoning": "1 Tim 4:9 'This is a trustworthy saying' and 1:15 'This is a trustworthy saying' use identical Pastoral Epistles formula introducing important truths. **literary_parallel** (tier 3, repeated 'trustworthy saying' formula)."
+    },
+    {
+      "anchor_ref": "1Tim.4.10",
+      "cross_ref": "1Tim.2.3-4",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 4:10 'Savior of all people' elaborates 2:4 'wants everyone to be saved.' **elaboration** (tier 4, universal salvation offer developed) + **theological_principle** (tier 6, God's universal saving intent)."
+    },
+    {
+      "anchor_ref": "1Tim.4.11",
+      "cross_ref": "1Tim.5.7",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "1 Tim 4:11 'Teach these things and insist that everyone learn them' and 5:7 'Give these instructions' share similar command structure. **elaboration** (tier 4, teaching commands throughout letter) + **literary_parallel** (tier 3, repeated instruction formula)."
+    },
+    {
+      "anchor_ref": "1Tim.4.11",
+      "cross_ref": "1Tim.6.2",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "1 Tim 4:11 'Teach these things' and 6:2 'Teach these things' use identical Pastoral Epistles instruction formula. **elaboration** (tier 4, teaching theme) + **literary_parallel** (tier 3, repeated command)."
+    },
+    {
+      "anchor_ref": "1Tim.4.12",
+      "cross_ref": "Titus.2.15",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 4:12 'Don't let anyone think less of you because you are young' and Titus 2:15 'Do not let anyone despise you' give similar instructions to young leaders. **parallel_instruction** (tier 3, similar leadership guidance) + **literary_parallel** (tier 3, Pastoral Epistles pattern)."
+    },
+    {
+      "anchor_ref": "1Tim.4.13",
+      "cross_ref": "1Tim.3.14",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 4:13 'until I get there' references 3:14 'I am coming to you soon.' **elaboration** (tier 4, Paul's travel plans mentioned)."
+    },
+    {
+      "anchor_ref": "1Tim.4.14",
+      "cross_ref": "2Tim.1.6",
+      "primary_category": "historical_reference",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 4:14 'when the elders...laid their hands on you' and 2 Tim 1:6 'when I laid my hands on you' both reference Timothy's ordination. **historical_reference** (tier 5, same event) + **parallel_instruction** (tier 3, use your gift)."
+    },
+    {
+      "anchor_ref": "1Tim.5.1",
+      "cross_ref": "Lev.19.32",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:1 'Never speak harshly to an older man' alludes to Lev 19:32 'Stand up in the presence of the aged...show respect for the elderly.' **allusion** (tier 7, echoes OT respect for elders) + **wisdom_principle** (tier 6, honor elderly)."
+    },
+    {
+      "anchor_ref": "1Tim.5.1",
+      "cross_ref": "Titus.2.2",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:1 'speak to him respectfully as...a father' and Titus 2:2 'Teach the older men' both address treatment of older men. **parallel_instruction** (tier 3, similar guidance about elders) + **literary_parallel** (tier 3, Pastoral Epistles pattern)."
+    },
+    {
+      "anchor_ref": "1Tim.5.1",
+      "cross_ref": "Titus.2.6",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:1 'Talk to younger men' and Titus 2:6 'encourage the young men' both address ministry to younger men. **parallel_instruction** (tier 3, similar age-appropriate guidance) + **literary_parallel** (tier 3, Pastoral Epistles structure)."
+    },
+    {
+      "anchor_ref": "1Tim.5.4",
+      "cross_ref": "Eph.6.2",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:4 'care for their own family' and Eph 6:2 'Honor your father and mother' both command family care. **parallel_instruction** (tier 3, same family responsibility) + **theological_principle** (tier 6, honoring parents)."
+    },
+    {
+      "anchor_ref": "1Tim.5.4",
+      "cross_ref": "1Tim.2.3",
+      "primary_category": "elaboration",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:4 'pleasing to God' echoes 2:3 'good and pleases God our Savior.' **elaboration** (tier 4, what pleases God theme) + **theological_principle** (tier 6, God-pleasing actions)."
+    },
+    {
+      "anchor_ref": "1Tim.5.5",
+      "cross_ref": "Luke.2.36-37",
+      "primary_category": "exemplification",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:5 'a true widow...spends much time in prayer' and Luke 2:36-37 Anna the prophetess 'never left the temple but...prayed' both describe widows devoted to prayer. **exemplification** (tier 5, Anna as example) + **allusion** (tier 7, echoes Anna's devotion)."
+    },
+    {
+      "anchor_ref": "1Tim.5.5",
+      "cross_ref": "1Pet.3.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:5 'widow...puts her hope in God' and 1 Pet 3:5 'holy women...put their hope in God' both emphasize godly women hoping in God. **parallel_instruction** (tier 3, similar spiritual character) + **wisdom_principle** (tier 6, trust God)."
+    },
+    {
+      "anchor_ref": "1Tim.5.6",
+      "cross_ref": "Luke.15.24",
+      "primary_category": "allusion",
+      "secondary_category": "contrast",
+      "confidence": 85,
+      "reasoning": "1 Tim 5:6 'widow who lives for pleasure is dead even while she lives' and Luke 15:24 'this son...was dead and is alive' use death/life language. **allusion** (tier 7, echoes spiritual death metaphor) + **contrast** (tier 3, spiritual death vs. life)."
+    },
+    {
+      "anchor_ref": "1Tim.5.6",
+      "cross_ref": "Jas.5.5",
+      "primary_category": "contrast",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:6 'widow who lives for pleasure' and Jas 5:5 'You have spent your years...in luxury and pleasure' both condemn pleasure-seeking. **contrast** (tier 3, godly vs. ungodly living) + **theological_principle** (tier 6, avoid self-indulgence)."
+    },
+    {
+      "anchor_ref": "1Tim.5.10",
+      "cross_ref": "Gen.18.3-5",
+      "primary_category": "allusion",
+      "secondary_category": "exemplification",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:10 'shown hospitality to strangers' alludes to Gen 18:3-5 where Abraham welcomes strangers (angels). **allusion** (tier 7, echoes OT hospitality) + **exemplification** (tier 5, Abraham as model)."
+    },
+    {
+      "anchor_ref": "1Tim.5.13",
+      "cross_ref": "2Thes.3.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:13 'spending their time...going from house to house...getting into other people's business' and 2 Thes 3:11 'some are...not really working but meddling' both condemn idleness and busybody behavior. **parallel_instruction** (tier 3, similar warnings) + **wisdom_principle** (tier 6, avoid idleness)."
+    },
+    {
+      "anchor_ref": "1Tim.5.14",
+      "cross_ref": "1Cor.7.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:14 'younger widows should marry' and 1 Cor 7:9 'if they cannot control themselves, they should marry' both recommend marriage. **parallel_instruction** (tier 3, similar guidance) + **wisdom_principle** (tier 6, marriage as remedy)."
+    },
+    {
+      "anchor_ref": "1Tim.5.15",
+      "cross_ref": "1Tim.1.19-20",
+      "primary_category": "elaboration",
+      "secondary_category": "exemplification",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:15 'some have already turned away to follow Satan' echoes 1:19-20 example of those who shipwrecked faith. **elaboration** (tier 4, apostasy theme) + **exemplification** (tier 5, negative examples)."
+    },
+    {
+      "anchor_ref": "1Tim.5.17",
+      "cross_ref": "Phil.2.29",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:17 'Elders who do their work well should be respected' and Phil 2:29 'Give him a warm welcome...honor people like him' both command honoring faithful workers. **parallel_instruction** (tier 3, honor leaders) + **wisdom_principle** (tier 6, respect faithful service)."
+    },
+    {
+      "anchor_ref": "1Tim.5.17",
+      "cross_ref": "1Thes.5.12",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:17 'Elders who do their work well should be respected' and 1 Thes 5:12 'Honor those who...work hard among you' both command respecting leaders. **parallel_instruction** (tier 3, same instruction) + **theological_principle** (tier 6, honor church leaders)."
+    },
+    {
+      "anchor_ref": "1Tim.5.18",
+      "cross_ref": "Deut.25.4",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_principle",
+      "confidence": 98,
+      "reasoning": "1 Tim 5:18 quotes 'You must not muzzle an ox' directly from Deut 25:4. **quotation** (tier 1, direct Scripture citation) + **wisdom_principle** (tier 6, workers deserve support)."
+    },
+    {
+      "anchor_ref": "1Tim.5.18",
+      "cross_ref": "Matt.10.10",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:18 'worker deserves wages' and Matt 10:10 'workers deserve to be fed' express same principle. **parallel_instruction** (tier 3, support ministers) + **theological_principle** (tier 6, workers merit support)."
+    },
+    {
+      "anchor_ref": "1Tim.5.18",
+      "cross_ref": "Luke.10.7",
+      "primary_category": "quotation",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 5:18 'worker deserves wages' likely quotes Luke 10:7 'the worker deserves his wages' - NT citing NT! **quotation** (tier 1, NT Scripture citation) + **parallel_instruction** (tier 3, support workers)."
+    },
+    {
+      "anchor_ref": "1Tim.5.18",
+      "cross_ref": "1Cor.9.9",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 5:18 'not muzzle an ox' and 1 Cor 9:9 'not muzzle an ox' both cite Deut 25:4 for same principle about supporting ministers. **parallel_instruction** (tier 3, same OT text applied same way) + **theological_principle** (tier 6, minister support)."
+    },
+    {
+      "anchor_ref": "1Tim.5.19",
+      "cross_ref": "Matt.18.16",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:19 'Do not listen to an accusation...unless it is confirmed by two or three witnesses' and Matt 18:16 'take one or two others...so that every charge may be established by the testimony of two or three witnesses' both require multiple witnesses. **parallel_instruction** (tier 3, same witness requirement) + **wisdom_principle** (tier 6, protect against false accusations)."
+    },
+    {
+      "anchor_ref": "1Tim.5.20",
+      "cross_ref": "Deut.13.11",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 87,
+      "reasoning": "1 Tim 5:20 'rebuke them in front of the whole church...as a strong warning to others' alludes to Deut 13:11 public discipline deterring others. **allusion** (tier 7, echoes OT public discipline) + **wisdom_principle** (tier 6, public correction deters sin)."
+    },
+    {
+      "anchor_ref": "1Tim.5.20",
+      "cross_ref": "Eph.5.11",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 5:20 'Those who are in sin should be reprimanded publicly' and Eph 5:11 'expose these deeds' both command confronting sin. **parallel_instruction** (tier 3, rebuke sin) + **theological_principle** (tier 6, church discipline)."
+    },
+    {
+      "anchor_ref": "1Tim.5.21",
+      "cross_ref": "1Tim.6.13",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:21 'I solemnly command you...before God and Christ Jesus and the chosen angels' and 6:13 'I command you before God...and before Christ Jesus' use similar solemn charge formula. **elaboration** (tier 4, solemn charges in letter) + **literary_parallel** (tier 3, repeated formula)."
+    },
+    {
+      "anchor_ref": "1Tim.5.22",
+      "cross_ref": "1Tim.4.14",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 5:22 'Never be in a hurry about appointing a church leader' and 4:14 reference to Timothy's ordination both address laying on of hands. **parallel_instruction** (tier 3, ordination guidance) + **wisdom_principle** (tier 6, careful selection)."
+    },
+    {
+      "anchor_ref": "1Tim.5.23",
+      "cross_ref": "1Tim.3.8",
+      "primary_category": "elaboration",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 5:23 'Don't drink only water' and 3:8 deacons 'not drink too much wine' both address wine use. **elaboration** (tier 4, wine/drinking theme in letter)."
+    },
+    {
+      "anchor_ref": "1Tim.5.24-25",
+      "cross_ref": "Rev.14.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 83,
+      "reasoning": "1 Tim 5:24-25 'sins of some people are obvious...good deeds of some people are obvious' and Rev 14:13 'their good deeds follow them' both discuss deeds being known. **theological_principle** (tier 6, deeds eventually revealed)."
+    },
+    {
+      "anchor_ref": "1Tim.6.1",
+      "cross_ref": "Eph.6.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:1 'All slaves should show full respect for their masters' and Eph 6:5 'Slaves, obey your earthly masters' give similar instructions to slaves. **parallel_instruction** (tier 3, same household code) + **theological_principle** (tier 6, slaves honor masters)."
+    },
+    {
+      "anchor_ref": "1Tim.6.1",
+      "cross_ref": "Titus.2.9-10",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 6:1 'slaves should show full respect for their masters' and Titus 2:9-10 'Slaves must...show themselves to be entirely trustworthy' share Pastoral Epistles instructions to slaves. **literary_parallel** (tier 3, shared household code) + **parallel_instruction** (tier 3, same guidance)."
+    },
+    {
+      "anchor_ref": "1Tim.6.2",
+      "cross_ref": "Phlm.1.16",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 6:2 'slaves with believing masters' and Phlm 16 'no longer as a slave...but as a beloved brother' both address Christian slaves and masters. **theological_principle** (tier 6, Christian brotherhood transforms slavery)."
+    },
+    {
+      "anchor_ref": "1Tim.6.3",
+      "cross_ref": "1Tim.1.3",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:3 'teach false doctrines and do not agree to the sound instruction' returns to 1:3 'stop those who teach false doctrines.' **elaboration** (tier 4, false teaching theme concluded) + **literary_parallel** (tier 3, repeated vocabulary)."
+    },
+    {
+      "anchor_ref": "1Tim.6.3",
+      "cross_ref": "1Tim.1.10",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:3 'sound instruction' echoes 1:10 'sound doctrine.' **elaboration** (tier 4, sound teaching theme throughout) + **literary_parallel** (tier 3, repeated 'sound' terminology)."
+    },
+    {
+      "anchor_ref": "1Tim.6.4",
+      "cross_ref": "2Tim.2.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:4 'unhealthy desire for arguing and quarreling' and 2 Tim 2:14 'Warn them not to quarrel about words' share Pastoral Epistles warnings against quarreling. **literary_parallel** (tier 3, shared terminology) + **parallel_instruction** (tier 3, avoid disputes)."
+    },
+    {
+      "anchor_ref": "1Tim.6.5",
+      "cross_ref": "2Tim.3.8",
+      "primary_category": "literary_parallel",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:5 'depraved minds' and 2 Tim 3:8 'people with depraved minds' use identical Pastoral Epistles phrase describing false teachers. **literary_parallel** (tier 3, shared vocabulary) + **contrast** (tier 3, corrupted vs. sound minds)."
+    },
+    {
+      "anchor_ref": "1Tim.6.5",
+      "cross_ref": "2Tim.4.4",
+      "primary_category": "literary_parallel",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:5 'deprived of the truth' and 2 Tim 4:4 'reject the truth' share Pastoral Epistles language about losing truth. **literary_parallel** (tier 3, shared vocabulary) + **contrast** (tier 3, truth vs. error)."
+    },
+    {
+      "anchor_ref": "1Tim.6.5",
+      "cross_ref": "Titus.1.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "contrast",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:5 'deprived of the truth' and Titus 1:14 'those who turn their backs on the truth' share Pastoral Epistles warnings about abandoning truth. **literary_parallel** (tier 3, shared theme) + **contrast** (tier 3, truth vs. falsehood)."
+    },
+    {
+      "anchor_ref": "1Tim.6.6",
+      "cross_ref": "Phil.4.11-12",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "theological_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:6 'godliness with contentment is itself great wealth' and Phil 4:11-12 'I have learned to be content whatever the circumstances' both teach contentment. **wisdom_principle** (tier 6, contentment principle) + **theological_principle** (tier 6, godliness plus contentment)."
+    },
+    {
+      "anchor_ref": "1Tim.6.6",
+      "cross_ref": "Heb.13.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:6 'godliness with contentment' and Heb 13:5 'be content with what you have' both command contentment. **parallel_instruction** (tier 3, same instruction) + **wisdom_principle** (tier 6, contentment principle)."
+    },
+    {
+      "anchor_ref": "1Tim.6.7",
+      "cross_ref": "Eccl.5.15",
+      "primary_category": "quotation",
+      "secondary_category": "wisdom_principle",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:7 'we brought nothing...we can take nothing' closely parallels Eccl 5:15 'As he came...naked he will return' - near quotation of wisdom. **quotation** (tier 1, near-citation of Ecclesiastes) + **wisdom_principle** (tier 6, life's brevity)."
+    },
+    {
+      "anchor_ref": "1Tim.6.7",
+      "cross_ref": "Job.1.21",
+      "primary_category": "allusion",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:7 'we brought nothing...we can take nothing' echoes Job 1:21 'Naked I came...naked I will depart.' **allusion** (tier 7, echoes Job's wisdom) + **wisdom_principle** (tier 6, earthly possessions temporary)."
+    },
+    {
+      "anchor_ref": "1Tim.6.8",
+      "cross_ref": "Pr.30.8",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:8 'if we have enough food and clothing, let us be content' echoes Prov 30:8 'give me neither poverty nor riches...feed me with the food I need.' **wisdom_principle** (tier 6, contentment with necessities) + **allusion** (tier 7, echoes Proverbs)."
+    },
+    {
+      "anchor_ref": "1Tim.6.8",
+      "cross_ref": "Heb.13.5",
+      "primary_category": "parallel_instruction",
+      "secondary_category": "wisdom_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:8 'let us be content' and Heb 13:5 'be content with what you have' give identical instruction. **parallel_instruction** (tier 3, same command) + **wisdom_principle** (tier 6, contentment)."
+    },
+    {
+      "anchor_ref": "1Tim.6.9",
+      "cross_ref": "Pr.23.4",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:9 'people who long to be rich' and Prov 23:4 'Don't wear yourself out trying to get rich' both warn against pursuing wealth. **wisdom_principle** (tier 6, danger of wealth pursuit) + **allusion** (tier 7, echoes Proverbs warning)."
+    },
+    {
+      "anchor_ref": "1Tim.6.9",
+      "cross_ref": "Pr.28.22",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "1 Tim 6:9 'people who long to be rich fall into...a trap' and Prov 28:22 'Greedy people try to get rich quick' both warn of wealth's dangers. **wisdom_principle** (tier 6, greed's trap) + **allusion** (tier 7, echoes Proverbs)."
+    },
+    {
+      "anchor_ref": "1Tim.6.11",
+      "cross_ref": "2Tim.2.22",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 6:11 'pursue righteousness and a godly life' and 2 Tim 2:22 'pursue righteous living...faith, love, and peace' use identical Pastoral Epistles 'pursue' virtue formula. **literary_parallel** (tier 3, shared structure) + **parallel_instruction** (tier 3, same command)."
+    },
+    {
+      "anchor_ref": "1Tim.6.12",
+      "cross_ref": "1Cor.9.25-26",
+      "primary_category": "shared_metaphor",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:12 'Fight the good fight' and 1 Cor 9:25-26 'run to win...I fight' both use athletic/military metaphors for Christian life. **shared_metaphor** (tier 7, fighting/athletic imagery) + **theological_principle** (tier 6, spiritual warfare)."
+    },
+    {
+      "anchor_ref": "1Tim.6.12",
+      "cross_ref": "2Tim.4.7",
+      "primary_category": "literary_parallel",
+      "secondary_category": "theological_principle",
+      "confidence": 95,
+      "reasoning": "1 Tim 6:12 'Fight the good fight' and 2 Tim 4:7 'I have fought the good fight' use identical Pastoral Epistles phrase. **literary_parallel** (tier 3, exact shared expression) + **theological_principle** (tier 6, faithful endurance)."
+    },
+    {
+      "anchor_ref": "1Tim.6.13",
+      "cross_ref": "John.18.33-37",
+      "primary_category": "christological_parallel",
+      "secondary_category": "exemplification",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:13 'Christ Jesus, who gave a good testimony before Pontius Pilate' and John 18:33-37 Jesus' trial before Pilate both reference Jesus' witness. **christological_parallel** (tier 4, Christ's testimony) + **exemplification** (tier 5, Jesus as example of witness)."
+    },
+    {
+      "anchor_ref": "1Tim.6.14",
+      "cross_ref": "1Thes.3.13",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 6:14 'until our Lord Jesus Christ comes again' and 1 Thes 3:13 'when our Lord Jesus comes' both reference Christ's return. **theological_principle** (tier 6, second coming hope)."
+    },
+    {
+      "anchor_ref": "1Tim.6.15",
+      "cross_ref": "Deut.10.17",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:15 'King of all kings and Lord of all lords' alludes to Deut 10:17 'LORD your God is the God of gods and Lord of lords.' **allusion** (tier 7, echoes OT title) + **theological_principle** (tier 6, God's sovereignty)."
+    },
+    {
+      "anchor_ref": "1Tim.6.15",
+      "cross_ref": "1Tim.1.17",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 93,
+      "reasoning": "1 Tim 6:15 'blessed and only Sovereign...King of kings' elaborates 1:17 'King eternal, immortal, invisible.' **elaboration** (tier 4, doxology theme returns) + **literary_parallel** (tier 3, both doxologies)."
+    },
+    {
+      "anchor_ref": "1Tim.6.15",
+      "cross_ref": "Rev.17.14",
+      "primary_category": "theological_principle",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "1 Tim 6:15 'King of all kings and Lord of all lords' and Rev 17:14 'Lord of all lords and King of all kings' share identical divine title. **theological_principle** (tier 6, Christ's supreme lordship) + **allusion** (tier 7, echoes Revelation)."
+    },
+    {
+      "anchor_ref": "1Tim.6.16",
+      "cross_ref": "Exod.33.20",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:16 'whom no human being has ever seen' alludes to Exod 33:20 'you may not look directly at my face, for no one may see me and live.' **allusion** (tier 7, echoes God's invisibility) + **theological_principle** (tier 6, God's transcendence)."
+    },
+    {
+      "anchor_ref": "1Tim.6.16",
+      "cross_ref": "Ps.104.2",
+      "primary_category": "allusion",
+      "secondary_category": "theological_principle",
+      "confidence": 88,
+      "reasoning": "1 Tim 6:16 'who lives in light so brilliant that no human can approach him' alludes to Ps 104:2 'clothed with light.' **allusion** (tier 7, echoes Psalm imagery) + **theological_principle** (tier 6, God's unapproachable glory)."
+    },
+    {
+      "anchor_ref": "1Tim.6.16",
+      "cross_ref": "John.1.18",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 88,
+      "reasoning": "1 Tim 6:16 'whom no human being has ever seen' and John 1:18 'No one has ever seen God' express identical truth. **theological_principle** (tier 6, God's invisibility)."
+    },
+    {
+      "anchor_ref": "1Tim.6.16",
+      "cross_ref": "John.5.26",
+      "primary_category": "theological_principle",
+      "secondary_category": null,
+      "confidence": 85,
+      "reasoning": "1 Tim 6:16 'He alone can never die' and John 5:26 'the Father has life in himself' both describe God's eternal life. **theological_principle** (tier 6, God's immortality)."
+    },
+    {
+      "anchor_ref": "1Tim.6.16",
+      "cross_ref": "1Tim.1.17",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:16 'He alone can never die...lives in light...no human has ever seen' elaborates 1:17 'immortal, invisible.' **elaboration** (tier 4, divine attributes expanded) + **literary_parallel** (tier 3, both doxologies)."
+    },
+    {
+      "anchor_ref": "1Tim.6.17",
+      "cross_ref": "Luke.12.20-21",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "allusion",
+      "confidence": 88,
+      "reasoning": "1 Tim 6:17 'not to trust in their money, which is so unreliable' and Luke 12:20-21 rich fool parable both warn against trusting wealth. **wisdom_principle** (tier 6, wealth's unreliability) + **allusion** (tier 7, echoes Jesus' teaching)."
+    },
+    {
+      "anchor_ref": "1Tim.6.19",
+      "cross_ref": "Matt.6.20",
+      "primary_category": "wisdom_principle",
+      "secondary_category": "allusion",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:19 'storing up their treasure as a good foundation for the future' and Matt 6:20 'store your treasures in heaven' both teach eternal investment. **wisdom_principle** (tier 6, eternal perspective) + **allusion** (tier 7, echoes Jesus' teaching)."
+    },
+    {
+      "anchor_ref": "1Tim.6.19",
+      "cross_ref": "1Tim.6.12",
+      "primary_category": "elaboration",
+      "secondary_category": "literary_parallel",
+      "confidence": 88,
+      "reasoning": "1 Tim 6:19 'take hold of the life that is truly life' echoes 6:12 'take hold of the eternal life.' **elaboration** (tier 4, 'take hold' theme) + **literary_parallel** (tier 3, repeated phrase)."
+    },
+    {
+      "anchor_ref": "1Tim.6.20",
+      "cross_ref": "2Tim.1.14",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 95,
+      "reasoning": "1 Tim 6:20 'guard what God has entrusted to you' and 2 Tim 1:14 'guard the precious truth that has been entrusted to you' use identical Pastoral Epistles 'guard what is entrusted' formula. **literary_parallel** (tier 3, shared phrase) + **parallel_instruction** (tier 3, protect the deposit)."
+    },
+    {
+      "anchor_ref": "1Tim.6.20",
+      "cross_ref": "2Tim.2.16",
+      "primary_category": "literary_parallel",
+      "secondary_category": "parallel_instruction",
+      "confidence": 92,
+      "reasoning": "1 Tim 6:20 'Avoid godless, foolish discussions' and 2 Tim 2:16 'Avoid godless chatter' use identical Pastoral Epistles warning with 'avoid godless.' **literary_parallel** (tier 3, shared vocabulary) + **parallel_instruction** (tier 3, shun empty talk)."
+    },
+    {
+      "anchor_ref": "1Tim.6.21",
+      "cross_ref": "2Tim.2.18",
+      "primary_category": "literary_parallel",
+      "secondary_category": "exemplification",
+      "confidence": 90,
+      "reasoning": "1 Tim 6:21 'some people have wandered from the faith' and 2 Tim 2:18 'wandered from the truth' share Pastoral Epistles language about apostasy. **literary_parallel** (tier 3, shared 'wandered from' vocabulary) + **exemplification** (tier 5, examples of apostates)."
+    }
+  ]
+}

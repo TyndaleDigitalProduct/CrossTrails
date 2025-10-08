@@ -29,10 +29,13 @@ export const metadata: Metadata = {
     index: true,
     follow: true,
   },
-  viewport: {
-    width: 'device-width',
-    initialScale: 1,
-  },
+}
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 }
 
 export default function RootLayout({
@@ -62,9 +65,6 @@ export default function RootLayout({
 
         {/* Theme color for browsers */}
         <meta name="theme-color" content="#f26b3c" />
-
-        {/* Prevent zoom on mobile inputs */}
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
       </head>
       <body
         className={`${inter.className} selection-primary antialiased`}

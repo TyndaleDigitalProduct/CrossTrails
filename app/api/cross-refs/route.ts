@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { CrossReference, CrossRefsAPIResponse, APIError } from '@/lib/types'
+import { getCrossReferenceConnection } from '@/lib/mcp-tools/getCrossReferenceConnection'
 
 export async function GET(request: NextRequest) {
   const searchParams = request.nextUrl.searchParams
@@ -71,151 +72,58 @@ export async function GET(request: NextRequest) {
 }
 
 async function getCrossReferencesForVerse(verseId: string, minStrength: number): Promise<CrossReference[]> {
-  // For demo purposes, return mock cross-references for Matthew 2 verses
-  // In production, this would load from the processed cross-reference data
-  const demoCrossRefs: Record<string, CrossReference[]> = {
-    'Matthew.2.1': [
-      {
-        reference: 'Luke.1.5',
-        display_ref: 'Luke 1:5',
-        text: 'When Herod was king of Judea, there was a Jewish priest named Zechariah.',
+  try {
+    // Use MCP tools to get real cross-reference data from JSON files
+    const mcpResponse = await getCrossReferenceConnection({
+      anchor_verse: verseId,
+      candidate_refs: [], // Let MCP tools find all available references
+      min_strength: minStrength
+    })
+
+    // Transform MCP response to CrossReference format
+    const crossRefs: CrossReference[] = mcpResponse.connections.map(conn => {
+      // Parse reference to get book, chapter, verse
+      const refParts = conn.reference.split('.')
+      const book = refParts[0]
+      let chapter = 1
+      let verse = 1
+
+      if (refParts.length >= 2) {
+        chapter = parseInt(refParts[1]) || 1
+      }
+      if (refParts.length >= 3) {
+        verse = parseInt(refParts[2]) || 1
+      }
+
+      // Create display reference (e.g., "Matthew 2:1")
+      const displayRef = `${book} ${chapter}:${verse}`
+
+      return {
+        reference: conn.reference,
+        display_ref: displayRef,
+        text: '', // Could be populated from Bible API if needed
         connection: {
-          categories: ['historical_context', 'chronology'],
-          strength: 0.85,
-          type: 'historical',
-          explanation: 'Both passages reference the reign of King Herod as historical context'
+          categories: conn.categories,
+          strength: conn.strength,
+          type: conn.type,
+          explanation: conn.explanation
         },
         context: {
-          book: 'Luke',
-          chapter: 1,
-          verse: 5
-        }
-      },
-      {
-        reference: 'Luke.2.4-7',
-        display_ref: 'Luke 2:4-7',
-        text: 'And because Joseph was a descendant of King David, he had to go to Bethlehem in Judea...',
-        connection: {
-          categories: ['birth_narrative', 'location'],
-          strength: 0.92,
-          type: 'parallel',
-          explanation: 'Both passages describe Jesus being born in Bethlehem'
-        },
-        context: {
-          book: 'Luke',
-          chapter: 2,
-          verse: 4
+          book,
+          chapter,
+          verse
         }
       }
-    ],
-    'Matthew.2.2': [
-      {
-        reference: 'Num.24.17',
-        display_ref: 'Num 24:17',
-        text: 'I see him, but not here and now. I perceive him, but far in the distant future. A star will rise from Jacob; a scepter will emerge from Israel.',
-        connection: {
-          categories: ['prophecy', 'messianic', 'star'],
-          strength: 0.88,
-          type: 'fulfillment',
-          explanation: 'Prophecy of a star rising from Jacob, fulfilled in the star that led the wise men'
-        },
-        context: {
-          book: 'Numbers',
-          chapter: 24,
-          verse: 17
-        }
-      },
-      {
-        reference: 'Jer.23.5',
-        display_ref: 'Jer 23:5',
-        text: '"For the time is coming," says the Lord, "when I will raise up a righteous descendant from King David\'s line."',
-        connection: {
-          categories: ['messianic', 'kingship'],
-          strength: 0.82,
-          type: 'fulfillment',
-          explanation: 'Prophecy of the coming king that the wise men came to worship'
-        },
-        context: {
-          book: 'Jeremiah',
-          chapter: 23,
-          verse: 5
-        }
-      },
-      {
-        reference: 'Matt.2.9',
-        display_ref: 'Matt 2:9',
-        text: 'After this interview the wise men went their way. And the star they had seen in the east guided them to Bethlehem.',
-        connection: {
-          categories: ['narrative_continuation'],
-          strength: 0.95,
-          type: 'parallel',
-          explanation: 'Direct continuation of the star narrative'
-        },
-        context: {
-          book: 'Matthew',
-          chapter: 2,
-          verse: 9
-        }
-      },
-      {
-        reference: 'Rev.22.16',
-        display_ref: 'Rev 22:16',
-        text: '"I, Jesus, have sent my angel to give you this message for the churches. I am both the source of David and the heir to his throne. I am the bright morning star."',
-        connection: {
-          categories: ['messianic', 'star', 'identity'],
-          strength: 0.78,
-          type: 'thematic',
-          explanation: 'Jesus identifies himself as the bright morning star'
-        },
-        context: {
-          book: 'Revelation',
-          chapter: 22,
-          verse: 16
-        }
-      }
-    ],
-    'Matthew.2.5': [
-      {
-        reference: 'John.7.42',
-        display_ref: 'John 7:42',
-        text: 'For the Scriptures clearly state that the Messiah will be born of the royal line of David, in Bethlehem, the village where King David was born.',
-        connection: {
-          categories: ['prophecy', 'location', 'messianic'],
-          strength: 0.90,
-          type: 'parallel',
-          explanation: 'Both passages reference the prophecy that the Messiah would be born in Bethlehem'
-        },
-        context: {
-          book: 'John',
-          chapter: 7,
-          verse: 42
-        }
-      }
-    ],
-    'Matthew.2.6': [
-      {
-        reference: 'Mic.5.2',
-        display_ref: 'Mic 5:2',
-        text: 'But you, O Bethlehem Ephrathah, are only a small village among all the people of Judah. Yet a ruler of Israel, whose origins are in the distant past, will come from you on my behalf.',
-        connection: {
-          categories: ['prophecy', 'direct_quotation'],
-          strength: 0.98,
-          type: 'quotation',
-          explanation: 'Matthew 2:6 is a direct quotation from Micah 5:2'
-        },
-        context: {
-          book: 'Micah',
-          chapter: 5,
-          verse: 2
-        }
-      }
-    ]
+    })
+
+    return crossRefs
+
+  } catch (error) {
+    console.error('Error getting cross-references from MCP tools:', error)
+    
+    // Fallback to empty array if real data fails
+    return []
   }
-
-  const crossRefs = demoCrossRefs[verseId] || []
-
-  // Filter by minimum strength
-  return crossRefs.filter(ref => ref.connection.strength >= minStrength)
 }
 
 function generateRequestId(): string {

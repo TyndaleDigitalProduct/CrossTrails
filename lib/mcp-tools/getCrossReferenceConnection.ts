@@ -1,4 +1,17 @@
-import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, ConnectionType } from '@/lib/types'
+import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, CrossReferenceCategory } from '@/lib/types'
+import { CrossReferenceDataAccess } from '@/lib/data-access/CrossReferenceDataAccess'
+import { VercelBlobDataSource } from '@/lib/data-access/VercelBlobDataSource'
+import { MockDataSource } from '@/lib/data-access/MockDataSource'
+
+/**
+ * Create a data access instance with appropriate sources
+ */
+async function createDataAccess(): Promise<CrossReferenceDataAccess> {
+  const blobSource = new VercelBlobDataSource()
+  // const localSource = new LocalFileDataSource('data/crefs_json')
+  const mockSource = new MockDataSource()
+  return new CrossReferenceDataAccess([blobSource, mockSource])
+}
 
 /**
  * MCP Tool: Get Cross-Reference Connection
@@ -10,29 +23,48 @@ export async function getCrossReferenceConnection(
   const { anchor_verse, candidate_refs, min_strength = 0.5 } = request
 
   try {
-    // Load cross-reference data (in production, this would come from Vercel Blob or processed JSON)
-    const crossRefData = await loadCrossReferenceData()
-
-    // Find connections for the anchor verse
-    const anchorData = crossRefData[anchor_verse]
+    // console.log('MCP Tool: getCrossReferenceConnection called with:', { anchor_verse, candidate_refs, min_strength })
+    
+    // Load cross-reference data using the data access layer
+    const dataAccess = await createDataAccess()
+    
+    // Get data for the anchor verse
+    const anchorData = await dataAccess.getVerseData(anchor_verse)
+    // console.log('MCP Tool: anchorData result:', anchorData)
+    
     if (!anchorData) {
+      // console.log('MCP Tool: No anchor data found, returning empty connections')
       return { connections: [] }
     }
 
     const connections = []
 
-    for (const candidateRef of candidate_refs) {
-      // Find if there's a connection between anchor and candidate
-      const connection = anchorData.cross_references.find(
+    // If no candidate_refs provided, use all cross-references from the anchor data
+    const refsToProcess = candidate_refs.length > 0 
+      ? candidate_refs 
+      : anchorData.cross_references.map((ref: any) => ref.bref)
+
+    // console.log('MCP Tool: Processing refs:', refsToProcess)
+
+    for (const candidateRef of refsToProcess) {
+      // Find the connection data for this reference
+      let connection = anchorData.cross_references.find(
         (ref: any) => normalizeReference(ref.bref) === normalizeReference(candidateRef)
       )
 
+      // If we're using all refs from anchor data, the connection IS the ref itself
+      if (!connection && candidate_refs.length === 0) {
+        connection = anchorData.cross_references.find(
+          (ref: any) => ref.bref === candidateRef
+        )
+      }
+
       if (connection && connection.strength >= min_strength) {
         connections.push({
-          reference: candidateRef,
+          reference: connection.bref || candidateRef,
           strength: connection.strength,
           categories: connection.categories || [],
-          type: connection.connection_type as ConnectionType,
+          type: connection.connection_type as CrossReferenceCategory,
           explanation: connection.explanation_seed || '',
           metadata: {
             thematic_overlap: calculateThematicOverlap(anchor_verse, candidateRef),
@@ -54,88 +86,9 @@ export async function getCrossReferenceConnection(
   }
 }
 
-async function loadCrossReferenceData(): Promise<Record<string, any>> {
-  // For demo purposes, return mock data
-  // In production, this would load from Vercel Blob storage or processed JSON files
-  return {
-    'Matthew.2.1': {
-      refs: 'Matthew.2.1',
-      cross_references: [
-        {
-          bref: 'Luke.1.5',
-          label: 'Luke 1:5',
-          categories: ['historical_context', 'chronology'],
-          strength: 0.85,
-          connection_type: 'historical',
-          explanation_seed: 'Both passages reference the reign of King Herod as historical context'
-        },
-        {
-          bref: 'Luke.2.4-7',
-          label: 'Luke 2:4-7',
-          categories: ['birth_narrative', 'location'],
-          strength: 0.92,
-          connection_type: 'parallel',
-          explanation_seed: 'Both passages describe Jesus being born in Bethlehem'
-        }
-      ]
-    },
-    'Matthew.2.2': {
-      refs: 'Matthew.2.2',
-      cross_references: [
-        {
-          bref: 'Num.24.17',
-          label: 'Num 24:17',
-          categories: ['prophecy', 'messianic', 'star'],
-          strength: 0.88,
-          connection_type: 'fulfillment',
-          explanation_seed: 'Prophecy of a star rising from Jacob, fulfilled in the star that led the wise men'
-        },
-        {
-          bref: 'Jer.23.5',
-          label: 'Jer 23:5',
-          categories: ['messianic', 'kingship'],
-          strength: 0.82,
-          connection_type: 'fulfillment',
-          explanation_seed: 'Prophecy of the coming king that the wise men came to worship'
-        },
-        {
-          bref: 'Rev.22.16',
-          label: 'Rev 22:16',
-          categories: ['messianic', 'star', 'identity'],
-          strength: 0.78,
-          connection_type: 'thematic',
-          explanation_seed: 'Jesus identifies himself as the bright morning star'
-        }
-      ]
-    },
-    'Matthew.2.5': {
-      refs: 'Matthew.2.5',
-      cross_references: [
-        {
-          bref: 'John.7.42',
-          label: 'John 7:42',
-          categories: ['prophecy', 'location', 'messianic'],
-          strength: 0.90,
-          connection_type: 'parallel',
-          explanation_seed: 'Both passages reference the prophecy that the Messiah would be born in Bethlehem'
-        }
-      ]
-    },
-    'Matthew.2.6': {
-      refs: 'Matthew.2.6',
-      cross_references: [
-        {
-          bref: 'Mic.5.2',
-          label: 'Mic 5:2',
-          categories: ['prophecy', 'direct_quotation'],
-          strength: 0.98,
-          connection_type: 'quotation',
-          explanation_seed: 'Matthew 2:6 is a direct quotation from Micah 5:2'
-        }
-      ]
-    }
-  }
-}
+
+
+
 
 function normalizeReference(ref: string): string {
   // Convert various reference formats to standard format

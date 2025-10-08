@@ -1,4 +1,5 @@
-import { VerseContextRequest, VerseContextResponse } from '@/lib/types'
+import { VerseContextRequest, VerseContextResponse, BibleVerse } from '@/lib/types'
+import nltClient from '@/lib/bible-api/nltClient'
 
 /**
  * MCP Tool: Get Verse Context
@@ -38,42 +39,29 @@ export async function getVerseContext(
   }
 }
 
-async function fetchVerse(reference: string) {
+async function fetchVerse(reference: string): Promise<BibleVerse | null> {
   // Parse reference like "John.3.16"
   const parts = reference.split('.')
   if (parts.length !== 3) {
     throw new Error(`Invalid reference format: ${reference}`)
   }
 
-  const [book, chapter, verse] = parts
-
-  // For demo, return mock data for Matthew 2
-  // In production, this would call the NLT.to API or use cached NLT data
-  if (book === 'Matthew' && chapter === '2') {
-    const matthewVerses = getMatthew2Verses()
-    const targetVerse = matthewVerses.find(v => v.verse_number === parseInt(verse))
-
-    if (targetVerse) {
-      return {
-        verse_number: targetVerse.verse_number,
-        verse_id: reference,
-        text: targetVerse.text,
-        book: 'Matthew',
-        chapter: 2,
-        verse: targetVerse.verse_number
-      }
+  try {
+    // Use the NLT client to fetch the verse
+    const result = await nltClient.getVersesByReference(reference)
+    
+    // Return the first verse from the result (should be the exact match)
+    if (result.verses && result.verses.length > 0) {
+      return result.verses[0]
     }
-  }
-
-  // For other references, return placeholder
-  // TODO: Implement actual NLT.to API call or NLT JSON lookup
-  return {
-    verse_number: parseInt(verse),
-    verse_id: reference,
-    text: `[${book} ${chapter}:${verse}] - Implement NLT.to API integration`,
-    book,
-    chapter: parseInt(chapter),
-    verse: parseInt(verse)
+    
+    return null
+  } catch (error) {
+    console.error(`Failed to fetch verse ${reference}:`, error)
+    
+    // Return null instead of throwing to allow graceful handling
+    // The caller can decide whether to continue with other verses or fail
+    return null
   }
 }
 
@@ -81,76 +69,76 @@ async function fetchSurroundingVerses(reference: string, range: number) {
   const parts = reference.split('.')
   const [book, chapter, verse] = parts
   const verseNum = parseInt(verse)
+  const chapterNum = parseInt(chapter)
 
   const context = []
 
-  // Fetch verses before
-  for (let i = Math.max(1, verseNum - range); i < verseNum; i++) {
-    const contextRef = `${book}.${chapter}.${i}`
-    const contextVerse = await fetchVerse(contextRef)
-    if (contextVerse) {
-      context.push({
-        reference: contextRef,
-        text: contextVerse.text,
-        position: 'before' as const
-      })
-    }
-  }
-
-  // Fetch verses after
-  for (let i = verseNum + 1; i <= verseNum + range; i++) {
-    const contextRef = `${book}.${chapter}.${i}`
-    try {
-      const contextVerse = await fetchVerse(contextRef)
-      if (contextVerse) {
-        context.push({
-          reference: contextRef,
-          text: contextVerse.text,
-          position: 'after' as const
-        })
+  try {
+    // More efficient: fetch the entire chapter and extract the needed verses
+    const chapterResult = await nltClient.getVersesByChapter(book, chapterNum)
+    
+    if (chapterResult.verses && chapterResult.verses.length > 0) {
+      // Find verses before the target verse
+      for (let i = Math.max(1, verseNum - range); i < verseNum; i++) {
+        const contextVerse = chapterResult.verses.find(v => v.verse_number === i)
+        if (contextVerse) {
+          context.push({
+            reference: `${book}.${chapter}.${i}`,
+            text: contextVerse.text,
+            position: 'before' as const
+          })
+        }
       }
-    } catch {
-      // Stop if we hit the end of the chapter
-      break
+
+      // Find verses after the target verse
+      for (let i = verseNum + 1; i <= verseNum + range; i++) {
+        const contextVerse = chapterResult.verses.find(v => v.verse_number === i)
+        if (contextVerse) {
+          context.push({
+            reference: `${book}.${chapter}.${i}`,
+            text: contextVerse.text,
+            position: 'after' as const
+          })
+        }
+      }
+    }
+  } catch (error) {
+    console.error(`Failed to fetch surrounding verses for ${reference}:`, error)
+    // If chapter fetch fails, try individual verse fetches as fallback
+    try {
+      // Fetch verses before
+      for (let i = Math.max(1, verseNum - range); i < verseNum; i++) {
+        const contextRef = `${book}.${chapter}.${i}`
+        const contextVerse = await fetchVerse(contextRef)
+        if (contextVerse) {
+          context.push({
+            reference: contextRef,
+            text: contextVerse.text,
+            position: 'before' as const
+          })
+        }
+      }
+
+      // Fetch verses after
+      for (let i = verseNum + 1; i <= verseNum + range; i++) {
+        const contextRef = `${book}.${chapter}.${i}`
+        const contextVerse = await fetchVerse(contextRef)
+        if (contextVerse) {
+          context.push({
+            reference: contextRef,
+            text: contextVerse.text,
+            position: 'after' as const
+          })
+        } else {
+          // If we can't fetch a verse, assume we've reached the end of the chapter
+          break
+        }
+      }
+    } catch (fallbackError) {
+      console.error(`Fallback verse fetch also failed for ${reference}:`, fallbackError)
     }
   }
 
   return context
 }
 
-function getMatthew2Verses() {
-  return [
-    {
-      verse_number: 1,
-      text: 'Jesus was born in Bethlehem in Judea, during the reign of King Herod. About that time some wise men from eastern lands arrived in Jerusalem, asking,'
-    },
-    {
-      verse_number: 2,
-      text: '"Where is the newborn king of the Jews? We saw his star as it rose, and we have come to worship him."'
-    },
-    {
-      verse_number: 3,
-      text: 'King Herod was deeply disturbed when he heard this, as was everyone in Jerusalem.'
-    },
-    {
-      verse_number: 4,
-      text: 'He called a meeting of the leading priests and teachers of religious law and asked, "Where is the Messiah supposed to be born?"'
-    },
-    {
-      verse_number: 5,
-      text: '"In Bethlehem in Judea," they said, "for this is what the prophet wrote:'
-    },
-    {
-      verse_number: 6,
-      text: '"And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah, for a ruler will come from you who will be the shepherd for my people Israel."'
-    },
-    {
-      verse_number: 7,
-      text: 'Then Herod called for a private meeting with the wise men, and he learned from them the time when the star first appeared.'
-    },
-    {
-      verse_number: 8,
-      text: 'Then he told them, "Go to Bethlehem and search carefully for the child. And when you find him, come back and tell me so that I can go and worship him, too!"'
-    }
-  ]
-}
