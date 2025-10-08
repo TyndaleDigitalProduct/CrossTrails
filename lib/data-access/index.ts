@@ -1,152 +1,105 @@
-import { CrossReferenceDataAccess, type CrossReferenceDataSource } from './CrossReferenceDataAccess'
-import { LocalFileDataSource } from './LocalFileDataSource'
+import { CrossReferenceDataAccess } from './CrossReferenceDataAccess'
 import { VercelBlobDataSource } from './VercelBlobDataSource'
+import { LocalFileDataSource } from './LocalFileDataSource'
 import { MockDataSource } from './MockDataSource'
+import { isBlobConfigured } from '@/lib/utils/blob'
 
-export { CrossReferenceDataAccess, type CrossReferenceDataSource }
-export { LocalFileDataSource }
-export { VercelBlobDataSource }
-export { MockDataSource }
-
-/**
- * Configuration for cross-reference data access
- */
-export interface DataAccessConfig {
-  // Data source priority (will try in order)
-  enableLocalFiles?: boolean
-  enableVercelBlob?: boolean
-  enableMockData?: boolean
-  
-  // Paths and settings
-  localDataPath?: string
-  vercelBlobToken?: string
-  vercelBlobBaseUrl?: string
-  
-  // Cache settings
-  cacheEnabled?: boolean
-  cacheExpiryMs?: number
-}
+// Global instance for singleton pattern
+let globalCrossReferenceDataAccess: CrossReferenceDataAccess | null = null
 
 /**
- * Factory for creating configured data access layer
+ * Factory class for creating CrossReferenceDataAccess instances
+ * with appropriate data sources based on environment
  */
 export class CrossReferenceDataAccessFactory {
   /**
-   * Create a data access layer with automatic configuration
-   * Will detect available data sources and configure them appropriately
+   * Create data access instance for production environment
+   * Priority: Vercel Blob → Mock Data
    */
-  static createDefault(): CrossReferenceDataAccess {
-    const config: DataAccessConfig = {
-      enableLocalFiles: true,
-      enableVercelBlob: true,
-      enableMockData: true, // Always enable as fallback
-      localDataPath: 'data/crefs_json'
+  static createForProduction(): CrossReferenceDataAccess {
+    const sources = []
+    
+    // First priority: Vercel Blob (if configured)
+    if (isBlobConfigured()) {
+      sources.push(new VercelBlobDataSource())
     }
     
-    return this.create(config)
+    // Fallback: Mock data
+    sources.push(new MockDataSource())
+    
+    return new CrossReferenceDataAccess(sources)
   }
 
   /**
-   * Create a data access layer for production
-   * Prioritizes Vercel Blob, falls back to mock data
+   * Create data access instance for development environment  
+   * Priority: Vercel Blob → Local Files → Mock Data
    */
-  static createProduction(): CrossReferenceDataAccess {
-    const config: DataAccessConfig = {
-      enableLocalFiles: false, // Not available in production
-      enableVercelBlob: true,
-      enableMockData: true, // Fallback for missing data
+  static createForDevelopment(): CrossReferenceDataAccess {
+    const sources = []
+    
+    // First priority: Vercel Blob (if configured)
+    if (isBlobConfigured()) {
+      sources.push(new VercelBlobDataSource())
     }
     
-    return this.create(config)
+    // Second priority: Local files (for development)
+    sources.push(new LocalFileDataSource('data/crefs_json'))
+    
+    // Fallback: Mock data
+    sources.push(new MockDataSource())
+    
+    return new CrossReferenceDataAccess(sources)
   }
 
   /**
-   * Create a data access layer for development
-   * Prioritizes local files for easier development
+   * Create data access instance for testing environment
+   * Uses only mock data for consistent test results
    */
-  static createDevelopment(): CrossReferenceDataAccess {
-    const config: DataAccessConfig = {
-      enableLocalFiles: true,
-      enableVercelBlob: false, // Might not be configured in dev
-      enableMockData: true,
-      localDataPath: 'data/crefs_json'
-    }
-    
-    return this.create(config)
+  static createForTesting(): CrossReferenceDataAccess {
+    return new CrossReferenceDataAccess([new MockDataSource()])
   }
 
   /**
-   * Create a data access layer for testing
-   * Uses only mock data for predictable test results
+   * Auto-configure based on environment
    */
-  static createTesting(): CrossReferenceDataAccess {
-    const config: DataAccessConfig = {
-      enableLocalFiles: false,
-      enableVercelBlob: false,
-      enableMockData: true,
-    }
+  static createAuto(): CrossReferenceDataAccess {
+    const isProduction = process.env.NODE_ENV === 'production'
+    const isDevelopment = process.env.NODE_ENV === 'development'
+    const isTesting = process.env.NODE_ENV === 'test' || process.env.JEST_WORKER_ID
     
-    return this.create(config)
-  }
-
-  /**
-   * Create a data access layer with custom configuration
-   */
-  static create(config: DataAccessConfig): CrossReferenceDataAccess {
-    const dataSources: CrossReferenceDataSource[] = []
-
-    // Add data sources in priority order
-    
-    // 1. Local files (highest priority in development)
-    if (config.enableLocalFiles) {
-      dataSources.push(new LocalFileDataSource(config.localDataPath))
-    }
-
-    // 2. Vercel Blob (highest priority in production)
-    if (config.enableVercelBlob) {
-      dataSources.push(new VercelBlobDataSource(
-        config.vercelBlobToken,
-        config.vercelBlobBaseUrl
-      ))
-    }
-
-    // 3. Mock data (lowest priority, but always reliable)
-    if (config.enableMockData) {
-      dataSources.push(new MockDataSource())
-    }
-
-    if (dataSources.length === 0) {
-      throw new Error('No data sources configured for CrossReferenceDataAccess')
-    }
-
-    return new CrossReferenceDataAccess(dataSources)
-  }
-}
-
-/**
- * Global instance for the application
- * Uses environment-based configuration
- */
-let globalInstance: CrossReferenceDataAccess | null = null
-
-export function getCrossReferenceDataAccess(): CrossReferenceDataAccess {
-  if (!globalInstance) {
-    // Auto-detect environment and create appropriate configuration
-    if (process.env.NODE_ENV === 'test') {
-      globalInstance = CrossReferenceDataAccessFactory.createTesting()
-    } else if (process.env.NODE_ENV === 'production') {
-      globalInstance = CrossReferenceDataAccessFactory.createProduction()
+    if (isTesting) {
+      return this.createForTesting()
+    } else if (isProduction) {
+      return this.createForProduction()
+    } else if (isDevelopment) {
+      return this.createForDevelopment()
     } else {
-      globalInstance = CrossReferenceDataAccessFactory.createDevelopment()
+      // Default fallback
+      return this.createForDevelopment()
     }
   }
-  
-  return globalInstance
 }
 
 /**
- * Reset the global instance (useful for testing)
+ * Get a singleton instance of CrossReferenceDataAccess
+ * Automatically configures based on environment
  */
-export function resetCrossReferenceDataAccess(): void {
-  globalInstance = null
+export function getCrossReferenceDataAccess(): CrossReferenceDataAccess {
+  if (!globalCrossReferenceDataAccess) {
+    globalCrossReferenceDataAccess = CrossReferenceDataAccessFactory.createAuto()
+  }
+  return globalCrossReferenceDataAccess
 }
+
+/**
+ * Reset the global instance (useful for testing or configuration changes)
+ */
+export function resetGlobalDataAccess(): void {
+  globalCrossReferenceDataAccess = null
+}
+
+// Export all the classes and types
+export { CrossReferenceDataAccess } from './CrossReferenceDataAccess'
+export { LocalFileDataSource } from './LocalFileDataSource'
+export { VercelBlobDataSource } from './VercelBlobDataSource'
+export { MockDataSource } from './MockDataSource'

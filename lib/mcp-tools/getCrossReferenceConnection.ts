@@ -1,5 +1,6 @@
 import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, CrossReferenceCategory } from '@/lib/types'
 import { CrossReferenceDataAccess } from '@/lib/data-access/CrossReferenceDataAccess'
+import { VercelBlobDataSource } from '@/lib/data-access/VercelBlobDataSource'
 import { LocalFileDataSource } from '@/lib/data-access/LocalFileDataSource'
 import { MockDataSource } from '@/lib/data-access/MockDataSource'
 
@@ -7,9 +8,10 @@ import { MockDataSource } from '@/lib/data-access/MockDataSource'
  * Create a data access instance with appropriate sources
  */
 async function createDataAccess(): Promise<CrossReferenceDataAccess> {
+  const blobSource = new VercelBlobDataSource()
   const localSource = new LocalFileDataSource('data/crefs_json')
   const mockSource = new MockDataSource()
-  return new CrossReferenceDataAccess([localSource, mockSource])
+  return new CrossReferenceDataAccess([blobSource, localSource, mockSource])
 }
 
 /**

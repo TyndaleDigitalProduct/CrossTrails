@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server'
 import { ensureValidToken, tokenInfo, testAuthentication } from '../../../lib/utils/auth'
 import { checkNLTHealth } from '../../../lib/bible-api/nltHealth'
 import { LLMClientFactory } from '@/lib/llm/LLMClientFactory'
+import { getBlobHealth } from '@/lib/utils/blob'
+import { blob } from 'stream/consumers'
 
 // --- Service checks ---
 
@@ -84,7 +86,8 @@ export async function GET() {
     environment_vars: checkEnvironmentVars(),
     authentication: await checkAuth(),
     llm_provider: await checkLLMProvider(),
-    gloo_auth: await checkGlooAuth()
+    gloo_auth: await checkGlooAuth(),
+    blob_storage: await getBlobHealth()
   }
 
   const checks = {
