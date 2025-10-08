@@ -7,27 +7,34 @@ import Header from './components/Header'
 import BibleReader from './components/BibleReader'
 import CrossReferencesSidebar from './components/CrossReferencesSidebar'
 import AICompanion from './components/AICompanion'
+import { findBookInString, findChapterInString } from '@/lib/parsers/book'
+import SearchResultModal from './components/SearchResultModal'
 
 export default function HomePage() {
   // State management for the main application
   const [currentBook, setCurrentBook] = useState('Matthew')
   const [currentChapter, setCurrentChapter] = useState(2)
+  const [currentTerms, setCurrentTerms] = useState('')
+  const [searchResults, setSearchResults] = useState<any[]>([])
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false)
   const [verses, setVerses] = useState<BibleVerse[]>([])
   const [selectedVerses, setSelectedVerses] = useState<string[]>([])
   const [selectedCrossRefs, setSelectedCrossRefs] = useState<string[]>([])
   const [crossReferences, setCrossReferences] = useState<CrossReferenceGroup[]>([])
+  
   const [loading, setLoading] = useState({
     verses: false,
     crossRefs: false,
+    search: false,
     ai: false
   })
   const [error, setError] = useState<string | null>(null)
-
+  
   // Load verses when book/chapter changes
   useEffect(() => {
     loadVerses(currentBook, currentChapter)
   }, [currentBook, currentChapter])
-
+  
   // Load cross-references when verses are selected
   useEffect(() => {
     if (selectedVerses.length > 0) {
@@ -36,22 +43,22 @@ export default function HomePage() {
       setCrossReferences([])
     }
   }, [selectedVerses])
-
+  
   const loadVerses = async (book: string, chapter: number) => {
     setLoading(prev => ({ ...prev, verses: true }))
     setError(null)
-
+    
     try {
       const response = await fetch(`/api/verses?book=${book}&chapter=${chapter}`)
-
+      
       if (!response.ok) {
         throw new Error('Failed to load verses')
       }
-
+      
       const data = await response.json()
       setVerses(data.verses)
       setSelectedVerses([]) // Clear selection when changing passages
-
+      
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Failed to load verses')
       console.error('Error loading verses:', err)
@@ -59,18 +66,18 @@ export default function HomePage() {
       setLoading(prev => ({ ...prev, verses: false }))
     }
   }
-
+  
   const loadCrossReferences = async (verseIds: string[]) => {
     setLoading(prev => ({ ...prev, crossRefs: true }))
-
+    
     try {
       const versesParam = verseIds.join(',')
       const response = await fetch(`/api/cross-refs?verses=${versesParam}`)
-
+      
       if (!response.ok) {
         throw new Error('Failed to load cross-references')
       }
-
+      
       const data = await response.json()
       // console.log('Cross-references API response:', data)
       
@@ -81,13 +88,6 @@ export default function HomePage() {
         returned: data.returned
       }])
       
-      // console.log('Set crossReferences state to:', [{
-      //   anchor_verse: verseIds[0],
-      //   cross_references: data.cross_references,
-      //   total_found: data.total_found,
-      //   returned: data.returned
-      // }])
-
     } catch (err) {
       console.error('Error loading cross-references:', err)
       // Don't show error for cross-references as it's secondary functionality
@@ -95,15 +95,57 @@ export default function HomePage() {
       setLoading(prev => ({ ...prev, crossRefs: false }))
     }
   }
-
+  
   const handleNavigation = (book: string, chapter: number) => {
     setCurrentBook(book)
     setCurrentChapter(chapter)
   }
-
+  
   const handleSearch = async (query: string) => {
-    // TODO: Implement search functionality
     console.log('Search query:', query)
+    
+    try {
+      const bookMatch = findBookInString(query)
+      if (bookMatch) {
+        const chapterMatch = findChapterInString(bookMatch.book, bookMatch.remaining)
+        console.log('Book match:', bookMatch)
+        console.log('Chapter match:', chapterMatch)
+        if (chapterMatch) {
+          setCurrentBook(bookMatch.book)
+          setCurrentChapter(chapterMatch.chapter)
+          setIsSearchModalOpen(false)
+          setSearchResults([])
+          return
+        }
+      }
+      
+      setLoading(prev => ({ ...prev, search: true }))
+      setError(null)
+      setCurrentTerms(query)
+      
+      const response = await fetch(`/api/search?terms=${query}`);
+      
+      if (!response.ok) {
+        throw new Error('Failed to load search')
+      }
+      
+      const data = await response.json()
+      setSearchResults(data)
+      setIsSearchModalOpen(Array.isArray(data) && data.length > 0)
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Failed to load search')
+      console.error('Error loading search:', err)
+    } finally {
+      setLoading(prev => ({ ...prev, search: false }))
+    }
+  }
+  
+  const handleSearchResultClick = (result: any) => {
+    // result should have book and chapter fields
+    setCurrentBook(result.book)
+    setCurrentChapter(result.chapter)
+    setIsSearchModalOpen(false)
+    setSearchResults([])
   }
 
   const handleVerseSelection = (verseIds: string[]) => {

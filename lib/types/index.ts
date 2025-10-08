@@ -351,6 +351,14 @@ export interface VersesAPIResponse {
   copyright: string;
 }
 
+export interface SearchAPIResponse {
+  book: string;
+  chapter: number;
+  text: string;
+  translation: string;
+  copyright: string;
+}
+
 export interface CrossRefsAPIResponse {
   anchor_verses: string[];
   cross_references: CrossReference[];
