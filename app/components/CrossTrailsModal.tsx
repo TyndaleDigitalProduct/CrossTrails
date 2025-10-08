@@ -37,8 +37,18 @@ export default function CrossTrailsModal({ isOpen, onClose, children }: CrossTra
           padding: '0',
           position: 'relative',
           fontFamily: 'Inter, Calibri, sans-serif',
+          boxShadow: '0 2px 16px rgba(64,62,62,0.10)',
+          borderBottom: 'none',
         }}
       >
+        {/* Black modal bar at the top */}
+        <div style={{
+          width: '100%',
+          height: '16px',
+          background: '#403e3e',
+          borderTopLeftRadius: '24px',
+          borderTopRightRadius: '24px',
+        }} />
         {/* Orange X close button only */}
         <button
           onClick={onClose}
