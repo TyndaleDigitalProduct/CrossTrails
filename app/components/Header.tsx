@@ -74,27 +74,46 @@ export default function Header({
 
   return (
     <header className="bg-white w-full">
-      <div style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '24px', paddingBottom: '24px' }}>
-        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '1076px', maxWidth: '1076px' }}>
+  <div style={{ display: 'flex', justifyContent: 'center', width: '100%', paddingTop: '24px', paddingBottom: '54px', background: 'white' }}>
+        <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', width: '1076px', maxWidth: '1076px', background: 'white' }}>
           {/* Logo - aligned to left */}
-          <div style={{ display: 'flex', alignItems: 'center' }}>
+          <div style={{ display: 'flex', alignItems: 'center', background: 'white' }}>
             <Image
               src="/images/logo.svg"
               alt="CrossTrails"
               width={332}
               height={58}
               priority
+              style={{ background: 'white' }}
             />
           </div>
 
           {/* Search and Navigation - aligned to right */}
-          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px' }}>
+          <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'flex-end', gap: '0px', background: 'white' }}>
             {/* Search bar with label on top */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative' }}>
-              <label htmlFor="search" style={{ fontFamily: 'Inter, sans-serif', fontStyle: 'normal', fontWeight: 600, fontSize: '14px', lineHeight: '17px', color: '#403E3E', marginBottom: '4px' }}>
-                Search
-              </label>
-              <form onSubmit={handleSearchSubmit} style={{ position: 'relative', width: '294px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative', background: 'white', width: '294px', minWidth: '294px', maxWidth: '294px', marginRight: '8px' }}>
+              <div style={{ position: 'relative', width: '100%' }}>
+                <label
+                  htmlFor="search"
+                  style={{
+                    position: 'absolute',
+                    top: '-10px',
+                    left: '16px',
+                    padding: '0 6px',
+                    background: 'white',
+                    fontFamily: 'Inter, sans-serif',
+                    fontStyle: 'normal',
+                    fontWeight: 600,
+                    fontSize: '14px',
+                    lineHeight: '17px',
+                    color: '#403E3E',
+                    zIndex: 2
+                  }}
+                >
+                  Search
+                </label>
+              </div>
+              <form onSubmit={handleSearchSubmit} style={{ position: 'relative', width: '294px', minWidth: '294px', maxWidth: '294px', background: 'white' }}>
                 <input
                   id="search"
                   type="text"
@@ -109,19 +128,25 @@ export default function Header({
                     fontFamily: 'Inter, sans-serif',
                     fontStyle: 'normal',
                     fontWeight: 400,
-                    fontSize: '16px',
+                    fontSize: '14px',
                     lineHeight: '130%',
                     color: '#403E3E',
                     paddingLeft: '12px',
-                    paddingRight: '40px'
+                    paddingRight: '40px',
+                    background: 'white',
+                    boxSizing: 'border-box',
+                    maxWidth: '294px',
+                    minWidth: '294px',
+                    // @ts-ignore
+                    width: '294px !important'
                   }}
                 />
-                <Search style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', width: '17.49px', height: '17.49px', color: '#403E3E' }} />
+                <Search style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', width: '17.49px', height: '17.49px', color: '#403E3E', background: 'white' }} />
               </form>
             </div>
 
             {/* Chapter/Book dropdown - same size as search */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative', marginTop: '21px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start', position: 'relative', marginTop: '21px', background: 'white', width: '294px', minWidth: '294px', maxWidth: '294px' }}>
               <button
                 onClick={() => setShowChapterDropdown(!showChapterDropdown)}
                 style={{
@@ -138,17 +163,17 @@ export default function Header({
                   fontFamily: 'Inter, sans-serif',
                   fontStyle: 'normal',
                   fontWeight: 400,
-                  fontSize: '16px',
+                  fontSize: '14px',
                   lineHeight: '130%',
                   color: '#403E3E',
                   background: 'white',
                   cursor: 'pointer'
                 }}
               >
-                <span>{currentBook} {currentChapter}</span>
-                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', width: '28px', height: '31.08px' }}>
+                <span style={{ background: 'white' }}>{currentBook} {currentChapter}</span>
+                <div style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '12px', width: '28px', height: '31.08px', background: 'white' }}>
                   <div style={{ width: '2px', height: '31.08px', background: '#403E3E' }} />
-                  <ChevronDown style={{ width: '14px', height: '9px', color: '#403E3E' }} />
+                  <ChevronDown style={{ width: '14px', height: '9px', color: '#403E3E', background: 'white' }} />
                 </div>
               </button>
 
@@ -158,7 +183,7 @@ export default function Header({
                   className="fixed inset-0 z-10"
                   onClick={() => setShowChapterDropdown(false)}
                 />
-                <div className="absolute top-full right-0 mt-1 w-48 bg-white border border-gray-200 rounded-lg shadow-lg z-20 max-h-96 overflow-y-auto scrollbar-thin">
+                <div style={{ position: 'absolute', top: '100%', right: 0, marginTop: '4px', width: '294px', background: 'white', border: '1px solid #e5e7eb', borderRadius: '16px', boxShadow: '0 2px 8px rgba(0,0,0,0.08)', zIndex: 20, maxHeight: '384px', overflowY: 'auto' }}>
                   <div className="py-1">
                     <div className="px-3 py-2 text-xs font-medium text-gray-500 border-b border-gray-100">
                       Old Testament
@@ -170,6 +195,7 @@ export default function Header({
                         className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
                           book === currentBook ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
                         }`}
+                        style={{ background: 'white' }}
                       >
                         {book}
                       </button>
@@ -184,6 +210,7 @@ export default function Header({
                         className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
                           book === currentBook ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
                         }`}
+                        style={{ background: 'white' }}
                       >
                         {book}
                       </button>
@@ -198,6 +225,7 @@ export default function Header({
                         className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
                           chapter === currentChapter ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
                         }`}
+                        style={{ background: 'white' }}
                       >
                         Chapter {chapter}
                       </button>

@@ -70,16 +70,10 @@ export default function RootLayout({
         className={`${inter.className} selection-primary antialiased`}
         suppressHydrationWarning={true}
       >
-        {/* Skip to main content link for accessibility */}
-        <a
-          href="#main-content"
-          className="sr-only focus:not-sr-only focus:absolute focus:top-0 focus:left-0 bg-primary-500 text-white px-4 py-2 z-50 focus-ring"
-        >
-          Skip to main content
-        </a>
+        
 
         {/* Main application container */}
-        <div className="min-h-screen bg-background-primary">
+  <div className="min-h-screen" style={{ background: '#F5F5F5' }}>
           {children}
         </div>
 
