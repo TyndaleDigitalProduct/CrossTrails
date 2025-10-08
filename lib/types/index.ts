@@ -99,7 +99,7 @@ export interface CrossReferenceDataItem {
   anchor_ref: string; // e.g., "Phlm.1"
   cross_ref: string; // e.g., "Eph.3.1"
   primary_category: CrossReferenceCategory;
-  secondary_category: CrossReferenceCategory | undefined;
+  secondary_category: CrossReferenceCategory | null;
   confidence: number; // 0 to 100
   reasoning: string;
   // Optionally add more fields if present in data

@@ -10,7 +10,7 @@ export interface CrossReferenceItem {
   anchor_ref: string
   cross_ref: string
   primary_category: string
-  secondary_category?: string
+  secondary_category?: string | null
   confidence: number
   reasoning: string
 }
