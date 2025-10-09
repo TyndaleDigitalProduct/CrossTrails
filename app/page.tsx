@@ -338,7 +338,7 @@ const loadCrossReferences = async (verseIds: string[]) => {
       {/* Proof of concept modal for any link click */}
       <CrossTrailsModal isOpen={modalOpen} onClose={() => setModalOpen(false)}>
         {(() => {
-          const [expanded, setExpanded] = React.useState(false);
+          const [expanded, setExpanded] = React.useState(true);
           return (
             <div style={{
               borderRadius: '24px',
@@ -376,14 +376,14 @@ const loadCrossReferences = async (verseIds: string[]) => {
                   </span>
                 </div>
                 {expanded && (
-                  <div style={{ background: '#fff', borderRadius: '8px', padding: '10px 14px', marginBottom: '12px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', boxShadow: '0 1px 4px rgba(64,62,62,0.04)' }}>
+                  <div style={{ display: 'none', background: '#fff', borderRadius: '8px', padding: '10px 14px', marginBottom: '12px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', boxShadow: '0 1px 4px rgba(64,62,62,0.04)' }}>
                     Is Micah predicting that the Messiah would come from Jerusalem?
                   </div>
                 )}
                 {expanded && (
                   <>
                     {/* AI response bubble */}
-                    <div style={{ background: 'transparent', borderRadius: '8px', padding: '14px 16px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', marginBottom: '12px' }}>
+                    <div style={{ display: 'none', background: 'transparent', borderRadius: '8px', padding: '14px 16px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', marginBottom: '12px' }}>
                       <div style={{ fontWeight: 700, marginBottom: '8px' }}>Yes, Here’s what’s going on:</div>
                       <ul style={{ paddingLeft: '18px', margin: 0 }}>
                         <li style={{ marginBottom: '8px' }}><b>Micah 5:2 (OT prophecy)</b><br />Micah prophesies that a future ruler of Israel (the Messiah) will come from Bethlehem, a small, seemingly insignificant town:<br /><span style={{ color: '#888' }}>&quot;But you, Bethlehem Ephrathah, though you are small among the clans of Judah, out of you will come for me one who will be ruler over Israel, whose origins are from of old, from ancient times.&quot;</span></li>
@@ -394,7 +394,7 @@ const loadCrossReferences = async (verseIds: string[]) => {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#fff', borderRadius: '8px', padding: '8px 10px', border: '1px solid #e0e0e0', marginBottom: '18px' }}>
                       <textarea style={{ flex: 1, borderRadius: '8px', border: 'none', padding: '8px 10px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', resize: 'none', minHeight: '36px', outline: 'none', background: 'transparent' }} placeholder="Chat with the Trail Guide" />
                       <button style={{ width: '28px', height: '28px', borderRadius: '50%', background: '#403e3e', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '16px', cursor: 'pointer' }} aria-label="Send">
-                        <span style={{ fontSize: '16px', fontWeight: 700 }}>↑</span>
+                        <span style={{ height: '0', width: '0', borderLeft: '5px solid transparent', borderRight: '5px solid transparent', borderTop: '10px solid white', rotate: '-90deg', marginLeft: '3px' }}></span>
                       </button>
                     </div>
                   </>
