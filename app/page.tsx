@@ -385,7 +385,7 @@ export default function HomePage() {
                       marginRight: '8px',
                     }}
                   >
-                    How Does This Passage Relate?
+                    What are your thoughts on how these passages are related?
                   </span>
                   <span
                     style={{
@@ -499,7 +499,7 @@ export default function HomePage() {
                           outline: 'none',
                           background: 'transparent',
                         }}
-                        placeholder="What do you think?"
+                        placeholder="Chat with the Trail Guide"
                       />
                       <button
                         style={{
