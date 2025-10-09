@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 interface CrossTrailsModalProps {
   isOpen: boolean;
@@ -9,13 +9,81 @@ export default function CrossTrailsModal({
   isOpen,
   onClose,
 }: CrossTrailsModalProps) {
+  const [aiResponse, setAiResponse] = useState<string | null>(null);
+  const [isLoading, setIsLoading] = useState(false);
+  const [userQuestion, setUserQuestion] = useState<string | null>(null);
+
   if (!isOpen) return null;
 
-  const onHandleSubmit = (e: React.FormEvent) => {
+  const onHandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const formData = new FormData(e.target as HTMLFormElement);
-    const data = Object.fromEntries(formData);
-    console.log(data);
+    const question = formData.get('question') as string;
+
+    if (!question.trim()) {
+      console.log('No question provided');
+      return;
+    }
+
+    // Store the user's question and clear the form
+    setUserQuestion(question);
+    setIsLoading(true);
+
+    // Clear the textarea
+    (e.target as HTMLFormElement).reset();
+
+    try {
+      // Construct the CrossReference object for Micah 5:2
+      const crossReference = {
+        reference: 'Micah.5.2',
+        display_ref: 'Micah 5:2',
+        text: 'But you, O Bethlehem Ephrathah, are only a small village among all the people of Judah. Yet a ruler of Israel, whose origins are in the distant past, will come from you on my behalf.',
+        anchor_ref: 'Matthew.2.6',
+        connection: {
+          categories: ['prophecy', 'messianic'],
+          strength: 0.9,
+          type: 'prophecy' as const,
+          explanation:
+            'Messianic prophecy about the birthplace of the ruler of Israel',
+        },
+        context: {
+          book: 'Micah',
+          chapter: 5,
+          verse: 2,
+        },
+      };
+
+      // Call the cross-refs analyze API
+      const response = await fetch('/api/cross-refs/analyze', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          crossReference,
+          userObservation: question,
+          analysisType: 'default',
+          contextRange: 2,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Analysis result:', data);
+
+      if (data.success && data.data?.analysis) {
+        // Convert \n to <br> tags for HTML display
+        const formattedAnalysis = data.data.analysis.replace(/\n/g, '<br>');
+        setAiResponse(formattedAnalysis);
+      }
+    } catch (error) {
+      console.error('Error analyzing cross-reference:', error);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -205,53 +273,61 @@ export default function CrossTrailsModal({
                 )}
                 {expanded && (
                   <>
-                    {/* AI response bubble */}
-                    <div
-                      style={{
-                        display: 'none',
-                        background: 'transparent',
-                        borderRadius: '8px',
-                        padding: '14px 16px',
-                        fontFamily: 'Calibri, sans-serif',
-                        fontSize: '15px',
-                        color: '#403e3e',
-                        marginBottom: '12px',
-                      }}
-                    >
-                      <div style={{ fontWeight: 700, marginBottom: '8px' }}>
-                        Yes, Here’s what’s going on:
+                    {/* User question bubble */}
+                    {userQuestion && (
+                      <div
+                        style={{
+                          background: '#f8f9fa',
+                          borderRadius: '8px',
+                          padding: '10px 14px',
+                          marginBottom: '12px',
+                          fontFamily: 'Calibri, sans-serif',
+                          fontSize: '15px',
+                          color: '#403e3e',
+                          border: '1px solid #e9ecef',
+                          marginLeft: '20px',
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontWeight: 600,
+                            marginBottom: '4px',
+                            fontSize: '14px',
+                            color: '#666',
+                          }}
+                        >
+                          You asked:
+                        </div>
+                        {userQuestion}
                       </div>
-                      <ul style={{ paddingLeft: '18px', margin: 0 }}>
-                        <li style={{ marginBottom: '8px' }}>
-                          <b>Micah 5:2 (OT prophecy)</b>
-                          <br />
-                          Micah prophesies that a future ruler of Israel (the
-                          Messiah) will come from Bethlehem, a small, seemingly
-                          insignificant town:
-                          <br />
-                          <span style={{ color: '#888' }}>
-                            &quot;But you, Bethlehem Ephrathah, though you are
-                            small among the clans of Judah, out of you will come
-                            for me one who will be ruler over Israel, whose
-                            origins are from of old, from ancient times.&quot;
-                          </span>
-                        </li>
-                        <li>
-                          <b>Matthew 2:6 (NT fulfillment)</b>
-                          <br />
-                          Matthew quotes/paraphrases Micah 5:2 to show that
-                          Jesus’ birthplace (Bethlehem) is not random but
-                          foretold in Scripture:
-                          <br />
-                          <span style={{ color: '#888' }}>
-                            &quot;But you, Bethlehem, in the land of Judah, are
-                            by no means least among the rulers of Judah; for out
-                            of you will come a ruler who will shepherd my people
-                            Israel.&quot;
-                          </span>
-                        </li>
-                      </ul>
-                    </div>
+                    )}
+
+                    {/* AI response bubble */}
+                    {(aiResponse || isLoading) && (
+                      <div
+                        style={{
+                          background: 'transparent',
+                          borderRadius: '8px',
+                          padding: '14px 16px',
+                          fontFamily: 'Calibri, sans-serif',
+                          fontSize: '15px',
+                          color: '#403e3e',
+                          marginBottom: '12px',
+                        }}
+                      >
+                        {isLoading ? (
+                          <div style={{ fontStyle: 'italic', color: '#888' }}>
+                            Trail Guide is thinking...
+                          </div>
+                        ) : (
+                          <div
+                            dangerouslySetInnerHTML={{
+                              __html: aiResponse || '',
+                            }}
+                          />
+                        )}
+                      </div>
+                    )}
                     {/* Textarea and send button */}
                     <form onSubmit={onHandleSubmit}>
                       <div
