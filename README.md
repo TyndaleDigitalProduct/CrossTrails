@@ -16,7 +16,7 @@ CrossTrails is a web application that enables users to explore the Bible through
 
 - Node.js 20+
 - npm or yarn
-- Gloo AI Studio API key (from docs.ai.gloo.com)
+- Gloo AI Studio API key (from docs.gloo.com)
 
 ### Installation
 

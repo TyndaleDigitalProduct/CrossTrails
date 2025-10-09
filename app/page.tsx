@@ -350,7 +350,7 @@ export default function HomePage() {
                 </div>
               </div>
               {/* Section: How Does This Passage Relate? */}
-              <div style={{ background: '#e5e5e5', padding: '18px 32px 0 32px' }}>
+              <div style={{ background: '#e5e5e5', padding: '18px 32px 2px 32px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
                   <span style={{ fontFamily: 'Calibri, sans-serif', fontWeight: 700, fontSize: '15px', color: '#403e3e', marginRight: '8px' }}>How Does This Passage Relate?</span>
                   <span
