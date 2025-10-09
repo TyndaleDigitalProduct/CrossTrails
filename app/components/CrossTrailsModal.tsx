@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ConversationTurn } from '@/lib/types';
 
 interface CrossTrailsModalProps {
   isOpen: boolean;
@@ -9,12 +10,13 @@ export default function CrossTrailsModal({
   isOpen,
   onClose,
 }: CrossTrailsModalProps) {
-  const [aiResponse, setAiResponse] = useState<string | null>(null);
+  const [conversationHistory, setConversationHistory] = useState<
+    ConversationTurn[]
+  >([]);
   const [isLoading, setIsLoading] = useState(false);
-  const [userQuestion, setUserQuestion] = useState<string | null>(null);
   const [expanded, setExpanded] = useState(true);
-
-  if (!isOpen) return null;
+  const conversationRef = useRef<HTMLDivElement>(null);
+  const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
 
   const onHandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -26,8 +28,14 @@ export default function CrossTrailsModal({
       return;
     }
 
-    // Store the user's question and clear the form
-    setUserQuestion(question);
+    // Add user's question to conversation history
+    const userTurn: ConversationTurn = {
+      type: 'user',
+      content: question,
+      timestamp: new Date().toISOString(),
+    };
+
+    setConversationHistory(prev => [...prev, userTurn]);
     setIsLoading(true);
 
     // Clear the textarea
@@ -76,16 +84,91 @@ export default function CrossTrailsModal({
       console.log('Analysis result:', data);
 
       if (data.success && data.data?.analysis) {
-        // Convert \n to <br> tags for HTML display
-        const formattedAnalysis = data.data.analysis.replace(/\n/g, '<br>');
-        setAiResponse(formattedAnalysis);
+        // Add AI response to conversation history
+        const assistantTurn: ConversationTurn = {
+          type: 'assistant',
+          content: data.data.analysis,
+          timestamp: new Date().toISOString(),
+        };
+
+        setConversationHistory(prev => [...prev, assistantTurn]);
       }
     } catch (error) {
       console.error('Error analyzing cross-reference:', error);
+
+      // Add error message to conversation history
+      const errorTurn: ConversationTurn = {
+        type: 'assistant',
+        content:
+          'I apologize, but I encountered an error while processing your question. Please try again.',
+        timestamp: new Date().toISOString(),
+      };
+
+      setConversationHistory(prev => [...prev, errorTurn]);
     } finally {
       setIsLoading(false);
     }
   };
+
+  const formatTimestamp = (timestamp: string) => {
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+
+  const clearHistory = () => {
+    setConversationHistory([]);
+    messageRefs.current = [];
+  };
+
+  // Reset state when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setConversationHistory([]);
+      setIsLoading(false);
+      setExpanded(true);
+      messageRefs.current = [];
+    }
+  }, [isOpen]);
+
+  // Ensure messageRefs array is properly sized
+  useEffect(() => {
+    messageRefs.current = messageRefs.current.slice(
+      0,
+      conversationHistory.length
+    );
+  }, [conversationHistory.length]);
+
+  // Auto-scroll behavior: show beginning of new AI responses, bottom for user messages
+  useEffect(() => {
+    if (conversationRef.current && conversationHistory.length > 0) {
+      const lastMessage = conversationHistory[conversationHistory.length - 1];
+      const lastMessageIndex = conversationHistory.length - 1;
+
+      if (lastMessage.type === 'assistant' && !isLoading) {
+        // For AI responses, scroll to show the beginning of the new response
+        setTimeout(() => {
+          const lastMessageElement = messageRefs.current[lastMessageIndex];
+          if (lastMessageElement) {
+            lastMessageElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        }, 100);
+      } else if (lastMessage.type === 'user') {
+        // For user messages, scroll to bottom as they're typically short
+        if (conversationRef.current) {
+          conversationRef.current.scrollTop =
+            conversationRef.current.scrollHeight;
+        }
+      }
+    }
+  }, [conversationHistory, isLoading]);
+
+  // Don't render anything if modal is closed
+  if (!isOpen) {
+    return null;
+  }
 
   return (
     <div
@@ -209,120 +292,181 @@ export default function CrossTrailsModal({
               </span>
             </div>
           </div>
+
           {/* Section: How Does This Passage Relate? */}
           <div style={{ background: '#e5e5e5', padding: '18px 32px 2px 32px' }}>
             <div
               style={{
                 display: 'flex',
                 alignItems: 'center',
+                justifyContent: 'space-between',
                 marginBottom: '12px',
               }}
             >
-              <span
-                style={{
-                  fontFamily: 'Calibri, sans-serif',
-                  fontWeight: 700,
-                  fontSize: '15px',
-                  color: '#403e3e',
-                  marginRight: '8px',
-                }}
-              >
-                What are your thoughts on how these passages are related?
-              </span>
-              <span
-                style={{
-                  background: '#fff',
-                  borderRadius: '50%',
-                  width: '22px',
-                  height: '22px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  fontWeight: 700,
-                  color: '#ff6a32',
-                  fontSize: '16px',
-                  border: '1px solid #e0e0e0',
-                  cursor: 'pointer',
-                }}
-                onClick={() => setExpanded(!expanded)}
-              >
-                {expanded ? '−' : '+'}
-              </span>
-            </div>
-            {expanded && (
-              <div
-                style={{
-                  display: 'none',
-                  background: '#fff',
-                  borderRadius: '8px',
-                  padding: '10px 14px',
-                  marginBottom: '12px',
-                  fontFamily: 'Calibri, sans-serif',
-                  fontSize: '15px',
-                  color: '#403e3e',
-                  boxShadow: '0 1px 4px rgba(64,62,62,0.04)',
-                }}
-              >
-                Is Micah predicting that the Messiah would come from Jerusalem?
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <span
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '15px',
+                    color: '#403e3e',
+                    marginRight: '8px',
+                  }}
+                >
+                  What are your thoughts on how these passages are related?
+                </span>
+                <span
+                  style={{
+                    background: '#fff',
+                    borderRadius: '50%',
+                    width: '22px',
+                    height: '22px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                    color: '#ff6a32',
+                    fontSize: '16px',
+                    border: '1px solid #e0e0e0',
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => setExpanded(!expanded)}
+                >
+                  {expanded ? '−' : '+'}
+                </span>
               </div>
-            )}
+              {expanded && conversationHistory.length > 0 && (
+                <button
+                  onClick={clearHistory}
+                  style={{
+                    background: 'transparent',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    padding: '4px 8px',
+                    fontSize: '12px',
+                    color: '#666',
+                    cursor: 'pointer',
+                    fontFamily: 'Calibri, sans-serif',
+                  }}
+                  title="Clear conversation history"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+
             {expanded && (
               <>
-                {/* User question bubble */}
-                {userQuestion && (
-                  <div
-                    style={{
-                      background: '#f8f9fa',
-                      borderRadius: '8px',
-                      padding: '10px 14px',
-                      marginBottom: '12px',
-                      fontFamily: 'Calibri, sans-serif',
-                      fontSize: '15px',
-                      color: '#403e3e',
-                      border: '1px solid #e9ecef',
-                      marginLeft: '20px',
-                    }}
-                  >
+                {/* Conversation History */}
+                <div
+                  ref={conversationRef}
+                  style={{
+                    maxHeight: '300px',
+                    overflowY: 'auto',
+                    marginBottom: '12px',
+                    scrollbarWidth: 'thin',
+                    scrollbarColor: '#ccc transparent',
+                  }}
+                >
+                  {conversationHistory.length === 0 && !isLoading && (
                     <div
                       style={{
-                        fontWeight: 600,
-                        marginBottom: '4px',
+                        textAlign: 'center',
+                        padding: '20px',
+                        color: '#999',
+                        fontStyle: 'italic',
                         fontSize: '14px',
-                        color: '#666',
+                        fontFamily: 'Calibri, sans-serif',
                       }}
                     >
-                      You asked:
+                      Start a conversation with the Trail Guide about how these
+                      passages relate to each other.
                     </div>
-                    {userQuestion}
-                  </div>
-                )}
+                  )}
+                  {conversationHistory.map((turn, index) => (
+                    <div
+                      key={index}
+                      ref={el => {
+                        messageRefs.current[index] = el;
+                      }}
+                      style={{
+                        background:
+                          turn.type === 'user' ? '#f8f9fa' : 'transparent',
+                        borderRadius: '8px',
+                        padding: '10px 14px',
+                        marginBottom: '8px',
+                        fontFamily: 'Calibri, sans-serif',
+                        fontSize: '15px',
+                        color: '#403e3e',
+                        border:
+                          turn.type === 'user' ? '1px solid #e9ecef' : 'none',
+                        marginLeft: turn.type === 'user' ? '20px' : '0px',
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontWeight: 600,
+                            fontSize: '14px',
+                            color: turn.type === 'user' ? '#666' : '#ff6a32',
+                          }}
+                        >
+                          {turn.type === 'user' ? 'You asked:' : 'Trail Guide:'}
+                        </div>
+                        <div
+                          style={{
+                            fontSize: '12px',
+                            color: '#999',
+                          }}
+                        >
+                          {formatTimestamp(turn.timestamp)}
+                        </div>
+                      </div>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: turn.content.replace(/\n/g, '<br>'),
+                        }}
+                      />
+                    </div>
+                  ))}
 
-                {/* AI response bubble */}
-                {(aiResponse || isLoading) && (
-                  <div
-                    style={{
-                      background: 'transparent',
-                      borderRadius: '8px',
-                      padding: '14px 16px',
-                      fontFamily: 'Calibri, sans-serif',
-                      fontSize: '15px',
-                      color: '#403e3e',
-                      marginBottom: '12px',
-                    }}
-                  >
-                    {isLoading ? (
+                  {/* Loading indicator */}
+                  {isLoading && (
+                    <div
+                      style={{
+                        background: 'transparent',
+                        borderRadius: '8px',
+                        padding: '14px 16px',
+                        fontFamily: 'Calibri, sans-serif',
+                        fontSize: '15px',
+                        color: '#403e3e',
+                        marginBottom: '8px',
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontWeight: 600,
+                          fontSize: '14px',
+                          color: '#ff6a32',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        Trail Guide:
+                      </div>
                       <div style={{ fontStyle: 'italic', color: '#888' }}>
                         Trail Guide is thinking...
                       </div>
-                    ) : (
-                      <div
-                        dangerouslySetInnerHTML={{
-                          __html: aiResponse || '',
-                        }}
-                      />
-                    )}
-                  </div>
-                )}
+                    </div>
+                  )}
+                </div>
+
                 {/* Textarea and send button */}
                 <form onSubmit={onHandleSubmit}>
                   <div
@@ -339,6 +483,7 @@ export default function CrossTrailsModal({
                   >
                     <textarea
                       name="question"
+                      disabled={isLoading}
                       style={{
                         flex: 1,
                         borderRadius: '8px',
@@ -351,15 +496,22 @@ export default function CrossTrailsModal({
                         minHeight: '36px',
                         outline: 'none',
                         background: 'transparent',
+                        opacity: isLoading ? 0.6 : 1,
                       }}
-                      placeholder="Chat with the Trail Guide"
+                      placeholder={
+                        isLoading
+                          ? 'Trail Guide is thinking...'
+                          : 'Chat with the Trail Guide'
+                      }
                     />
                     <button
+                      type="submit"
+                      disabled={isLoading}
                       style={{
                         width: '28px',
                         height: '28px',
                         borderRadius: '50%',
-                        background: '#403e3e',
+                        background: isLoading ? '#ccc' : '#403e3e',
                         border: 'none',
                         display: 'flex',
                         alignItems: 'center',
@@ -367,7 +519,7 @@ export default function CrossTrailsModal({
                         color: '#fff',
                         fontWeight: 700,
                         fontSize: '16px',
-                        cursor: 'pointer',
+                        cursor: isLoading ? 'not-allowed' : 'pointer',
                       }}
                       aria-label="Send"
                     >
