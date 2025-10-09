@@ -22,7 +22,7 @@ const SearchResultModal = ({
             left: 0,
             width: '100vw',
             height: '100vh',
-            background: 'rgba(0,0,0,0.3)',
+            background: 'rgba(64,62,62,0.4)',
             zIndex: 1000,
             display: 'flex',
             alignItems: 'center',
@@ -30,19 +30,46 @@ const SearchResultModal = ({
         }}>
         <div style={{
             background: '#fff',
-            borderRadius: '8px',
+            borderRadius: '24px',
             boxShadow: '0 2px 16px rgba(0,0,0,0.15)',
             padding: '32px',
             minWidth: '400px',
             maxHeight: '80vh',
+            maxWidth: '90vw',
             overflowY: 'auto',
             display: 'flex',
             flexDirection: 'column',
             gap: '8px',
+            scrollbarWidth: 'none', // Firefox
+            msOverflowStyle: 'none', // IE 10+
         }}>
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12 }}>
         <h2 style={{ fontSize: 20, fontWeight: 600 }}>Search Results</h2>
-        <button onClick={() => { setIsSearchModalOpen(false); setSearchResults([]) }} style={{ fontSize: 20, border: 'none', background: 'none', cursor: 'pointer' }}>×</button>
+        {/* Orange X close button only */}
+        <button
+          onClick={() => { setIsSearchModalOpen(false); setSearchResults([]) }}
+          style={{
+            position: 'absolute',
+            top: '48px',
+            right: '48px',
+            width: '32px',
+            height: '32px',
+            borderRadius: '50%',
+            background: '#ff6a32',
+            border: 'none',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#fff',
+            fontWeight: 700,
+            fontSize: '22px',
+            cursor: 'pointer',
+            zIndex: 2,
+          }}
+          aria-label="Close"
+        >
+          ×
+        </button>
         </div>
         {loading ? (
             <div>Loading...</div>
