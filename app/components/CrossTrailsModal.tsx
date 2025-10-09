@@ -10,8 +10,6 @@ export default function CrossTrailsModal({
   isOpen,
   onClose,
 }: CrossTrailsModalProps) {
-  if (!isOpen) return null;
-
   const [conversationHistory, setConversationHistory] = useState<
     ConversationTurn[]
   >([]);
@@ -122,6 +120,16 @@ export default function CrossTrailsModal({
     messageRefs.current = [];
   };
 
+  // Reset state when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setConversationHistory([]);
+      setIsLoading(false);
+      setExpanded(true);
+      messageRefs.current = [];
+    }
+  }, [isOpen]);
+
   // Ensure messageRefs array is properly sized
   useEffect(() => {
     messageRefs.current = messageRefs.current.slice(
@@ -156,6 +164,11 @@ export default function CrossTrailsModal({
       }
     }
   }, [conversationHistory, isLoading]);
+
+  // Don't render anything if modal is closed
+  if (!isOpen) {
+    return null;
+  }
 
   return (
     <div
