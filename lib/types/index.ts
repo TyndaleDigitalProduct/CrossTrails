@@ -395,6 +395,8 @@ export interface BibleReaderProps {
   selectedVerses: string[];
   onVerseSelect: (verses: string[]) => void;
   loading?: boolean;
+  // Optional callback to allow parent components to handle chapter changes
+  handleChapterSelect?: (chapter: number) => void;
 }
 
 export interface CrossReferencesSidebarProps {
@@ -418,4 +420,6 @@ export interface HeaderProps {
   currentChapter: number;
   onNavigate: (book: string, chapter: number) => void;
   onSearch: (query: string) => void;
+  // Optional callback to allow parent components to handle chapter changes
+  handleChapterSelect?: (chapter: number) => void;
 }
