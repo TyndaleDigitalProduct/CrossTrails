@@ -46,6 +46,8 @@ export default function HomePage() {
   // State management for the main application
   const [currentBook, setCurrentBook] = useState('Matthew')
   const [currentChapter, setCurrentChapter] = useState(2)
+  const [nextChapter, setNextChapter] = useState(3)
+  const [previousChapter, setPreviousChapter] = useState(1)
   const [currentTerms, setCurrentTerms] = useState('')
   const [searchResults, setSearchResults] = useState<any[]>([])
   const [isSearchModalOpen, setIsSearchModalOpen] = useState(false)
@@ -142,6 +144,8 @@ const loadCrossReferences = async (verseIds: string[]) => {
   const handleNavigation = (book: string, chapter: number) => {
     setCurrentBook(book)
     setCurrentChapter(chapter)
+    setNextChapter(chapter + 1) 
+    setPreviousChapter(chapter > 1 ? chapter - 1 : 1)
   }
   
   const handleSearch = async (query: string) => {
@@ -242,6 +246,7 @@ const loadCrossReferences = async (verseIds: string[]) => {
         currentChapter={currentChapter}
         onNavigate={handleNavigation}
         onSearch={handleSearch}
+        handleChapterSelect={(chapter: number) => handleNavigation(currentBook, chapter)}
       />
     
       {/* Search Results Modal */}
@@ -306,6 +311,7 @@ const loadCrossReferences = async (verseIds: string[]) => {
                 selectedVerses={selectedVerses}
                 onVerseSelect={handleVerseSelection}
                 loading={loading.verses}
+                  handleChapterSelect={(chapter: number) => handleNavigation(currentBook, chapter)}
               />
             )}
           </div>

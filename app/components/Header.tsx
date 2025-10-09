@@ -48,6 +48,7 @@ export default function Header({
   currentChapter,
   onNavigate,
   onSearch
+  , handleChapterSelect
 }: HeaderProps) {
   const [searchQuery, setSearchQuery] = useState('')
   const [showBookDropdown, setShowBookDropdown] = useState(false)
@@ -65,8 +66,12 @@ export default function Header({
     setShowBookDropdown(false)
   }
 
-  const handleChapterSelect = (chapter: number) => {
-    onNavigate(currentBook, chapter)
+  const internalHandleChapterSelect = (chapter: number) => {
+    if (handleChapterSelect) {
+      handleChapterSelect(chapter)
+    } else {
+      onNavigate(currentBook, chapter)
+    }
     setShowChapterDropdown(false)
   }
 
@@ -221,7 +226,7 @@ export default function Header({
                     {Array.from({ length: maxChapters }, (_, i) => i + 1).map((chapter) => (
                       <button
                         key={chapter}
-                        onClick={() => handleChapterSelect(chapter)}
+                        onClick={() => internalHandleChapterSelect(chapter)}
                         className={`w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors ${
                           chapter === currentChapter ? 'bg-primary-50 text-primary-700 font-medium' : 'text-gray-700'
                         }`}
