@@ -21,7 +21,8 @@ export async function getBlobJSON<T>(filename: string): Promise<T> {
     // Fetch the blob content
     const response = await fetch(url)
     if (!response.ok) {
-      throw new Error(`Failed to fetch blob: ${filename}`)
+      console.error(`Failed to fetch blob: ${filename}`)
+      return null
     }
 
     const text = await response.text()
