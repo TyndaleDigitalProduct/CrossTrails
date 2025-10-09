@@ -4,7 +4,7 @@ import { getDownloadUrl } from '@vercel/blob'
  * @param filename - The blob filename (e.g., 'Matt.json')
  * @returns Promise containing the parsed JSON data
  */
-export async function getBlobJSON<T>(filename: string): Promise<T> {
+export async function getBlobJSON<T>(filename: string): Promise<T | null> {
   try {
     if (!process.env.BLOB_READ_WRITE_TOKEN) {
       throw new Error('BLOB_READ_WRITE_TOKEN is not defined')
@@ -21,7 +21,8 @@ export async function getBlobJSON<T>(filename: string): Promise<T> {
     // Fetch the blob content
     const response = await fetch(url)
     if (!response.ok) {
-      throw new Error(`Failed to fetch blob: ${filename}`)
+      console.error(`Failed to fetch blob: ${filename}`)
+      return null
     }
 
     const text = await response.text()

@@ -60,7 +60,8 @@ export default function HomePage() {
     search: false,
     ai: false
   })
-  const [error, setError] = useState<string | null>(null)
+  const [verseError, setVerseError] = useState<string | null>(null)
+  const [crossRefError, setCrossRefError] = useState<string | null>(null)
   
   // Load verses when book/chapter changes
   useEffect(() => {
@@ -79,7 +80,7 @@ useEffect(() => {
   
   const loadVerses = async (book: string, chapter: number) => {
     setLoading(prev => ({ ...prev, verses: true }))
-    setError(null)
+    setVerseError(null)
     
     try {
       const response = await fetch(`/api/verses?book=${book}&chapter=${chapter}`)
@@ -93,42 +94,50 @@ useEffect(() => {
       setSelectedVerses([]) // Clear selection when changing passages
       
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load verses')
+      setVerseError(err instanceof Error ? err.message : 'Failed to load verses')
       console.error('Error loading verses:', err)
     } finally {
       setLoading(prev => ({ ...prev, verses: false }))
     }
   }
   
-  const loadCrossReferences = async (verseIds: string[]) => {
-    console.log('Loading cross-references for:', verseIds)
-    setLoading(prev => ({ ...prev, crossRefs: true }))
-    
-    try {
-      const versesParam = verseIds.join(',')
-      const response = await fetch(`/api/cross-refs?verses=${versesParam}`)
-      
-      if (!response.ok) {
-        throw new Error('Failed to load cross-references')
-      }
-      
-      const data = await response.json()
-      // console.log('Cross-references API response:', data)
-      
-      setCrossReferences([{
-        anchor_verse: verseIds[0],
-        cross_references: data.cross_references,
-        total_found: data.total_found,
-        returned: data.returned
-      }])
-      
-    } catch (err) {
-      console.error('Error loading cross-references:', err)
-      // Don't show error for cross-references as it's secondary functionality
-    } finally {
-      setLoading(prev => ({ ...prev, crossRefs: false }))
+const loadCrossReferences = async (verseIds: string[]) => {
+  console.log('Loading cross-references for:', verseIds)
+  setLoading(prev => ({ ...prev, crossRefs: true }))
+  setCrossRefError(null) // Clear previous cross-ref errors
+
+  try {
+    const versesParam = verseIds.join(',')
+    const response = await fetch(`/api/cross-refs?verses=${versesParam}`)
+
+    if (!response.ok) {
+      throw new Error('Failed to load cross-references')
     }
+
+    const data = await response.json()
+
+    // If no cross-references are found, show the error and clear the sidebar
+    if (!data.cross_references || data.cross_references.length === 0) {
+      setCrossRefError('Sorry, cross-references are not available for this chapter.')
+      setCrossReferences([])
+      return
+    }
+
+    setCrossReferences([{
+      anchor_verse: verseIds[0],
+      cross_references: data.cross_references,
+      total_found: data.total_found,
+      returned: data.returned
+    }])
+
+  } catch (err) {
+    console.error('Error loading cross-references:', err)
+    setCrossRefError('Sorry, cross-references are not available for this chapter.')
+    setCrossReferences([]) // Clear any previous cross-references
+  } finally {
+    setLoading(prev => ({ ...prev, crossRefs: false }))
   }
+}
   
   const handleNavigation = (book: string, chapter: number) => {
     setCurrentBook(book)
@@ -154,7 +163,7 @@ useEffect(() => {
       }
       
       setLoading(prev => ({ ...prev, search: true }))
-      setError(null)
+      setVerseError(null)
       setCurrentTerms(query)
       
       const response = await fetch(`/api/search?terms=${query}`);
@@ -167,7 +176,7 @@ useEffect(() => {
       setSearchResults(data)
       setIsSearchModalOpen(Array.isArray(data) && data.length > 0)
     } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load search')
+      setVerseError(err instanceof Error ? err.message : 'Failed to load search')
       console.error('Error loading search:', err)
     } finally {
       setLoading(prev => ({ ...prev, search: false }))
@@ -275,11 +284,11 @@ useEffect(() => {
             flexGrow: 0,
             zIndex: 0
           }}>
-            {error ? (
+            {verseError ? (
               <div className="py-8">
                 <div className="bg-red-50 border border-red-200 rounded-lg p-4">
                   <p className="text-red-800">
-                    Error loading content: {error}
+                    Error loading content: {verseError}
                   </p>
                   <button
                     onClick={() => loadVerses(currentBook, currentChapter)}
@@ -320,6 +329,7 @@ useEffect(() => {
               selectedRefs={selectedCrossRefs}
               onRefSelect={handleCrossRefSelection}
               loading={loading.crossRefs}
+              error={crossRefError}
             />
           </aside>
         </div>

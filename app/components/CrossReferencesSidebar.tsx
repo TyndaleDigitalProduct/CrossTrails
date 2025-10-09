@@ -8,8 +8,19 @@ export default function CrossReferencesSidebar({
   crossReferences,
   selectedRefs,
   onRefSelect,
-  loading = false
-}: CrossReferencesSidebarProps) {
+  loading = false,
+  error
+}: CrossReferencesSidebarProps & { error?: string | null }) {
+
+  if (error) {
+    return (
+      <div className="flex items-center justify-center h-64">
+        <p className="text-center">
+          {error}
+        </p>
+      </div>
+    )
+  }
   const [expandedGroups, setExpandedGroups] = useState<Set<string>>(new Set())
 
   const handleRefClick = (refId: string) => {

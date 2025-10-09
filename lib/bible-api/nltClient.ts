@@ -5,6 +5,75 @@ const BASE_URL = (process.env.NLT_API_BASE_URL || 'https://api.nlt.to').replace(
 const API_KEY = process.env.NLT_API_KEY || process.env.NLT_API_TOKEN || ''
 const TIMEOUT_MS = 5000
 
+const nltBkToAbbrev: Record<string, string> = {
+  gene: 'Gen',
+  exod: 'Exod',
+  levi: 'Lev',
+  numb: 'Num',
+  deut: 'Deut',
+  josh: 'Josh',
+  judg: 'Judg',
+  ruth: 'Ruth',
+  sam1: '1Sam',
+  sam2: '2Sam',
+  kgs1: '1Kgs',
+  kgs2: '2Kgs',
+  chr1: '1Chr',
+  chr2: '2Chr',
+  ezra: 'Ezra',
+  nehe: 'Neh',
+  esth: 'Esth',
+  job: 'Job',
+  psal: 'Ps',
+  prov: 'Pr',
+  eccl: 'Eccl',
+  song: 'Song',
+  isai: 'Isa',
+  jere: 'Jer',
+  lame: 'Lam',
+  ezek: 'Ezek',
+  dani: 'Dan',
+  hose: 'Hos',
+  joel: 'Joel',
+  amos: 'Amos',
+  obad: 'Obad',
+  jona: 'Jon',
+  mica: 'Mic',
+  nahu: 'Nah',
+  haba: 'Hab',
+  zeph: 'Zeph',
+  hagg: 'Hagg',
+  zech: 'Zech',
+  mala: 'Mal',
+  matt: 'Matt',
+  mark: 'Mark',
+  luke: 'Luke',
+  john: 'John',
+  acts: 'Acts',
+  roma: 'Rom',
+  cor1: '1Cor',
+  cor2: '2Cor',
+  gala: 'Gal',
+  ephe: 'Eph',
+  phil: 'Phil',
+  colo: 'Col',
+  the1: '1Thes',
+  the2: '2Thes',
+  tim1: '1Tim',
+  tim2: '2Tim',
+  titu: 'Titus',
+  phlm: 'Phlm',
+  hebr: 'Heb',
+  jame: 'Jas',
+  pet1: '1Pet',
+  pet2: '2Pet',
+  joh1: '1Jn',
+  joh2: '2Jn',
+  joh3: '3Jn',
+  jude: 'Jude',
+  reve: 'Rev',
+};
+
 function makeUrl(path: string, params: Record<string, string | number | undefined> = {}) {
   const url = new URL(`${BASE_URL}/${path.replace(/^\//, '')}`)
   Object.entries(params).forEach(([k, v]) => {
@@ -177,7 +246,8 @@ function parseHTMLwithDOM(html: string, referenceHint?: string) {
     const chAttr = ve.getAttribute('ch')
     const vnAttr = ve.getAttribute('vn')
     
-    const bk = bkAttr ? capitalize(bkAttr) : undefined
+    const bkRaw = bkAttr ? bkAttr.toLowerCase() : undefined
+    const bk = bkRaw ? (nltBkToAbbrev[bkRaw] || bkRaw) : undefined
     const ch = chAttr ? parseInt(chAttr, 10) : undefined
     const vn = vnAttr ? parseInt(vnAttr, 10) : undefined
     
