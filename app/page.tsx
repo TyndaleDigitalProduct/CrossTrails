@@ -69,9 +69,13 @@ export default function HomePage() {
   
   // Load cross-references when verses are selected
   // Always show demo sidebar links regardless of selection
-  useEffect(() => {
+useEffect(() => {
+  if (selectedVerses.length > 0) {
+    loadCrossReferences(selectedVerses)
+  } else {
     setCrossReferences([])
-  }, [selectedVerses])
+  }
+}, [selectedVerses])
   
   const loadVerses = async (book: string, chapter: number) => {
     setLoading(prev => ({ ...prev, verses: true }))
@@ -97,6 +101,7 @@ export default function HomePage() {
   }
   
   const loadCrossReferences = async (verseIds: string[]) => {
+    console.log('Loading cross-references for:', verseIds)
     setLoading(prev => ({ ...prev, crossRefs: true }))
     
     try {

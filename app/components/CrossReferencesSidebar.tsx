@@ -81,36 +81,19 @@ export default function CrossReferencesSidebar({
   // console.log('CrossReferencesSidebar received crossReferences:', crossReferences)
   // console.log('crossReferences.length:', crossReferences.length)
 
-  // Use demo data if no real cross-references are provided
-  const displayReferences = crossReferences.length > 0
-    ? crossReferences
-    : getDemoReferences().map(group => ({
-        anchor_verse: `Matthew.${group.verse}`,
-        cross_references: group.references.map(ref => ({
-          reference: ref.ref.replace(/\s/g, '.').replace(/:/g, '.'),
-          display_ref: ref.text,
-          text: '', // Would be populated from API
-          connection: {
-            categories: [],
-            strength: 0.8,
-            type: 'parallel' as const,
-            explanation: ''
-          }
-        })),
-        total_found: group.references.length,
-        returned: group.references.length
-      }))
+// Only use live cross-references
+const displayReferences = crossReferences;
 
-  if (displayReferences.length === 0) {
-    return (
-      <div className="flex items-center justify-center h-64">
-        <p className="text-text-muted text-center">
-          Select an underlined passage<br />
-          to view cross references
-        </p>
-      </div>
-    )
-  }
+if (displayReferences.length === 0) {
+  return (
+    <div className="flex items-center justify-center h-64">
+      <p className="text-text-muted text-center">
+        Select an underlined passage<br />
+        to view cross references
+      </p>
+    </div>
+  )
+}
 
   return (
   <div className="w-full">
