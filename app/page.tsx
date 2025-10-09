@@ -357,7 +357,7 @@ useEffect(() => {
               {/* Section: How Does This Passage Relate? */}
               <div style={{ background: '#e5e5e5', padding: '18px 32px 2px 32px' }}>
                 <div style={{ display: 'flex', alignItems: 'center', marginBottom: '12px' }}>
-                  <span style={{ fontFamily: 'Calibri, sans-serif', fontWeight: 700, fontSize: '15px', color: '#403e3e', marginRight: '8px' }}>How Does This Passage Relate?</span>
+                  <span style={{ fontFamily: 'Calibri, sans-serif', fontWeight: 700, fontSize: '15px', color: '#403e3e', marginRight: '8px' }}>What are your thoughts on how these passages are related?</span>
                   <span
                     style={{ background: '#fff', borderRadius: '50%', width: '22px', height: '22px', display: 'flex', alignItems: 'center', justifyContent: 'center', fontWeight: 700, color: '#ff6a32', fontSize: '16px', border: '1px solid #e0e0e0', cursor: 'pointer' }}
                     onClick={() => setExpanded(!expanded)}
@@ -382,7 +382,7 @@ useEffect(() => {
                     </div>
                     {/* Textarea and send button */}
                     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', background: '#fff', borderRadius: '8px', padding: '8px 10px', border: '1px solid #e0e0e0', marginBottom: '18px' }}>
-                      <textarea style={{ flex: 1, borderRadius: '8px', border: 'none', padding: '8px 10px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', resize: 'none', minHeight: '36px', outline: 'none', background: 'transparent' }} placeholder="What do you think?" />
+                      <textarea style={{ flex: 1, borderRadius: '8px', border: 'none', padding: '8px 10px', fontFamily: 'Calibri, sans-serif', fontSize: '15px', color: '#403e3e', resize: 'none', minHeight: '36px', outline: 'none', background: 'transparent' }} placeholder="Chat with the Trail Guide" />
                       <button style={{ width: '28px', height: '28px', borderRadius: '50%', background: '#403e3e', border: 'none', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontWeight: 700, fontSize: '16px', cursor: 'pointer' }} aria-label="Send">
                         <span style={{ fontSize: '16px', fontWeight: 700 }}>↑</span>
                       </button>

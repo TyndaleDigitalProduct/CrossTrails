@@ -227,11 +227,6 @@ export default function BibleReader({
 
   return (
     <div className="w-full">
-      {/* Instruction text */}
-      <p className="text-[20px] mb-[35px]" style={{ fontFamily: 'Calibri, sans-serif', fontWeight: 300, color: '#403E3E' }}>
-        Select an underlined passage to view a cross reference
-      </p>
-
       {/* Chapter title */}
       <h2 className="text-[32px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
   <span style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '32px', lineHeight: '1.2', color: '#403E3E' }}>{book} {chapter}</span>
