@@ -1,8 +1,9 @@
 'use client';
 
 import React from 'react';
-import { useState, useCallback } from 'react';
+import { useState, useCallback, useEffect } from 'react';
 import { BibleReaderProps, BibleVerse } from '@/lib/types';
+import { getCrossReferenceConnection } from '@/lib/mcp-tools/getCrossReferenceConnection';
 
 interface AlignedBibleReaderProps
   extends Omit<BibleReaderProps, 'onSpanPositionsChange'> {
@@ -20,6 +21,12 @@ export default function AlignedBibleReader({
   selectedCrossRefs,
   loading = false,
 }: AlignedBibleReaderProps) {
+  // State to store cross-references for each verse
+  const [verseCrossRefs, setVerseCrossRefs] = useState<
+    Record<number, Array<{ ref: string; text: string }>>
+  >({});
+  const [crossRefsLoading, setCrossRefsLoading] = useState(false);
+  const [crossRefsError, setCrossRefsError] = useState<string | null>(null);
   // Handle clicking on cross-reference spans in the text
   const handleSpanClick = useCallback(
     (verseId: string) => {
@@ -45,81 +52,148 @@ export default function AlignedBibleReader({
     [selectedCrossRefs, onCrossRefSelect]
   );
 
+  // Load cross-references for all verses when component mounts or verses change
+  useEffect(() => {
+    const loadCrossReferences = async () => {
+      if (!verses.length || crossRefsLoading) return;
+
+      setCrossRefsLoading(true);
+      setCrossRefsError(null);
+      const newCrossRefs: Record<
+        number,
+        Array<{ ref: string; text: string }>
+      > = {};
+
+      try {
+        // Process each verse to get its cross-references
+        for (const verse of verses) {
+          const anchorVerse = `${book}.${chapter}.${verse.verse_number}`;
+
+          try {
+            const response = await getCrossReferenceConnection({
+              anchor_verse: anchorVerse,
+              candidate_refs: [], // Empty array means use all cross-references from anchor data
+              min_strength: 0.3, // Lower threshold to get more references
+            });
+
+            if (response.connections.length > 0) {
+              newCrossRefs[verse.verse_number] = response.connections.map(
+                conn => ({
+                  ref: conn.reference,
+                  text: formatReferenceForDisplay(conn.reference),
+                })
+              );
+            }
+          } catch (error) {
+            console.warn(
+              `Failed to load cross-references for ${anchorVerse}:`,
+              error
+            );
+            // Continue with other verses even if one fails
+          }
+        }
+
+        setVerseCrossRefs(newCrossRefs);
+      } catch (error) {
+        console.error('Error loading cross-references:', error);
+        setCrossRefsError('Failed to load cross-references');
+      } finally {
+        setCrossRefsLoading(false);
+      }
+    };
+
+    loadCrossReferences();
+  }, [book, chapter, verses, crossRefsLoading]);
+
+  // Helper function to format reference for display
+  const formatReferenceForDisplay = (ref: string): string => {
+    // Convert "Luke.1.5" to "Luke 1:5"
+    const parts = ref.split('.');
+    if (parts.length >= 3) {
+      const book = parts[0];
+      const chapter = parts[1];
+      const verse = parts[2];
+      return `${book} ${chapter}:${verse}`;
+    }
+    return ref;
+  };
+
   // Helper function to get cross-references for a verse
   const getVerseCrossReferences = (
     verseNumber: number
   ): Array<{ ref: string; text: string }> => {
-    // Demo cross-references based on Matthew 2 content
-    const demoCrossRefs: Record<
-      number,
-      Array<{ ref: string; text: string }>
-    > = {
-      1: [
-        { ref: 'Luke.1.5', text: 'Luke 1:5' },
-        { ref: 'Luke.2.4-7', text: 'Luke 2:4-7' },
-      ],
-      2: [
-        { ref: 'Num.24.17', text: 'Num 24:17' },
-        { ref: 'Jer.23.5', text: 'Jer 23:5' },
-        { ref: 'Matt.2.9', text: 'Matt 2:9' },
-        { ref: 'Rev.22.16', text: 'Rev 22:16' },
-      ],
-      5: [{ ref: 'John.7.42', text: 'John 7:42' }],
-      6: [{ ref: 'Mic.5.2', text: 'Mic 5:2' }],
-    };
-
-    return demoCrossRefs[verseNumber] || [];
+    return verseCrossRefs[verseNumber] || [];
   };
 
-  // Helper function to create demo cross-reference spans
-  const getDemoCrossReferenceSpans = (verseNumber: number, text: string) => {
-    const demoSpans: Array<{ start: number; end: number; refs: string[] }> = [];
+  // Helper function to create cross-reference spans based on actual data
+  const getCrossReferenceSpans = (verseNumber: number, text: string) => {
+    const crossRefs = getVerseCrossReferences(verseNumber);
+    const spans: Array<{ start: number; end: number; refs: string[] }> = [];
 
-    switch (verseNumber) {
-      case 1:
-        if (text.includes('Jesus was born in Bethlehem')) {
-          const start = text.indexOf('Jesus was born in Bethlehem');
-          const end =
-            start +
-            'Jesus was born in Bethlehem in Judea, during the reign of King Herod'
-              .length;
-          demoSpans.push({ start, end, refs: ['Luke.1.5', 'Luke.2.4-7'] });
-        }
-        break;
-      case 2:
-        if (text.includes('wise men')) {
-          const start = text.indexOf('wise men');
-          const end = start + 'wise men from eastern lands'.length;
-          demoSpans.push({
-            start,
-            end,
-            refs: ['Num.24.17', 'Jer.23.5', 'Matt.2.9', 'Rev.22.16'],
-          });
-        }
-        break;
-      case 5:
-        if (text.includes('In Bethlehem in Judea')) {
-          const start = text.indexOf('In Bethlehem in Judea');
-          const end =
-            start +
-            'In Bethlehem in Judea," they said, "for this is what the prophet wrote'
-              .length;
-          demoSpans.push({ start, end, refs: ['John.7.42'] });
-        }
-        break;
-      case 6:
-        if (text.includes('And you, O Bethlehem')) {
-          const start = text.indexOf('And you, O Bethlehem');
-          const end =
-            start +
-            'And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah'
-              .length;
-          demoSpans.push({ start, end, refs: ['Mic.5.2'] });
-        }
-        break;
+    // If we have cross-references for this verse, create spans
+    if (crossRefs.length > 0) {
+      // For demo purposes, we'll create spans for specific phrases
+      // In a full implementation, this would use span data from the cross-reference system
+      const refs = crossRefs.map(ref => ref.ref);
+
+      switch (verseNumber) {
+        case 1:
+          if (text.includes('Jesus was born in Bethlehem')) {
+            const start = text.indexOf('Jesus was born in Bethlehem');
+            const end =
+              start +
+              'Jesus was born in Bethlehem in Judea, during the reign of King Herod'
+                .length;
+            spans.push({ start, end, refs });
+          }
+          break;
+        case 2:
+          if (text.includes('wise men')) {
+            const start = text.indexOf('wise men');
+            const end = start + 'wise men from eastern lands'.length;
+            spans.push({ start, end, refs });
+          }
+          break;
+        case 5:
+          if (text.includes('In Bethlehem in Judea')) {
+            const start = text.indexOf('In Bethlehem in Judea');
+            const end =
+              start +
+              'In Bethlehem in Judea," they said, "for this is what the prophet wrote'
+                .length;
+            spans.push({ start, end, refs });
+          }
+          break;
+        case 6:
+          if (text.includes('And you, O Bethlehem')) {
+            const start = text.indexOf('And you, O Bethlehem');
+            const end =
+              start +
+              'And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah'
+                .length;
+            spans.push({ start, end, refs });
+          }
+          break;
+        default:
+          // For other verses with cross-references, create a span for a meaningful portion
+          // This is a simplified approach - in production, you'd have more sophisticated span detection
+          if (crossRefs.length > 0 && text.length > 20) {
+            // Create a span for the first meaningful phrase (up to first comma or period, or first 50 chars)
+            const firstPunctuation = Math.min(
+              text.indexOf(',') > 0 ? text.indexOf(',') : text.length,
+              text.indexOf('.') > 0 ? text.indexOf('.') : text.length,
+              50
+            );
+            spans.push({ start: 0, end: firstPunctuation, refs });
+          } else if (crossRefs.length > 0) {
+            // For short verses, underline the entire verse
+            spans.push({ start: 0, end: text.length, refs });
+          }
+          break;
+      }
     }
 
-    return demoSpans;
+    return spans;
   };
 
   // Render text with cross-reference spans
@@ -252,58 +326,17 @@ export default function AlignedBibleReader({
 
   // Render a verse row with aligned cross-references
   const renderVerseRow = (verse: BibleVerse) => {
-    const hasDemo = verse.verse_number <= 6; // First 6 verses have demo cross-refs
+    const crossRefs = getVerseCrossReferences(verse.verse_number);
+    const hasCrossRefs = crossRefs.length > 0;
     const verseText = verse.text;
     let spanElements: React.ReactElement[] = [];
 
-    if (verse.verse_number === 1) {
-      // Entirety of verse 1 is underlined and is a link
-      spanElements = [
-        <sup
-          key="verse-num"
-          style={{
-            fontSize: '16.77px',
-            fontFamily: 'Calibri, sans-serif',
-            marginRight: '6px',
-            position: 'relative',
-            top: '0.1em',
-          }}
-        >
-          {verse.verse_number}
-        </sup>,
-        <a
-          key="text"
-          href="#"
-          style={{
-            fontSize: '26px',
-            fontFamily: 'Calibri, sans-serif',
-            lineHeight: '1.55',
-            color: '#403E3E',
-            verticalAlign: 'baseline',
-            textDecoration: 'underline',
-            textDecorationColor: '#ff6a32',
-            textDecorationThickness: '1px',
-            textUnderlineOffset: '0.2em',
-            textDecorationSkipInk: 'none',
-            cursor: 'pointer',
-          }}
-          onClick={e => {
-            e.preventDefault();
-            handleSpanClick(verse.verse_id);
-          }}
-        >
-          {verseText}
-        </a>,
-      ];
-    } else if (hasDemo) {
-      // Demo: Add underlines to specific phrases
-      const demoSpans = getDemoCrossReferenceSpans(
-        verse.verse_number,
-        verse.text
-      );
+    if (hasCrossRefs) {
+      // Get cross-reference spans for this verse
+      const spans = getCrossReferenceSpans(verse.verse_number, verse.text);
       spanElements = renderTextWithSpans(
         verse.text,
-        demoSpans,
+        spans,
         verse.verse_id,
         verse.verse_number
       );
@@ -368,7 +401,7 @@ export default function AlignedBibleReader({
     );
   };
 
-  if (loading) {
+  if (loading || crossRefsLoading) {
     return (
       <div className="w-full">
         <div className="space-y-4">
@@ -385,6 +418,18 @@ export default function AlignedBibleReader({
             </div>
           ))}
         </div>
+        {crossRefsLoading && (
+          <div className="text-center py-4">
+            <p className="text-text-muted text-sm">
+              Loading cross-references...
+            </p>
+          </div>
+        )}
+        {crossRefsError && (
+          <div className="text-center py-4">
+            <p className="text-red-500 text-sm">{crossRefsError}</p>
+          </div>
+        )}
       </div>
     );
   }
