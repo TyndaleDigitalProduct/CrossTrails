@@ -402,6 +402,7 @@ export interface CrossReferencesSidebarProps {
   selectedRefs: string[];
   onRefSelect: (refs: string[]) => void;
   loading?: boolean;
+  error?: string | null;
 }
 
 export interface AICompanionProps {

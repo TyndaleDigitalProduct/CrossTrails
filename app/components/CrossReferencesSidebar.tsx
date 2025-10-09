@@ -10,7 +10,7 @@ export default function CrossReferencesSidebar({
   onRefSelect,
   loading = false,
   error
-}: CrossReferencesSidebarProps & { error?: string }) {
+}: CrossReferencesSidebarProps & { error?: string | null }) {
 
   if (error) {
     return (
