@@ -2,12 +2,13 @@
 
 import React from 'react';
 import { useState } from 'react';
-import { CrossReferencesSidebarProps } from '@/lib/types';
+import { CrossReference, CrossReferencesSidebarProps } from '@/lib/types';
 
 export default function CrossReferencesSidebar({
   crossReferences,
   selectedRefs,
   onRefSelect,
+  onReferenceClick,
   loading = false,
   error,
 }: CrossReferencesSidebarProps & { error?: string | null }) {
@@ -29,9 +30,13 @@ export default function CrossReferencesSidebar({
     }
   };
 
-  const handleRefNavigation = async (reference: string) => {
-    // TODO: Implement navigation to the cross-reference
-    console.log('Navigate to:', reference);
+  const handleRefNavigation = async (crossRef: CrossReference) => {
+    // Call the modal handler if provided
+    if (onReferenceClick) {
+      onReferenceClick(crossRef);
+    } else {
+      console.log('Navigate to:', crossRef.reference);
+    }
   };
 
   // Demo data that matches the Figma design for Matthew 2
@@ -144,7 +149,10 @@ export default function CrossReferencesSidebar({
                     className="modal-trigger"
                     onClick={e => {
                       e.preventDefault();
+                      // Handle selection for highlighting
                       handleRefClick(ref.reference);
+                      // Handle navigation/modal opening
+                      handleRefNavigation(ref);
                     }}
                     style={{
                       fontFamily: 'Calibri, sans-serif',

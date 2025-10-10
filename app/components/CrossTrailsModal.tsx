@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ConversationTurn } from '@/lib/types';
+import { ConversationTurn, CrossReference } from '@/lib/types';
 
 interface CrossTrailsModalProps {
   isOpen: boolean;
   onClose: () => void;
+  referenceVerse?: CrossReference;
 }
 
 export default function CrossTrailsModal({
   isOpen,
   onClose,
+  referenceVerse,
 }: CrossTrailsModalProps) {
   const [conversationHistory, setConversationHistory] = useState<
     ConversationTurn[]
@@ -42,8 +44,8 @@ export default function CrossTrailsModal({
     (e.target as HTMLFormElement).reset();
 
     try {
-      // Construct the CrossReference object for Acts.20.16
-      const crossReference = {
+      // Use the provided reference verse or fallback to demo data
+      const crossReference = referenceVerse || {
         reference: 'Acts.20.16',
         display_ref: 'Acts 20.16',
         text: 'On the day of Pentecost all the believers were meeting together in one place.',
