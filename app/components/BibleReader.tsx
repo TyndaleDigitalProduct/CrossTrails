@@ -356,9 +356,12 @@ export default function BibleReader({
         {verses.map((verse, index) => renderVerse(verse, index))}
       </div>
       <button
-        onClick={() =>
-          handleChapterSelect ? handleChapterSelect(chapter + 1) : undefined
-        }
+        onClick={e => {
+          e.preventDefault();
+          if (handleChapterSelect) {
+            handleChapterSelect(chapter + 1);
+          }
+        }}
         className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700"
         style={{ background: 'white' }}
       >
