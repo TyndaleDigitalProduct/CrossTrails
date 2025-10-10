@@ -279,15 +279,8 @@ export default function CrossTrailsModal({
               <br />
               <span style={{ display: 'inline-block', marginLeft: '24px' }}>
                 for he didn’t want to spend any more time in the province of
-                Asia.
-              </span>
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                He was hurrying to get to Jerusalem, if possible,
-              </span>
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                in time for the Festival of Pentecost.
+                Asia. He was hurrying to get to Jerusalem, if possible, in time
+                for the Festival of Pentecost.
               </span>
             </div>
           </div>
