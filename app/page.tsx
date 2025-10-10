@@ -11,76 +11,75 @@ import CrossTrailsModal from './components/CrossTrailsModal';
 import { findBookInString, findChapterInString } from '@/lib/parsers/book';
 import SearchResultModal from './components/SearchResultModal';
 
-export const fullBookNameToAbbrev: Record<string, string> = {
-  Genesis: 'Gen',
-  Exodus: 'Exod',
-  Leviticus: 'Lev',
-  Numbers: 'Num',
-  Deuteronomy: 'Deut',
-  Joshua: 'Josh',
-  Judges: 'Judg',
-  Ruth: 'Ruth',
-  '1 Samuel': '1Sam',
-  '2 Samuel': '2Sam',
-  '1 Kings': '1Kgs',
-  '2 Kings': '2Kgs',
-  '1 Chronicles': '1Chr',
-  '2 Chronicles': '2Chr',
-  Ezra: 'Ezra',
-  Nehemiah: 'Neh',
-  Esther: 'Esth',
-  Job: 'Job',
-  Psalms: 'Ps',
-  Proverbs: 'Pr',
-  Ecclesiastes: 'Eccl',
-  'Song of Songs': 'Song',
-  Isaiah: 'Isa',
-  Jeremiah: 'Jer',
-  Lamentations: 'Lam',
-  Ezekiel: 'Ezek',
-  Daniel: 'Dan',
-  Hosea: 'Hos',
-  Joel: 'Joel',
-  Amos: 'Amos',
-  Obadiah: 'Obad',
-  Jonah: 'Jon',
-  Micah: 'Mic',
-  Nahum: 'Nah',
-  Habakkuk: 'Hab',
-  Zephaniah: 'Zeph',
-  Haggai: 'Hagg',
-  Zechariah: 'Zech',
-  Malachi: 'Mal',
-  Matthew: 'Matt',
-  Mark: 'Mark',
-  Luke: 'Luke',
-  John: 'John',
-  Acts: 'Acts',
-  Romans: 'Rom',
-  '1 Corinthians': '1Cor',
-  '2 Corinthians': '2Cor',
-  Galatians: 'Gal',
-  Ephesians: 'Eph',
-  Philippians: 'Phil',
-  Colossians: 'Col',
-  '1 Thessalonians': '1Thes',
-  '2 Thessalonians': '2Thes',
-  '1 Timothy': '1Tim',
-  '2 Timothy': '2Tim',
-  Titus: 'Titus',
-  Philemon: 'Phlm',
-  Hebrews: 'Heb',
-  James: 'Jas',
-  '1 Peter': '1Pet',
-  '2 Peter': '2Pet',
-  '1 John': '1Jn',
-  '2 John': '2Jn',
-  '3 John': '3Jn',
-  Jude: 'Jude',
-  Revelation: 'Rev',
-};
-
 export default function HomePage() {
+  const fullBookNameToAbbrev: Record<string, string> = {
+    Genesis: 'Gen',
+    Exodus: 'Exod',
+    Leviticus: 'Lev',
+    Numbers: 'Num',
+    Deuteronomy: 'Deut',
+    Joshua: 'Josh',
+    Judges: 'Judg',
+    Ruth: 'Ruth',
+    '1 Samuel': '1Sam',
+    '2 Samuel': '2Sam',
+    '1 Kings': '1Kgs',
+    '2 Kings': '2Kgs',
+    '1 Chronicles': '1Chr',
+    '2 Chronicles': '2Chr',
+    Ezra: 'Ezra',
+    Nehemiah: 'Neh',
+    Esther: 'Esth',
+    Job: 'Job',
+    Psalms: 'Ps',
+    Proverbs: 'Pr',
+    Ecclesiastes: 'Eccl',
+    'Song of Songs': 'Song',
+    Isaiah: 'Isa',
+    Jeremiah: 'Jer',
+    Lamentations: 'Lam',
+    Ezekiel: 'Ezek',
+    Daniel: 'Dan',
+    Hosea: 'Hos',
+    Joel: 'Joel',
+    Amos: 'Amos',
+    Obadiah: 'Obad',
+    Jonah: 'Jon',
+    Micah: 'Mic',
+    Nahum: 'Nah',
+    Habakkuk: 'Hab',
+    Zephaniah: 'Zeph',
+    Haggai: 'Hagg',
+    Zechariah: 'Zech',
+    Malachi: 'Mal',
+    Matthew: 'Matt',
+    Mark: 'Mark',
+    Luke: 'Luke',
+    John: 'John',
+    Acts: 'Acts',
+    Romans: 'Rom',
+    '1 Corinthians': '1Cor',
+    '2 Corinthians': '2Cor',
+    Galatians: 'Gal',
+    Ephesians: 'Eph',
+    Philippians: 'Phil',
+    Colossians: 'Col',
+    '1 Thessalonians': '1Thes',
+    '2 Thessalonians': '2Thes',
+    '1 Timothy': '1Tim',
+    '2 Timothy': '2Tim',
+    Titus: 'Titus',
+    Philemon: 'Phlm',
+    Hebrews: 'Heb',
+    James: 'Jas',
+    '1 Peter': '1Pet',
+    '2 Peter': '2Pet',
+    '1 John': '1Jn',
+    '2 John': '2Jn',
+    '3 John': '3Jn',
+    Jude: 'Jude',
+    Revelation: 'Rev',
+  };
   // Modal state for proof of concept
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<string>('');
@@ -98,14 +97,15 @@ export default function HomePage() {
   }, [modalOpen]);
   // (removed duplicate modalOpen and modalContent)
 
-  // Global link click handler
+  // Global link click handler - only for specific modal triggers
   React.useEffect(() => {
     function handleLinkClick(e: MouseEvent) {
       const target = e.target as HTMLElement;
+      // Only trigger modal for elements with specific class or data attribute
+      // This prevents interference with Bible reader verse selection
       if (
-        target.tagName === 'A' ||
-        (target.tagName === 'SPAN' &&
-          target.style.textDecoration === 'underline')
+        target.classList.contains('modal-trigger') ||
+        target.getAttribute('data-modal-trigger') === 'true'
       ) {
         e.preventDefault();
         // Always show the same initial modal content regardless of which link is clicked

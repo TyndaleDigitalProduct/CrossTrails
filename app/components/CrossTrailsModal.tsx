@@ -42,23 +42,23 @@ export default function CrossTrailsModal({
     (e.target as HTMLFormElement).reset();
 
     try {
-      // Construct the CrossReference object for Micah 5:2
+      // Construct the CrossReference object for Acts.20.16
       const crossReference = {
-        reference: 'Micah.5.2',
-        display_ref: 'Micah 5:2',
-        text: 'But you, O Bethlehem Ephrathah, are only a small village among all the people of Judah. Yet a ruler of Israel, whose origins are in the distant past, will come from you on my behalf.',
-        anchor_ref: 'Matthew.2.6',
+        reference: 'Acts.20.16',
+        display_ref: 'Acts 20.16',
+        text: 'On the day of Pentecost all the believers were meeting together in one place.',
+        anchor_ref: 'Acts.2.1',
         connection: {
-          categories: ['prophecy', 'messianic'],
+          categories: ['ritual_practice', 'elaboration'],
           strength: 0.9,
-          type: 'prophecy' as const,
+          type: 'ritual_practice' as const,
           explanation:
-            'Messianic prophecy about the birthplace of the ruler of Israel',
+            'Paul had decided to sail on past Ephesus, for he didn\u2019t want to spend any more time in the province',
         },
         context: {
-          book: 'Micah',
-          chapter: 5,
-          verse: 2,
+          book: 'Acts',
+          chapter: 20,
+          verse: 16,
         },
       };
 
@@ -262,7 +262,7 @@ export default function CrossTrailsModal({
                 marginBottom: '8px',
               }}
             >
-              {'Micah 5:2'}
+              {'Acts 20:16'}
             </div>
             <div
               style={{
@@ -272,23 +272,15 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              2
+              16&nbsp;
               <span style={{ fontWeight: 400 }}>
-                *But you, O Bethlehem Ephrathah,
+                Paul had decided to sail on past Ephesus,
               </span>
               <br />
               <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                are only a small village among all the people of Judah.
-              </span>
-              <br />
-              Yet a ruler of Israel,
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                whose origins are in the distant past,
-              </span>
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                will come from you on my behalf.
+                for he didn’t want to spend any more time in the province of
+                Asia. He was hurrying to get to Jerusalem, if possible, in time
+                for the Festival of Pentecost.
               </span>
             </div>
           </div>

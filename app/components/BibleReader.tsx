@@ -54,9 +54,8 @@ export default function BibleReader({
         >
           {verse.verse_number}
         </sup>,
-        <a
+        <span
           key="text"
-          href="#"
           style={{
             fontSize: '26px',
             fontFamily: 'Calibri, sans-serif',
@@ -72,11 +71,12 @@ export default function BibleReader({
           }}
           onClick={e => {
             e.preventDefault();
+            e.stopPropagation();
             handleSpanClick(verse.verse_id, verseText);
           }}
         >
           {verseText}
-        </a>,
+        </span>,
       ];
     } else {
       // No cross-references, render plain text with verse number
@@ -238,7 +238,11 @@ export default function BibleReader({
             textUnderlineOffset: '0.2em',
             textDecorationSkipInk: 'none',
           }}
-          onClick={() => handleSpanClick(verseId, spanText)}
+          onClick={e => {
+            e.preventDefault();
+            e.stopPropagation();
+            handleSpanClick(verseId, spanText);
+          }}
           onMouseEnter={() => setHoveredSpan(`${verseId}-${spanIndex}`)}
           onMouseLeave={() => setHoveredSpan(null)}
           title={`Cross-references: ${span.refs.join(', ')}`}
@@ -297,9 +301,12 @@ export default function BibleReader({
     <div className="w-full">
       {chapter > 1 ? (
         <button
-          onClick={() =>
-            handleChapterSelect ? handleChapterSelect(chapter - 1) : undefined
-          }
+          onClick={e => {
+            e.preventDefault();
+            if (handleChapterSelect) {
+              handleChapterSelect(chapter - 1);
+            }
+          }}
           className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700"
           style={{ background: 'white' }}
         >
@@ -350,9 +357,12 @@ export default function BibleReader({
         {verses.map((verse, index) => renderVerse(verse, index))}
       </div>
       <button
-        onClick={() =>
-          handleChapterSelect ? handleChapterSelect(chapter + 1) : undefined
-        }
+        onClick={e => {
+          e.preventDefault();
+          if (handleChapterSelect) {
+            handleChapterSelect(chapter + 1);
+          }
+        }}
         className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700"
         style={{ background: 'white' }}
       >
