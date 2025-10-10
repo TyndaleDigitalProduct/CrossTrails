@@ -237,7 +237,9 @@ function buildStudyPrompt(options: PromptBuildOptions): string {
 1. What are the key themes that connect these passages?
 2. How does the historical context of each passage inform their relationship?
 3. What theological insights emerge when these verses are read together?
-4. How might these cross-references inform personal application or understanding?`
+4. How might these cross-references inform personal application or understanding?
+5. How does this cross-reference relate to the user's observation above?
+Use this in your own thinking; and then in your response, provide the user with gentle guidance that helps them discover the significance of the connection on their own. If the user's observation aligns with your analysis and doesn't have any significant things missing (or inappropriately included), affirm their response as excellent, provide them with some confirming details they might not have mentioned, and encourage them to move on to other cross references to expand their journey through the Bible. If the user's observation doesn't align with your analysis, provide them with gentle guidance that helps them discover the significance of the connection on their own.`
 }
 
 function buildDevotionalPrompt(options: PromptBuildOptions): string {
@@ -263,7 +265,8 @@ ${reasoning ? `\n**Why they connect**: ${reasoning}` : ''}
 ${userObservation.trim() ? `## Your Observation\n"${userObservation.trim()}"\n` : ''}
 
 ## Reflection Invitation
-Consider how these connected verses speak to your life today. What encouragement, challenge, or insight does God offer through seeing these scriptures together? How might this cross-reference deepen your understanding of God's character or His work in your life?`
+Consider how these connected verses speak to your life today. What encouragement, challenge, or insight does God offer through seeing these scriptures together? How might this cross-reference deepen your understanding of God's character or His work in your life?
+Use this in your own thinking; and then in your response, provide the user with gentle guidance that helps them discover the significance of the connection on their own. If the user's observation aligns with your analysis and doesn't have any significant things missing (or inappropriately included), affirm their response as excellent, provide them with some confirming details they might not have mentioned, and encourage them to move on to other cross references to expand their journey through the Bible. If the user's observation doesn't align with your analysis, provide them with gentle guidance that helps them discover the significance of the connection on their own.`
 }
 
 function buildAcademicPrompt(options: PromptBuildOptions): string {
@@ -275,9 +278,7 @@ function buildAcademicPrompt(options: PromptBuildOptions): string {
 Please provide a scholarly analysis addressing:
 
 ### Textual Analysis
-- Examine the original language connections (if applicable)
 - Identify literary devices, structure, and genre considerations
-- Note any significant textual variants or translation considerations
 
 ### Historical-Critical Context
 - Compare the historical settings of both passages
@@ -289,8 +290,7 @@ Please provide a scholarly analysis addressing:
 - Identify how this cross-reference contributes to broader biblical theology
 - Assess the interpretive significance for systematic theology
 
-### Scholarly Sources
-Please reference relevant scholarly works, commentaries, or recent academic research that illuminates this cross-reference relationship.`
+Use this in your own thinking; and then in your response, provide the user with gentle guidance that helps them discover the significance of the connection on their own. If the user's observation aligns with your analysis and doesn't have any significant things missing (or inappropriately included), affirm their response as excellent, provide them with some confirming details they might not have mentioned, and encourage them to move on to other cross references to expand their journey through the Bible. If the user's observation doesn't align with your analysis, provide them with gentle guidance that helps them discover the significance of the connection on their own.`
 }
 
 function extractAnchorFromContext(crossReference: CrossReference): string | null {
