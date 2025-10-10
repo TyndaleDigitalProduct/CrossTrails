@@ -219,13 +219,17 @@ export default function BibleReader({
     )
   }
 
+  // Remove handleChapterSelect from here; it should be handled in Header.tsx or passed as a prop if needed.
+
   return (
     <div className="w-full">
+      {chapter > 1 ? 
+  <button onClick={() => handleChapterSelect ? handleChapterSelect(chapter - 1) : undefined} className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700" style={{ background: 'white' }}>&lt;&lt; Chapter {chapter - 1}</button>
+      : <span></span>}
       {/* Chapter title */}
       <h2 className="text-[32px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
   <span style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '32px', lineHeight: '1.2', color: '#403E3E' }}>{book} {chapter}</span>
       </h2>
-
       {/* Chapter subtitle if we have it (for demo, using Matthew 2) */}
       {book === 'Matthew' && chapter === 2 && (
         <h3 className="text-[24px] font-bold mb-6" style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '24px', lineHeight: '1.2', color: '#403E3E' }}>
@@ -237,6 +241,7 @@ export default function BibleReader({
       <div className="space-y-0">
         {verses.map((verse, index) => renderVerse(verse, index))}
       </div>
+  <button onClick={() => handleChapterSelect ? handleChapterSelect(chapter + 1) : undefined} className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700" style={{ background: 'white' }}>Chapter {chapter + 1} &gt;&gt;</button>
     </div>
   )
 }

@@ -12,7 +12,7 @@ export async function generateCrossReferencePrompt(
   const { 
     crossReference, 
     userObservation = '', 
-    contextRange = 2, 
+    contextRange = 3, 
     promptTemplate = 'default' 
   } = request
 
@@ -217,13 +217,13 @@ function buildDefaultPrompt(options: PromptBuildOptions): string {
 
   prompt += `
 ## Analysis Request
-Please analyze the connection between these two passages, considering:
+Please assess the connection between these two passages, considering:
 1. The thematic relationships indicated by the categories: ${connection.categories.join(', ')}
 2. The textual and contextual evidence from both passages
-3. The historical, literary, or theological significance of this connection
+3. The historical, literary, or theological significance of this connection. 
 ${userObservation.trim() ? `4. How this relates to the user's observation above` : ''}
 
-Provide insights that would help someone studying these passages understand why they are cross-referenced and what deeper meaning emerges from considering them together.`
+Use this in your own thinking; and then in your response, provide the user with gentle guidance that helps them discover the significance of the connection on their own. If the user's observation aligns with your analysis and doesn't have any significant things missing (or inappropriately included), affirm their response as excellent, provide them with some confirming details they might not have mentioned, and encourage them to move on to other cross references to expand their journey through the Bible. If the user's observation doesn't align with your analysis, provide them with gentle guidance that helps them discover the significance of the connection on their own.`
 
   return prompt
 }

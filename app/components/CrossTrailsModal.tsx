@@ -1,13 +1,174 @@
-import React from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import { ConversationTurn } from '@/lib/types';
 
 interface CrossTrailsModalProps {
   isOpen: boolean;
   onClose: () => void;
-  children: React.ReactNode;
 }
 
-export default function CrossTrailsModal({ isOpen, onClose, children }: CrossTrailsModalProps) {
-  if (!isOpen) return null;
+export default function CrossTrailsModal({
+  isOpen,
+  onClose,
+}: CrossTrailsModalProps) {
+  const [conversationHistory, setConversationHistory] = useState<
+    ConversationTurn[]
+  >([]);
+  const [isLoading, setIsLoading] = useState(false);
+  const [expanded, setExpanded] = useState(true);
+  const conversationRef = useRef<HTMLDivElement>(null);
+  const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
+
+  const onHandleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const formData = new FormData(e.target as HTMLFormElement);
+    const question = formData.get('question') as string;
+
+    if (!question.trim()) {
+      console.log('No question provided');
+      return;
+    }
+
+    // Add user's question to conversation history
+    const userTurn: ConversationTurn = {
+      type: 'user',
+      content: question,
+      timestamp: new Date().toISOString(),
+    };
+
+    setConversationHistory(prev => [...prev, userTurn]);
+    setIsLoading(true);
+
+    // Clear the textarea
+    (e.target as HTMLFormElement).reset();
+
+    try {
+      // Construct the CrossReference object for Micah 5:2
+      const crossReference = {
+        reference: 'Micah.5.2',
+        display_ref: 'Micah 5:2',
+        text: 'But you, O Bethlehem Ephrathah, are only a small village among all the people of Judah. Yet a ruler of Israel, whose origins are in the distant past, will come from you on my behalf.',
+        anchor_ref: 'Matthew.2.6',
+        connection: {
+          categories: ['prophecy', 'messianic'],
+          strength: 0.9,
+          type: 'prophecy' as const,
+          explanation:
+            'Messianic prophecy about the birthplace of the ruler of Israel',
+        },
+        context: {
+          book: 'Micah',
+          chapter: 5,
+          verse: 2,
+        },
+      };
+
+      // Call the cross-refs analyze API
+      const response = await fetch('/api/cross-refs/analyze', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          crossReference,
+          userObservation: question,
+          analysisType: 'default',
+          contextRange: 2,
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+
+      const data = await response.json();
+      console.log('Analysis result:', data);
+
+      if (data.success && data.data?.analysis) {
+        // Add AI response to conversation history
+        const assistantTurn: ConversationTurn = {
+          type: 'assistant',
+          content: data.data.analysis,
+          timestamp: new Date().toISOString(),
+        };
+
+        setConversationHistory(prev => [...prev, assistantTurn]);
+      }
+    } catch (error) {
+      console.error('Error analyzing cross-reference:', error);
+
+      // Add error message to conversation history
+      const errorTurn: ConversationTurn = {
+        type: 'assistant',
+        content:
+          'I apologize, but I encountered an error while processing your question. Please try again.',
+        timestamp: new Date().toISOString(),
+      };
+
+      setConversationHistory(prev => [...prev, errorTurn]);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const formatTimestamp = (timestamp: string) => {
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+
+  const clearHistory = () => {
+    setConversationHistory([]);
+    messageRefs.current = [];
+  };
+
+  // Reset state when modal opens
+  useEffect(() => {
+    if (isOpen) {
+      setConversationHistory([]);
+      setIsLoading(false);
+      setExpanded(true);
+      messageRefs.current = [];
+    }
+  }, [isOpen]);
+
+  // Ensure messageRefs array is properly sized
+  useEffect(() => {
+    messageRefs.current = messageRefs.current.slice(
+      0,
+      conversationHistory.length
+    );
+  }, [conversationHistory.length]);
+
+  // Auto-scroll behavior: show beginning of new AI responses, bottom for user messages
+  useEffect(() => {
+    if (conversationRef.current && conversationHistory.length > 0) {
+      const lastMessage = conversationHistory[conversationHistory.length - 1];
+      const lastMessageIndex = conversationHistory.length - 1;
+
+      if (lastMessage.type === 'assistant' && !isLoading) {
+        // For AI responses, scroll to show the beginning of the new response
+        setTimeout(() => {
+          const lastMessageElement = messageRefs.current[lastMessageIndex];
+          if (lastMessageElement) {
+            lastMessageElement.scrollIntoView({
+              behavior: 'smooth',
+              block: 'start',
+            });
+          }
+        }, 100);
+      } else if (lastMessage.type === 'user') {
+        // For user messages, scroll to bottom as they're typically short
+        if (conversationRef.current) {
+          conversationRef.current.scrollTop =
+            conversationRef.current.scrollHeight;
+        }
+      }
+    }
+  }, [conversationHistory, isLoading]);
+
+  // Don't render anything if modal is closed
+  if (!isOpen) {
+    return null;
+  }
 
   return (
     <div
@@ -70,7 +231,316 @@ export default function CrossTrailsModal({ isOpen, onClose, children }: CrossTra
         >
           ×
         </button>
-        {children}
+
+        <div
+          style={{
+            borderRadius: '24px',
+            background: '#fff',
+            minWidth: '400px',
+            maxWidth: '600px',
+            margin: '0 auto',
+            padding: 0,
+            position: 'relative',
+            boxShadow: '0 2px 16px rgba(64,62,62,0.10)',
+            overflow: 'hidden',
+          }}
+        >
+          {/* Headline and passage */}
+          <div
+            style={{
+              padding: '28px 32px 18px 32px',
+              borderBottom: '1px solid #e0e0e0',
+            }}
+          >
+            <div
+              style={{
+                fontFamily: 'Calibri, sans-serif',
+                fontWeight: 700,
+                fontSize: '20px',
+                color: '#403e3e',
+                textDecoration: 'underline',
+                marginBottom: '8px',
+              }}
+            >
+              {'Micah 5:2'}
+            </div>
+            <div
+              style={{
+                fontFamily: 'Calibri, sans-serif',
+                fontSize: '17px',
+                color: '#403e3e',
+                marginBottom: '0',
+              }}
+            >
+              2
+              <span style={{ fontWeight: 400 }}>
+                *But you, O Bethlehem Ephrathah,
+              </span>
+              <br />
+              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
+                are only a small village among all the people of Judah.
+              </span>
+              <br />
+              Yet a ruler of Israel,
+              <br />
+              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
+                whose origins are in the distant past,
+              </span>
+              <br />
+              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
+                will come from you on my behalf.
+              </span>
+            </div>
+          </div>
+
+          {/* Section: How Does This Passage Relate? */}
+          <div style={{ background: '#e5e5e5', padding: '18px 32px 2px 32px' }}>
+            <div
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'space-between',
+                marginBottom: '12px',
+              }}
+            >
+              <div style={{ display: 'flex', alignItems: 'center' }}>
+                <span
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '15px',
+                    color: '#403e3e',
+                    marginRight: '8px',
+                  }}
+                >
+                  What are your thoughts on how these passages are related?
+                </span>
+                <span
+                  style={{
+                    background: '#fff',
+                    borderRadius: '50%',
+                    width: '22px',
+                    height: '22px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontWeight: 700,
+                    color: '#ff6a32',
+                    fontSize: '16px',
+                    border: '1px solid #e0e0e0',
+                    cursor: 'pointer',
+                  }}
+                  onClick={() => setExpanded(!expanded)}
+                >
+                  {expanded ? '−' : '+'}
+                </span>
+              </div>
+              {expanded && conversationHistory.length > 0 && (
+                <button
+                  onClick={clearHistory}
+                  style={{
+                    background: 'transparent',
+                    border: '1px solid #ccc',
+                    borderRadius: '4px',
+                    padding: '4px 8px',
+                    fontSize: '12px',
+                    color: '#666',
+                    cursor: 'pointer',
+                    fontFamily: 'Calibri, sans-serif',
+                  }}
+                  title="Clear conversation history"
+                >
+                  Clear
+                </button>
+              )}
+            </div>
+
+            {expanded && (
+              <>
+                {/* Conversation History */}
+                <div
+                  ref={conversationRef}
+                  style={{
+                    maxHeight: '300px',
+                    overflowY: 'auto',
+                    marginBottom: '12px',
+                    scrollbarWidth: 'thin',
+                    scrollbarColor: '#ccc transparent',
+                  }}
+                >
+                  {conversationHistory.length === 0 && !isLoading && (
+                    <div
+                      style={{
+                        textAlign: 'center',
+                        padding: '20px',
+                        color: '#999',
+                        fontStyle: 'italic',
+                        fontSize: '14px',
+                        fontFamily: 'Calibri, sans-serif',
+                      }}
+                    >
+                      Start a conversation with the Trail Guide about how these
+                      passages relate to each other.
+                    </div>
+                  )}
+                  {conversationHistory.map((turn, index) => (
+                    <div
+                      key={index}
+                      ref={el => {
+                        messageRefs.current[index] = el;
+                      }}
+                      style={{
+                        background:
+                          turn.type === 'user' ? '#f8f9fa' : 'transparent',
+                        borderRadius: '8px',
+                        padding: '10px 14px',
+                        marginBottom: '8px',
+                        fontFamily: 'Calibri, sans-serif',
+                        fontSize: '15px',
+                        color: '#403e3e',
+                        border:
+                          turn.type === 'user' ? '1px solid #e9ecef' : 'none',
+                        marginLeft: turn.type === 'user' ? '20px' : '0px',
+                      }}
+                    >
+                      <div
+                        style={{
+                          display: 'flex',
+                          justifyContent: 'space-between',
+                          alignItems: 'center',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        <div
+                          style={{
+                            fontWeight: 600,
+                            fontSize: '14px',
+                            color: turn.type === 'user' ? '#666' : '#ff6a32',
+                          }}
+                        >
+                          {turn.type === 'user' ? 'You asked:' : 'Trail Guide:'}
+                        </div>
+                        <div
+                          style={{
+                            fontSize: '12px',
+                            color: '#999',
+                          }}
+                        >
+                          {formatTimestamp(turn.timestamp)}
+                        </div>
+                      </div>
+                      <div
+                        dangerouslySetInnerHTML={{
+                          __html: turn.content.replace(/\n/g, '<br>'),
+                        }}
+                      />
+                    </div>
+                  ))}
+
+                  {/* Loading indicator */}
+                  {isLoading && (
+                    <div
+                      style={{
+                        background: 'transparent',
+                        borderRadius: '8px',
+                        padding: '14px 16px',
+                        fontFamily: 'Calibri, sans-serif',
+                        fontSize: '15px',
+                        color: '#403e3e',
+                        marginBottom: '8px',
+                      }}
+                    >
+                      <div
+                        style={{
+                          fontWeight: 600,
+                          fontSize: '14px',
+                          color: '#ff6a32',
+                          marginBottom: '4px',
+                        }}
+                      >
+                        Trail Guide:
+                      </div>
+                      <div style={{ fontStyle: 'italic', color: '#888' }}>
+                        Trail Guide is thinking...
+                      </div>
+                    </div>
+                  )}
+                </div>
+
+                {/* Textarea and send button */}
+                <form onSubmit={onHandleSubmit}>
+                  <div
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '8px',
+                      background: '#fff',
+                      borderRadius: '8px',
+                      padding: '8px 10px',
+                      border: '1px solid #e0e0e0',
+                      marginBottom: '18px',
+                    }}
+                  >
+                    <textarea
+                      name="question"
+                      disabled={isLoading}
+                      style={{
+                        flex: 1,
+                        borderRadius: '8px',
+                        border: 'none',
+                        padding: '8px 10px',
+                        fontFamily: 'Calibri, sans-serif',
+                        fontSize: '15px',
+                        color: '#403e3e',
+                        resize: 'none',
+                        minHeight: '36px',
+                        outline: 'none',
+                        background: 'transparent',
+                        opacity: isLoading ? 0.6 : 1,
+                      }}
+                      placeholder={
+                        isLoading
+                          ? 'Trail Guide is thinking...'
+                          : 'Chat with the Trail Guide'
+                      }
+                    />
+                    <button
+                      type="submit"
+                      disabled={isLoading}
+                      style={{
+                        width: '28px',
+                        height: '28px',
+                        borderRadius: '50%',
+                        background: isLoading ? '#ccc' : '#403e3e',
+                        border: 'none',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: '#fff',
+                        fontWeight: 700,
+                        fontSize: '16px',
+                        cursor: isLoading ? 'not-allowed' : 'pointer',
+                      }}
+                      aria-label="Send"
+                    >
+                      <span
+                        style={{
+                          height: '0',
+                          width: '0',
+                          borderLeft: '5px solid transparent',
+                          borderRight: '5px solid transparent',
+                          borderTop: '10px solid white',
+                          rotate: '-90deg',
+                          marginLeft: '3px',
+                        }}
+                      ></span>
+                    </button>
+                  </div>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
