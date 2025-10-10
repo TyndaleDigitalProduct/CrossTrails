@@ -274,7 +274,9 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              <span style={{ fontWeight: 400 }}>{referenceVerse?.text}</span>
+              <span style={{ fontWeight: 400 }}>
+                {referenceVerse?.reference}
+              </span>
             </div>
           </div>
 
