@@ -1,8 +1,8 @@
-'use client'
+'use client';
 
-import React from 'react'
-import { useState, useCallback, type ReactElement } from 'react'
-import { BibleReaderProps } from '@/lib/types'
+import React from 'react';
+import { useState, useCallback, type ReactElement } from 'react';
+import { BibleReaderProps } from '@/lib/types';
 
 export default function BibleReader({
   book,
@@ -10,38 +10,50 @@ export default function BibleReader({
   verses,
   selectedVerses,
   onVerseSelect,
-  loading = false
-  , handleChapterSelect
+  loading = false,
+  handleChapterSelect,
+  versesWithCrossRefs = [],
 }: BibleReaderProps) {
-  const [hoveredSpan, setHoveredSpan] = useState<string | null>(null)
+  const [hoveredSpan, setHoveredSpan] = useState<string | null>(null);
 
   // Handle clicking on cross-reference spans in the text
-  const handleSpanClick = useCallback((verseId: string, spanText: string) => {
-    // Toggle verse selection
-    if (selectedVerses.includes(verseId)) {
-      onVerseSelect(selectedVerses.filter(id => id !== verseId))
-    } else {
-      // For now, only allow single verse selection
-      // In the future, we might support multiple verse selection
-      onVerseSelect([verseId])
-    }
-  }, [selectedVerses, onVerseSelect])
+  const handleSpanClick = useCallback(
+    (verseId: string, spanText: string) => {
+      // Toggle verse selection
+      if (selectedVerses.includes(verseId)) {
+        onVerseSelect(selectedVerses.filter(id => id !== verseId));
+      } else {
+        // For now, only allow single verse selection
+        // In the future, we might support multiple verse selection
+        onVerseSelect([verseId]);
+      }
+    },
+    [selectedVerses, onVerseSelect]
+  );
 
   // Render a verse with cross-reference indicators
   const renderVerse = (verse: any, index: number) => {
-    const isSelected = selectedVerses.includes(verse.verse_id)
-
-    // For demo purposes, let's add some cross-reference spans to specific verses
-    // In production, this would come from the cross-reference data
-    const hasDemo = verse.verse_number <= 6; // First 6 verses have demo cross-refs
+    const isSelected = selectedVerses.includes(verse.verse_id);
+    const shouldUnderline = versesWithCrossRefs.includes(verse.verse_id);
 
     const verseText = verse.text;
     let spanElements: ReactElement[] = [];
 
-    if (verse.verse_number === 1) {
-      // Entirety of verse 1 is underlined and is a link
+    // Underline the whole verse if it has cross-references
+    if (shouldUnderline) {
       spanElements = [
-        <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
+        <sup
+          key="verse-num"
+          style={{
+            fontSize: '16.77px',
+            fontFamily: 'Calibri, sans-serif',
+            marginRight: '6px',
+            position: 'relative',
+            top: '0.1em',
+          }}
+        >
+          {verse.verse_number}
+        </sup>,
         <a
           key="text"
           href="#"
@@ -56,7 +68,7 @@ export default function BibleReader({
             textDecorationThickness: '1px',
             textUnderlineOffset: '0.2em',
             textDecorationSkipInk: 'none',
-            cursor: 'pointer'
+            cursor: 'pointer',
           }}
           onClick={e => {
             e.preventDefault();
@@ -64,38 +76,69 @@ export default function BibleReader({
           }}
         >
           {verseText}
-        </a>
+        </a>,
       ];
-    } else if (hasDemo) {
-      // Demo: Add underlines to specific phrases (in production, this comes from data)
-      const demoSpans = getDemoCrossReferenceSpans(verse.verse_number, verse.text);
-      spanElements = renderTextWithSpans(verse.text, demoSpans, verse.verse_id, verse.verse_number);
     } else {
       // No cross-references, render plain text with verse number
       spanElements = [
-        <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
-        <span key="text" style={{ fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', verticalAlign: 'baseline' }}>{verseText}</span>
+        <sup
+          key="verse-num"
+          style={{
+            fontSize: '16.77px',
+            fontFamily: 'Calibri, sans-serif',
+            marginRight: '6px',
+            position: 'relative',
+            top: '0.1em',
+          }}
+        >
+          {verse.verse_number}
+        </sup>,
+        <span
+          key="text"
+          style={{
+            fontSize: '26px',
+            fontFamily: 'Calibri, sans-serif',
+            lineHeight: '1.55',
+            color: '#403E3E',
+            verticalAlign: 'baseline',
+          }}
+        >
+          {verseText}
+        </span>,
       ];
     }
 
     return (
-      <p key={verse.verse_id} style={{ marginBottom: '16px', fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', fontWeight: 400 }}>
+      <p
+        key={verse.verse_id}
+        style={{
+          marginBottom: '16px',
+          fontSize: '26px',
+          fontFamily: 'Calibri, sans-serif',
+          lineHeight: '1.55',
+          color: '#403E3E',
+          fontWeight: 400,
+        }}
+      >
         {spanElements}
       </p>
-    )
-  }
+    );
+  };
 
   // Helper function to create demo cross-reference spans
   const getDemoCrossReferenceSpans = (verseNumber: number, text: string) => {
     // Demo spans based on Matthew 2 content (matching Figma)
-    const demoSpans: Array<{start: number, end: number, refs: string[]}> = [];
+    const demoSpans: Array<{ start: number; end: number; refs: string[] }> = [];
 
     switch (verseNumber) {
       case 1:
         // "Jesus was born in Bethlehem in Judea, during the reign of King Herod"
         if (text.includes('Jesus was born in Bethlehem')) {
           const start = text.indexOf('Jesus was born in Bethlehem');
-          const end = start + 'Jesus was born in Bethlehem in Judea, during the reign of King Herod'.length;
+          const end =
+            start +
+            'Jesus was born in Bethlehem in Judea, during the reign of King Herod'
+              .length;
           demoSpans.push({ start, end, refs: ['Luke.1.5', 'Luke.2.4-7'] });
         }
         break;
@@ -104,14 +147,21 @@ export default function BibleReader({
         if (text.includes('wise men')) {
           const start = text.indexOf('wise men');
           const end = start + 'wise men from eastern lands'.length;
-          demoSpans.push({ start, end, refs: ['Num.24.17', 'Jer.23.5', 'Matt.2.9', 'Rev.22.16'] });
+          demoSpans.push({
+            start,
+            end,
+            refs: ['Num.24.17', 'Jer.23.5', 'Matt.2.9', 'Rev.22.16'],
+          });
         }
         break;
       case 5:
         // "In Bethlehem in Judea," they said, "for this is what the prophet wrote:"
         if (text.includes('In Bethlehem in Judea')) {
           const start = text.indexOf('In Bethlehem in Judea');
-          const end = start + 'In Bethlehem in Judea," they said, "for this is what the prophet wrote'.length;
+          const end =
+            start +
+            'In Bethlehem in Judea," they said, "for this is what the prophet wrote'
+              .length;
           demoSpans.push({ start, end, refs: ['John.7.42'] });
         }
         break;
@@ -119,25 +169,42 @@ export default function BibleReader({
         // "And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah"
         if (text.includes('And you, O Bethlehem')) {
           const start = text.indexOf('And you, O Bethlehem');
-          const end = start + 'And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah'.length;
+          const end =
+            start +
+            'And you, O Bethlehem in the land of Judah, are not least among the ruling cities of Judah'
+              .length;
           demoSpans.push({ start, end, refs: ['Mic.5.2'] });
         }
         break;
     }
 
     return demoSpans;
-  }
+  };
 
   // Render text with cross-reference spans
-  const renderTextWithSpans = (text: string, spans: Array<{start: number, end: number, refs: string[]}>, verseId: string, verseNumber: number) => {
+  const renderTextWithSpans = (
+    text: string,
+    spans: Array<{ start: number; end: number; refs: string[] }>,
+    verseId: string,
+    verseNumber: number
+  ) => {
     const elements: ReactElement[] = [];
     let currentIndex = 0;
 
     // Add verse number at the beginning
     elements.push(
-          <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>
-            {verseNumber}
-          </sup>
+      <sup
+        key="verse-num"
+        style={{
+          fontSize: '16.77px',
+          fontFamily: 'Calibri, sans-serif',
+          marginRight: '6px',
+          position: 'relative',
+          top: '0.1em',
+        }}
+      >
+        {verseNumber}
+      </sup>
     );
 
     if (spans.length === 0) {
@@ -169,7 +236,7 @@ export default function BibleReader({
             textDecorationColor: '#ff6a32',
             textDecorationThickness: '1px',
             textUnderlineOffset: '0.2em',
-            textDecorationSkipInk: 'none'
+            textDecorationSkipInk: 'none',
           }}
           onClick={() => handleSpanClick(verseId, spanText)}
           onMouseEnter={() => setHoveredSpan(`${verseId}-${spanIndex}`)}
@@ -185,15 +252,11 @@ export default function BibleReader({
 
     // Add remaining text after the last span
     if (currentIndex < text.length) {
-      elements.push(
-        <span key="after-last">
-          {text.slice(currentIndex)}
-        </span>
-      );
+      elements.push(<span key="after-last">{text.slice(currentIndex)}</span>);
     }
 
     return elements;
-  }
+  };
 
   if (loading) {
     return (
@@ -213,33 +276,71 @@ export default function BibleReader({
           ))}
         </div>
       </div>
-    )
+    );
   }
 
   if (!verses.length) {
     return (
       <div className="bible-reader-container">
         <div className="text-center py-12">
-          <p className="text-text-muted">No verses available for this passage.</p>
+          <p className="text-text-muted">
+            No verses available for this passage.
+          </p>
         </div>
       </div>
-    )
+    );
   }
 
   // Remove handleChapterSelect from here; it should be handled in Header.tsx or passed as a prop if needed.
 
   return (
     <div className="w-full">
-      {chapter > 1 ? 
-  <button onClick={() => handleChapterSelect ? handleChapterSelect(chapter - 1) : undefined} className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700" style={{ background: 'white' }}>&lt;&lt; Chapter {chapter - 1}</button>
-      : <span></span>}
+      {chapter > 1 ? (
+        <button
+          onClick={() =>
+            handleChapterSelect ? handleChapterSelect(chapter - 1) : undefined
+          }
+          className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700"
+          style={{ background: 'white' }}
+        >
+          &lt;&lt; Chapter {chapter - 1}
+        </button>
+      ) : (
+        <span></span>
+      )}
       {/* Chapter title */}
-      <h2 className="text-[32px] font-bold mb-6" style={{ fontFamily: 'miller-text, serif', lineHeight: '1.5', color: '#403E3E' }}>
-  <span style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '32px', lineHeight: '1.2', color: '#403E3E' }}>{book} {chapter}</span>
+      <h2
+        className="text-[32px] font-bold mb-6"
+        style={{
+          fontFamily: 'miller-text, serif',
+          lineHeight: '1.5',
+          color: '#403E3E',
+        }}
+      >
+        <span
+          style={{
+            fontFamily: 'Miller Text, miller-text, serif',
+            fontWeight: 'bold',
+            fontSize: '32px',
+            lineHeight: '1.2',
+            color: '#403E3E',
+          }}
+        >
+          {book} {chapter}
+        </span>
       </h2>
       {/* Chapter subtitle if we have it (for demo, using Matthew 2) */}
       {book === 'Matthew' && chapter === 2 && (
-        <h3 className="text-[24px] font-bold mb-6" style={{ fontFamily: 'Miller Text, miller-text, serif', fontWeight: 'bold', fontSize: '24px', lineHeight: '1.2', color: '#403E3E' }}>
+        <h3
+          className="text-[24px] font-bold mb-6"
+          style={{
+            fontFamily: 'Miller Text, miller-text, serif',
+            fontWeight: 'bold',
+            fontSize: '24px',
+            lineHeight: '1.2',
+            color: '#403E3E',
+          }}
+        >
           Visitors from the East
         </h3>
       )}
@@ -248,7 +349,15 @@ export default function BibleReader({
       <div className="space-y-0">
         {verses.map((verse, index) => renderVerse(verse, index))}
       </div>
-  <button onClick={() => handleChapterSelect ? handleChapterSelect(chapter + 1) : undefined} className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700" style={{ background: 'white' }}>Chapter {chapter + 1} &gt;&gt;</button>
+      <button
+        onClick={() =>
+          handleChapterSelect ? handleChapterSelect(chapter + 1) : undefined
+        }
+        className="w-full text-left px-3 py-2 text-sm hover:bg-gray-50 transition-colors text-gray-700"
+        style={{ background: 'white' }}
+      >
+        Chapter {chapter + 1} &gt;&gt;
+      </button>
     </div>
-  )
+  );
 }

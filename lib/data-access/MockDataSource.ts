@@ -102,7 +102,9 @@ export class MockDataSource implements CrossReferenceDataSource {
   async loadAllData(): Promise<Record<string, CrossReferenceBookData>> {
     return { ...this.mockData }
   }
-
+  async getChapterData(bookAbbrev: string, chapter: number): Promise<{ anchor_verse: string; cross_references: any[] }[]> {
+    return []
+  }
   async isAvailable(): Promise<boolean> {
     return true // Mock data is always available
   }
