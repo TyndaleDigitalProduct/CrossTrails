@@ -264,7 +264,7 @@ export default function CrossTrailsModal({
                 marginBottom: '8px',
               }}
             >
-              {'Acts 20:16'}
+              {referenceVerse?.display_ref}
             </div>
             <div
               style={{
@@ -274,16 +274,7 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              16&nbsp;
-              <span style={{ fontWeight: 400 }}>
-                Paul had decided to sail on past Ephesus,
-              </span>
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                for he didn’t want to spend any more time in the province of
-                Asia. He was hurrying to get to Jerusalem, if possible, in time
-                for the Festival of Pentecost.
-              </span>
+              <span style={{ fontWeight: 400 }}>{referenceVerse?.text}</span>
             </div>
           </div>
 
