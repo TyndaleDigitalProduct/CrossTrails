@@ -1,4 +1,4 @@
-import { CrossReferenceConnectionRequest, CrossReferenceConnectionResponse, CrossReferenceCategory } from '@/lib/types'
+import { CrossReferenceConnectionRequest, CrossReferenceConnectionArrayResponse, CrossReferenceCategory } from '@/lib/types'
 import { CrossReferenceDataAccess } from '@/lib/data-access/CrossReferenceDataAccess'
 import { VercelBlobDataSource } from '@/lib/data-access/VercelBlobDataSource'
 import { MockDataSource } from '@/lib/data-access/MockDataSource'
@@ -19,74 +19,109 @@ async function createDataAccess(): Promise<CrossReferenceDataAccess> {
  */
 export async function getCrossReferenceConnection(
   request: CrossReferenceConnectionRequest
-): Promise<CrossReferenceConnectionResponse> {
-  const { anchor_verse, candidate_refs, min_strength = 0.5 } = request
+): Promise<CrossReferenceConnectionArrayResponse[]> {
+  const { anchor_ref, candidate_refs, min_strength = 0.5 } = request
 
   try {
-    // console.log('MCP Tool: getCrossReferenceConnection called with:', { anchor_verse, candidate_refs, min_strength })
-    
-    // Load cross-reference data using the data access layer
     const dataAccess = await createDataAccess()
     
-    // Get data for the anchor verse
-    const anchorData = await dataAccess.getVerseData(anchor_verse)
-    // console.log('MCP Tool: anchorData result:', anchorData)
+    // Determine if anchor_ref is chapter or verse format
+    const refParts = anchor_ref.split('.')
+    const isChapter = refParts.length === 2
+    const isVerse = refParts.length === 3
     
-    if (!anchorData) {
-      // console.log('MCP Tool: No anchor data found, returning empty connections')
-      return { connections: [] }
+    if (!isChapter && !isVerse) {
+      throw new Error('Invalid anchor_ref format. Expected "Book.Chapter" or "Book.Chapter.Verse"')
+    }
+    
+    // Fetch data based on format
+    let anchorDataArray: any[] = []
+    if (isChapter) {
+      const bookAbbrev = refParts[0]
+      const chapter = parseInt(refParts[1])
+      const chapterData = await dataAccess.getChapterData(bookAbbrev, chapter)
+      anchorDataArray = chapterData
+    } else if (isVerse) {
+      const verseData = await dataAccess.getVerseData(anchor_ref)
+      anchorDataArray = verseData ? [verseData] : []
+    }
+    
+    if (anchorDataArray.length === 0) {
+      return []
     }
 
-    const connections = []
+    const connectionsByAnchor = new Map<string, any[]>()
 
-    // If no candidate_refs provided, use all cross-references from the anchor data
-    const refsToProcess = candidate_refs.length > 0 
-      ? candidate_refs 
-      : anchorData.cross_references.map((ref: any) => ref.bref)
+    // Process each anchor data object
+    for (const anchorData of anchorDataArray) {
+      // Get cross_references - chapter data has it directly, verse data needs conversion
+      const crossRefs = Array.isArray(anchorData) 
+        ? anchorData 
+        : (anchorData.cross_references || [])
+      
+      // If no candidate_refs provided, use all cross-references from the anchor data
+      const refsToProcess = candidate_refs.length > 0 
+        ? candidate_refs 
+        : crossRefs.map((ref: any) => ref.bref || ref.cross_ref)
 
-    // console.log('MCP Tool: Processing refs:', refsToProcess)
-
-    for (const candidateRef of refsToProcess) {
-      // Find the connection data for this reference
-      let connection = anchorData.cross_references.find(
-        (ref: any) => normalizeReference(ref.bref) === normalizeReference(candidateRef)
-      )
-
-      // If we're using all refs from anchor data, the connection IS the ref itself
-      if (!connection && candidate_refs.length === 0) {
-        connection = anchorData.cross_references.find(
-          (ref: any) => ref.bref === candidateRef
+      for (const candidateRef of refsToProcess) {
+        // Find the connection data for this reference
+        let connection = crossRefs.find(
+          (ref: any) => normalizeReference(ref.bref || ref.cross_ref) === normalizeReference(candidateRef)
         )
-      }
 
-      if (connection && connection.strength >= min_strength) {
-        connections.push({
-          reference: connection.bref || candidateRef,
-          strength: connection.strength,
-          categories: connection.categories || [],
-          type: connection.connection_type as CrossReferenceCategory,
-          explanation: connection.explanation_seed || '',
-          metadata: {
-            thematic_overlap: calculateThematicOverlap(anchor_verse, candidateRef),
-            historical_context: hasHistoricalContext(connection.categories || []),
-            literary_connection: hasLiteraryConnection(connection.connection_type)
+        // If we're using all refs from anchor data, the connection IS the ref itself
+        if (!connection && candidate_refs.length === 0) {
+          connection = crossRefs.find(
+            (ref: any) => (ref.bref || ref.cross_ref) === candidateRef
+          )
+        }
+
+        if (connection) {
+          const strength = connection.strength !== undefined ? connection.strength : (connection.confidence || 0) / 100
+          if (strength >= min_strength) {
+            const anchorVerse = anchorData.anchor_verse || anchor_ref
+            if (!connectionsByAnchor.has(anchorVerse)) {
+              connectionsByAnchor.set(anchorVerse, [])
+            }
+            connectionsByAnchor.get(anchorVerse)!.push({
+              reference: connection.bref || connection.cross_ref || candidateRef,
+              strength: strength,
+              categories: connection.categories || [connection.primary_category].filter(Boolean),
+              type: (connection.connection_type || connection.primary_category) as CrossReferenceCategory,
+              explanation: connection.explanation_seed || connection.reasoning || '',
+              anchor_verse: anchorVerse,
+              metadata: {
+                thematic_overlap: calculateThematicOverlap(anchor_ref, candidateRef),
+                historical_context: hasHistoricalContext(connection.categories || [connection.primary_category]),
+                literary_connection: hasLiteraryConnection(connection.connection_type || connection.primary_category)
+              }
+            })
           }
-        })
+        }
       }
     }
 
-    // Sort by strength (highest first)
-    connections.sort((a, b) => b.strength - a.strength)
+    // Sort each anchor's connections by strength (highest first)
+    for (const conns of connectionsByAnchor.values()) {
+      conns.sort((a, b) => b.strength - a.strength)
+    }
 
-    return { connections }
+    // For chapter queries, return as array of arrays (one per anchor verse)
+    // For single verse queries, return as single array wrapped in an array
+    if (isChapter) {
+      return Array.from(connectionsByAnchor.values())
+    } else {
+      // Single verse - return array of connections wrapped so it matches chapter format
+      const singleVerseConnections = connectionsByAnchor.get(anchor_ref) || []
+      return [singleVerseConnections]
+    }
 
   } catch (error) {
     console.error('Error in getCrossReferenceConnection:', error)
     throw new Error('Failed to analyze cross-reference connections')
   }
 }
-
-
 
 
 

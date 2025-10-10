@@ -132,7 +132,7 @@ export interface VerseContextResponse {
 }
 
 export interface CrossReferenceConnectionRequest {
-  anchor_verse: string;
+  anchor_ref: string;
   candidate_refs: string[];
   min_strength?: number;
 }
@@ -151,6 +151,20 @@ export interface CrossReferenceConnectionResponse {
     };
   }[];
 }
+
+export type CrossReferenceConnectionArrayResponse = Array<{
+  reference: string;
+  strength: number;
+  categories: string[];
+  type: CrossReferenceCategory;
+  explanation: string;
+  anchor_verse?: string;
+  metadata: {
+    thematic_overlap: number;
+    historical_context: boolean;
+    literary_connection: boolean;
+  };
+}>
 
 export interface CrossReferencePromptRequest {
   crossReference: CrossReference;
@@ -395,6 +409,7 @@ export interface BibleReaderProps {
   selectedVerses: string[];
   onVerseSelect: (verses: string[]) => void;
   loading?: boolean;
+  versesWithCrossRefs?: string[]; // IDs of verses that have cross-references
 }
 
 export interface CrossReferencesSidebarProps {

@@ -11,6 +11,75 @@ import CrossTrailsModal from './components/CrossTrailsModal'
 import { findBookInString, findChapterInString } from '@/lib/parsers/book'
 import SearchResultModal from './components/SearchResultModal'
 
+export const fullBookNameToAbbrev: Record<string, string> = {
+  Genesis: 'Gen',
+  Exodus: 'Exod',
+  Leviticus: 'Lev',
+  Numbers: 'Num',
+  Deuteronomy: 'Deut',
+  Joshua: 'Josh',
+  Judges: 'Judg',
+  Ruth: 'Ruth',
+  '1 Samuel': '1Sam',
+  '2 Samuel': '2Sam',
+  '1 Kings': '1Kgs',
+  '2 Kings': '2Kgs',
+  '1 Chronicles': '1Chr',
+  '2 Chronicles': '2Chr',
+  Ezra: 'Ezra',
+  Nehemiah: 'Neh',
+  Esther: 'Esth',
+  Job: 'Job',
+  Psalms: 'Ps',
+  Proverbs: 'Pr',
+  Ecclesiastes: 'Eccl',
+  'Song of Songs': 'Song',
+  Isaiah: 'Isa',
+  Jeremiah: 'Jer',
+  Lamentations: 'Lam',
+  Ezekiel: 'Ezek',
+  Daniel: 'Dan',
+  Hosea: 'Hos',
+  Joel: 'Joel',
+  Amos: 'Amos',
+  Obadiah: 'Obad',
+  Jonah: 'Jon',
+  Micah: 'Mic',
+  Nahum: 'Nah',
+  Habakkuk: 'Hab',
+  Zephaniah: 'Zeph',
+  Haggai: 'Hagg',
+  Zechariah: 'Zech',
+  Malachi: 'Mal',
+  Matthew: 'Matt',
+  Mark: 'Mark',
+  Luke: 'Luke',
+  John: 'John',
+  Acts: 'Acts',
+  Romans: 'Rom',
+  '1 Corinthians': '1Cor',
+  '2 Corinthians': '2Cor',
+  Galatians: 'Gal',
+  Ephesians: 'Eph',
+  Philippians: 'Phil',
+  Colossians: 'Col',
+  '1 Thessalonians': '1Thes',
+  '2 Thessalonians': '2Thes',
+  '1 Timothy': '1Tim',
+  '2 Timothy': '2Tim',
+  Titus: 'Titus',
+  Philemon: 'Phlm',
+  Hebrews: 'Heb',
+  James: 'Jas',
+  '1 Peter': '1Pet',
+  '2 Peter': '2Pet',
+  '1 John': '1Jn',
+  '2 John': '2Jn',
+  '3 John': '3Jn',
+  Jude: 'Jude',
+  Revelation: 'Rev'
+};
+
 export default function HomePage() {
   // Modal state for proof of concept
   const [modalOpen, setModalOpen] = useState(false);
@@ -53,7 +122,8 @@ export default function HomePage() {
   const [selectedVerses, setSelectedVerses] = useState<string[]>([])
   const [selectedCrossRefs, setSelectedCrossRefs] = useState<string[]>([])
   const [crossReferences, setCrossReferences] = useState<CrossReferenceGroup[]>([])
-  
+  const [versesWithCrossRefs, setVersesWithCrossRefs] = useState<string[]>([]);
+
   const [loading, setLoading] = useState({
     verses: false,
     crossRefs: false,
@@ -67,7 +137,27 @@ export default function HomePage() {
   useEffect(() => {
     loadVerses(currentBook, currentChapter)
   }, [currentBook, currentChapter])
-  
+
+  // Load cross-ref availability for the chapter when verses change
+  useEffect(() => {
+  if (verses.length === 0) {
+    setVersesWithCrossRefs([]);
+    return;
+  }
+  // Fetch cross-ref metadata for all verses in this chapter
+  const bookAbbrev = fullBookNameToAbbrev[currentBook] || currentBook;
+  fetch(`/api/cross-refs?chapter=${bookAbbrev}.${currentChapter}`)
+    .then(res => res.ok ? res.json() : Promise.reject('Failed to fetch cross-ref metadata'))
+    .then(data => {
+      // Assume data.verses is an array of cross-ref objects with anchor_verse or verse_id
+      const ids = Array.isArray(data.verses)
+        ? data.verses.map((ref: any) => ref.anchor_verse || ref.verse_id)
+        : [];
+      setVersesWithCrossRefs(ids);
+    })
+    .catch(() => setVersesWithCrossRefs([]));
+}, [verses]);
+
   // Load cross-references when verses are selected
   // Always show demo sidebar links regardless of selection
 useEffect(() => {
@@ -306,6 +396,7 @@ const loadCrossReferences = async (verseIds: string[]) => {
                 selectedVerses={selectedVerses}
                 onVerseSelect={handleVerseSelection}
                 loading={loading.verses}
+                versesWithCrossRefs={versesWithCrossRefs}
               />
             )}
           </div>

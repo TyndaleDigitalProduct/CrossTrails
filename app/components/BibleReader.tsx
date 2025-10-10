@@ -10,7 +10,8 @@ export default function BibleReader({
   verses,
   selectedVerses,
   onVerseSelect,
-  loading = false
+  loading = false,
+  versesWithCrossRefs = [],
 }: BibleReaderProps) {
   const [hoveredSpan, setHoveredSpan] = useState<string | null>(null)
 
@@ -28,61 +29,54 @@ export default function BibleReader({
 
   // Render a verse with cross-reference indicators
   const renderVerse = (verse: any, index: number) => {
-    const isSelected = selectedVerses.includes(verse.verse_id)
+  const isSelected = selectedVerses.includes(verse.verse_id);
+  const shouldUnderline = versesWithCrossRefs.includes(verse.verse_id);
 
-    // For demo purposes, let's add some cross-reference spans to specific verses
-    // In production, this would come from the cross-reference data
-    const hasDemo = verse.verse_number <= 6; // First 6 verses have demo cross-refs
+  const verseText = verse.text;
+  let spanElements: ReactElement[] = [];
 
-    const verseText = verse.text;
-    let spanElements: ReactElement[] = [];
-
-    if (verse.verse_number === 1) {
-      // Entirety of verse 1 is underlined and is a link
-      spanElements = [
-        <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
-        <a
-          key="text"
-          href="#"
-          style={{
-            fontSize: '26px',
-            fontFamily: 'Calibri, sans-serif',
-            lineHeight: '1.55',
-            color: '#403E3E',
-            verticalAlign: 'baseline',
-            textDecoration: 'underline',
-            textDecorationColor: '#ff6a32',
-            textDecorationThickness: '1px',
-            textUnderlineOffset: '0.2em',
-            textDecorationSkipInk: 'none',
-            cursor: 'pointer'
-          }}
-          onClick={e => {
-            e.preventDefault();
-            handleSpanClick(verse.verse_id, verseText);
-          }}
-        >
-          {verseText}
-        </a>
-      ];
-    } else if (hasDemo) {
-      // Demo: Add underlines to specific phrases (in production, this comes from data)
-      const demoSpans = getDemoCrossReferenceSpans(verse.verse_number, verse.text);
-      spanElements = renderTextWithSpans(verse.text, demoSpans, verse.verse_id, verse.verse_number);
-    } else {
-      // No cross-references, render plain text with verse number
-      spanElements = [
-        <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
-        <span key="text" style={{ fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', verticalAlign: 'baseline' }}>{verseText}</span>
-      ];
-    }
-
-    return (
-      <p key={verse.verse_id} style={{ marginBottom: '16px', fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', fontWeight: 400 }}>
-        {spanElements}
-      </p>
-    )
+  // Underline the whole verse if it has cross-references
+  if (shouldUnderline) {
+    spanElements = [
+      <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
+      <a
+        key="text"
+        href="#"
+        style={{
+          fontSize: '26px',
+          fontFamily: 'Calibri, sans-serif',
+          lineHeight: '1.55',
+          color: '#403E3E',
+          verticalAlign: 'baseline',
+          textDecoration: 'underline',
+          textDecorationColor: '#ff6a32',
+          textDecorationThickness: '1px',
+          textUnderlineOffset: '0.2em',
+          textDecorationSkipInk: 'none',
+          cursor: 'pointer'
+        }}
+        onClick={e => {
+          e.preventDefault();
+          handleSpanClick(verse.verse_id, verseText);
+        }}
+      >
+        {verseText}
+      </a>
+    ];
+  } else {
+    // No cross-references, render plain text with verse number
+    spanElements = [
+      <sup key="verse-num" style={{ fontSize: '16.77px', fontFamily: 'Calibri, sans-serif', marginRight: '6px', position: 'relative', top: '0.1em' }}>{verse.verse_number}</sup>,
+      <span key="text" style={{ fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', verticalAlign: 'baseline' }}>{verseText}</span>
+    ];
   }
+
+  return (
+    <p key={verse.verse_id} style={{ marginBottom: '16px', fontSize: '26px', fontFamily: 'Calibri, sans-serif', lineHeight: '1.55', color: '#403E3E', fontWeight: 400 }}>
+      {spanElements}
+    </p>
+  );
+};
 
   // Helper function to create demo cross-reference spans
   const getDemoCrossReferenceSpans = (verseNumber: number, text: string) => {

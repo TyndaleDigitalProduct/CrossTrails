@@ -65,8 +65,15 @@ export interface CrossReferenceDataSource {
    * Check if data source is available/configured
    */
   isAvailable(): Promise<boolean>
+  
+  /**
+   * Get cross-reference data for all verses in a specific chapter
+   */
+  getChapterData(
+    bookAbbrev: string, 
+    chapter: number
+  ): Promise<{ anchor_verse: string; cross_references: any[] }[]>
 }
-
 /**
  * Cross-Reference Data Access Layer
  * Manages different data sources and provides a unified interface
@@ -115,7 +122,74 @@ export class CrossReferenceDataAccess {
 
     return null
   }
+/**
+ * Get cross-reference data for all verses in a specific chapter
+ */
+/**
+ * Get cross-reference data for all verses in a specific chapter
+ */
+  async getChapterData(
+    bookAbbrev: string,
+    chapter: number 
+  ): Promise<{ anchor_verse: string; cross_references: any[] }[]> {
+    
+    for (const source of this.dataSources) {
+      try {
+        if (!(await source.isAvailable())) continue
+        
+        const bookData = await source.loadBookData(bookAbbrev)
+        if (!bookData) continue
+        
+        const chapterData = this.processBookDataForChapter(bookData, bookAbbrev, chapter)
+        // console.log(chapterData)
+        if (chapterData && chapterData.length > 0) {
+          return chapterData
+        }
+      } catch (error) {
+        console.warn(`Data source failed for ${bookAbbrev} chapter ${chapter}:`, error)
+        continue
+      }
+    }
 
+    return []
+  }
+
+  /**
+   * Process book data to extract all verses in a specific chapter
+   */
+  private processBookDataForChapter(
+    bookData: CrossReferenceBookData,
+    bookAbbrev: string,
+    chapter: number
+  ): { anchor_verse: string; cross_references: any[] }[] {
+    const result: { anchor_verse: string; cross_references: any[] }[] = []
+    const chapterPrefix = `${bookAbbrev}.${chapter}.`
+    
+    // bookData has an items array
+    const items = (bookData as any).items || []
+    
+    // Group by anchor_ref
+    const groupedByAnchor = new Map<string, any[]>()
+    
+    for (const item of items) {
+      if (item.anchor_ref?.startsWith(chapterPrefix)) {
+        if (!groupedByAnchor.has(item.anchor_ref)) {
+          groupedByAnchor.set(item.anchor_ref, [])
+        }
+        groupedByAnchor.get(item.anchor_ref)!.push(item)
+      }
+    }
+    
+    // Convert grouped data to result format
+    for (const [anchor_verse, crossRefs] of groupedByAnchor) {
+      result.push({
+        anchor_verse,
+        cross_references: crossRefs
+      })
+    }
+    
+    return result
+  }
   /**
    * Get cross-reference data for multiple verses
    */
