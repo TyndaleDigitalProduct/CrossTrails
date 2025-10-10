@@ -45,7 +45,7 @@ export default function CrossTrailsModal({
       // Construct the CrossReference object for Acts.20.16
       const crossReference = {
         reference: 'Acts.20.16',
-        display_ref: 'Acts.20.16',
+        display_ref: 'Acts 20.16',
         text: 'On the day of Pentecost all the believers were meeting together in one place.',
         anchor_ref: 'Acts.2.1',
         connection: {
