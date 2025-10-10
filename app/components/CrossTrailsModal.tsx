@@ -44,21 +44,21 @@ export default function CrossTrailsModal({
     try {
       // Construct the CrossReference object for Micah 5:2
       const crossReference = {
-        reference: 'Micah.5.2',
-        display_ref: 'Micah 5:2',
-        text: 'But you, O Bethlehem Ephrathah, are only a small village among all the people of Judah. Yet a ruler of Israel, whose origins are in the distant past, will come from you on my behalf.',
-        anchor_ref: 'Matthew.2.6',
+        reference: 'Acts.20.16',
+        display_ref: 'Acts.20.16',
+        text: 'On the day of Pentecost all the believers were meeting together in one place.',
+        anchor_ref: 'Acts.2.1',
         connection: {
-          categories: ['prophecy', 'messianic'],
+          categories: ['ritual_practice', 'elaboration'],
           strength: 0.9,
-          type: 'prophecy' as const,
+          type: 'ritual_practice' as const,
           explanation:
-            'Messianic prophecy about the birthplace of the ruler of Israel',
+            'Paul had decided to sail on past Ephesus, for he didn\u2019t want to spend any more time in the province',
         },
         context: {
-          book: 'Micah',
-          chapter: 5,
-          verse: 2,
+          book: 'Acts',
+          chapter: 20,
+          verse: 16,
         },
       };
 
