@@ -238,7 +238,10 @@ export default function BibleReader({
             textUnderlineOffset: '0.2em',
             textDecorationSkipInk: 'none',
           }}
-          onClick={() => handleSpanClick(verseId, spanText)}
+          onClick={e => {
+            e.preventDefault();
+            handleSpanClick(verseId, spanText);
+          }}
           onMouseEnter={() => setHoveredSpan(`${verseId}-${spanIndex}`)}
           onMouseLeave={() => setHoveredSpan(null)}
           title={`Cross-references: ${span.refs.join(', ')}`}
