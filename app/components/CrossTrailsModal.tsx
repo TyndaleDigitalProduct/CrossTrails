@@ -42,7 +42,7 @@ export default function CrossTrailsModal({
     (e.target as HTMLFormElement).reset();
 
     try {
-      // Construct the CrossReference object for Micah 5:2
+      // Construct the CrossReference object for Acts.20.16
       const crossReference = {
         reference: 'Acts.20.16',
         display_ref: 'Acts.20.16',
@@ -262,7 +262,7 @@ export default function CrossTrailsModal({
                 marginBottom: '8px',
               }}
             >
-              {'Micah 5:2'}
+              {'Acts 20:16'}
             </div>
             <div
               style={{
@@ -272,23 +272,22 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              2
+              16
               <span style={{ fontWeight: 400 }}>
-                *But you, O Bethlehem Ephrathah,
+                Paul had decided to sail on past Ephesus,
               </span>
               <br />
               <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                are only a small village among all the people of Judah.
-              </span>
-              <br />
-              Yet a ruler of Israel,
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                whose origins are in the distant past,
+                for he didn’t want to spend any more time in the province of
+                Asia.
               </span>
               <br />
               <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                will come from you on my behalf.
+                He was hurrying to get to Jerusalem, if possible,
+              </span>
+              <br />
+              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
+                in time for the Festival of Pentecost.
               </span>
             </div>
           </div>
