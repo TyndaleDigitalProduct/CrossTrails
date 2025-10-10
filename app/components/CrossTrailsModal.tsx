@@ -1,14 +1,16 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ConversationTurn } from '@/lib/types';
+import { ConversationTurn, CrossReference } from '@/lib/types';
 
 interface CrossTrailsModalProps {
   isOpen: boolean;
   onClose: () => void;
+  referenceVerse?: CrossReference;
 }
 
 export default function CrossTrailsModal({
   isOpen,
   onClose,
+  referenceVerse,
 }: CrossTrailsModalProps) {
   const [conversationHistory, setConversationHistory] = useState<
     ConversationTurn[]
@@ -42,8 +44,8 @@ export default function CrossTrailsModal({
     (e.target as HTMLFormElement).reset();
 
     try {
-      // Construct the CrossReference object for Acts.20.16
-      const crossReference = {
+      // Use the provided reference verse or fallback to demo data
+      const crossReference = referenceVerse || {
         reference: 'Acts.20.16',
         display_ref: 'Acts 20.16',
         text: 'On the day of Pentecost all the believers were meeting together in one place.',
@@ -262,7 +264,7 @@ export default function CrossTrailsModal({
                 marginBottom: '8px',
               }}
             >
-              {'Acts 20:16'}
+              {referenceVerse?.display_ref}
             </div>
             <div
               style={{
@@ -272,15 +274,8 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              16&nbsp;
               <span style={{ fontWeight: 400 }}>
-                Paul had decided to sail on past Ephesus,
-              </span>
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                for he didn’t want to spend any more time in the province of
-                Asia. He was hurrying to get to Jerusalem, if possible, in time
-                for the Festival of Pentecost.
+                {referenceVerse?.reference}
               </span>
             </div>
           </div>

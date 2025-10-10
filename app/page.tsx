@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { useState, useEffect } from 'react';
-import { BibleVerse, CrossReferenceGroup } from '@/lib/types';
+import { BibleVerse, CrossReferenceGroup, CrossReference } from '@/lib/types';
 import Header from './components/Header';
 import BibleReader from './components/BibleReader';
 import CrossReferencesSidebar from './components/CrossReferencesSidebar';
@@ -83,6 +83,9 @@ export default function HomePage() {
   // Modal state for proof of concept
   const [modalOpen, setModalOpen] = useState(false);
   const [modalContent, setModalContent] = useState<string>('');
+  const [selectedReferenceVerse, setSelectedReferenceVerse] = useState<
+    CrossReference | undefined
+  >(undefined);
 
   // Prevent background scrolling when modal is open
   React.useEffect(() => {
@@ -127,6 +130,12 @@ export default function HomePage() {
   const [verses, setVerses] = useState<BibleVerse[]>([]);
   const [selectedVerses, setSelectedVerses] = useState<string[]>([]);
   const [selectedCrossRefs, setSelectedCrossRefs] = useState<string[]>([]);
+
+  // Handler for reference verse clicks from sidebar
+  const handleReferenceVerseClick = (crossRef: CrossReference) => {
+    setSelectedReferenceVerse(crossRef);
+    setModalOpen(true);
+  };
   const [crossReferences, setCrossReferences] = useState<CrossReferenceGroup[]>(
     []
   );
@@ -465,6 +474,7 @@ export default function HomePage() {
               crossReferences={crossReferences}
               selectedRefs={selectedCrossRefs}
               onRefSelect={handleCrossRefSelection}
+              onReferenceClick={handleReferenceVerseClick}
               loading={loading.crossRefs}
               error={crossRefError}
             />
@@ -476,6 +486,7 @@ export default function HomePage() {
       <CrossTrailsModal
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
+        referenceVerse={selectedReferenceVerse}
       ></CrossTrailsModal>
     </div>
   );
