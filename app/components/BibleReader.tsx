@@ -54,9 +54,8 @@ export default function BibleReader({
         >
           {verse.verse_number}
         </sup>,
-        <a
+        <span
           key="text"
-          href="#"
           style={{
             fontSize: '26px',
             fontFamily: 'Calibri, sans-serif',
@@ -72,11 +71,12 @@ export default function BibleReader({
           }}
           onClick={e => {
             e.preventDefault();
+            e.stopPropagation();
             handleSpanClick(verse.verse_id, verseText);
           }}
         >
           {verseText}
-        </a>,
+        </span>,
       ];
     } else {
       // No cross-references, render plain text with verse number
@@ -240,6 +240,7 @@ export default function BibleReader({
           }}
           onClick={e => {
             e.preventDefault();
+            e.stopPropagation();
             handleSpanClick(verseId, spanText);
           }}
           onMouseEnter={() => setHoveredSpan(`${verseId}-${spanIndex}`)}
