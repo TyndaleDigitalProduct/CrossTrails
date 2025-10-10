@@ -44,7 +44,9 @@ export class LocalFileDataSource implements CrossReferenceDataSource {
     
     return results
   }
-
+  async getChapterData(bookAbbrev: string, chapter: number): Promise<{ anchor_verse: string; cross_references: any[] }[]> {
+    return []
+  }
   async loadAllData(): Promise<Record<string, CrossReferenceBookData>> {
     try {
       const dataDir = path.join(process.cwd(), this.dataDirectory)

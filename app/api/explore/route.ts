@@ -25,7 +25,7 @@ async function generateMCPResponse(
         const anchorVerse = selectedVerses[0]
         
         const connections = await getCrossReferenceConnection({
-          anchor_verse: anchorVerse,
+          anchor_ref: anchorVerse,
           candidate_refs: selectedCrossRefs,
           min_strength: 0.5
         })
@@ -47,12 +47,13 @@ async function generateMCPResponse(
         }
 
         // Add cross-reference insights
-        if (connections.connections && connections.connections.length > 0) {
+        const flatConnections = connections.flat()
+        if (flatConnections && flatConnections.length > 0) {
           response += `**Cross-Reference Connections:**\n\n`
           
           // Group by strength
-          const strongConnections = connections.connections.filter(c => c.strength >= 0.8)
-          const moderateConnections = connections.connections.filter(c => c.strength >= 0.6 && c.strength < 0.8)
+          const strongConnections = flatConnections.filter(c => c.strength >= 0.8)
+          const moderateConnections = flatConnections.filter(c => c.strength >= 0.6 && c.strength < 0.8)
           
           if (strongConnections.length > 0) {
             response += `**Strong Connections (80%+ strength):**\n`
@@ -62,7 +63,7 @@ async function generateMCPResponse(
               response += `  Categories: ${conn.categories.join(', ')}\n\n`
             })
           }
-          
+
           if (moderateConnections.length > 0) {
             response += `**Notable Connections (60-80% strength):**\n`
             moderateConnections.slice(0, 2).forEach(conn => {
@@ -73,10 +74,10 @@ async function generateMCPResponse(
 
           // Add interpretive summary
           response += `**Summary:**\n`
-          const categories = [...new Set(connections.connections.flatMap(c => c.categories))]
+          const categories = [...new Set(flatConnections.flatMap(c => c.categories))]
           response += `This passage shows connections across ${categories.length} thematic categories: ${categories.join(', ')}. `
           
-          const avgStrength = connections.connections.reduce((sum, c) => sum + c.strength, 0) / connections.connections.length
+          const avgStrength = flatConnections.reduce((sum, c) => sum + c.strength, 0) / flatConnections.length
           if (avgStrength >= 0.7) {
             response += `The cross-references demonstrate strong thematic coherence (${Math.round(avgStrength * 100)}% average strength). `
           }
