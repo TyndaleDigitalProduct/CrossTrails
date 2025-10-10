@@ -272,7 +272,7 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              16
+              16&nbsp;
               <span style={{ fontWeight: 400 }}>
                 Paul had decided to sail on past Ephesus,
               </span>
