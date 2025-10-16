@@ -1,22 +1,31 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ConversationTurn } from '@/lib/types';
-
+import {
+  ConversationTurn,
+  CrossReference,
+  VersesAPIResponse,
+} from '@/lib/types';
 interface CrossTrailsModalProps {
   isOpen: boolean;
   onClose: () => void;
+  referenceVerse?: CrossReference;
+  anchorRef?: string;
 }
 
 export default function CrossTrailsModal({
   isOpen,
   onClose,
+  referenceVerse,
+  anchorRef,
 }: CrossTrailsModalProps) {
   const [conversationHistory, setConversationHistory] = useState<
     ConversationTurn[]
   >([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isVerseLoading, setIsVerseLoading] = useState(false);
   const [expanded, setExpanded] = useState(true);
   const conversationRef = useRef<HTMLDivElement>(null);
   const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [verse, setVerse] = useState<VersesAPIResponse | null>();
 
   const onHandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -42,8 +51,8 @@ export default function CrossTrailsModal({
     (e.target as HTMLFormElement).reset();
 
     try {
-      // Construct the CrossReference object for Acts.20.16
-      const crossReference = {
+      // Use the provided reference verse or fallback to demo data
+      const crossReference = referenceVerse || {
         reference: 'Acts.20.16',
         display_ref: 'Acts 20.16',
         text: 'On the day of Pentecost all the believers were meeting together in one place.',
@@ -62,6 +71,8 @@ export default function CrossTrailsModal({
         },
       };
 
+      crossReference.anchor_ref = anchorRef;
+      crossReference.text = verse?.verses[0].text || '';
       // Call the cross-refs analyze API
       const response = await fetch('/api/cross-refs/analyze', {
         method: 'POST',
@@ -120,15 +131,38 @@ export default function CrossTrailsModal({
     messageRefs.current = [];
   };
 
-  // Reset state when modal opens
+  // Reset state when modal opens or referenceVerse changes
   useEffect(() => {
     if (isOpen) {
+      // Reset verse state first to clear any cached data
+      setVerse(null);
+      fetchReferenceVerse();
+
       setConversationHistory([]);
       setIsLoading(false);
       setExpanded(true);
       messageRefs.current = [];
+    } else {
+      setVerse(null);
     }
-  }, [isOpen]);
+  }, [isOpen, referenceVerse]);
+
+  const fetchReferenceVerse = async () => {
+    setIsVerseLoading(true);
+    if (referenceVerse) {
+      try {
+        await fetch(`/api/verses?reference=${referenceVerse?.reference}`)
+          .then(response => response.json())
+          .then(data => {
+            setVerse(data);
+          });
+      } catch (error) {
+        console.error('Error fetching verse:', error);
+      } finally {
+        setIsVerseLoading(false);
+      }
+    }
+  };
 
   // Ensure messageRefs array is properly sized
   useEffect(() => {
@@ -252,37 +286,70 @@ export default function CrossTrailsModal({
               borderBottom: '1px solid #e0e0e0',
             }}
           >
-            <div
-              style={{
-                fontFamily: 'Calibri, sans-serif',
-                fontWeight: 700,
-                fontSize: '20px',
-                color: '#403e3e',
-                textDecoration: 'underline',
-                marginBottom: '8px',
-              }}
-            >
-              {'Acts 20:16'}
-            </div>
-            <div
-              style={{
-                fontFamily: 'Calibri, sans-serif',
-                fontSize: '17px',
-                color: '#403e3e',
-                marginBottom: '0',
-              }}
-            >
-              16&nbsp;
-              <span style={{ fontWeight: 400 }}>
-                Paul had decided to sail on past Ephesus,
-              </span>
-              <br />
-              <span style={{ display: 'inline-block', marginLeft: '24px' }}>
-                for he didn’t want to spend any more time in the province of
-                Asia. He was hurrying to get to Jerusalem, if possible, in time
-                for the Festival of Pentecost.
-              </span>
-            </div>
+            {/* Loading indicator */}
+            {isVerseLoading && (
+              <>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '20px',
+                    color: '#403e3e',
+                    textDecoration: 'underline',
+                    marginBottom: '8px',
+                  }}
+                >
+                  Verse
+                </div>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontSize: '17px',
+                    color: '#403e3e',
+                    marginBottom: '0',
+                  }}
+                >
+                  <span style={{ fontWeight: 400, fontStyle: 'italic' }}>
+                    Reference verse is loading...
+                  </span>
+                </div>
+              </>
+            )}
+
+            {!isVerseLoading && (
+              <>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '20px',
+                    color: '#403e3e',
+                    textDecoration: 'underline',
+                    marginBottom: '8px',
+                  }}
+                >
+                  {verse && (
+                    <>
+                      {verse?.book} {verse?.chapter}
+                      {':'}
+                      {verse?.verses[0]?.verse_number}
+                    </>
+                  )}
+                </div>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontSize: '17px',
+                    color: '#403e3e',
+                    marginBottom: '0',
+                  }}
+                >
+                  <span style={{ fontWeight: 400 }}>
+                    {verse && <>{verse?.verses[0].text}</>}
+                  </span>
+                </div>
+              </>
+            )}
           </div>
 
           {/* Section: How Does This Passage Relate? */}
