@@ -487,6 +487,7 @@ export default function HomePage() {
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         referenceVerse={selectedReferenceVerse}
+        anchorRef={selectedVerses.join(',')}
       ></CrossTrailsModal>
     </div>
   );

@@ -1,16 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { ConversationTurn, CrossReference } from '@/lib/types';
-
+import {
+  ConversationTurn,
+  CrossReference,
+  VersesAPIResponse,
+} from '@/lib/types';
 interface CrossTrailsModalProps {
   isOpen: boolean;
   onClose: () => void;
   referenceVerse?: CrossReference;
+  anchorRef?: string;
 }
 
 export default function CrossTrailsModal({
   isOpen,
   onClose,
   referenceVerse,
+  anchorRef,
 }: CrossTrailsModalProps) {
   const [conversationHistory, setConversationHistory] = useState<
     ConversationTurn[]
@@ -19,6 +24,7 @@ export default function CrossTrailsModal({
   const [expanded, setExpanded] = useState(true);
   const conversationRef = useRef<HTMLDivElement>(null);
   const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
+  const [verse, setVerse] = useState<VersesAPIResponse>();
 
   const onHandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -64,6 +70,8 @@ export default function CrossTrailsModal({
         },
       };
 
+      crossReference.anchor_ref = anchorRef;
+      crossReference.text = verse?.verses[0].text || '';
       // Call the cross-refs analyze API
       const response = await fetch('/api/cross-refs/analyze', {
         method: 'POST',
@@ -125,6 +133,14 @@ export default function CrossTrailsModal({
   // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
+      if (referenceVerse) {
+        fetch(`/api/verses?reference=${referenceVerse?.reference}`)
+          .then(response => response.json())
+          .then(data => {
+            setVerse(data);
+          });
+      }
+
       setConversationHistory([]);
       setIsLoading(false);
       setExpanded(true);
@@ -264,7 +280,7 @@ export default function CrossTrailsModal({
                 marginBottom: '8px',
               }}
             >
-              {referenceVerse?.display_ref}
+              {verse?.book} {verse?.chapter} {verse?.verses[0]?.verse_number}
             </div>
             <div
               style={{
@@ -274,9 +290,7 @@ export default function CrossTrailsModal({
                 marginBottom: '0',
               }}
             >
-              <span style={{ fontWeight: 400 }}>
-                {referenceVerse?.reference}
-              </span>
+              <span style={{ fontWeight: 400 }}>{verse?.verses[0].text}</span>
             </div>
           </div>
 
