@@ -152,7 +152,7 @@ export default function CrossTrailsModal({
       setExpanded(true);
       messageRefs.current = [];
     }
-  }, [isOpen, isVerseLoading]);
+  }, [isOpen]);
 
   // Ensure messageRefs array is properly sized
   useEffect(() => {
