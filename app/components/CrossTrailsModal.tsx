@@ -21,6 +21,7 @@ export default function CrossTrailsModal({
     ConversationTurn[]
   >([]);
   const [isLoading, setIsLoading] = useState(false);
+  const [isVerseLoading, setIsVerseLoading] = useState(false);
   const [expanded, setExpanded] = useState(true);
   const conversationRef = useRef<HTMLDivElement>(null);
   const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
@@ -133,12 +134,17 @@ export default function CrossTrailsModal({
   // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
+      setIsVerseLoading(true);
       if (referenceVerse) {
-        fetch(`/api/verses?reference=${referenceVerse?.reference}`)
-          .then(response => response.json())
-          .then(data => {
-            setVerse(data);
-          });
+        try {
+          fetch(`/api/verses?reference=${referenceVerse?.reference}`)
+            .then(response => response.json())
+            .then(data => {
+              setVerse(data);
+            });
+        } finally {
+          setIsVerseLoading(false);
+        }
       }
 
       setConversationHistory([]);
@@ -146,7 +152,7 @@ export default function CrossTrailsModal({
       setExpanded(true);
       messageRefs.current = [];
     }
-  }, [isOpen]);
+  }, [isOpen, isVerseLoading]);
 
   // Ensure messageRefs array is properly sized
   useEffect(() => {
@@ -270,28 +276,66 @@ export default function CrossTrailsModal({
               borderBottom: '1px solid #e0e0e0',
             }}
           >
-            <div
-              style={{
-                fontFamily: 'Calibri, sans-serif',
-                fontWeight: 700,
-                fontSize: '20px',
-                color: '#403e3e',
-                textDecoration: 'underline',
-                marginBottom: '8px',
-              }}
-            >
-              {verse?.book} {verse?.chapter} {verse?.verses[0]?.verse_number}
-            </div>
-            <div
-              style={{
-                fontFamily: 'Calibri, sans-serif',
-                fontSize: '17px',
-                color: '#403e3e',
-                marginBottom: '0',
-              }}
-            >
-              <span style={{ fontWeight: 400 }}>{verse?.verses[0].text}</span>
-            </div>
+            {/* Loading indicator */}
+            {isVerseLoading && (
+              <>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '20px',
+                    color: '#403e3e',
+                    textDecoration: 'underline',
+                    marginBottom: '8px',
+                  }}
+                >
+                  Verse
+                </div>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontSize: '17px',
+                    color: '#403e3e',
+                    marginBottom: '0',
+                  }}
+                >
+                  <span style={{ fontWeight: 400, fontStyle: 'italic' }}>
+                    Reference verse is loading...
+                  </span>
+                </div>
+              </>
+            )}
+
+            {!isVerseLoading && (
+              <>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontWeight: 700,
+                    fontSize: '20px',
+                    color: '#403e3e',
+                    textDecoration: 'underline',
+                    marginBottom: '8px',
+                  }}
+                >
+                  {verse?.book} {verse?.chapter}
+                  {': '}
+                  {verse?.verses[0]?.verse_number}
+                </div>
+                <div
+                  style={{
+                    fontFamily: 'Calibri, sans-serif',
+                    fontSize: '17px',
+                    color: '#403e3e',
+                    marginBottom: '0',
+                  }}
+                >
+                  <span style={{ fontWeight: 400 }}>
+                    {verse?.verses[0].text}
+                  </span>
+                </div>
+              </>
+            )}
           </div>
 
           {/* Section: How Does This Passage Relate? */}
