@@ -25,7 +25,7 @@ export default function CrossTrailsModal({
   const [expanded, setExpanded] = useState(true);
   const conversationRef = useRef<HTMLDivElement>(null);
   const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [verse, setVerse] = useState<VersesAPIResponse>();
+  const [verse, setVerse] = useState<VersesAPIResponse | null>();
 
   const onHandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -131,17 +131,21 @@ export default function CrossTrailsModal({
     messageRefs.current = [];
   };
 
-  // Reset state when modal opens
+  // Reset state when modal opens or referenceVerse changes
   useEffect(() => {
     if (isOpen) {
+      // Reset verse state first to clear any cached data
+      setVerse(null);
       fetchReferenceVerse();
 
       setConversationHistory([]);
       setIsLoading(false);
       setExpanded(true);
       messageRefs.current = [];
+    } else {
+      setVerse(null);
     }
-  }, [isOpen]);
+  }, [isOpen, referenceVerse]);
 
   const fetchReferenceVerse = async () => {
     setIsVerseLoading(true);
@@ -324,9 +328,13 @@ export default function CrossTrailsModal({
                     marginBottom: '8px',
                   }}
                 >
-                  {verse?.book} {verse?.chapter}
-                  {': '}
-                  {verse?.verses[0]?.verse_number}
+                  {verse && (
+                    <>
+                      {verse?.book} {verse?.chapter}
+                      {':'}
+                      {verse?.verses[0]?.verse_number}
+                    </>
+                  )}
                 </div>
                 <div
                   style={{
@@ -337,7 +345,7 @@ export default function CrossTrailsModal({
                   }}
                 >
                   <span style={{ fontWeight: 400 }}>
-                    {verse?.verses[0].text}
+                    {verse && <>{verse?.verses[0].text}</>}
                   </span>
                 </div>
               </>
