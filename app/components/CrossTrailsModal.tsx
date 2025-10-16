@@ -134,18 +134,7 @@ export default function CrossTrailsModal({
   // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
-      setIsVerseLoading(true);
-      if (referenceVerse) {
-        try {
-          fetch(`/api/verses?reference=${referenceVerse?.reference}`)
-            .then(response => response.json())
-            .then(data => {
-              setVerse(data);
-            });
-        } finally {
-          setIsVerseLoading(false);
-        }
-      }
+      fetchReferenceVerse();
 
       setConversationHistory([]);
       setIsLoading(false);
@@ -153,6 +142,23 @@ export default function CrossTrailsModal({
       messageRefs.current = [];
     }
   }, [isOpen]);
+
+  const fetchReferenceVerse = async () => {
+    setIsVerseLoading(true);
+    if (referenceVerse) {
+      try {
+        await fetch(`/api/verses?reference=${referenceVerse?.reference}`)
+          .then(response => response.json())
+          .then(data => {
+            setVerse(data);
+          });
+      } catch (error) {
+        console.error('Error fetching verse:', error);
+      } finally {
+        setIsVerseLoading(false);
+      }
+    }
+  };
 
   // Ensure messageRefs array is properly sized
   useEffect(() => {
