@@ -1,9 +1,19 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
+'use client';
+
+import React, {
+  useState,
+  useEffect,
+  useRef,
+  useCallback,
+  useTransition,
+  useMemo,
+} from 'react';
 import {
   ConversationTurn,
   CrossReference,
   VersesAPIResponse,
 } from '@/lib/types';
+
 interface CrossTrailsModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -23,120 +33,154 @@ export default function CrossTrailsModal({
   const [isLoading, setIsLoading] = useState(false);
   const [isVerseLoading, setIsVerseLoading] = useState(false);
   const [expanded, setExpanded] = useState(true);
+  const [verse, setVerse] = useState<VersesAPIResponse | null>(null);
+  const [isPending, startTransition] = useTransition();
+
   const conversationRef = useRef<HTMLDivElement>(null);
   const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [verse, setVerse] = useState<VersesAPIResponse | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+  const textareaRef = useRef<HTMLTextAreaElement>(null);
 
-  const onHandleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    const question = formData.get('question') as string;
+  // Memoize reference key to prevent unnecessary re-renders
+  const referenceKey = useMemo(
+    () =>
+      referenceVerse
+        ? `${referenceVerse.reference}-${referenceVerse._timestamp}`
+        : null,
+    [referenceVerse?.reference, referenceVerse?._timestamp]
+  );
 
-    if (!question.trim()) {
-      console.log('No question provided');
-      return;
-    }
+  // Memoize timestamp formatter
+  const formatTimestamp = useCallback((timestamp: string) => {
+    const date = new Date(timestamp);
+    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  }, []);
 
-    // Prevent submission if verse is still loading
-    if (isVerseLoading || !verse) {
-      console.log('Verse is still loading, please wait');
-      return;
-    }
+  // Enhanced form submission with better error handling
+  const handleFormSubmission = useCallback(
+    async (formData: FormData) => {
+      const question = formData.get('question') as string;
 
-    // Add user's question to conversation history
-    const userTurn: ConversationTurn = {
-      type: 'user',
-      content: question,
-      timestamp: new Date().toISOString(),
-    };
-
-    setConversationHistory(prev => [...prev, userTurn]);
-    setIsLoading(true);
-
-    // Clear the textarea
-    (e.target as HTMLFormElement).reset();
-
-    try {
-      // Use the provided reference verse or fallback to demo data
-      const crossReference = referenceVerse || {
-        reference: 'Acts.20.16',
-        display_ref: 'Acts 20.16',
-        text: 'On the day of Pentecost all the believers were meeting together in one place.',
-        anchor_ref: 'Acts.2.1',
-        connection: {
-          categories: ['ritual_practice', 'elaboration'],
-          strength: 0.9,
-          type: 'ritual_practice' as const,
-          explanation:
-            'Paul had decided to sail on past Ephesus, for he didn\u2019t want to spend any more time in the province',
-        },
-        context: {
-          book: 'Acts',
-          chapter: 20,
-          verse: 16,
-        },
-      };
-
-      crossReference.anchor_ref = anchorRef;
-      // Use the current verse state to ensure we have the latest data
-      crossReference.text = verse.verses[0]?.text || '';
-      // Call the cross-refs analyze API
-      const response = await fetch('/api/cross-refs/analyze', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          crossReference,
-          userObservation: question,
-          analysisType: 'default',
-          contextRange: 2,
-        }),
-      });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
+      if (!question.trim()) {
+        console.log('No question provided');
+        return;
       }
 
-      const data = await response.json();
-      console.log('Analysis result:', data);
-
-      if (data.success && data.data?.analysis) {
-        // Add AI response to conversation history
-        const assistantTurn: ConversationTurn = {
-          type: 'assistant',
-          content: data.data.analysis,
-          timestamp: new Date().toISOString(),
-        };
-
-        setConversationHistory(prev => [...prev, assistantTurn]);
+      // Prevent submission if verse is still loading
+      if (isVerseLoading || !verse) {
+        console.log('Verse is still loading, please wait');
+        return;
       }
-    } catch (error) {
-      console.error('Error analyzing cross-reference:', error);
 
-      // Add error message to conversation history
-      const errorTurn: ConversationTurn = {
-        type: 'assistant',
-        content:
-          'I apologize, but I encountered an error while processing your question. Please try again.',
+      // Add user's question to conversation history with transition
+      const userTurn: ConversationTurn = {
+        type: 'user',
+        content: question,
         timestamp: new Date().toISOString(),
       };
 
-      setConversationHistory(prev => [...prev, errorTurn]);
-    } finally {
-      setIsLoading(false);
-    }
-  };
+      startTransition(() => {
+        setConversationHistory(prev => [...prev, userTurn]);
+      });
 
-  const formatTimestamp = (timestamp: string) => {
-    const date = new Date(timestamp);
-    return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
-  };
+      setIsLoading(true);
 
-  const clearHistory = () => {
-    setConversationHistory([]);
+      // Clear the textarea
+      if (textareaRef.current) {
+        textareaRef.current.value = '';
+      }
+
+      try {
+        // Use the provided reference verse or fallback to demo data
+        const crossReference = referenceVerse || {
+          reference: 'Acts.20.16',
+          display_ref: 'Acts 20.16',
+          text: 'On the day of Pentecost all the believers were meeting together in one place.',
+          anchor_ref: 'Acts.2.1',
+          connection: {
+            categories: ['ritual_practice', 'elaboration'],
+            strength: 0.9,
+            type: 'ritual_practice' as const,
+            explanation:
+              'Paul had decided to sail on past Ephesus, for he didn\u2019t want to spend any more time in the province',
+          },
+          context: {
+            book: 'Acts',
+            chapter: 20,
+            verse: 16,
+          },
+        };
+
+        crossReference.anchor_ref = anchorRef;
+        crossReference.text = verse.verses[0]?.text || '';
+
+        const response = await fetch('/api/cross-refs/analyze', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            crossReference,
+            userObservation: question,
+            analysisType: 'default',
+            contextRange: 2,
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        console.log('Analysis result:', data);
+
+        if (data.success && data.data?.analysis) {
+          const assistantTurn: ConversationTurn = {
+            type: 'assistant',
+            content: data.data.analysis,
+            timestamp: new Date().toISOString(),
+          };
+
+          startTransition(() => {
+            setConversationHistory(prev => [...prev, assistantTurn]);
+          });
+        }
+      } catch (error) {
+        console.error('Error analyzing cross-reference:', error);
+
+        const errorTurn: ConversationTurn = {
+          type: 'assistant',
+          content:
+            'I apologize, but I encountered an error while processing your question. Please try again.',
+          timestamp: new Date().toISOString(),
+        };
+
+        startTransition(() => {
+          setConversationHistory(prev => [...prev, errorTurn]);
+        });
+      } finally {
+        setIsLoading(false);
+      }
+    },
+    [isVerseLoading, verse, referenceVerse, anchorRef]
+  );
+
+  // Enhanced form submit handler for backward compatibility
+  const onHandleSubmit = useCallback(
+    async (e: React.FormEvent) => {
+      e.preventDefault();
+      const formData = new FormData(e.target as HTMLFormElement);
+      await handleFormSubmission(formData);
+    },
+    [handleFormSubmission]
+  );
+
+  const clearHistory = useCallback(() => {
+    startTransition(() => {
+      setConversationHistory([]);
+    });
     messageRefs.current = [];
-  };
+  }, []);
 
   const fetchReferenceVerse = useCallback(async () => {
     if (!referenceVerse?.reference) {
@@ -146,7 +190,6 @@ export default function CrossTrailsModal({
 
     setIsVerseLoading(true);
     try {
-      // Add cache-busting timestamp to prevent browser caching
       const timestamp = Date.now();
       const response = await fetch(
         `/api/verses?reference=${referenceVerse.reference}&_t=${timestamp}`,
@@ -157,9 +200,11 @@ export default function CrossTrailsModal({
           },
         }
       );
+
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
+
       const data = await response.json();
       setVerse(data);
     } catch (error) {
@@ -168,66 +213,74 @@ export default function CrossTrailsModal({
     } finally {
       setIsVerseLoading(false);
     }
-  }, [
-    referenceVerse?.reference,
-    referenceVerse?.display_ref,
-    referenceVerse?._timestamp,
-  ]);
+  }, [referenceVerse?.reference]);
 
-  // Reset state when modal opens
+  // Enhanced keyboard navigation
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    },
+    [onClose]
+  );
+
+  // Reset state when modal opens with optimized dependencies
   useEffect(() => {
     if (isOpen) {
-      // Clear all state including verse data to prevent flash
       setVerse(null);
-      setConversationHistory([]);
+      startTransition(() => {
+        setConversationHistory([]);
+      });
       setIsLoading(false);
       setExpanded(true);
       messageRefs.current = [];
-
-      // Fetch new verse data
       fetchReferenceVerse();
     } else {
       // Clean up when modal closes
       setVerse(null);
-      setConversationHistory([]);
+      startTransition(() => {
+        setConversationHistory([]);
+      });
     }
   }, [isOpen, fetchReferenceVerse]);
 
-  // Separate effect to handle reference changes when modal is already open
+  // Handle reference changes when modal is already open
   useEffect(() => {
-    if (isOpen && referenceVerse?.reference) {
-      // Clear all data immediately when reference changes
+    if (isOpen && referenceKey) {
       setVerse(null);
-      setConversationHistory([]);
+      startTransition(() => {
+        setConversationHistory([]);
+      });
       setIsLoading(false);
-
-      // Fetch new verse data
       fetchReferenceVerse();
     }
-  }, [
-    referenceVerse?.reference,
-    referenceVerse?.display_ref,
-    referenceVerse?._timestamp,
-    isOpen,
-    fetchReferenceVerse,
-  ]);
+  }, [isOpen, referenceKey, fetchReferenceVerse]);
 
-  // Ensure messageRefs array is properly sized
+  // Optimized messageRefs management with cleanup
   useEffect(() => {
-    messageRefs.current = messageRefs.current.slice(
-      0,
-      conversationHistory.length
-    );
+    const currentLength = conversationHistory.length;
+    messageRefs.current = messageRefs.current.slice(0, currentLength);
+
+    return () => {
+      // Cleanup refs when component unmounts or conversation changes significantly
+      if (currentLength === 0) {
+        messageRefs.current = [];
+      }
+    };
   }, [conversationHistory.length]);
 
-  // Auto-scroll behavior: show beginning of new AI responses, bottom for user messages
+  // Enhanced auto-scroll behavior
   useEffect(() => {
-    if (conversationRef.current && conversationHistory.length > 0) {
+    if (
+      conversationRef.current &&
+      conversationHistory.length > 0 &&
+      !isPending
+    ) {
       const lastMessage = conversationHistory[conversationHistory.length - 1];
       const lastMessageIndex = conversationHistory.length - 1;
 
       if (lastMessage.type === 'assistant' && !isLoading) {
-        // For AI responses, scroll to show the beginning of the new response
         setTimeout(() => {
           const lastMessageElement = messageRefs.current[lastMessageIndex];
           if (lastMessageElement) {
@@ -238,14 +291,22 @@ export default function CrossTrailsModal({
           }
         }, 100);
       } else if (lastMessage.type === 'user') {
-        // For user messages, scroll to bottom as they're typically short
         if (conversationRef.current) {
           conversationRef.current.scrollTop =
             conversationRef.current.scrollHeight;
         }
       }
     }
-  }, [conversationHistory, isLoading]);
+  }, [conversationHistory, isLoading, isPending]);
+
+  // Focus management
+  useEffect(() => {
+    if (isOpen && textareaRef.current) {
+      setTimeout(() => {
+        textareaRef.current?.focus();
+      }, 100);
+    }
+  }, [isOpen]);
 
   // Don't render anything if modal is closed
   if (!isOpen) {
@@ -254,6 +315,7 @@ export default function CrossTrailsModal({
 
   return (
     <div
+      ref={modalRef}
       style={{
         position: 'fixed',
         top: 0,
@@ -266,10 +328,14 @@ export default function CrossTrailsModal({
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        scrollbarWidth: 'none', // Firefox
-        msOverflowStyle: 'none', // IE 10+
+        scrollbarWidth: 'none',
+        msOverflowStyle: 'none',
       }}
       className="hide-scrollbar"
+      onKeyDown={handleKeyDown}
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="modal-title"
     >
       <div
         style={{
@@ -284,13 +350,19 @@ export default function CrossTrailsModal({
           fontFamily: 'Inter, Calibri, sans-serif',
           boxShadow: '0 2px 16px rgba(64,62,62,0.10)',
           borderBottom: 'none',
-          scrollbarWidth: 'none', // Firefox
-          msOverflowStyle: 'none', // IE 10+
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none',
         }}
       >
-        {/* Orange X close button only */}
+        {/* Enhanced close button with better accessibility */}
         <button
           onClick={onClose}
+          onKeyDown={e => {
+            if (e.key === 'Enter' || e.key === ' ') {
+              e.preventDefault();
+              onClose();
+            }
+          }}
           style={{
             position: 'absolute',
             top: '24px',
@@ -309,7 +381,8 @@ export default function CrossTrailsModal({
             cursor: 'pointer',
             zIndex: 2,
           }}
-          aria-label="Close"
+          aria-label="Close modal"
+          title="Close modal (Esc)"
         >
           ×
         </button>
@@ -338,6 +411,7 @@ export default function CrossTrailsModal({
             {isVerseLoading && (
               <>
                 <div
+                  id="modal-title"
                   style={{
                     fontFamily: 'Calibri, sans-serif',
                     fontWeight: 700,
@@ -367,6 +441,7 @@ export default function CrossTrailsModal({
             {!isVerseLoading && (
               <>
                 <div
+                  id="modal-title"
                   style={{
                     fontFamily: 'Calibri, sans-serif',
                     fontWeight: 700,
@@ -430,7 +505,7 @@ export default function CrossTrailsModal({
                 >
                   What are your thoughts on how these passages are related?
                 </span>
-                <span
+                <button
                   style={{
                     background: '#fff',
                     borderRadius: '50%',
@@ -446,9 +521,15 @@ export default function CrossTrailsModal({
                     cursor: 'pointer',
                   }}
                   onClick={() => setExpanded(!expanded)}
+                  aria-label={
+                    expanded ? 'Collapse conversation' : 'Expand conversation'
+                  }
+                  title={
+                    expanded ? 'Collapse conversation' : 'Expand conversation'
+                  }
                 >
                   {expanded ? '−' : '+'}
-                </span>
+                </button>
               </div>
               {expanded && conversationHistory.length > 0 && (
                 <button
@@ -464,6 +545,7 @@ export default function CrossTrailsModal({
                     fontFamily: 'Calibri, sans-serif',
                   }}
                   title="Clear conversation history"
+                  aria-label="Clear conversation history"
                 >
                   Clear
                 </button>
@@ -482,6 +564,8 @@ export default function CrossTrailsModal({
                     scrollbarWidth: 'thin',
                     scrollbarColor: '#ccc transparent',
                   }}
+                  role="log"
+                  aria-label="Conversation history"
                 >
                   {conversationHistory.length === 0 && !isLoading && (
                     <div
@@ -500,7 +584,7 @@ export default function CrossTrailsModal({
                   )}
                   {conversationHistory.map((turn, index) => (
                     <div
-                      key={index}
+                      key={`${turn.timestamp}-${index}`}
                       ref={el => {
                         messageRefs.current[index] = el;
                       }}
@@ -516,7 +600,11 @@ export default function CrossTrailsModal({
                         border:
                           turn.type === 'user' ? '1px solid #e9ecef' : 'none',
                         marginLeft: turn.type === 'user' ? '20px' : '0px',
+                        opacity: isPending ? 0.7 : 1,
+                        transition: 'opacity 0.2s ease',
                       }}
+                      role="article"
+                      aria-label={`${turn.type === 'user' ? 'Your question' : 'Trail Guide response'} at ${formatTimestamp(turn.timestamp)}`}
                     >
                       <div
                         style={{
@@ -564,6 +652,8 @@ export default function CrossTrailsModal({
                         color: '#403e3e',
                         marginBottom: '8px',
                       }}
+                      role="status"
+                      aria-label="Trail Guide is thinking"
                     >
                       <div
                         style={{
@@ -582,7 +672,7 @@ export default function CrossTrailsModal({
                   )}
                 </div>
 
-                {/* Textarea and send button */}
+                {/* Enhanced form with React 19 patterns */}
                 <form onSubmit={onHandleSubmit}>
                   <div
                     style={{
@@ -597,6 +687,7 @@ export default function CrossTrailsModal({
                     }}
                   >
                     <textarea
+                      ref={textareaRef}
                       name="question"
                       disabled={isLoading}
                       style={{
@@ -618,6 +709,16 @@ export default function CrossTrailsModal({
                           ? 'Trail Guide is thinking...'
                           : 'Chat with the Trail Guide'
                       }
+                      aria-label="Ask a question about the passage relationship"
+                      onKeyDown={e => {
+                        if (e.key === 'Enter' && !e.shiftKey) {
+                          e.preventDefault();
+                          const form = e.currentTarget.closest('form');
+                          if (form) {
+                            form.requestSubmit();
+                          }
+                        }
+                      }}
                     />
                     <button
                       type="submit"
@@ -642,7 +743,8 @@ export default function CrossTrailsModal({
                             ? 'not-allowed'
                             : 'pointer',
                       }}
-                      aria-label="Send"
+                      aria-label="Send message"
+                      title="Send message (Enter)"
                     >
                       <span
                         style={{
