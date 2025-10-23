@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -23,42 +23,42 @@ const config: Config = {
           900: '#782d16',
         },
         text: {
-          primary: '#1a1a1a',    // Dark gray for main text
-          secondary: '#666666',   // Medium gray for verse numbers
-          muted: '#999999',       // Light gray for instructions
+          primary: '#1a1a1a', // Dark gray for main text
+          secondary: '#666666', // Medium gray for verse numbers
+          muted: '#999999', // Light gray for instructions
         },
         background: {
-          primary: '#ffffff',     // Clean white background
-          secondary: '#fafafa',   // Slightly off-white for sidebar
-        }
+          primary: '#ffffff', // Clean white background
+          secondary: '#fafafa', // Slightly off-white for sidebar
+        },
       },
       fontFamily: {
         sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         serif: ['Georgia', 'ui-serif', 'serif'], // For Bible text readability
       },
       fontSize: {
-        'bible': ['18px', { lineHeight: '1.7' }],    // Optimal for Bible reading
+        bible: ['18px', { lineHeight: '1.7' }], // Optimal for Bible reading
         'verse-number': ['14px', { lineHeight: '1.5' }],
-        'reference': ['15px', { lineHeight: '1.6' }],
+        reference: ['15px', { lineHeight: '1.6' }],
       },
       spacing: {
-        '18': '4.5rem',   // Custom spacing for layout
+        '18': '4.5rem', // Custom spacing for layout
         '22': '5.5rem',
       },
       maxWidth: {
-        'bible': '45rem',     // Optimal line length for reading
-        'sidebar': '20rem',   // Cross-reference sidebar width
+        bible: '45rem', // Optimal line length for reading
+        sidebar: '20rem', // Cross-reference sidebar width
       },
       screens: {
-        'sm': '640px',
-        'md': '768px',
-        'lg': '1024px',
-        'xl': '1280px',
+        sm: '640px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
         '2xl': '1536px',
-      }
+      },
     },
   },
   plugins: [],
-}
+};
 
-export default config
+export default config;
