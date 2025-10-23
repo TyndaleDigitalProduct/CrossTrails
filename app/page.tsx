@@ -133,7 +133,15 @@ export default function HomePage() {
 
   // Handler for reference verse clicks from sidebar
   const handleReferenceVerseClick = (crossRef: CrossReference) => {
-    setSelectedReferenceVerse(crossRef);
+    // Create a fresh object with timestamp to ensure uniqueness and force re-render
+    const freshCrossRef = {
+      ...crossRef,
+      _timestamp: Date.now(),
+    } as CrossReference;
+
+    // Update state in a single batch - React will handle the updates efficiently
+    setSelectedReferenceVerse(freshCrossRef);
+    setModalContent(''); // Clear any existing content
     setModalOpen(true);
   };
   const [crossReferences, setCrossReferences] = useState<CrossReferenceGroup[]>(
@@ -484,6 +492,7 @@ export default function HomePage() {
 
       {/* Proof of concept modal for any link click */}
       <CrossTrailsModal
+        key={selectedReferenceVerse?._timestamp || 'default'}
         isOpen={modalOpen}
         onClose={() => setModalOpen(false)}
         referenceVerse={selectedReferenceVerse}

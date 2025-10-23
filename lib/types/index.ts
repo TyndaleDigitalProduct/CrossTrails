@@ -44,6 +44,7 @@ export interface CrossReference {
   anchor_ref?: string; // e.g., "Phlm.1" (optional, for data linkage)
   category?: CrossReferenceCategory; // optional, for granular category
   reasoning?: string; // optional, explanation of the connection
+  _timestamp?: number; // optional, for cache-busting
 }
 
 export interface ConnectionData {

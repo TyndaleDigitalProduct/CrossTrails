@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import {
   ConversationTurn,
   CrossReference,
@@ -25,7 +25,7 @@ export default function CrossTrailsModal({
   const [expanded, setExpanded] = useState(true);
   const conversationRef = useRef<HTMLDivElement>(null);
   const messageRefs = useRef<(HTMLDivElement | null)[]>([]);
-  const [verse, setVerse] = useState<VersesAPIResponse | null>();
+  const [verse, setVerse] = useState<VersesAPIResponse | null>(null);
 
   const onHandleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -34,6 +34,12 @@ export default function CrossTrailsModal({
 
     if (!question.trim()) {
       console.log('No question provided');
+      return;
+    }
+
+    // Prevent submission if verse is still loading
+    if (isVerseLoading || !verse) {
+      console.log('Verse is still loading, please wait');
       return;
     }
 
@@ -72,7 +78,8 @@ export default function CrossTrailsModal({
       };
 
       crossReference.anchor_ref = anchorRef;
-      crossReference.text = verse?.verses[0].text || '';
+      // Use the current verse state to ensure we have the latest data
+      crossReference.text = verse.verses[0]?.text || '';
       // Call the cross-refs analyze API
       const response = await fetch('/api/cross-refs/analyze', {
         method: 'POST',
@@ -131,38 +138,79 @@ export default function CrossTrailsModal({
     messageRefs.current = [];
   };
 
-  // Reset state when modal opens or referenceVerse changes
+  const fetchReferenceVerse = useCallback(async () => {
+    if (!referenceVerse?.reference) {
+      setIsVerseLoading(false);
+      return;
+    }
+
+    setIsVerseLoading(true);
+    try {
+      // Add cache-busting timestamp to prevent browser caching
+      const timestamp = Date.now();
+      const response = await fetch(
+        `/api/verses?reference=${referenceVerse.reference}&_t=${timestamp}`,
+        {
+          cache: 'no-cache',
+          headers: {
+            'Cache-Control': 'no-cache',
+          },
+        }
+      );
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const data = await response.json();
+      setVerse(data);
+    } catch (error) {
+      console.error('Error fetching verse:', error);
+      setVerse(null);
+    } finally {
+      setIsVerseLoading(false);
+    }
+  }, [
+    referenceVerse?.reference,
+    referenceVerse?.display_ref,
+    referenceVerse?._timestamp,
+  ]);
+
+  // Reset state when modal opens
   useEffect(() => {
     if (isOpen) {
-      // Reset verse state first to clear any cached data
+      // Clear all state including verse data to prevent flash
       setVerse(null);
-      fetchReferenceVerse();
-
       setConversationHistory([]);
       setIsLoading(false);
       setExpanded(true);
       messageRefs.current = [];
-    } else {
-      setVerse(null);
-    }
-  }, [isOpen, referenceVerse]);
 
-  const fetchReferenceVerse = async () => {
-    setIsVerseLoading(true);
-    if (referenceVerse) {
-      try {
-        await fetch(`/api/verses?reference=${referenceVerse?.reference}`)
-          .then(response => response.json())
-          .then(data => {
-            setVerse(data);
-          });
-      } catch (error) {
-        console.error('Error fetching verse:', error);
-      } finally {
-        setIsVerseLoading(false);
-      }
+      // Fetch new verse data
+      fetchReferenceVerse();
+    } else {
+      // Clean up when modal closes
+      setVerse(null);
+      setConversationHistory([]);
     }
-  };
+  }, [isOpen, fetchReferenceVerse]);
+
+  // Separate effect to handle reference changes when modal is already open
+  useEffect(() => {
+    if (isOpen && referenceVerse?.reference) {
+      // Clear all data immediately when reference changes
+      setVerse(null);
+      setConversationHistory([]);
+      setIsLoading(false);
+
+      // Fetch new verse data
+      fetchReferenceVerse();
+    }
+  }, [
+    referenceVerse?.reference,
+    referenceVerse?.display_ref,
+    referenceVerse?._timestamp,
+    isOpen,
+    fetchReferenceVerse,
+  ]);
 
   // Ensure messageRefs array is properly sized
   useEffect(() => {
@@ -328,12 +376,15 @@ export default function CrossTrailsModal({
                     marginBottom: '8px',
                   }}
                 >
-                  {verse && (
+                  {verse && !isVerseLoading && (
                     <>
                       {verse?.book} {verse?.chapter}
                       {':'}
                       {verse?.verses[0]?.verse_number}
                     </>
+                  )}
+                  {isVerseLoading && (
+                    <span style={{ color: '#999' }}>Loading...</span>
                   )}
                 </div>
                 <div
@@ -345,7 +396,12 @@ export default function CrossTrailsModal({
                   }}
                 >
                   <span style={{ fontWeight: 400 }}>
-                    {verse && <>{verse?.verses[0].text}</>}
+                    {verse && !isVerseLoading && <>{verse?.verses[0].text}</>}
+                    {isVerseLoading && (
+                      <span style={{ color: '#999' }}>
+                        Loading verse text...
+                      </span>
+                    )}
                   </span>
                 </div>
               </>
@@ -565,12 +621,15 @@ export default function CrossTrailsModal({
                     />
                     <button
                       type="submit"
-                      disabled={isLoading}
+                      disabled={isLoading || isVerseLoading || !verse}
                       style={{
                         width: '28px',
                         height: '28px',
                         borderRadius: '50%',
-                        background: isLoading ? '#ccc' : '#403e3e',
+                        background:
+                          isLoading || isVerseLoading || !verse
+                            ? '#ccc'
+                            : '#403e3e',
                         border: 'none',
                         display: 'flex',
                         alignItems: 'center',
@@ -578,7 +637,10 @@ export default function CrossTrailsModal({
                         color: '#fff',
                         fontWeight: 700,
                         fontSize: '16px',
-                        cursor: isLoading ? 'not-allowed' : 'pointer',
+                        cursor:
+                          isLoading || isVerseLoading || !verse
+                            ? 'not-allowed'
+                            : 'pointer',
                       }}
                       aria-label="Send"
                     >
