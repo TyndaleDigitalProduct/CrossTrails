@@ -44,6 +44,7 @@ export interface CrossReference {
   anchor_ref?: string; // e.g., "Phlm.1" (optional, for data linkage)
   category?: CrossReferenceCategory; // optional, for granular category
   reasoning?: string; // optional, explanation of the connection
+  _timestamp?: number; // optional, for cache-busting
 }
 
 export interface ConnectionData {
@@ -56,33 +57,33 @@ export interface ConnectionData {
 
 // Expanded category system based on category_cheat_sheet.json
 export type CrossReferenceCategory =
-  | "allusion"
-  | "christological_parallel"
-  | "contrast"
-  | "covenant_connection"
-  | "elaboration"
-  | "exemplification"
-  | "greek_word"
-  | "hebrew_word"
-  | "historical_pattern"
-  | "historical_reference"
-  | "legal_parallel"
-  | "literary_parallel"
-  | "narrative_continuation"
-  | "numerology"
-  | "parallel_account"
-  | "parallel_instruction"
-  | "prophecy_fulfillment"
-  | "prophetic_parallel"
-  | "quotation"
-  | "ritual_practice"
-  | "septuagint_difference"
-  | "shared_metaphor"
-  | "thematic_echo"
-  | "theological_principle"
-  | "typology"
-  | "wisdom_parallel"
-  | "wisdom_principle";
+  | 'allusion'
+  | 'christological_parallel'
+  | 'contrast'
+  | 'covenant_connection'
+  | 'elaboration'
+  | 'exemplification'
+  | 'greek_word'
+  | 'hebrew_word'
+  | 'historical_pattern'
+  | 'historical_reference'
+  | 'legal_parallel'
+  | 'literary_parallel'
+  | 'narrative_continuation'
+  | 'numerology'
+  | 'parallel_account'
+  | 'parallel_instruction'
+  | 'prophecy_fulfillment'
+  | 'prophetic_parallel'
+  | 'quotation'
+  | 'ritual_practice'
+  | 'septuagint_difference'
+  | 'shared_metaphor'
+  | 'thematic_echo'
+  | 'theological_principle'
+  | 'typology'
+  | 'wisdom_parallel'
+  | 'wisdom_principle';
 
 // Types for cross-reference data files (e.g., Phlm.json)
 export interface CrossReferenceDataFile {
@@ -164,7 +165,7 @@ export type CrossReferenceConnectionArrayResponse = Array<{
     historical_context: boolean;
     literary_connection: boolean;
   };
-}>
+}>;
 
 export interface CrossReferencePromptRequest {
   crossReference: CrossReference;
@@ -418,6 +419,7 @@ export interface CrossReferencesSidebarProps {
   crossReferences: CrossReferenceGroup[];
   selectedRefs: string[];
   onRefSelect: (refs: string[]) => void;
+  onReferenceClick?: (crossRef: CrossReference) => void;
   loading?: boolean;
   error?: string | null;
 }
