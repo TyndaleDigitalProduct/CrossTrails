@@ -18,7 +18,7 @@ describe('CrossReferenceDataFile JSON validation', () => {
       if (!valid) {
         throw new Error(
           `${file} failed schema validation:\n` +
-          JSON.stringify(validate.errors, null, 2)
+            JSON.stringify(validate.errors, null, 2)
         );
       }
       expect(valid).toBe(true);
