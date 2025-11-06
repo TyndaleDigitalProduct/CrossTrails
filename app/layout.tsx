@@ -1,47 +1,57 @@
-import React from 'react'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
-import './globals.css'
+import React from 'react';
+import type { Metadata } from 'next';
+import { Inter } from 'next/font/google';
+import './globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
   display: 'swap',
-  variable: '--font-inter'
-})
+  variable: '--font-inter',
+});
 
 export const metadata: Metadata = {
   title: 'CrossTrails - Explore Bible Connections',
-  description: 'Discover meaningful connections between Bible passages through interactive cross-references and AI-powered insights',
-  keywords: ['Bible', 'cross-references', 'scripture', 'biblical connections', 'NLT', 'Bible study'],
+  description:
+    'Discover meaningful connections between Bible passages through interactive cross-references and AI-powered insights',
+  keywords: [
+    'Bible',
+    'cross-references',
+    'scripture',
+    'biblical connections',
+    'NLT',
+    'Bible study',
+  ],
   authors: [{ name: 'CrossTrails Team' }],
   openGraph: {
     title: 'CrossTrails - Explore Bible Connections',
-    description: 'Discover meaningful connections between Bible passages through interactive cross-references and AI-powered insights',
+    description:
+      'Discover meaningful connections between Bible passages through interactive cross-references and AI-powered insights',
     type: 'website',
     locale: 'en_US',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'CrossTrails - Explore Bible Connections',
-    description: 'Discover meaningful connections between Bible passages through interactive cross-references and AI-powered insights',
+    description:
+      'Discover meaningful connections between Bible passages through interactive cross-references and AI-powered insights',
   },
   robots: {
     index: true,
     follow: true,
   },
-}
+};
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 1,
   userScalable: false,
-}
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en" className={inter.variable}>
@@ -70,10 +80,8 @@ export default function RootLayout({
         className={`${inter.className} selection-primary antialiased`}
         suppressHydrationWarning={true}
       >
-        
-
         {/* Main application container */}
-  <div className="min-h-screen" style={{ background: '#F5F5F5' }}>
+        <div className="min-h-screen" style={{ background: '#F5F5F5' }}>
           {children}
         </div>
 
@@ -86,5 +94,5 @@ export default function RootLayout({
         )}
       </body>
     </html>
-  )
+  );
 }

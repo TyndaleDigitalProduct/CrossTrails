@@ -10,7 +10,9 @@
     "lint": "eslint",
     "type-check": "tsc --noEmit",
     "generate-schema": "ts-json-schema-generator --path lib/types/index.ts --type CrossReferenceDataFile --out tests/unit/crossRefDataFile.schema.json",
-    "test": "npm run generate-schema && jest"
+    "test": "npm run generate-schema && jest",
+    "format": "prettier --write .",
+    "prettier": "prettier --check ."
   },
   "dependencies": {
     "@anthropic-ai/sdk": "0.63.0",
@@ -39,6 +41,7 @@
     "globals": "16.4.0",
     "jest": "30.1.3",
     "jiti": "2.6.0",
+    "prettier": "3.6.2",
     "tailwindcss": "4.1.14",
     "ts-jest": "29.4.4",
     "ts-json-schema-generator": "2.4.0",
